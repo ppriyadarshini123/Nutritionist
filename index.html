@@ -3,37 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>Nutritionist</title>
-    <link rel="stylesheet" href="css/indexCSS.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="dist/css/indexCSS.css" media="screen" type="text/css">
 </head>
 <body>
 <div class="wrapper">
     <header id="top">
-        <div class="logo" onclick="showHome()">
-            <div><img alt="hamburger icon" src="imgs/Home/hamburger.png"></div>
-            <div class="logo">
+        <div class="logoAndHam" onclick="showHome()">
+            <div >
+                <img alt="hamburger icon" src="dist/imgs/home/hamburger.png" class="hamburger">
+            </div><!--Hamburger Icon-->
+            <div>
+                <img alt="Logo" src="dist/imgs/home/logonuts.png"  class="logo">
             </div><!--Logo-->
         </div><!--Logo and hamburger icon-->
-    </header>
+    </header><!--header-->
 
-    <nav class="topNav">
+    <nav class="nav">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Recipes</a></li>
-            <li><a href="#">About Me</a></li>
+            <li><img alt="Home" src="dist/imgs/home/menuicons/home.svg" class="homeIcon"><a href="#">Home</a></li>
+            <li><img alt="Recipes" src="dist/imgs/home/menuicons/recipes.svg" class="recipesIcon"><a href="#">Recipes</a></li>
+            <li><img alt="About Me" src="dist/imgs/home/menuicons/aboutme.svg" class="aboutMe"><a href="#">About Me</a></li>
         </ul>
     </nav>
-</div><!--Logo & Navigation-->
-<div class="header">
-    <div class="wrapper">
+</div><!--wrapper, Logo & Navigation-->
 
-    </div>
-</div><!--Header-->
+<div class="bigPicSection">
+    <div class="wrapper">
+        <div class="headerSection">
+            <div><img alt="changingpic" src="dist/imgs/home/workshops.png"  class="bigPicLeft"></div>
+            <div class="rightHandColumn">
+                <div>
+                    <a href="#"><img alt="iconConsultancy" src="dist/imgs/home/menuicons/consultancy.png"></a>
+                </div><!--Consultancy icon-->
+                <div>
+                    <a href="#"><img alt="iconWorkshops" src="dist/imgs/home/menuicons/workshop.png"></a>
+                </div><!--Workshops icon-->
+                <div>
+                    <a href="#"><img alt="iconCorporateNutrition" src="dist/imgs/home/menuicons/corporatenutrition.png"></a>
+                </div><!--Corporate Nutrition-->
+            </div><!--rightHandColumn-->
+        </div><!--Header Section-->
+    </div><!--wrapper-->
+</div><!--bigPicSection-->
 
 
 <div class="wrapper">
     <main>
-
-
+        <div class="photoGallery">
+            <div class="topRow">
+                <div>
+                </div>
+                <div>
+                </div>
+                <div>
+                </div>
+                <div>
+                </div>
+            </div>
+            <div class="bottomRow">
+                <div>
+                </div>
+                <div>
+                </div>
+                <div>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div class="linkedPictures">
+            <div>
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
+            <div>
+            </div>
+        </div>
     </main>
 </div><!--/wrapper-->
 
@@ -57,17 +104,16 @@
 
                         </ul>
                     </div><!--sitemap second column-->
-
-                </div><!--sitemap columns-->
+                </div><!--sitemap-->
             </div><!--Sitemap-->
 
             <div class="latestColSocialMedia">
                 <div class="goToTop">
                     <div>
                         <h3 class="title">Find us here:</h3>
-                        <a href="#"><img src="./imgs/twitter.png" title="Find us on Twitter" alt="Twitter" width="20" height="20"></a>
-                        <a href="#"><img src="./imgs/facebook.png" title="Find us on Facebook" alt="Facebook" width="20" height="20"></a>
-                        <a href="#"><img src="./imgs/youtube.jpg" title="Find us on YouTube" alt="YouTube" width="20" height="20"></a>
+                        <a href="#"><img src="dist/imgs/twitter.png" title="Find us on Twitter" alt="Twitter" width="20" height="20"></a>
+                        <a href="#"><img src="dist/imgs/facebook.png" title="Find us on Facebook" alt="Facebook" width="20" height="20"></a>
+                        <a href="#"><img src="dist/imgs/youtube.jpg" title="Find us on YouTube" alt="YouTube" width="20" height="20"></a>
                     </div><!--Social media icons-->
                     <div>
                         <a href="#top" class="linkTop" >Go to top</a>
@@ -78,6 +124,6 @@
     </div><!-- Footer row-->
     <div class="base">Copyright &copy; 2018 Nutritionist for you, Cambridge</div>
 </footer>
-<script src="./js/script.js"></script>
+<script src="dist/js/script.js"></script>
 </body>
 </html>
