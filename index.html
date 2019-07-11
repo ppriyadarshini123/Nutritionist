@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nutritionist</title>
-    <link rel="stylesheet" href="dist/css/indexCSS.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="dist/css/index.css" media="screen" type="text/css">
 </head>
 <body>
 <div class="wrapper">
     <header id="top">
-        <div class="logoAndHam" onclick="showHome()">
+
+        <div class="logoAndHam" >
             <div >
-                <img alt="hamburger icon" src="dist/imgs/home/hamburger.png" class="hamburger">
+               <!-- <img alt="hamburger icon" src="dist/imgs/home/hamburger.png" class="hamburger" id="hamburger">-->
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
             </div><!--Hamburger Icon-->
-            <div>
+            <div onclick="showHome()">
                 <img alt="Logo" src="dist/imgs/home/logonuts.png"  class="logo">
             </div><!--Logo-->
         </div><!--Logo and hamburger icon-->
     </header><!--header-->
 
-    <nav class="nav">
-        <ul>
-            <li class="homeText"><a href="#" ><img alt="Home" src="dist/imgs/home/menuicons/home.svg" class="homeIcon">Home</a></li>
-            <li class="recipesText"><a href="#" ><img alt="Recipes" src="dist/imgs/home/menuicons/recipes.svg" class="recipesIcon">Recipes</a></li>
-            <li class="aboutMeText"><a href="#" ><img alt="About Me" src="dist/imgs/home/menuicons/aboutme.svg" class="aboutMeIcon">About Me</a></li>
-        </ul>
+    <nav id="nav1" role="navigation">
+            <ul>
+                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                <li><a href="#" ><img alt="Home" src="dist/imgs/home/menuicons/home.svg" class="homeIcon">Home</a></li>
+                <li><a href="#" ><img alt="Recipes" src="dist/imgs/home/menuicons/recipes.svg" class="recipesIcon">Recipes</a></li>
+                <li><a href="#" ><img alt="About Me" src="dist/imgs/home/menuicons/aboutme.svg" class="aboutMeIcon">About Me</a></li>
+            </ul>
     </nav>
 </div><!--wrapper, Logo & Navigation-->
 
@@ -125,6 +128,7 @@
     </div><!-- Footer row-->
     <div class="base">Copyright &copy; 2018 Nutritionist for you, Cambridge</div>
 </footer>
+
 <script src="dist/js/script.js"></script>
 </body>
 </html>
