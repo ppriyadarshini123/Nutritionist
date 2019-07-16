@@ -21,7 +21,7 @@ html, body{  width: 100%;  height: 100%;  }
 
 body {
     /*font-family: "Merriweather", serif;*/
-    background-color: #ffffff;
+    background-color: #E3EAE7;
 }
 
 
@@ -99,7 +99,7 @@ nav ul li a
 {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 10vw;
     color: #ffffff;
     display: block;
     transition: 0.3s;
@@ -119,7 +119,7 @@ nav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 10vw;
     margin-left: 50px;
 }
 body
@@ -139,194 +139,12 @@ body
 {
 
     max-height: 100%;
-    /*background-color:#8C470B;*/
+    background-color:#8C470B;
     max-width: 100%;
     border-top: 4px solid #73290E;
-}
-
-
-
-
-
-/* MOST READ SECTION  */
-h2
-{
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}
-
-h3
-{
-    padding-top:20px;
-    padding-bottom: 20px;
-    font-size: 14px;
-}
-
-.paddBottom
-{
-    padding-bottom: 20px;
-}
-
-.leftColMostRead
-{
-    background-color: white;
-    margin-right: 10px;
-    height:512px;
-}
-
-.leftColMostRead ul
-{
-    border-top: 3px solid #A4031F;
-    padding-left:20px;
-    padding-top: 20px;
-    padding-right: 20px;
-}
-
-.leftColMostRead ul li
-{
-    padding-bottom: 15px;
 
 }
 
-.leftColMostRead ul li:last-child
-{
-    padding-bottom: 0;
-}
-
-.leftColMostRead ul li a
-{
-    text-decoration: none;
-    line-height: 1.4;
-    letter-spacing: 1px;
-    font-size: 16px;
-}
-
-.leftColMostRead ul li a:hover
-{
-    text-decoration: underline;
-    color:#40444B;
-}
-/* LINKED PICTURES SECTION*/
-/* CONTACT US SECTION*/
-
-/*  SITEMAP SECTION   */
-.sitemap
-{
-    display:flex;
-}
-
-
-.latestRowSiteMap
-{
-    border-top: 3px solid #A4031F;
-    background-color: #40444B;
-}
-
-.title
-{
-    color: #ffffff;
-    letter-spacing: 1px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 14px;
-}
-
-.linkSiteMap
-{
-    color: #40444B;
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 1.2;
-}
-
-.linkSiteMap:hover
-{
-    text-decoration: underline;
-    color:#ffffff;
-}
-
-.siteSocial
-{
-    margin: 0 auto;
-    width:960px;
-    display:flex;
-    justify-content: space-between;
-}
-
-.latestColSiteMap ul
-{
-    padding-top: 20px;
-}
-
-.latestColSiteMap ul li
-{
-    padding-bottom: 20px;
-    width:150px;
-}
-
-.latestColSiteMap ul li a
-{
-    text-decoration: none;
-    color:#ffffff;
-}
-
-.latestColSiteMap ul li a:hover
-{
-    text-decoration: underline;
-    color: #ffffff;
-}
-
-/* SOCIAL MEDIA SECTION*/
-
-.goToTop
-{
-    display:flex;
-    justify-content: space-between;
-}
-.goToTop div a
-{
-    padding-left: 10px;
-    color: #ffffff;
-    padding-top: 10px;
-}
-
-.linkTop
-{
-    color: #40444B;
-    font-size: 14px;
-    letter-spacing: 1px;
-    line-height: 1.2;
-    text-decoration: none;
-
-}
-
-.linkTop:hover
-{
-    text-decoration: underline;
-    color:#ffffff;
-}
-
-.latestColSocialMedia ul li a
-{
-    text-decoration: none;
-}
-
-.latestColSocialMedia ul li a:hover
-{
-    text-decoration: underline;
-    color:#40444B;
-}
-
-.base
-{
-    background-color: black;
-    height: 50px;
-    color:#ffffff;
-    text-align: center;
-    padding-top: 10px;
-    letter-spacing: 2px;
-}
 
 /* MEDIA QUERIES*/
 /*MEDIA QUERIES TO BE ADDED TO SEPARATE CSS FILES*/
@@ -335,17 +153,18 @@ h3
 @media screen and (max-width: 360px)
 {
     nav {padding-top: 15px;}
-    nav a {font-size: 18px;}
+    nav a {font-size: 5vw;}
     .logo
     {
-        width: 40px;
-        height: 40px;
+       text-align: left;
     }
     .name
     {
-        margin-top: -40px;
-        width: 100px;
-        height: 30px;
+       text-align: right;
+    }
+    .logoName
+    {
+        display: flex;
     }
 
     .homeIcon
@@ -362,7 +181,7 @@ h3
     {
         display: none;
     }
-
+    /* BIG PICTURE SECTION*/
     .headerSection
     {
         padding-top: 10px;
@@ -376,12 +195,24 @@ h3
         max-width: 100%;
         display: flex;
     }
-    .leftColumn, .rightColumn
+    .row:last-child
     {
-        width: 50%;
+        padding-bottom: 20px;
     }
 
-    /*Pic*/
+    .leftColumn
+    {
+        width: 50%;
+        margin-right: 10px;
+
+    }
+    .rightColumn
+    {
+        width: 50%;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+
     .pic
     {
         margin: 10px;
@@ -390,28 +221,34 @@ h3
         max-height: 100%;
     }
 
-    /*Icon image*/
     .iconImage
     {
         max-width: 30%;
-        margin-left: 50px;
-        margin-top: 20px;
-
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        padding-bottom: 10px;
     }
 
     .text
     {
         color: #ffffff;
-        font-size: 16px;
+        font-size: 5vw;
+        text-align: center;
+        letter-spacing: 1px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
     }
     .brownRect
     {
         box-sizing: border-box;
-        background-color: #BF6E26;
+        background-color: #E6842E;
         max-width: 100%;
         border: 10px solid white;
         max-height: 100%;
-        margin: 7px;
+        text-align: center;
     }
 
     /*  PHOTO GALLERY SECTION */
@@ -421,7 +258,9 @@ h3
         max-width: 100%;
         border-top: 4px solid #73290E;
         margin-top: 20px;
+        margin-bottom: 20px;
         box-shadow: -4px 6px 8px 1px #40444B;
+        background-color: #ffffff;
     }
     .whiteRect
     {
@@ -430,8 +269,16 @@ h3
         max-height: 100%;
 
     }
+    .title
+    {
+        color: #000000;
+        letter-spacing: 1px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-size: 5vw;
+        text-align: center;
+    }
 
-    /*Pic*/
     .picPG
     {
         max-width: 100%;
@@ -439,19 +286,47 @@ h3
         border: 10px solid white;
         box-sizing: border-box;
         box-shadow: -4px 6px 8px 1px #40444B;
-        margin: 7px;
     }
+
     /*LINKED PICTURES*/
     .linkedPictures
     {
         margin-top: 10px;
-        background-color: #BF6E26 ;
+        background-color: #BF6E26;
+        border-top: 4px solid #ffffff;
+    }
+    .picLP
+    {
+        max-width: 100%;
+        max-height: 100%;
+        border: 10px solid white;
+        box-sizing: border-box;
+        margin-top: 10px;
+
+    }
+
+    /*MAP & ADDRESS SECTION*/
+    .mapAddress
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: white;
+        border-top: 4px solid #73290E;
+    }
+    .map
+    {
+        max-width: 100%;
+        max-height: 100%;
+        text-align: center;
+    }
+    .address
+    {
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 2px ;
     }
 
 }
-
-
-
 
 /* >360px and <768px - Tablet*/
 @media screen and (min-width: 361px) and (max-width: 768px)

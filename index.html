@@ -9,15 +9,18 @@
 <body>
 <div class="wrapper">
     <header id="top">
-
         <div class="logoAndHam" >
-            <div >
+            <div>
                 <!-- <img alt="hamburger icon" src="dist/imgs/home/hamburger.png" class="hamburger" id="hamburger">-->
                 <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
             </div><!--Hamburger Icon-->
-            <div onclick="showHome()">
-                <img alt="Logo" src="dist/imgs/home/optimized/logo-optimized-40x40.png"  class="logo">
-                <img alt="Name" src="dist/imgs/home/optimized/name-100x30.png"  class="name">
+            <div onclick="showHome()" class="logoName">
+                <div class="logo">
+                    <img alt="Logo" src="dist/imgs/home/optimized/logo-optimized-40x40.png"  >
+                </div>
+                <div class="name">
+                    <img alt="Name" src="dist/imgs/home/optimized/name-160x16.png"  >
+                </div>
             </div><!--Logo-->
         </div><!--Logo and hamburger icon-->
     </header><!--header-->
@@ -40,36 +43,36 @@
                     <a href="#">
                         <img class="pic" alt="changingpic" src="dist/imgs/home/optimized/workshops-160x127.png">
                     </a>
-                </div>
-                <div class="rightColumn brownRect">
-                    <a href="#" class="text">
-                        <img alt="Icon Workshops" src="dist/imgs/home/optimized/workshop-48x48.png" class="iconImage">Workshops
-                    </a>
-                </div>
+                </div><!--leftColumn-->
+                <div class="rightColumn brownRect text">
+                    <a href="#">
+                        <img alt="Icon Workshops" src="dist/imgs/home/optimized/workshop-48x48.png" class="iconImage">
+                    </a>Workshops
+                </div><!--rightColumn-->
             </div><!--row-->
             <div class="row">
                 <div class="leftColumn">
                     <a href="#">
                         <img class="pic" alt="changingpic" src="dist/imgs/home/optimized/consultancy-160x127.png">
                     </a>
-                </div>
-                <div class="rightColumn brownRect">
-                    <a href="#" class="text">
-                        <img alt="Icon Consultancy" src="dist/imgs/home/optimized/consultancy-48x48.png" class="iconImage">Consultancy
-                    </a>
-                </div>
+                </div><!--leftColumn-->
+                <div class="rightColumn brownRect text">
+                    <a href="#">
+                        <img alt="Icon Consultancy" src="dist/imgs/home/optimized/consultancy-48x48.png" class="iconImage">
+                    </a>Consultancy
+                </div><!--rightColumn-->
             </div><!--row-->
             <div class="row">
                 <div class="leftColumn">
                     <a href="#">
                         <img class="pic" alt="changingpic" src="dist/imgs/home/optimized/apple-160x127.png">
                     </a>
-                </div>
-                <div class="rightColumn brownRect">
-                    <a href="#" class="text">
-                        <img alt="Icon Corporate Nutrition" src="dist/imgs/home/optimized/corporatenutrition-48x48.png" class="iconImage">Corporate Nutrition
-                    </a>
-                </div>
+                </div><!--leftColumn-->
+                <div class="rightColumn brownRect text">
+                    <a href="#">
+                        <img alt="Icon Corporate Nutrition" src="dist/imgs/home/optimized/corporatenutrition-48x48.png" class="iconImage">
+                    </a>Corporate Nutrition
+                </div><!--rightColumn-->
             </div><!--row-->
         </div><!--Big Pic Section-->
     </div><!--wrapper-->
@@ -79,67 +82,99 @@
 <div class="wrapper">
     <main>
         <div class="photoGallery">
-
+            <div class="title">Photo Gallery</div><!--title PhotoGallery-->
             <div class="row">
                 <div class="leftColumn">
                     <a href="#">
                         <img class="picPG" alt="changingpic" src="dist/imgs/home/optimized/salads-160x107.png">
-
                     </a>
-                </div>
+                </div><!--leftColumn-->
                 <div class="rightColumn">
                     <img class="picPG" alt="changingpic" src="dist/imgs/home/optimized/strawberry-160x106.png">
-                </div>
+                </div><!--rightColumn-->
             </div><!--row-->
 
             <div class="row">
                 <div class="leftColumn">
                     <img class="picPG" alt="changingpic" src="dist/imgs/home/optimized/almonds-160x107.png">
-                </div>
+                </div><!--leftColumn-->
                 <div class="rightColumn">
                     <img class="picPG" alt="changingpic" src="dist/imgs/home/optimized/pineapple-160x107.png">
-                </div>
+                </div><!--rightColumn-->
             </div><!--row-->
 
             <div class="row">
                 <div class="leftColumn">
                     <img class="picPG" alt="changingpic" src="dist/imgs/home/optimized/soup-160x107.png">
-                </div>
+                </div><!--leftColumn-->
                 <div class="rightColumn">
                     <img class="picPG" alt="changingpic" src="dist/imgs/home/optimized/citrus-160x106.png">
-                </div>
+                </div><!--rightColumn-->
             </div><!--row-->
 
             <div class="row">
                 <div class="leftColumn">
                     <img class="picPG" alt="changingpic"  src="dist/imgs/home/optimized/citrus-160x107.png">
-                </div>
+                </div><!--leftColumn-->
                 <div class="rightColumn">
                     <img class="picPG" alt="changingpic" src="dist/imgs/home/optimized/salad-160x107.png">
-                </div>
+                </div><!--rightColumn-->
             </div><!--row-->
         </div><!--photoGallery-->
 
         <div class="linkedPictures">
+            <div class="text">The Feel Good Factor</div><!--title linkedpictures-->
             <div class="row">
-                <div class="leftColumn">
-                    <img class="picPG" alt="changingpic"  src="dist/imgs/home/optimized/citrus-160x107.png">
-                </div>
-                <div class="rightColumn">
-                    <img class="picPG" alt="changingpic" src="dist/imgs/home/optimized/salad-160x107.png">
-                </div>
+                <div class="leftColumn text">
+                    <a href="#">
+                        <img class="picLP" alt="changingpic"  src="dist/imgs/home/optimized/detoxyourbody-160x107.png">
+                    </a>Detox Your Body
+                </div><!--leftColumn-->
+                <div class="rightColumn text">
+                    <a href="#">
+                        <img class="picLP" alt="changingpic" src="dist/imgs/home/optimized/boostbrainpower-160x107.png">
+                    </a>Boost Your Brain Power
+                </div><!--rightColumn-->
             </div><!--row-->
             <div class="row">
-                <div class="leftColumn">
-                    <img class="picPG" alt="changingpic"  src="dist/imgs/home/optimized/citrus-160x107.png">
-                </div>
-                <div class="rightColumn">
-                    <img class="picPG" alt="changingpic" src="dist/imgs/home/optimized/salad-160x107.png">
-                </div>
+                <div class="leftColumn text">
+                    <a href="#">
+                        <img class="picLP" alt="changingpic"  src="dist/imgs/home/optimized/reducestress-160x107.png">
+                    </a>Reduce Stress
+                </div><!--leftColumn-->
+                <div class="rightColumn text">
+                    <a href="#">
+                        <img class="picLP" alt="changingpic" src="dist/imgs/home/optimized/weightcontrol-160x107.png">
+                    </a>Weight Control
+                </div><!--rightColumn-->
             </div><!--row-->
+        </div><!--linkedPictures-->
+
+
+        <div class="mapAddress">
+            <div class="title">Find Us Here</div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78254.48455913832!2d0.04994763499338952!3d52.19882136780877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d85d89f32a012d%3A0x63a320e1a35e3d21!2sCambridge!5e0!3m2!1sen!2suk!4v1563278465266!5m2!1sen!2suk"   style="border: 1px solid #BF6E26;"></iframe>
+            </div>
+            <div class="title">
+                    Address:
+            </div>
+            <div class="address">
+                95 Osier Close,
+                Cambridge, UK.
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </main>
 </div><!--/wrapper-->
+
+
 
 <footer class="footer">
     <div class="latestRowSiteMap">
