@@ -156,15 +156,20 @@ body
     nav a {font-size: 5vw;}
     .logo
     {
-       text-align: left;
+
     }
     .name
     {
-       text-align: right;
+        width: 160px;
+        padding-top: 2vh;
+        margin-left: 3vw;
     }
+
     .logoName
     {
         display: flex;
+        width: 100%;
+        margin-left: 12vw;
     }
 
     .homeIcon
@@ -323,7 +328,8 @@ body
     {
         text-align: center;
         padding-bottom: 10px;
-        border-bottom: 2px ;
+        border-bottom: 2px;
+        font-size: 5vw;
     }
 
 }
