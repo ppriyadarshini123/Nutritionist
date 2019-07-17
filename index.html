@@ -12,16 +12,16 @@
         <div class="logoAndHam" >
             <div>
                 <!-- <img alt="hamburger icon" src="dist/imgs/home/hamburger.png" class="hamburger" id="hamburger">-->
-                <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <span class="hamburger" onclick="openNav()">&#9776;</span>
             </div><!--Hamburger Icon-->
             <div onclick="showHome()" class="logoName">
                 <div class="logo">
                     <img alt="Logo" src="dist/imgs/home/optimized/logo-optimized-40x40.png"  >
-                </div>
+                </div><!--logo-->
                 <div class="name">
                     <img alt="Name" src="dist/imgs/home/optimized/name-160x16.png"  >
-                </div>
-            </div><!--Logo-->
+                </div><!--name-->
+            </div><!--LogoName-->
         </div><!--Logo and hamburger icon-->
     </header><!--header-->
 
@@ -44,7 +44,7 @@
                         <img class="pic" alt="changingpic" src="dist/imgs/home/optimized/workshops-160x127.png">
                     </a>
                 </div><!--leftColumn-->
-                <div class="rightColumn brownRect text">
+                <div class="rightColumn brownRect txt">
                     <a href="#">
                         <img alt="Icon Workshops" src="dist/imgs/home/optimized/workshop-48x48.png" class="iconImage">
                     </a>Workshops
@@ -56,7 +56,7 @@
                         <img class="pic" alt="changingpic" src="dist/imgs/home/optimized/consultancy-160x127.png">
                     </a>
                 </div><!--leftColumn-->
-                <div class="rightColumn brownRect text">
+                <div class="rightColumn brownRect txt">
                     <a href="#">
                         <img alt="Icon Consultancy" src="dist/imgs/home/optimized/consultancy-48x48.png" class="iconImage">
                     </a>Consultancy
@@ -68,7 +68,7 @@
                         <img class="pic" alt="changingpic" src="dist/imgs/home/optimized/apple-160x127.png">
                     </a>
                 </div><!--leftColumn-->
-                <div class="rightColumn brownRect text">
+                <div class="rightColumn brownRect txt">
                     <a href="#">
                         <img alt="Icon Corporate Nutrition" src="dist/imgs/home/optimized/corporatenutrition-48x48.png" class="iconImage">
                     </a>Corporate Nutrition
@@ -152,69 +152,92 @@
 
 
         <div class="mapAddress">
-            <div class="title">Find Us Here</div>
+            <div class="title">Find Us Here
+            </div><!--title-->
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78254.48455913832!2d0.04994763499338952!3d52.19882136780877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d85d89f32a012d%3A0x63a320e1a35e3d21!2sCambridge!5e0!3m2!1sen!2suk!4v1563278465266!5m2!1sen!2suk"   style="border: 1px solid #BF6E26; max-width: 100%"></iframe>
-            </div>
+            </div><!--map-->
             <div class="title">
-                    Address:
-            </div>
+                Address:
+            </div><!--addressTitle-->
             <div class="address">
                 95 Osier Close,
                 Cambridge, UK.
-            </div>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
+            </div><!--addressArea-->
+            <div class="contactForm">
+                <div class="title">Contact Us</div><!--title-->
+                <div class="nameCF">
+                    <div class="address">Name
+                    </div><!--nameLabel-->
+                    <div>
+                        <input type="text" class="nameTextBox" required placeholder="">
+                    </div><!--name textbox-->
+                </div><!--name area-->
+                <div class="phoneCF">
+                    <div class="address">Phone
+                    </div><!--phone label-->
+                    <div>
+                        <input type="text" class="phoneTextBox" required>
+                    </div><!--phone textbox-->
+                </div><!--phone area-->
+                <div class="emailCF">
+                    <div class="address">Email
+                    </div><!--Email label-->
+                    <div>
+                        <input type="text" class="emailTextBox" required>
+                    </div><!--email textbox-->
+                </div><!--email area-->
+                <div class="messageCF">
+                    <div class="address">Message
+                    </div><!--message label-->
+                    <div>
+                        <textarea rows="4" cols="23" class="messageTextArea" required>Enter your message</textarea>
+                    </div><!--message textarea-->
+                </div><!--message area-->
+                <div>
+                    <input type="submit" name="Submit" class="submitBtn">
+                </div><!--submit button-->
+            </div><!--contactform-->
+        </div><!--map & address-->
     </main>
 </div><!--/wrapper-->
 
 
+<footer class="wrapper">
+    <div class="rowSiteMapSocial">
+        <div class="colSiteMapSocialM">
+            <div class="colSiteMap">
+                <p class="txtSM">Sitemap</p>
 
-<footer class="footer">
-    <div class="latestRowSiteMap">
-        <div class="siteSocial">
-            <div class="latestColSiteMap">
-                <p class="title">Sitemap</p>
-                <div class="sitemap">
-                    <div>
+                    <div class="links">
                         <ul>
-                            <li><a class="linkSiteMap" href="#">Home</a></li>
-                            <li><a class="linkSiteMap" href="">About Me</a></li>
-
-                        </ul>
-                    </div><!--sitemap first column-->
-                    <div>
-                        <ul>
+                            <li class="linkSiteMap"><a  href="#" >Home</a></li>
+                            <li class="linkSiteMap"><a  href="">About Me</a></li>
                             <li><a class="linkSiteMap" href="#">Recipes</a></li>
                             <li><a class="linkSiteMap" href="#">Consultancy</a></li>
-
                         </ul>
-                    </div><!--sitemap second column-->
-                </div><!--sitemap-->
-            </div><!--Sitemap-->
+                    </div><!--sitemap first column-->
 
-            <div class="latestColSocialMedia">
-                <div class="goToTop">
-                    <div>
-                        <h3 class="title">Find us here:</h3>
+            </div><!--colSitemap-->
+
+            <div class="colSocialMedia">
+                <div>
+                    <div class="goToTop">
+                        <a href="#top" class="linkTop" >Go to top</a>
+                    </div><!--go to top-->
+                    <div class="socialM">
+                        <h3 class="txtSM">Find us here:</h3>
                         <a href="#"><img src="dist/imgs/twitter.png" title="Find us on Twitter" alt="Twitter" width="20" height="20"></a>
                         <a href="#"><img src="dist/imgs/facebook.png" title="Find us on Facebook" alt="Facebook" width="20" height="20"></a>
                         <a href="#"><img src="dist/imgs/youtube.jpg" title="Find us on YouTube" alt="YouTube" width="20" height="20"></a>
                     </div><!--Social media icons-->
-                    <div>
-                        <a href="#top" class="linkTop" >Go to top</a>
-                    </div><!--go to top-->
                 </div><!--Social media icons and go to top-->
             </div><!--Social media icons and go to top border-->
-        </div><!--siteSocial-->
-    </div><!-- Footer row-->
-    <div class="base">Copyright &copy; 2018 Nutritionist for you, Cambridge</div>
+
+        </div><!--colSiteMapSocialM-->
+
+    </div><!-- rowSiteMapSocial-->
+    <div class="base">Copyright &copy; 2018 Nutritionist for you, Cambridge</div><!--Copyright-->
 </footer>
 
 <script src="dist/js/script.js"></script>
