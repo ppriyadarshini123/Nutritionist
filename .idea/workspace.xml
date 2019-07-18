@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="07967b48-5693-43e0-8265-6fce4bf2b90d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Nutritionist/dist/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/dist/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nutritionist/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/dist/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nutritionist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/index.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.56696427">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Nutritionist/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="280">
+                  <caret line="226" column="43" lean-forward="true" selection-start-line="226" selection-start-column="43" selection-end-line="226" selection-end-column="43" />
+                  <folding>
+                    <element signature="e#954#961#1" expanded="true" />
+                    <element signature="e#10941#10947#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Nutritionist/dist/js/script.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="408">
+                  <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Nutritionist/dist/css/index.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="348">
+                  <caret line="424" column="5" lean-forward="true" selection-start-line="424" selection-start-column="5" selection-end-line="424" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&quot;img/</find>
+      <find>imgs/</find>
+      <find>topNav</find>
+      <find>hover</find>
+      <find>hamburger</find>
+      <find>marBottom</find>
+      <find>.marBottom</find>
+      <find>mar</find>
+      <find>consultancy</find>
+      <find>font-size</find>
+      <find>color</find>
+      <find>backgr</find>
+      <find>360</find>
+      <find>360px</find>
+      <find>header</find>
+      <find>pic</find>
+      <find>address</find>
+      <find>text</find>
+      <find>rightcolumn</find>
+      <find>.links</find>
+      <find>.row</find>
+      <find>text/css</find>
+      <find>logon</find>
+      <find>bigpic</find>
+      <find>logo</find>
+      <find>onclick</find>
+      <find>nav</find>
+      <find>font</find>
+      <find>labels</find>
+      <find>closeBtn</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&quot;imgs/</replace>
+      <replace>dist/imgs/</replace>
+      <replace>nav</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Nutritionist" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Nutritionist/dist/css/indexCSS.css" />
+        <option value="$PROJECT_DIR$/Nutritionist/dist/js/script.js" />
+        <option value="$PROJECT_DIR$/Nutritionist/dist/css/index.css" />
+        <option value="$PROJECT_DIR$/Nutritionist/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1391" />
+    <option name="height" value="1068" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Payal_Priyadarshini_MWD_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Payal_Priyadarshini_MWD_Project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Payal_Priyadarshini_MWD_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Payal_Priyadarshini_MWD_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="Nutritionist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Payal_Priyadarshini_MWD_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Payal_Priyadarshini_MWD_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="Nutritionist" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Payal_Priyadarshini_MWD_Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Payal_Priyadarshini_MWD_Project" type="462c0819:PsiDirectoryNode" />
+              <item name="Nutritionist" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07967b48-5693-43e0-8265-6fce4bf2b90d" name="Default Changelist" comment="" />
+      <created>1562665063702</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562665063702</updated>
+      <workItem from="1562665067067" duration="19624000" />
+      <workItem from="1562746831281" duration="11908000" />
+      <workItem from="1562778777328" duration="6229000" />
+      <workItem from="1562837004051" duration="15002000" />
+      <workItem from="1563105796786" duration="604000" />
+      <workItem from="1563182583348" duration="22934000" />
+      <workItem from="1563266700697" duration="18413000" />
+      <workItem from="1563350466746" duration="20559000" />
+      <workItem from="1563438079355" duration="3441000" />
+      <workItem from="1563443905990" duration="18128000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="136842000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18898809" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3797054" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Nutritionist/imgs/Home/Menu icons/recipes.svg" />
+    <entry file="file://$PROJECT_DIR$/Nutritionist/dist/css/indexCSS.css" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Save For Web AI/almond vector_002.tmp/almond vector.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Save For Web AI/almond vector_001.tmp/almond vector.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Save For Web AI/almond vector.tmp/almond vector.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nutritionist/dist/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nutritionist/dist/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="424" column="5" lean-forward="true" selection-start-line="424" selection-start-column="5" selection-end-line="424" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nutritionist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="226" column="43" lean-forward="true" selection-start-line="226" selection-start-column="43" selection-end-line="226" selection-end-column="43" />
+          <folding>
+            <element signature="e#954#961#1" expanded="true" />
+            <element signature="e#10941#10947#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
