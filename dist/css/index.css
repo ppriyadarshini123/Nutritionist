@@ -25,85 +25,105 @@ body {
 
 
 /*    LOGO AND HAMBURGER SECTION */
-.logoAndHam
-{
-    margin-top: 20px;
-    width: 65%;
-    cursor: pointer;
-    display:flex;
-    justify-content: space-between;
-}
+
 
 /*    HEADER/BIG PIC SECTION */
 
-.bigPicSection
-{
-    max-height: 100%;
-    background-color:#8C470B;
-    max-width: 100%;
-    border-top: 4px solid #73290E;
-
-}
 
 
 /* MEDIA QUERIES*/
-/*MEDIA QUERIES TO BE ADDED TO SEPARATE CSS FILES*/
 
 /* <360px - Mobile */
 @media screen and (max-width: 360px)
 {
+    /* HEADER SECTION*/
     .wrapper
     {
-        margin-right: 5vw;
-        margin-left: 5vw;
+        width: 100%;
+        margin: 0 auto;
     }
-    header
+
+    #top
     {
         all: unset;
+    }
+    .logoAndHam
+    {
+        margin-top: 10px;
+        width: 65%;
+        cursor: pointer;
+        display:flex;
+        justify-content: space-between;
     }
     .hamburger
     {
         font-size:40px;
         cursor:pointer;
     }
-    /*  NAVIGATION SECTION */
-
-    nav
+    .logoName
     {
-        height: 20%;
+        display: flex;
+        max-width: 100%;
+        margin-left: 7vw;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .logo
+    {
+        max-width: 100%;
+        height: auto;
+        width: 40px;
+    }
+
+    .heading
+    {
+        max-width: 100%;
+        color:#73290E;
+        font-weight: bold;
+        width: 100%;
+        font-size: 5vw;
+        letter-spacing: 1px;
+        padding-top: 0.5vh;
+    }
+
+    /*  NAVIGATION SECTION */
+    #nav1
+    {
+        height: 9%;
         width: 0;
         position: fixed;
         z-index: 1;
         /*top: 0;*/
         left: 0;
-        background-color: #BF6E26;
+        background-color: #402005;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 15px;
     }
 
 
-    nav ul li a
+    #nav1 ul li a
     {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 5vw;
+        letter-spacing: 1px;
         color: #ffffff;
         display: block;
         transition: 0.3s;
     }
 
-    nav ul li:hover {
+    #nav1 ul li:hover {
         color: #F2C166;
 
     }
 
-    nav ul li a:hover {
+    #nav1 ul li a:hover {
         color: #F2C166;
         text-decoration: underline;
     }
 
-    nav .closebtn {
+    #nav1 .closeBtn {
         position: absolute;
         top: 0;
         right: 25px;
@@ -116,25 +136,7 @@ body {
         padding: 16px;
     }
 
-    .logo
-    {
-
-    }
-    .name
-    {
-        width: 160px;
-        padding-top: 2vh;
-        margin-left: 3vw;
-    }
-
-    .logoName
-    {
-        display: flex;
-        width: 100%;
-        margin-left: 7vw;
-
-    }
-
+    /*Hide navigation Icons in mobile*/
     .homeIcon
     {
         display: none;
@@ -149,6 +151,7 @@ body {
     {
         display: none;
     }
+
     /* BIG PICTURE SECTION*/
     .headerSection
     {
@@ -157,7 +160,8 @@ body {
     .bigPicSection
     {
         box-shadow: -4px 6px 8px 1px #40444B;
-        padding-top: 5px;
+        padding-top: 20px;
+        background-color:#8C470B;
     }
     .row
     {
@@ -167,7 +171,7 @@ body {
     }
     .row:last-child
     {
-        padding-bottom: 7px;
+        padding-bottom: 20px;
     }
 
     .leftColumn
@@ -181,7 +185,6 @@ body {
     {
         width: 50%;
         margin-right: 10px;
-
     }
     .txt
     {
@@ -190,7 +193,6 @@ body {
         letter-spacing: 1px;
         font-weight: bold;
         text-align: center;
-
     }
 
     .pic
@@ -217,7 +219,6 @@ body {
         letter-spacing: 1px;
         font-weight: bold;
         text-align: center;
-
         padding-top: 20px;
     }
     .brownRect
@@ -296,6 +297,14 @@ body {
         max-width: 100%;
         max-height: 100%;
         text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .mapFrame
+    {
+        border: 1px solid #BF6E26;
+        max-width: 100%;
+
     }
     .address
     {
@@ -303,8 +312,11 @@ body {
         padding-bottom: 10px;
         border-bottom: 2px;
         font-size: 5vw;
+        letter-spacing: 1px;
         max-width: 100%;
     }
+
+
     /* Contact Form area*/
     .contactForm
     {
@@ -314,67 +326,54 @@ body {
         border-top: 1px solid #8C470B;
         max-width: 100%;
     }
-    .nameCF
+    .rowCF
     {
-        display: flex;
         max-width: 100%;
-        justify-content: space-around;
         margin-top: 10px;
     }
-    .nameTextBox
+    .textBox
+    {
+
+    }
+    .labels {
+        text-align: left;
+        max-width: 100%;
+        margin-left: 26px;
+        margin-bottom: 10px;
+        font-size: 5vw;
+        letter-spacing: 1px;
+    }
+    .txtBox
     {
         max-width: 100%;
+        width: 300px;
         background-color: #E3EAE7;
+        color: darkgrey;
     }
-    .phoneCF
+    .submitBtnCF
     {
-        display: flex;
-        max-width: 100%;
-        justify-content: space-around;
-        margin-top: 10px;
-    }
-    .phoneTextBox
-    {
-        max-width: 100%;
-        background-color: #E3EAE7;
-    }
-    .emailCF
-    {
-        display: flex;
-        max-width: 100%;
-        justify-content: space-around;
-        margin-top: 10px;
-    }
-    .emailTextBox
-    {
-        max-width: 100%;
-        background-color: #E3EAE7;
-    }
-    .messageCF
-    {
-        display: flex;
-        max-width: 100%;
-        justify-content: space-around;
-        margin-top: 10px;
-    }
-    .messageTextArea
-    {
-        max-width: 100%;
-        background-color: #E3EAE7;
-        margin-right: 6px;
+
     }
     .submitBtn
     {
+        letter-spacing: 1px;
         margin-top: 20px;
         font-size: 5vw;
-        background-color: #8C470B;
+        background-color: #BF6E26;
         color: white;
+        display: block;
+        padding: 10px 30px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
+
     /*Sitemap & social media icons*/
      .rowSiteMapSocial
     {
         background-color: #8C470B;
         border-top: 4px solid white;
+
     }
     .colSiteMapSocialM
     {
@@ -382,11 +381,18 @@ body {
         justify-content: space-between;
         text-align: center;
         padding-bottom: 20px;
-        padding-left: 20px;
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
     .colSiteMap
     {
-        text-align: center;
+        display: block;
+    }
+    .links
+    {
+       width: 2%;
+
+        line-height: 22px;
     }
     .linkSiteMap
       {
@@ -394,28 +400,41 @@ body {
           font-size: 5vw;
           letter-spacing: 1px;
           text-decoration: none;
-
       }
+    .linkSiteMap:hover
+    {
+        background-color: white;
+    }
     .txtSM
     {
         color: #ffffff;
         font-size: 5vw;
         letter-spacing: 1px;
         font-weight: bold;
-        text-align: center;
         padding-top: 20px;
         padding-bottom: 10px;
+        text-align: left;
+    }
+    .txtSM:hover
+    {
+        text-decoration: #F2C166;
+        color: white;
     }
 
+    .socialMediaIcons
+    {
+
+    }
     .goToTop
     {
-        padding-top: 5px;
+        //padding-top: 5px;
+        display: none;
     }
-    .linkTop
+   /* .linkTop
     {
         text-decoration: none;
         color: #ffffff;
-    }
+    }*/
     .socialM
     {
         padding-right: 20px;
@@ -429,6 +448,7 @@ body {
         padding-bottom: 20px;
         color: #ffffff;
         font-size: 5vw;
+        letter-spacing: 1px;
         text-align: center;
     }
 
@@ -479,7 +499,7 @@ body {
         margin-right: auto;
     }
 
-    nav ul li
+    #nav1 ul li
     {
         margin-right: 100px;
     }
@@ -532,7 +552,7 @@ body {
         width: 100%;
         margin: 0 auto;
     }
-    nav ul li
+    #nav1 ul li
     {
         margin-right: 100px;
     }
