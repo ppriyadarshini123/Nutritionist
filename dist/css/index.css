@@ -39,7 +39,7 @@ body {
     /* HEADER SECTION*/
     .wrapper
     {
-        width: 100%;
+        width: 100vw; /*360px*/
         margin: 0 auto;
     }
 
@@ -49,15 +49,15 @@ body {
     }
     .logoAndHam
     {
-        margin-top: 10px;
+        margin-top: 2.8vw; /*10px*/
         width: 65%;
         cursor: pointer;
-        display:flex;
+        display: flex;
         justify-content: space-between;
     }
     .hamburger
     {
-        font-size:40px;
+        font-size:11vw;
         cursor:pointer;
     }
     .logoName
@@ -68,13 +68,18 @@ body {
         box-sizing: border-box;
         text-align: center;
     }
+
+    .showHome
+    {
+        /*height: 11.11vw;!*40px*!
+        width: 11.11vw; !*40px*!
+        max-width: 100%;*/
+    }
     .logo
     {
         max-width: 100%;
-        height: auto;
-        width: 40px;
-    }
 
+    }
     .heading
     {
         max-width: 100%;
@@ -82,14 +87,15 @@ body {
         font-weight: bold;
         width: 100%;
         font-size: 5vw;
-        letter-spacing: 1px;
+        letter-spacing: .28vw;/*1px*/
         padding-top: 0.5vh;
     }
 
     /*  NAVIGATION SECTION */
+    /*old code*/
     #nav1
     {
-        height: 9%;
+        /*height: 19%;*/
         width: 0;
         position: fixed;
         z-index: 1;
@@ -98,43 +104,69 @@ body {
         background-color: #402005;
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 15px;
+        padding-top: 4.2vw;/*15px*/
+        padding-bottom: 4.2vw;/*15px*/
     }
 
 
     #nav1 ul li a
     {
-        padding: 8px 8px 8px 32px;
+        padding: 2.2vw 2.2vw 2.2vw 8.9vw;/*8px 8px 8px 32px*/
         text-decoration: none;
         font-size: 5vw;
-        letter-spacing: 1px;
+        letter-spacing: .28vw;/*1px*/
         color: #ffffff;
         display: block;
         transition: 0.3s;
     }
 
-    #nav1 ul li:hover {
-        color: #F2C166;
-
-    }
-
     #nav1 ul li a:hover {
-        color: #F2C166;
+        color: #402005;
+        background-color: #fff;
+    }
+    #nav1 ul li a:active{
         text-decoration: underline;
     }
 
     #nav1 .closeBtn {
         position: absolute;
         top: 0;
-        right: 25px;
+        right: 6.94vw;/*25px*/
         font-size: 10vw;
-        margin-left: 50px;
+        margin-left: 13.9vw ;/*50px*/
     }
     body
     {
         transition: margin-left .5s;
-        padding: 16px;
+        /*padding: 4.4vw;!*16px*!*/
     }
+
+    /* !*new code*!
+     #nav1 ul a{
+         display: block;
+         color:#fff;
+         text-decoration: none;
+         padding:10px;
+         background-color: #9F146D;
+         text-transform: capitalize;
+     }
+
+     !*
+         PSEUDO CLASSES
+     ELEMENT:hover   =>  styling the element while we hover over it
+
+     ELEMENT:active  =>  styling the element while we hold left mouse
+                             btn down on the element
+
+     *!
+     #nav1 ul a:hover{
+         background-color: #fff;
+         color: #9F146D;
+     }
+
+     #nav1 ul a:active{
+         text-decoration: underline;
+     }*/
 
     /*Hide navigation Icons in mobile*/
     .homeIcon
@@ -155,42 +187,42 @@ body {
     /* BIG PICTURE SECTION*/
     .headerSection
     {
-        padding-top: 10px;
+        padding-top: 2.8vw;/*10px*/
     }
     .bigPicSection
     {
-        box-shadow: -4px 6px 8px 1px #40444B;
-        padding-top: 20px;
+        box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
+        padding-top: 5.6vw;/*20px*/
         background-color:#8C470B;
     }
     .row
     {
         max-width: 100%;
         display: flex;
-        padding-bottom: 7px;
+        padding-bottom: 1.94vw;/*7px*/
     }
     .row:last-child
     {
-        padding-bottom: 20px;
+        padding-bottom: 5.6vw;/*20px*/
     }
 
     .leftColumn
     {
         width: 50%;
-        margin-right: 10px;
-        margin-left: 10px;
+        margin-right:2.8vw;/*10px*/
+        margin-left: 2.8vw;/*10px*/
     }
 
     .rightColumn
     {
         width: 50%;
-        margin-right: 10px;
+        margin-right: 2.8vw;/*10px*/
     }
     .txt
     {
         color: #ffffff;
         font-size: 5vw;
-        letter-spacing: 1px;
+        letter-spacing: .28vw;/*1px*/
         font-weight: bold;
         text-align: center;
     }
@@ -208,18 +240,18 @@ body {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 15px;
-        padding-bottom: 10px;
+        padding-top: 4.2vw;/*15px*/
+        padding-bottom: 2.8vw;/*10px*/
     }
 
     .text
     {
         color: #ffffff;
         font-size: 5vw;
-        letter-spacing: 1px;
+        letter-spacing: .28vw;/*1px*/
         font-weight: bold;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 5.6vw;/*20px*/
     }
     .brownRect
     {
@@ -228,23 +260,26 @@ body {
         max-width: 100%;
         max-height: 100%;
         text-align: center;
-        border: 2px solid #ffffff;
+        border: .56vw solid #ffffff;/*2px*/
     }
 
     /*  PHOTO GALLERY SECTION */
+    .photoLinked
+    {
+        border-top:  1.11vw solid #73290E;/*4px*/
+        margin-top: 5.56vw;/*20px*/
+        margin-bottom: 5.56vw;/*20px*/
+        box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
+        background-color: #ffffff;
+    }
     .photoGallery
     {
         max-height: 100%;
         max-width: 100%;
-        border-top: 4px solid #73290E;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        box-shadow: -4px 6px 8px 1px #40444B;
-        background-color: #ffffff;
     }
     .whiteRect
     {
-        margin: 10px;
+        margin: 2.8vw;/*10px*/
         max-width: 100%;
         max-height: 100%;
 
@@ -252,9 +287,9 @@ body {
     .title
     {
         color: #000000;
-        letter-spacing: 1px;
-        padding-top: 20px;
-        padding-bottom: 10px;
+        letter-spacing: .28vw;/*1px*/
+        padding-top: 5.56vw;/*20px*/
+        padding-bottom: 2.8vw;/*10px*/
         font-size: 5vw;
         text-align: center;
     }
@@ -263,56 +298,89 @@ body {
     {
         max-width: 100%;
         max-height: 100%;
+        width: 100%;
+        height: 100%;
         border: 10px solid white;
         box-sizing: border-box;
-        box-shadow: -4px 6px 8px 1px #40444B;
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
+        object-fit: cover;
+        transition-duration: .5s;
+    }
+    .picPG:hover
+    {
+        transform: scale(1.5);
     }
 
     /*LINKED PICTURES*/
     .linkedPictures
     {
-        margin-top: 10px;
+        margin-top: 2.8vw;/*10px*/
         background-color: #BF6E26;
-        border-top: 4px solid #ffffff;
+        border-top: 1.11vw solid #ffffff;/*4px*/
     }
     .picLP
     {
         max-width: 100%;
         max-height: 100%;
-        border: 10px solid white;
+        border: 2.8vw solid white;/*10px*/
         box-sizing: border-box;
+    }
+    .rowLP
+    {
+        max-width: 100%;
+        display: flex;
+        padding-bottom: 1.94vw;/*7px*/
+    }
+    .rowLP:last-child
+    {
+        padding-bottom: 5.6vw;/*20px*/
     }
 
 
     /*MAP & ADDRESS SECTION*/
     .mapAddress
     {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 5.56vw;/*20px*/
+        margin-bottom: 5.56vw;/*20px*/
         background-color: white;
-        border-top: 4px solid #73290E;
+        border-top: 1.11vw solid #73290E;/*4px*/
     }
-    .map
-    {
-        max-width: 100%;
-        max-height: 100%;
-        text-align: center;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    .mapFrame
-    {
-        border: 1px solid #BF6E26;
-        max-width: 100%;
+    /* .map
+     {
+         max-width: 100%;
+         max-height: 100%;
+         text-align: center;
 
+     }*/
+    .map{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+        margin-left: 1.39vw;/*5px*/
+        margin-right: 1.39vw;/*5px*/
     }
+    .map iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+        border: 1px solid #BF6E26;
+    }
+    /* .mapFrame
+     {
+         border: 1px solid #BF6E26;
+         max-width: 100%;
+
+     }*/
     .address
     {
         text-align: center;
-        padding-bottom: 10px;
-        border-bottom: 2px;
+        padding-bottom: 2.78vw;/*10px*/
+        border-bottom: .56vw;/*2px*/
         font-size: 5vw;
-        letter-spacing: 1px;
+        letter-spacing: .28vw;/*1px*/
         max-width: 100%;
     }
 
@@ -321,58 +389,58 @@ body {
     .contactForm
     {
         text-align: center;
-        padding-top: 10px;
-        padding-bottom: 20px;
-        border-top: 1px solid #8C470B;
+        padding-top: 2.78vw;/*10px*/
+        padding-bottom: 5.56vw;/*20px*/
+        border-top: .28vw solid #8C470B;/*1px*/
         max-width: 100%;
     }
     .rowCF
     {
         max-width: 100%;
-        margin-top: 10px;
+        margin-top: 2.78vw;/*10px*/
     }
-    .textBox
-    {
 
-    }
     .labels {
         text-align: left;
         max-width: 100%;
-        margin-left: 26px;
-        margin-bottom: 10px;
+        margin-left: 7.2vw;/*26px*/
+        margin-bottom: 2.78vw;/*10px*/
         font-size: 5vw;
-        letter-spacing: 1px;
+        letter-spacing: .28vw;/*1px*/
     }
     .txtBox
     {
         max-width: 100%;
-        width: 300px;
+        width: 83.3vw;/*300px*/
         background-color: #E3EAE7;
         color: darkgrey;
+        min-height: 13.3vw;/*48px*/
+        font-size: 5vw;
     }
-    .submitBtnCF
-    {
 
+    ::placeholder
+    {
+        font-size: 5vw;
     }
     .submitBtn
     {
-        letter-spacing: 1px;
-        margin-top: 20px;
+        letter-spacing: .28vw;/*1px*/
+        margin-top: 5.56vw;/*20px*/
         font-size: 5vw;
         background-color: #BF6E26;
         color: white;
         display: block;
-        padding: 10px 30px;
+        padding: 5.56vw 8.33vw;/*20px 30px*/
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
 
     /*Sitemap & social media icons*/
-     .rowSiteMapSocial
+    .rowSiteMapSocial
     {
         background-color: #8C470B;
-        border-top: 4px solid white;
+        border-top: 1.11vw solid white;/*4px*/
 
     }
     .colSiteMapSocialM
@@ -380,7 +448,7 @@ body {
         display: flex;
         justify-content: space-between;
         text-align: center;
-        padding-bottom: 20px;
+        padding-bottom: 5.56vw;/*20px*/
         margin-left: 5vw;
         margin-right: 5vw;
     }
@@ -390,17 +458,16 @@ body {
     }
     .links
     {
-       width: 2%;
-
-        line-height: 22px;
+        width: 2%;
+        line-height: 6.67vw;/*24px*/
     }
     .linkSiteMap
-      {
-          color: #ffffff;
-          font-size: 5vw;
-          letter-spacing: 1px;
-          text-decoration: none;
-      }
+    {
+        color: #ffffff;
+        font-size: 5vw;
+        letter-spacing: .28vw;/*1px*/
+        text-decoration: none;
+    }
     .linkSiteMap:hover
     {
         background-color: white;
@@ -409,10 +476,10 @@ body {
     {
         color: #ffffff;
         font-size: 5vw;
-        letter-spacing: 1px;
+        letter-spacing: .28vw;/*1px*/
         font-weight: bold;
-        padding-top: 20px;
-        padding-bottom: 10px;
+        padding-top: 5.56vw;/*20px*/
+        padding-bottom: 2.78vw;/*10px*/
         text-align: left;
     }
     .txtSM:hover
@@ -421,72 +488,557 @@ body {
         color: white;
     }
 
-    .socialMediaIcons
-    {
 
-    }
     .goToTop
     {
-        //padding-top: 5px;
+        /* padding-top: 5px;*/
         display: none;
     }
-   /* .linkTop
-    {
-        text-decoration: none;
-        color: #ffffff;
-    }*/
+    /* .linkTop
+     {
+         text-decoration: none;
+         color: #ffffff;
+     }*/
     .socialM
     {
-        padding-right: 20px;
+        padding-right: 5.56vw;/*20px*/
     }
-
+    .socialMediaIcons
+    {
+        max-width: 100%;
+        width: 13.9vw;
+    }
 
     .base
     {
         background-color: #0D0D0D;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 5.56vw;/*20px*/
+        padding-bottom: 5.56vw;/*20px*/
         color: #ffffff;
         font-size: 5vw;
-        letter-spacing: 1px;
+        letter-spacing: .28vw;/*1px*/
         text-align: center;
     }
-
 }
 
 /* >360px and <768px - Tablet*/
 @media screen and (min-width: 361px) and (max-width: 768px)
 {
-    .wrapper{
-        width: 100%;
+    /* HEADER SECTION*/
+    .wrapper
+    {
+        width: 100%; /*360px*/
         margin: 0 auto;
     }
 
+    #top
+    {
+        all: unset;
+    }
+    .logoAndHam
+    {
+        margin-top: 2.8vw; /*10px*/
+        width: 65%;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+    }
+    .hamburger
+    {
+        font-size:11vw;
+        cursor:pointer;
+    }
+    .logoName
+    {
+        display: flex;
+        max-width: 100%;
+        margin-left: 7vw;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .showHome
+    {
+        /*height: 11.11vw;!*40px*!
+        width: 11.11vw; !*40px*!
+        max-width: 100%;*/
+    }
+    .logo
+    {
+        max-width: 100%;
+
+    }
+    .heading
+    {
+        max-width: 100%;
+        color:#73290E;
+        font-weight: bold;
+        width: 100%;
+        font-size: 5vw;
+        letter-spacing: .28vw;/*1px*/
+        padding-top: 0.5vh;
+    }
+
+    /*  NAVIGATION SECTION */
+    /*old code*/
+    #nav1
+    {
+        /*height: 19%;*/
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        /*top: 0;*/
+        left: 0;
+        background-color: #402005;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 4.2vw;/*15px*/
+        padding-bottom: 4.2vw;/*15px*/
+    }
+
+
+    #nav1 ul li a
+    {
+        padding: 2.2vw 2.2vw 2.2vw 8.9vw;/*8px 8px 8px 32px*/
+        text-decoration: none;
+        font-size: 5vw;
+        letter-spacing: .28vw;/*1px*/
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+    }
+
+    #nav1 ul li a:hover {
+        color: #402005;
+        background-color: #fff;
+    }
+    #nav1 ul li a:active{
+        text-decoration: underline;
+    }
+
+    #nav1 .closeBtn {
+        position: absolute;
+        top: 0;
+        right: 6.94vw;/*25px*/
+        font-size: 10vw;
+        margin-left: 13.9vw ;/*50px*/
+    }
+    body
+    {
+        transition: margin-left .5s;
+        /*padding: 4.4vw;!*16px*!*/
+    }
+
+    /* !*new code*!
+     #nav1 ul a{
+         display: block;
+         color:#fff;
+         text-decoration: none;
+         padding:10px;
+         background-color: #9F146D;
+         text-transform: capitalize;
+     }
+
+     !*
+         PSEUDO CLASSES
+     ELEMENT:hover   =>  styling the element while we hover over it
+
+     ELEMENT:active  =>  styling the element while we hold left mouse
+                             btn down on the element
+
+     *!
+     #nav1 ul a:hover{
+         background-color: #fff;
+         color: #9F146D;
+     }
+
+     #nav1 ul a:active{
+         text-decoration: underline;
+     }*/
+
+    /*Hide navigation Icons in mobile*/
     .homeIcon
     {
         display: none;
     }
+
     .recipesIcon
     {
         display: none;
     }
+
     .aboutMeIcon
     {
         display: none;
     }
-    .iconConsultancy
+
+    /* BIG PICTURE SECTION*/
+    .headerSection
     {
-        display: none;
+        padding-top: 2.8vw;/*10px*/
     }
-    .iconWorkshop
+    .bigPicSection
     {
-        display:none;
-    }
-    .iconCorporateNutrition
-    {
-        display: none;
+        box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
+        padding-top: 5.6vw;/*20px*/
+        background-color:#8C470B;
     }
 
+    .txt
+    {
+        color: #ffffff;
+        font-size: 5vw;
+        letter-spacing: .28vw;/*1px*/
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .pic
+    {
+        box-sizing: border-box;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .iconImage
+    {
+        max-width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 4.2vw;/*15px*/
+        padding-bottom: 2.8vw;/*10px*/
+    }
+
+    .text
+    {
+        color: #ffffff;
+        font-size: 3.5vw;
+        letter-spacing: .28vw;/*1px*/
+        font-weight: bold;
+        text-align: center;
+        padding-top: 5.6vw;/*20px*/
+    }
+    .brownRect
+    {
+        box-sizing: border-box;
+        background-color: #E6842E;
+        max-width: 100%;
+        max-height: 100%;
+        text-align: center;
+        border: .56vw solid #ffffff;/*2px*/
+    }
+
+    /*  PHOTO GALLERY SECTION */
+    .photoLinked
+    {
+        border-top:  1.11vw solid #73290E;/*4px*/
+        margin-top: 5.56vw;/*20px*/
+        margin-bottom: 5.56vw;/*20px*/
+        box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
+        background-color: #ffffff;
+    }
+    .photoGallery
+    {
+        max-height: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .row
+    {
+        width: 100%;
+        padding-bottom: 1.94vw;/*7px*/
+        margin-right: 1vw;
+    }
+    .row:last-child
+    {
+        padding-bottom: 5.6vw;/*20px*/
+    }
+
+    .leftColumn
+    {
+        width: 100%;
+        padding-right:2.8vw;/*10px*/
+    }
+
+    .rightColumn
+    {
+        width: 100%;
+        margin-right: 2.8vw;/*10px*/
+    }
+    .whiteRect
+    {
+        margin: 2.8vw;/*10px*/
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+    .title
+    {
+        color: #000000;
+        letter-spacing: .28vw;/*1px*/
+        padding-top: 5.56vw;/*20px*/
+        padding-bottom: 2.8vw;/*10px*/
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .picPG
+    {
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: 100%;
+        border: 10px solid white;
+        box-sizing: border-box;
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
+        object-fit: cover;
+        transition-duration: .5s;
+    }
+    .picPG:hover
+    {
+        transform: scale(1.5);
+    }
+
+    /*LINKED PICTURES*/
+    .linkedP
+    {
+        margin-top: 2.8vw;/*10px*/
+        border-top: 1.11vw solid #ffffff;/*4px*/
+        background-color: #BF6E26;
+
+    }
+
+    .linkedPictures
+    {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        max-height: 100%;
+        max-width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .leftColumnLP
+    {
+        width: 100%;
+        padding-right:.8vw;/*10px*/
+    }
+
+    .rightColumnLP
+    {
+        width: 100%;
+        margin-right: .8vw;/*10px*/
+    }
+
+    .rowLP
+    {
+        width: 100%;
+        padding-bottom: 1.94vw;/*7px*/
+        display: flex;
+    }
+
+    .rowLP:last-child .rightColumnLP
+    {
+        margin-right: 0vw;
+        padding-bottom: 5.6vw;/*20px*/
+    }
+    .picLP
+    {
+        max-width: 100%;
+        max-height: 100%;
+        border: 2.8vw solid white;/*10px*/
+        box-sizing: border-box;
+    }
+
+
+    /*MAP & ADDRESS SECTION*/
+    .mapAddress
+    {
+        margin-top: 5.56vw;/*20px*/
+        margin-bottom: 5.56vw;/*20px*/
+        background-color: white;
+        border-top: 1.11vw solid #73290E;/*4px*/
+    }
+    /* .map
+     {
+         max-width: 100%;
+         max-height: 100%;
+         text-align: center;
+
+     }*/
+    .map{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+        margin-left: 1.39vw;/*5px*/
+        margin-right: 1.39vw;/*5px*/
+    }
+    .map iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+        border: 1px solid #BF6E26;
+    }
+    /* .mapFrame
+     {
+         border: 1px solid #BF6E26;
+         max-width: 100%;
+
+     }*/
+    .address
+    {
+        text-align: center;
+        padding-bottom: 2.78vw;/*10px*/
+        border-bottom: .56vw;/*2px*/
+        font-size: 5vw;
+        letter-spacing: .28vw;/*1px*/
+        max-width: 100%;
+    }
+
+
+    /* Contact Form area*/
+    .contactForm
+    {
+        text-align: center;
+        padding-top: 2.78vw;/*10px*/
+        padding-bottom: 5.56vw;/*20px*/
+        border-top: .28vw solid #8C470B;/*1px*/
+        max-width: 100%;
+    }
+    .rowCF
+    {
+        max-width: 100%;
+        margin-top: 2.78vw;/*10px*/
+    }
+
+    .labels {
+        text-align: left;
+        max-width: 100%;
+        margin-left: 7.2vw;/*26px*/
+        margin-bottom: 2.78vw;/*10px*/
+        font-size: 5vw;
+        letter-spacing: .28vw;/*1px*/
+    }
+    .txtBox
+    {
+        max-width: 100%;
+        width: 83.3vw;/*300px*/
+        background-color: #E3EAE7;
+        color: darkgrey;
+        min-height: 13.3vw;/*48px*/
+        font-size: 5vw;
+    }
+
+    ::placeholder
+    {
+        font-size: 5vw;
+    }
+    .submitBtn
+    {
+        letter-spacing: .28vw;/*1px*/
+        margin-top: 5.56vw;/*20px*/
+        font-size: 5vw;
+        background-color: #BF6E26;
+        color: white;
+        display: block;
+        padding: 5.56vw 8.33vw;/*20px 30px*/
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*Sitemap & social media icons*/
+    .rowSiteMapSocial
+    {
+        background-color: #8C470B;
+        border-top: 1.11vw solid white;/*4px*/
+
+    }
+    .colSiteMapSocialM
+    {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding-bottom: 5.56vw;/*20px*/
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .colSiteMap
+    {
+        display: block;
+    }
+    .links
+    {
+        width: 2%;
+        line-height: 6.67vw;/*24px*/
+    }
+    .linkSiteMap
+    {
+        color: #ffffff;
+        font-size: 5vw;
+        letter-spacing: .28vw;/*1px*/
+        text-decoration: none;
+    }
+    .linkSiteMap:hover
+    {
+        background-color: white;
+    }
+    .txtSM
+    {
+        color: #ffffff;
+        font-size: 5vw;
+        letter-spacing: .28vw;/*1px*/
+        font-weight: bold;
+        padding-top: 5.56vw;/*20px*/
+        padding-bottom: 2.78vw;/*10px*/
+        text-align: left;
+    }
+    .txtSM:hover
+    {
+        text-decoration: #F2C166;
+        color: white;
+    }
+
+
+    .goToTop
+    {
+        /* padding-top: 5px;*/
+        display: none;
+    }
+    /* .linkTop
+     {
+         text-decoration: none;
+         color: #ffffff;
+     }*/
+    .socialM
+    {
+        padding-right: 5.56vw;/*20px*/
+    }
+    .socialMediaIcons
+    {
+        max-width: 100%;
+        width: 13.9vw;
+    }
+
+    .base
+    {
+        background-color: #0D0D0D;
+        padding-top: 5.56vw;/*20px*/
+        padding-bottom: 5.56vw;/*20px*/
+        color: #ffffff;
+        font-size: 5vw;
+        letter-spacing: .28vw;/*1px*/
+        text-align: center;
+    }
 
 }
 

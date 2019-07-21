@@ -1,4 +1,3 @@
-
 /*
 -----------------------------------------------
 1) 	create your iffy
@@ -12,27 +11,46 @@
 
 (function(){
 
-    const showHomePage = document.getElementById("showHomeP");
     const openNavigation = document.getElementById("openNav");
     const closeNavigation = document.getElementById("closeNav");
 
-    /* FUNCTIONS */
 
-    /**
-     *  Goto Home Page when the logo is clicked
-     */
-    function showHome()
-    {
-        window.open("index.html", "_self");
-    }//showHome
+    /* FUNCTIONS */
+   /* function bindTopNavToggle() {
+        $menuIcon.on('click', function(){
+            $(topUl).slideToggle();
+        });
+    } // bindTopNavToggle
+
+      function toggleNavigation() {
+        enquire.register("screen and (min-width: 360px)", {
+
+            // OPTIONAL
+            // If supplied, triggered when a media query matches.
+            match: function () {
+                $(topUl)
+                    .show()
+                ;
+
+            },
+
+            // OPTIONAL
+            // If supplied, triggered when the media query transitions
+            // *from a matched state to an unmatched state*.
+            unmatch: function () {
+                $(topUl).hide();
+            }
+        });
+    }// toggleNavigation*/
+
 
     /**
      *  Open Navigation when Hamburger is clicked
      */
     function openNav()
     {
-        document.getElementById("nav1").style.width = "50%";
-        document.getElementById("top").style.marginLeft = "50%";
+        document.getElementById("nav1").style.width = "100%";
+        document.getElementById("top").style.marginLeft = "100%";
     }//openNav
 
     /**
@@ -48,7 +66,6 @@
      */
     function bindBtns() {
 
-         if(showHomePage != null) showHomePage.addEventListener("click", showHome);
          if(openNavigation != null) openNavigation.addEventListener("click", openNav)
          if(closeNavigation != null) closeNavigation.addEventListener("click", closeNav)
 
@@ -60,7 +77,8 @@
      */
     function init() {
         bindBtns();
-
+        toggleNavigation();
+        bindTopNavToggle();
     }//end init
 
     //onload initialiser

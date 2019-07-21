@@ -7,30 +7,36 @@
     <link rel="stylesheet" href="dist/css/index.css" media="screen">
 </head>
 <body>
-<div class="wrapper">
-    <header id="top">
+
+<header id="top">
+    <div class="wrapper">
         <div class="logoAndHam" >
             <div id="ham">
                 <span class="hamburger" id="openNav">&#9776;</span>
             </div><!--Hamburger Icon-->
             <div id="showHomeP" class="logoName">
-                <div class="logo">
-                    <img src="dist/imgs/home/optimized/logo-optimized-40x40.png">
-                </div><!--logo-->
+                <a href="index.html" class="showHome" id="showHome">
+                    <!-- <div class="">-->
+                    <img class="logo" src="dist/imgs/home/optimized/logo-optimized-40x40.png">
+                    <!-- </div>logo-->
+                </a>
                 <h1 class="heading">Nutritionist For You</h1>
             </div><!--LogoName-->
         </div><!--Logo and hamburger icon-->
-    </header><!--header-->
+    </div><!--wrapper, Logo-->
+</header><!--header-->
 
-    <nav id="nav1" role="navigation">
+<nav id="nav1" role="navigation">
+    <div class="wrapper">
         <ul>
             <li><a class="closeBtn" id="closeNav">&times;</a></li>
-            <li><a href="#" ><img alt="Home" src="dist/imgs/home/menuicons/home.svg" class="homeIcon">Home</a></li>
-            <li><a href="#" ><img alt="Recipes" src="dist/imgs/home/menuicons/recipes.svg" class="recipesIcon">Recipes</a></li>
-            <li><a href="#" ><img alt="About Me" src="dist/imgs/home/menuicons/aboutme.svg" class="aboutMeIcon">About Me</a></li>
+            <li><a href="#"><img alt="Home" src="dist/imgs/home/menuicons/home.svg" class="homeIcon">Home</a></li>
+            <li><a href="#"><img alt="Recipes" src="dist/imgs/home/menuicons/recipes.svg" class="recipesIcon">Recipes</a></li>
+            <li><a href="#"><img alt="About Me" src="dist/imgs/home/menuicons/aboutme.svg" class="aboutMeIcon">About Me</a></li>
         </ul>
-    </nav>
-</div><!--wrapper, Logo & Navigation-->
+    </div>
+</nav>
+
 
 <div class="headerSection">
     <div class="wrapper">
@@ -77,10 +83,10 @@
 
 
 <div class="wrapper">
-    <main>
+    <main class="photoLinked">
+        <div class="title">Photo Gallery
+        </div><!--title PhotoGallery-->
         <div class="photoGallery">
-            <div class="title">Photo Gallery
-            </div><!--title PhotoGallery-->
             <div class="row">
                 <div class="leftColumn">
                     <a href="#">
@@ -120,34 +126,35 @@
             </div><!--row-->
         </div><!--photoGallery-->
 
-        <div class="linkedPictures">
+        <div class="linkedP">
             <div class="text">The Feel Good Factor</div><!--title linkedpictures-->
-            <div class="row">
-                <div class="leftColumn text">
-                    <a href="#">
-                        <img class="picLP" alt="changingpic"  src="dist/imgs/home/optimized/detoxyourbody-160x107.png">
-                    </a>Detox Your Body
-                </div><!--leftColumn-->
-                <div class="rightColumn text">
-                    <a href="#">
-                        <img class="picLP" alt="changingpic" src="dist/imgs/home/optimized/boostbrainpower-160x107.png">
-                    </a>Boost Your Brain Power
-                </div><!--rightColumn-->
-            </div><!--row-->
-            <div class="row">
-                <div class="leftColumn text">
-                    <a href="#">
-                        <img class="picLP" alt="changingpic"  src="dist/imgs/home/optimized/reducestress-160x107.png">
-                    </a>Reduce Stress
-                </div><!--leftColumn-->
-                <div class="rightColumn text">
-                    <a href="#">
-                        <img class="picLP" alt="changingpic" src="dist/imgs/home/optimized/weightcontrol-160x107.png">
-                    </a>Weight Control
-                </div><!--rightColumn-->
-            </div><!--row-->
-        </div><!--linkedPictures-->
-
+            <div class="linkedPictures">
+                <div class="rowLP">
+                    <div class="leftColumnLP text">
+                        <a href="#">
+                            <img class="picLP" alt="changingpic"  src="dist/imgs/home/optimized/detoxyourbody-160x107.png">
+                        </a>Detox Your Body
+                    </div><!--leftColumn-->
+                    <div class="rightColumnLP text">
+                        <a href="#">
+                            <img class="picLP" alt="changingpic" src="dist/imgs/home/optimized/boostbrainpower-160x107.png">
+                        </a>Boost Your Brain Power
+                    </div><!--rightColumn-->
+                </div><!--row-->
+                <div class="rowLP">
+                    <div class="leftColumnLP text">
+                        <a href="#">
+                            <img class="picLP" alt="changingpic"  src="dist/imgs/home/optimized/reducestress-160x107.png">
+                        </a>Reduce Stress
+                    </div><!--leftColumn-->
+                    <div class="rightColumnLP text">
+                        <a href="#">
+                            <img class="picLP" alt="changingpic" src="dist/imgs/home/optimized/weightcontrol-160x107.png">
+                        </a>Weight Control
+                    </div><!--rightColumn-->
+                </div><!--row-->
+            </div><!--linkedPictures-->
+        </div><!--linkedP-->
 
         <div class="mapAddress">
             <div class="title">Find Us Here
@@ -168,28 +175,28 @@
                     <p class="labels">Name
                     </p>
                     <div class="textBox">
-                        <input name="name" type="text" value="Name" class="txtBox" required placeholder="">
+                        <input name="name"  type="text" class="txtBox" required placeholder="Name">
                     </div><!--name textbox-->
                 </div><!--name area-->
                 <div class="rowCF">
                     <p class="labels">Phone
                     </p><!--phone label-->
                     <div class="textBox">
-                        <input name="phone" type="text" value="Phone" class="txtBox" required>
+                        <input name="phone" type="text"  placeholder="Phone" class="txtBox" required>
                     </div><!--phone textbox-->
                 </div><!--phone area-->
                 <div class="rowCF">
                     <p class="labels">Email
                     </p><!--Email label-->
                     <div class="textBox">
-                        <input type="email" name="textbox" type="text" value="Email" class="txtBox" required>
+                        <input type="email" name="textbox"  type="text" placeholder="Email" class="txtBox" required>
                     </div><!--email textbox-->
                 </div><!--email area-->
                 <div class="rowCF">
                     <p class="labels">Message
                     </p><!--message label-->
                     <div class="textBox">
-                        <textarea name="message" rows="4" cols="23" value="Message" class="txtBox" required>Enter your message</textarea>
+                        <textarea name="message" rows="4"  cols="23" class="txtBox" required>Enter your message</textarea>
                     </div><!--message textarea-->
                 </div><!--message area-->
                 <div class="submitBtnCF">
@@ -208,8 +215,8 @@
                 <p class="txtSM">Sitemap</p>
                 <nav id="nav2" class="links">
                     <ul>
-                        <li><a class="linkSiteMap"href="#" >Home</a></li>
-                        <li><a class="linkSiteMap"href="#">About Me</a></li>
+                        <li><a class="linkSiteMap" href="#" >Home</a></li>
+                        <li><a class="linkSiteMap" href="#">About Me</a></li>
                         <li><a class="linkSiteMap" href="#">Recipes</a></li>
                         <li><a class="linkSiteMap" href="#">Consultancy</a></li>
                     </ul>
@@ -228,13 +235,10 @@
                     </div><!--Social media icons-->
                 </div><!--Social media icons and go to top-->
             </div><!--Social media icons and go to top border-->
-
         </div><!--colSiteMapSocialM-->
-
     </div><!-- rowSiteMapSocial-->
     <div class="base">Copyright &copy; 2018 Nutritionist for you, Cambridge</div><!--Copyright-->
 </footer>
-
 <script src="dist/js/script.js"></script>
 </body>
 </html>
