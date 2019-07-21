@@ -195,29 +195,7 @@ body {
         padding-top: 5.6vw;/*20px*/
         background-color:#8C470B;
     }
-    .row
-    {
-        max-width: 100%;
-        display: flex;
-        padding-bottom: 1.94vw;/*7px*/
-    }
-    .row:last-child
-    {
-        padding-bottom: 5.6vw;/*20px*/
-    }
 
-    .leftColumn
-    {
-        width: 50%;
-        margin-right:2.8vw;/*10px*/
-        margin-left: 2.8vw;/*10px*/
-    }
-
-    .rightColumn
-    {
-        width: 50%;
-        margin-right: 2.8vw;/*10px*/
-    }
     .txt
     {
         color: #ffffff;
@@ -277,6 +255,29 @@ body {
         max-height: 100%;
         max-width: 100%;
     }
+    .rowPG
+    {
+        max-width: 100%;
+        display: flex;
+        padding-bottom: 1.94vw;/*7px*/
+    }
+    .rowPG:last-child
+    {
+        padding-bottom: 5.6vw;/*20px*/
+    }
+
+    .leftColumnPG
+    {
+        width: 50%;
+        margin-right:2.8vw;/*10px*/
+        margin-left: 2.8vw;/*10px*/
+    }
+
+    .rightColumnPG
+    {
+        width: 50%;
+        margin-right: 2.8vw;/*10px*/
+    }
     .whiteRect
     {
         margin: 2.8vw;/*10px*/
@@ -312,11 +313,31 @@ body {
     }
 
     /*LINKED PICTURES*/
-    .linkedPictures
+    .linkedP
     {
         margin-top: 2.8vw;/*10px*/
-        background-color: #BF6E26;
         border-top: 1.11vw solid #ffffff;/*4px*/
+        background-color: #BF6E26;
+
+    }
+
+    .linkedPictures
+    {
+        /*margin-top: 2.8vw;!*10px*!
+        background-color: #BF6E26;
+        border-top: 1.11vw solid #ffffff;!*4px*!*/
+    }
+    .leftColumnLP
+    {
+        width: 50%;
+        margin-right:2.8vw;/*10px*/
+        margin-left: 2.8vw;/*10px*/
+    }
+
+    .rightColumnLP
+    {
+        width: 50%;
+        margin-right: 2.8vw;/*10px*/
     }
     .picLP
     {
@@ -748,24 +769,24 @@ body {
         margin-right: 5vw;
     }
 
-    .row
+    .rowPG
     {
         width: 100%;
         padding-bottom: 1.94vw;/*7px*/
         margin-right: 1vw;
     }
-    .row:last-child
+    .rowPG:last-child
     {
         padding-bottom: 5.6vw;/*20px*/
     }
 
-    .leftColumn
+    .leftColumnPG
     {
         width: 100%;
         padding-right:2.8vw;/*10px*/
     }
 
-    .rightColumn
+    .rightColumnPG
     {
         width: 100%;
         margin-right: 2.8vw;/*10px*/
@@ -813,6 +834,15 @@ body {
 
     }
 
+    .titleLP
+    {
+        color: #ffffff;
+        letter-spacing: .28vw;/*1px*/
+        padding-top: 5.56vw;/*20px*/
+        padding-bottom: 2.8vw;/*10px*/
+        font-size: 5vw;
+        text-align: center;
+    }
     .linkedPictures
     {
         margin-left: 5vw;
@@ -827,13 +857,13 @@ body {
     .leftColumnLP
     {
         width: 100%;
-        padding-right:.8vw;/*10px*/
+        padding-right:1vw;/*10px*/
     }
 
     .rightColumnLP
     {
         width: 100%;
-        margin-right: .8vw;/*10px*/
+        margin-right: 1vw;/*10px*/
     }
 
     .rowLP
@@ -872,13 +902,14 @@ body {
          text-align: center;
 
      }*/
-    .map{
+    .map
+    {
         overflow:hidden;
         padding-bottom:56.25%;
         position:relative;
         height:0;
-        margin-left: 1.39vw;/*5px*/
-        margin-right: 1.39vw;/*5px*/
+        margin-left: 5vw;/*px*/
+        margin-right: 5vw;/*px*/
     }
     .map iframe{
         left:0;
@@ -899,7 +930,7 @@ body {
         text-align: center;
         padding-bottom: 2.78vw;/*10px*/
         border-bottom: .56vw;/*2px*/
-        font-size: 5vw;
+        font-size: 3.5vw;
         letter-spacing: .28vw;/*1px*/
         max-width: 100%;
     }
