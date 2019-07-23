@@ -17,7 +17,7 @@
             <div id="showHomeP" class="logoName">
                 <a href="index.html" class="showHome" id="showHome">
                     <!-- <div class="">-->
-                    <img class="logo" src="dist/imgs/home/optimized/logo-optimized-40x40.png">
+                    <img class="logo" src="dist/imgs/home/optimized/logo-optimized-100x83.png">
                     <!-- </div>logo-->
                 </a>
                 <h1 class="heading">Nutritionist For You</h1>
@@ -29,10 +29,25 @@
 <nav id="nav1" role="navigation">
     <div class="wrapper">
         <ul>
-            <li><a class="closeBtn" id="closeNav">&times;</a></li>
-            <li><a href="#"><img alt="Home" src="dist/imgs/home/menuicons/home.svg" class="homeIcon">Home</a></li>
-            <li><a href="#"><img alt="Recipes" src="dist/imgs/home/menuicons/recipes.svg" class="recipesIcon">Recipes</a></li>
-            <li><a href="#"><img alt="About Me" src="dist/imgs/home/menuicons/aboutme.svg" class="aboutMeIcon">About Me</a></li>
+            <li>
+                <a class="closeBtn" id="closeNav">&times;
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img alt="Home" src="dist/imgs/home/menuicons/home.svg" class="homeIcon">Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img alt="Recipes" src="dist/imgs/home/menuicons/recipes.svg" class="recipesIcon">Recipes
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img alt="About Me" src="dist/imgs/home/menuicons/aboutme.svg" class="aboutMeIcon">About Me
+                </a>
+            </li>
         </ul>
     </div>
 </nav>
@@ -44,7 +59,7 @@
             <div class="rowBG">
                 <div class="leftColumnBG">
                     <a href="#">
-                        <img class="pic" alt="changingpic" src="dist/imgs/home/optimized/workshops-160x127.png">
+                        <img class="pic" id="pic1" alt="changingpic" src="dist/imgs/home/optimized/workshops-700x810.png">
                     </a>
                 </div><!--leftColumn-->
                 <div class="rightColumnBG brownRect txt">
@@ -56,7 +71,7 @@
             <div class="rowBG">
                 <div class="leftColumnBG">
                     <a href="#">
-                        <img class="pic" alt="changingpic" src="dist/imgs/home/optimized/consultancy-160x127.png">
+                        <img class="pic" id="pic2" alt="changingpic" src="dist/imgs/home/optimized/consultancy-700x810.png">
                     </a>
                 </div><!--leftColumn-->
                 <div class="rightColumnBG brownRect txt">
@@ -68,7 +83,7 @@
             <div class="rowBG">
                 <div class="leftColumnBG">
                     <a href="#">
-                        <img class="pic" alt="changingpic" src="dist/imgs/home/optimized/apple-160x127.png">
+                        <img class="pic" id="pic3" alt="changingpic" src="dist/imgs/home/optimized/apple-700x810.png">
                     </a>
                 </div><!--leftColumn-->
                 <div class="rightColumnBG brownRect txt">
@@ -77,10 +92,15 @@
                     </a>Corporate Nutrition
                 </div><!--rightColumn-->
             </div><!--row-->
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks brownRect txt" onclick="openCity(event, 'London')">Workshops</button>
+                <button class="tablinks brownRect txt" onclick="openCity(event, 'Paris')">Consultancy</button>
+                <button class="tablinks brownRect txt" onclick="openCity(event, 'Tokyo')">Corporate Nutrition</button>
+            </div>
         </div><!--Big Pic Section-->
     </div><!--wrapper-->
 </div><!--Header Section-->
-
 
 <div class="wrapper">
     <main>
