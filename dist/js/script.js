@@ -1,47 +1,46 @@
-/*
------------------------------------------------
-1) 	create your iffy
-2) 	fetch DOM elements and store them into const variables
-2.1) 	store other values into let variables
-3) 	set up your initialising pattern
-4) 	subscribe handlers to events on elements
-5) 	implement handlers
------------------------------------------------
-*/
+/*import * as enquire from "./lib/enquire/dist/enquire";*/
+
 
 (function(){
 
     const openNavigation = document.getElementById("openNav");
     const closeNavigation = document.getElementById("closeNav");
 
+    let pic1 = document.getElementById("pic1");
+    let pic2 = document.getElementById("pic2");
+    let pic3 = document.getElementById("pic3");
+
+    const tabWorkshop = document.getElementById("tabWorkshop");
+    const tabConsultancy = document.getElementById("tabConsultancy");
+    const tabCorporateNutrition = document.getElementById("tabCorporateNutrition");
 
     /* FUNCTIONS */
-   /* function bindTopNavToggle() {
-        $menuIcon.on('click', function(){
-            $(topUl).slideToggle();
-        });
-    } // bindTopNavToggle
+    /* function bindTopNavToggle() {
+         $menuIcon.on('click', function(){
+             $(topUl).slideToggle();
+         });
+     } // bindTopNavToggle
 
-      function toggleNavigation() {
-        enquire.register("screen and (min-width: 360px)", {
+       function toggleNavigation() {
+         enquire.register("screen and (min-width: 360px)", {
 
-            // OPTIONAL
-            // If supplied, triggered when a media query matches.
-            match: function () {
-                $(topUl)
-                    .show()
-                ;
+             // OPTIONAL
+             // If supplied, triggered when a media query matches.
+             match: function () {
+                 $(topUl)
+                     .show()
+                 ;
 
-            },
+             },
 
-            // OPTIONAL
-            // If supplied, triggered when the media query transitions
-            // *from a matched state to an unmatched state*.
-            unmatch: function () {
-                $(topUl).hide();
-            }
-        });
-    }// toggleNavigation*/
+             // OPTIONAL
+             // If supplied, triggered when the media query transitions
+             // *from a matched state to an unmatched state*.
+             unmatch: function () {
+                 $(topUl).hide();
+             }
+         });
+     }// toggleNavigation*/
 
 
     /**
@@ -61,24 +60,98 @@
         document.getElementById("top").style.marginLeft= "0";
     }//closeNav
 
+
+
+
+
     /**
      *  Bind fields to event handler
      */
     function bindBtns() {
 
-         if(openNavigation != null) openNavigation.addEventListener("click", openNav)
-         if(closeNavigation != null) closeNavigation.addEventListener("click", closeNav)
+        if (openNavigation != null) openNavigation.addEventListener("click", openNav);
+        if (closeNavigation != null) closeNavigation.addEventListener("click", closeNav);
 
-    }// bindBtns
+        /*  enquire.register("screen and (min-width: 361px) and (max-width: 768px)",
+              {
+                  match: function () {
+                      if (tabWorkshop) {
+                          tabWorkshop.addEventListener("click", function () {
+                              document.getElementById("pic1").src = pic1;
+                          })
+                      }//if
+                      if (tabConsultancy) {
+                          tabConsultancy.addEventListener("click", function () {
+                              document.getElementById("pic2").src = pic2;
+                          })
+                      }//if
+                      if (tabCorporateNutrition) {
+                          tabCorporateNutrition.addEventListener("click", function () {
+                              document.getElementById("pic3").src = pic2;
+                          })
+                      }//if
+                  },
+                  unmatch: function(){
 
+                  }
+              },true
+          )ASK EMILIANO*/
+
+        /*tabWorkshop*/
+
+        tabWorkshop.addEventListener("mouseleave", function(){
+            tabWorkshop.style.backgroundColor = "#E6842E";
+
+        })
+        tabWorkshop.addEventListener("click", function () {
+            tabWorkshop.style.backgroundColor = "#402005";
+            tabWorkshop.style.color = "#ffffff";
+            pic2.parentElement.style.display = "none";
+            pic3.parentElement.style.display = "none";
+            pic1.src = "../Nutritionist/dist/imgs/home/optimized/workshops-700x810.png";
+            pic1.parentElement.style.display = "block";
+
+        })
+
+        /*tabConsultancy*/
+
+        tabConsultancy.addEventListener("mouseleave", function(){
+            tabConsultancy.style.backgroundColor = "#E6842E";
+        })
+        tabConsultancy.addEventListener("click", function () {
+            tabConsultancy.style.backgroundColor = "#402005";
+            tabConsultancy.style.color = "#ffffff";
+            pic1.parentElement.style.display = "none";
+            pic3.parentElement.style.display = "none";
+            pic2.src = "../Nutritionist/dist/imgs/home/optimized/consultancy-700x810.png";
+            pic2.parentElement.style.display = "block";
+        })
+
+        /*tabCorporate Nutrition*/
+        tabCorporateNutrition.addEventListener("mouseleave", function(){
+            tabCorporateNutrition.style.backgroundColor = "#E6842E";
+
+        })
+        tabCorporateNutrition.addEventListener("click", function () {
+            tabCorporateNutrition.style.backgroundColor = "#402005";
+            tabCorporateNutrition.style.color = "#ffffff";
+            pic1.parentElement.style.display = "none";
+            pic2.parentElement.style.display = "none";
+            pic3.src = "../Nutritionist/dist/imgs/home/optimized/apple-700x810.png";
+            pic3.parentElement.style.display = "block";
+
+        })
+
+
+    };//bindBtns
 
     /**
      * initialising function
      */
     function init() {
         bindBtns();
-        toggleNavigation();
-        bindTopNavToggle();
+        /* toggleNavigation();
+         bindTopNavToggle();*/
     }//end init
 
     //onload initialiser
