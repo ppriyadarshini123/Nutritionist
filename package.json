@@ -2,13 +2,11 @@
   "name": "nutritionist",
   "version": "1.0.0",
   "description": "Mobile web design project",
-  "main": "enquire.js",
+  "main": "index.html",
   "dependencies": {
-    "enquire.js": "file:dist/js/enquire.js"
+    "enquire.js": "2.1.6"
   },
-  "devDependencies": {
-    "grunt": "^1.0.4"
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

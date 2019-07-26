@@ -49,7 +49,7 @@
                 </a>
             </li>
         </ul>
-    </div>
+    </div><!--wrapper-->
 </nav>
 
 
@@ -179,18 +179,20 @@
         </div><!--photoLinked-->
         <div class="mapContact">
             <div class="mapAddress">
-                <div class="title">Find Us Here
-                </div><!--title-->
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78254.48455913832!2d0.04994763499338952!3d52.19882136780877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d85d89f32a012d%3A0x63a320e1a35e3d21!2sCambridge!5e0!3m2!1sen!2suk!4v1563278465266!5m2!1sen!2suk"   class="mapFrame"></iframe>
-                </div><!--map-->
-                <div class="title">
-                    Address:
-                </div><!--addressTitle-->
-                <div class="address">
-                    95 Osier Close,
-                    Cambridge, UK.
-                </div><!--addressArea-->
+                <div class="mapArea">
+                    <div class="title">Find Us Here
+                    </div><!--title-->
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78254.48455913832!2d0.04994763499338952!3d52.19882136780877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d85d89f32a012d%3A0x63a320e1a35e3d21!2sCambridge!5e0!3m2!1sen!2suk!4v1563278465266!5m2!1sen!2suk"   class="mapFrame"></iframe>
+                    </div><!--map-->
+                    <div class="title">
+                        Address:
+                    </div><!--addressTitle-->
+                    <div class="address">
+                        95 Osier Close,
+                        Cambridge, UK.
+                    </div><!--addressArea-->
+                </div><!--mapArea-->
             </div><!--mapAddress-->
             <div class="contactForm">
                 <div class="insideCF">
@@ -198,34 +200,24 @@
                     <div class="rowCF">
                         <p class="labels">Name
                         </p>
-                        <div class="textBox">
-                            <input name="name"  type="text" class="txtBox" required placeholder="Name">
-                        </div><!--name textbox-->
+                        <input name="name"  type="text" class="txtBox" placeholder="Your Name.." required >
                     </div><!--name area-->
                     <div class="rowCF">
                         <p class="labels">Phone
                         </p><!--phone label-->
-                        <div class="textBox">
-                            <input name="phone" type="text"  placeholder="Phone" class="txtBox" required>
-                        </div><!--phone textbox-->
+                        <input name="phone" type="tel"  placeholder="Your Phone.." pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="txtBox" required>
                     </div><!--phone area-->
                     <div class="rowCF">
                         <p class="labels">Email
                         </p><!--Email label-->
-                        <div class="textBox">
-                            <input type="email" name="textbox"  type="text" placeholder="Email" class="txtBox" required>
-                        </div><!--email textbox-->
+                        <input type="email" name="textbox"  type="text" placeholder="Your Email.." class="txtBox" required>
                     </div><!--email area-->
                     <div class="rowCF">
                         <p class="labels">Message
                         </p><!--message label-->
-                        <div class="textBox">
-                            <textarea name="message" rows="4"  cols="23" class="txtBox" required>Enter your message</textarea>
-                        </div><!--message textarea-->
-                    </div><!--message area-->
-                    <div class="submitBtnCF">
-                        <input type="submit" name="Submit" class="submitBtn">
-                    </div><!--submit button-->
+                        <textarea name="message" rows="4"  cols="23" class="txtBox" placeholder="Your Message.." required></textarea>
+                    </div><!--message textarea-->
+                    <input type="submit" name="Submit" class="submitBtn">
                 </div><!--insideCF-->
             </div><!--contactform-->
         </div><!--mapContact-->
@@ -264,6 +256,12 @@
     </div><!-- rowSiteMapSocial-->
     <div class="base">Copyright &copy; 2018 Nutritionist for you, Cambridge</div><!--Copyright-->
 </footer>
+<script src="node_modules/enquire.js/dist/enquire.min.js"></script>
 <script src="dist/js/script.js"></script>
+<script>
+    $(window).on("resize", function () {
+        $(".map").height($(window).height()); map.invalidateSize();
+    }).trigger("resize");
+</script>
 </body>
 </html>

@@ -19,7 +19,7 @@ html, body{  width: 100%;  height: 100%;  }
 
 /*   GENERAL SECTION */
 body {
-    /*font-family: "Merriweather", serif;*/
+    font-family: "Merriweather", serif;
     background-color: #E3EAE7;
 }
 
@@ -193,14 +193,14 @@ body {
     .bigPicSection
     {
         box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        padding-top: 5.6vw;/*20px*/
+        padding-top: 2.8vw;/*20px*/
         background-color:#8C470B;
     }
     .rowBG
     {
         max-width: 100%;
         display: flex;
-        padding-bottom: 7px;
+        padding-bottom: 2.8vw;
         width: 100%;
     }
     .leftColumnBG
@@ -214,6 +214,7 @@ body {
     {
         width: 50%;
         margin-right: 2.8vw;/*10px*/
+        vertical-align: middle;
     }
     .txt
     {
@@ -226,6 +227,7 @@ body {
     .pic
     {
         box-sizing: border-box;
+        width: 100%;
         max-width: 100%;
         max-height: 100%;
     }
@@ -236,7 +238,7 @@ body {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 4.2vw;/*15px*/
+        padding-top: 14.2vw;/*15px*/
         padding-bottom: 2.8vw;/*10px*/
     }
 
@@ -280,7 +282,7 @@ body {
     {
         max-width: 100%;
         display: flex;
-        padding-bottom: 1.94vw;/*7px*/
+        padding-bottom: 2.8vw;/*7px*/
     }
     .rowPG:last-child
     {
@@ -310,7 +312,7 @@ body {
     {
         color: #000000;
         letter-spacing: .28vw;/*1px*/
-        padding-top: 5.56vw;/*20px*/
+        padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
         font-size: 5vw;
         text-align: center;
@@ -346,7 +348,7 @@ body {
     {
         color: #ffffff;
         letter-spacing: .28vw;/*1px*/
-        padding-top: 5.56vw;/*20px*/
+        padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
         font-size: 5vw;
         text-align: center;
@@ -381,7 +383,7 @@ body {
     {
         max-width: 100%;
         display: flex;
-        padding-bottom: 1.94vw;/*7px*/
+        padding-bottom: 2.8vw;/*7px*/
     }
     .rowLP:last-child
     {
@@ -408,8 +410,8 @@ body {
         padding-bottom:56.25%;
         position:relative;
         height:0;
-        margin-left: 1.39vw;/*5px*/
-        margin-right: 1.39vw;/*5px*/
+       /* margin-left: 1.39vw;!*5px*!
+        margin-right: 1.39vw;!*5px*!*/
     }
     .map iframe{
         left:0;
@@ -425,10 +427,15 @@ body {
          max-width: 100%;
 
      }*/
+    .mapArea
+    {
+        margin-left: 2.8vw;
+        margin-right: 2.8vw;
+    }
     .address
     {
         text-align: center;
-        padding-bottom: 2.78vw;/*10px*/
+        padding-bottom: 2.8vw;/*10px*/
         border-bottom: .56vw;/*2px*/
         font-size: 5vw;
         letter-spacing: .28vw;/*1px*/
@@ -437,11 +444,16 @@ body {
 
 
     /* Contact Form area*/
+    .insideCF
+    {
+        margin-left: 2.8vw;
+        margin-right: 2.8vw;
+    }
     .contactForm
     {
         text-align: center;
-        padding-top: 2.78vw;/*10px*/
-        padding-bottom: 5.56vw;/*20px*/
+        padding-top: 2.8vw;/*10px*/
+        padding-bottom: 5.6vw;/*20px*/
         border-top: .28vw solid #8C470B;/*1px*/
         max-width: 100%;
         background-color: white;
@@ -449,31 +461,34 @@ body {
     .rowCF
     {
         max-width: 100%;
-        margin-top: 2.78vw;/*10px*/
     }
 
     .labels {
         text-align: left;
         max-width: 100%;
-        margin-left: 7.2vw;/*26px*/
-        margin-bottom: 2.78vw;/*10px*/
+        margin-bottom: .78vw;/*10px*/
         font-size: 5vw;
         letter-spacing: .28vw;/*1px*/
     }
     .txtBox
     {
         max-width: 100%;
-        width: 83.3vw;/*300px*/
+        width: 100%;
         background-color: #E3EAE7;
         color: darkgrey;
-        min-height: 13.3vw;/*48px*/
+        min-height: 3.3vw;/*48px*/
         font-size: 5vw;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+        margin-top: 6px;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 12px;
+        resize: vertical;
+        font-family: "Merriweather", serif;
     }
 
-    ::placeholder
-    {
-        font-size: 5vw;
-    }
+
     .submitBtn
     {
         letter-spacing: .28vw;/*1px*/
@@ -486,6 +501,8 @@ body {
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
+        width: 100%;
+        text-align: center;
     }
 
     /*Sitemap & social media icons*/
@@ -493,7 +510,6 @@ body {
     {
         background-color: #8C470B;
         border-top: 1.11vw solid white;/*4px*/
-
     }
     .colSiteMapSocialM
     {
@@ -691,25 +707,20 @@ body {
     /* BIG PICTURE SECTION*/
     .headerSection
     {
-        padding-top: 2.8vw;/*10px*/
+        margin-top: 2.8vw;/*10px*/
     }
     .bigPicSection
     {
         box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        padding-top: 5.6vw;/*20px*/
-        padding-bottom: 2.6vw;/*20px*/
+        padding-top: 5vw;/*20px*/
+        padding-bottom: 5vw;/*20px*/
         background-color:#8C470B;
+    }
 
-    }
-    .rowBG
-    {
-        margin-bottom: 2vw;
-    }
     .leftColumnBG
     {
         margin-left: 5vw;
         margin-right: 5vw;
-
     }
     .rightColumnBG
     {
@@ -728,44 +739,34 @@ body {
         box-sizing: border-box;
         background-color: #E6842E;
         border: .56vw solid #ffffff;/*2px*/
+        padding: 10px;
     }
 
     .pic
     {
-        margin-bottom: 2vw;
-        width: 194.4vw;/*700px*/
-        height: 105vw;/*810px*/
+       /* width:700px;!*194.4vw*!
+        height: 810px;!*105vw*!*/
+        width: 100%;
+        height: auto;
         max-width: 100%;
     }
-    .leftColumnBG a
-    {
 
-    }
 
     #idPic1
     {
         display: block;
     }
-    #idPic2, #idPic3
+    #idPic2
+    {
+        display: none;
+    }
+    #idPic3
     {
         display: none;
     }
     .iconImage
     {
         display: none;
-    }
-    .tab
-    {
-        text-align: center;
-    }
-    .tablinks:hover
-    {
-        background-color: #402005;
-        cursor: pointer;
-    }
-    .tablinks
-    {
-        margin-right: 1vw;
     }
 
     .text
@@ -775,14 +776,24 @@ body {
         letter-spacing: .28vw;/*1px*/
         text-align: center;
     }
+    .tab
+    {
+        text-align: center;
+        width: 100%;
+    }
+
+    .tablinks
+    {
+        margin-right: 1vw;
+    }
 
 
     /*  PHOTO GALLERY SECTION */
     .photoLinked
     {
         border-top:  1.11vw solid #73290E;/*4px*/
-        margin-top: 5.56vw;/*20px*/
-        margin-bottom: 5.56vw;/*20px*/
+        margin-top: 5vw;/*20px*/
+        margin-bottom: 5vw;/*20px*/
         box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
         background-color: #ffffff;
     }
@@ -829,7 +840,7 @@ body {
     {
         color: #000000;
         letter-spacing: .28vw;/*1px*/
-        padding-top: 5.56vw;/*20px*/
+        padding-top: 5vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
         font-size: 5vw;
         text-align: center;
@@ -846,11 +857,15 @@ body {
         box-sizing: border-box;
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
         object-fit: cover;
-        transition-duration: .5s;
+        transition-duration: .2s;
     }
     .picPG:hover
     {
-        transform: scale(1.5);
+        transform: scale(2.0);
+    }
+    .leftColumnPG .picPG
+    {
+        margin-bottom: 1vw;
     }
 
     /*LINKED PICTURES*/
@@ -866,7 +881,7 @@ body {
     {
         color: #ffffff;
         letter-spacing: .28vw;/*1px*/
-        padding-top: 5.56vw;/*20px*/
+        padding-top: 5vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
         font-size: 5vw;
         text-align: center;
@@ -936,18 +951,24 @@ body {
     .map
     {
         overflow:hidden;
-        padding-bottom:56.25%;
+        padding-bottom:113.5%;
         position:relative;
         height:0;
-        margin-left: 5vw;/*px*/
+        max-width: 100%;
     }
     .mapFrame{
         left:0;
         top:0;
-        height:100%;
         width:100%;
+        height: 100%;
+        max-width: 100%;
         position:absolute;
         border: 1px solid #BF6E26;
+    }
+    .mapArea
+    {
+        margin-left: 5vw;
+        height: 100%;
     }
     /* .mapFrame
      {
@@ -958,12 +979,12 @@ body {
     .address
     {
         text-align: center;
-        padding-bottom: 2.78vw;/*10px*/
+        padding-bottom: 2.8vw;/*10px*/
         border-bottom: .56vw;/*2px*/
         font-size: 3.5vw;
         letter-spacing: .28vw;/*1px*/
         max-width: 100%;
-        margin-left: 5vw;
+
     }
 
     /* Contact Form area*/
@@ -979,12 +1000,7 @@ body {
         max-width: 100%;
         width: 50%;
     }
-    textarea
-    {
-        font-family: inherit;
-        font-size: inherit;
-        color: darkgrey;
-    }
+
     .rowCF
     {
         max-width: 100%;
@@ -999,23 +1015,28 @@ body {
     }
     .txtBox
     {
+        box-sizing: border-box;
         max-width: 100%;
         width: 100%;
         background-color: #E3EAE7;
         color: darkgrey;
-        margin-bottom: 2vw;
+        margin-bottom: 16px;
+        margin-top: 6px;
+        min-height: 3.3vw;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 4vw;
+        padding: 12px;
+        resize: vertical;
+        font-family: "Merriweather", serif;
     }
 
-    ::placeholder
-    {
-        font-family: inherit;
-        font-size: inherit;
-    }
     .submitBtn
     {
+        width: 100%;
         text-align: center;
         letter-spacing: .28vw;/*1px*/
-        margin-top: 5.56vw;/*20px*/
+        margin-top: 5vw;/*20px*/
         font-size: 3.5vw;
         background-color: #BF6E26;
         color: white;
@@ -1265,12 +1286,12 @@ body {
         height: 105vw;/*810px*/
         max-width: 100%;
     }
-    #idPic1
+    #pic1
     {
         display: block;
 
     }
-    #idPic2, #idPic3
+    #pic2, #pic3
     {
         display: none;
     }
@@ -1317,20 +1338,7 @@ body {
     {
 
     }
-    .tab
-    {
-        text-align: center;
-        display: none;
-    }
-    #tabWorkshop:hover
-    {
-        background-color: #402005;
-        cursor: pointer;
-    }
-    .tablinks
-    {
-        margin-right: 1vw;
-    }
+
 
     .text
     {

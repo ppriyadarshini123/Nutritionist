@@ -1,5 +1,3 @@
-/*import * as enquire from "./lib/enquire/dist/enquire";*/
-
 
 (function(){
 
@@ -59,10 +57,6 @@
         document.getElementById("nav1").style.width = "0";
         document.getElementById("top").style.marginLeft= "0";
     }//closeNav
-
-
-
-
 
     /**
      *  Bind fields to event handler
