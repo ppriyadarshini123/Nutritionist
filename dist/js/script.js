@@ -12,6 +12,8 @@
     const tabConsultancy = document.getElementById("tabConsultancy");
     const tabCorporateNutrition = document.getElementById("tabCorporateNutrition");
 
+    const submit = document.getElementById("submit");
+
     /* FUNCTIONS */
     /* function bindTopNavToggle() {
          $menuIcon.on('click', function(){
@@ -135,6 +137,38 @@
             pic3.parentElement.style.display = "block";
 
         })
+
+        submit.addEventListener("click", function()
+            {
+                let fName = document.getElementById("name");
+                let phone = document.getElementById("phone");
+                let email = document.getElementById("email");
+
+                if(!fName.checkValidity()) {
+                    if(fName.validity.valueMissing)
+                    document.getElementById("nameMessage").innerHTML = fName.validationMessage;
+                    else if (!isNaN(fName.value))
+                        document.getElementById("nameMessage").innerHTML = "Please enter characters only.";
+
+                }
+                if(!phone.checkValidity()) {
+
+                    if(phone.validity.valueMissing)
+                        document.getElementById("phoneMessage").innerHTML = phone.validationMessage;
+                    else if (isNaN(parseInt(phone.value))) {
+                        document.getElementById("phoneMessage").innerHTML = "Please enter numbers only.";
+                    }
+
+                }
+                if(!email.checkValidity()) {
+                    if (email.validity.valueMissing)
+                        document.getElementById("emailMessage").innerHTML = email.validationMessage;
+                    else if (email.validity.patternMismatch)
+                        document.getElementById("emailMessage").innerHTML = "Please enter a valid email address.";
+
+                }
+            }
+        )
 
 
     };//bindBtns

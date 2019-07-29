@@ -1046,6 +1046,15 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+    .formMessage
+    {
+        text-align: left;
+        max-width: 100%;
+        margin-bottom: .78vw;/*10px*/
+        font-size: 2.5vw;
+        letter-spacing: .28vw;/*1px*/
+        color: red;
+    }
 
     /*Sitemap & social media icons*/
     .rowSiteMapSocial
