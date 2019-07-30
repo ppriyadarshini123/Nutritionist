@@ -4,7 +4,8 @@
   "description": "Mobile web design project",
   "main": "index.html",
   "dependencies": {
-    "enquire.js": "2.1.6"
+    "enquire.js": "2.1.6",
+    "jquery": "3.4.1"
   },
   "devDependencies": {},
   "scripts": {

@@ -17,7 +17,7 @@
             <div id="showHomeP" class="logoName">
                 <a href="index.html" class="showHome" id="showHome">
                     <!-- <div class="">-->
-                    <img class="logo" src="dist/imgs/home/optimized/logo-optimized-300x249.png">
+                    <img class="logo" src="dist/imgs/home/optimized/logo-optimized-300x249.png" width="300" height="249">
                     <!-- </div>logo-->
                 </a>
                 <h1 class="heading">Nutritionist For You</h1>
@@ -26,28 +26,12 @@
     </div><!--wrapper, Logo-->
 </header><!--header-->
 
-<nav id="nav1" role="navigation">
+<nav id="nav1" role="navigation" class="topNav">
     <div class="wrapper">
         <ul>
-            <li>
-                <a class="closeBtn" id="closeNav">&times;
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img alt="Home" src="dist/imgs/home/menuicons/home.svg" class="homeIcon">Home
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img alt="Recipes" src="dist/imgs/home/menuicons/recipes.svg" class="recipesIcon">Recipes
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img alt="About Me" src="dist/imgs/home/menuicons/aboutme.svg" class="aboutMeIcon">About Me
-                </a>
-            </li>
+            <li><a href="#"><img alt="Home" src="dist/imgs/home/menuicons/home.svg" class="homeIcon">Home</a></li>
+            <li><a href="#"><img alt="Recipes" src="dist/imgs/home/menuicons/recipes.svg" class="recipesIcon">Recipes</a></li>
+            <li><a href="#"><img alt="About Me" src="dist/imgs/home/menuicons/aboutme.svg" class="aboutMeIcon">About Me</a></li>
         </ul>
     </div><!--wrapper-->
 </nav>
@@ -259,6 +243,8 @@
     </div><!-- rowSiteMapSocial-->
     <div class="base">Copyright &copy; 2018 Nutritionist for you, Cambridge</div><!--Copyright-->
 </footer>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="node_modules/enquire.js/dist/enquire.min.js"></script>
 <script src="dist/js/script.js"></script>
 
