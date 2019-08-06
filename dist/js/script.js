@@ -8,6 +8,10 @@
     let pic2 = document.getElementById("pic2");
     let pic3 = document.getElementById("pic3");
 
+    let idPic1 = document.getElementById("idPic1");
+    let idPic2 = document.getElementById("idPic2");
+    let idPic3 = document.getElementById("idPic3");
+
     const tabWorkshop = document.getElementById("tabWorkshop");
     const tabConsultancy = document.getElementById("tabConsultancy");
     const tabCorporateNutrition = document.getElementById("tabCorporateNutrition");
@@ -62,10 +66,10 @@
                 tabWorkshop.addEventListener("click", function () {
                     tabWorkshop.style.backgroundColor = "#402005";
                     tabWorkshop.style.color = "#ffffff";
-                    pic2.parentElement.style.display = "none";
-                    pic3.parentElement.style.display = "none";
-                    pic1.src = "../Nutritionist/dist/imgs/home/optimized/workshops-700x810.png";
-                    pic1.parentElement.style.display = "block";
+                    idPic2.style.display = "none";
+                    idPic3.style.display = "none";
+                    pic1.src = "dist/imgs/home/optimized/workshops-700x810.png";
+                    idPic1.style.display = "block";
                 });/*Click event tabWorkshop*/
 
                 /*tabConsultancy*/
@@ -76,10 +80,10 @@
                 tabConsultancy.addEventListener("click", function () {
                     tabConsultancy.style.backgroundColor = "#402005";
                     tabConsultancy.style.color = "#ffffff";
-                    pic1.parentElement.style.display = "none";
-                    pic3.parentElement.style.display = "none";
-                    pic2.src = "../Nutritionist/dist/imgs/home/optimized/consultancy-700x810.png";
-                    pic2.parentElement.style.display = "block";
+                    idPic1.style.display = "none";
+                    idPic3.style.display = "none";
+                    pic2.src = "dist/imgs/home/optimized/consultancy-700x810.png";
+                    idPic2.style.display = "block";
                 });/*Click event tabConsultancy*/
 
                 /*tabCorporate Nutrition*/
@@ -90,11 +94,10 @@
                 tabCorporateNutrition.addEventListener("click", function () {
                     tabCorporateNutrition.style.backgroundColor = "#402005";
                     tabCorporateNutrition.style.color = "#ffffff";
-                    pic1.parentElement.style.display = "none";
-                    pic2.parentElement.style.display = "none";
-                    pic3.src = "../Nutritionist/dist/imgs/home/optimized/apple-700x810.png";
-                    pic3.parentElement.style.display = "block";
-
+                    idPic1.style.display = "none";
+                    idPic2.style.display = "none";
+                    pic3.src = "dist/imgs/home/optimized/apple-700x810.png";
+                    idPic3.style.display = "block";
                 });/*Click event tabCorporateNutrition*/
             },
             unmatch: function(){
