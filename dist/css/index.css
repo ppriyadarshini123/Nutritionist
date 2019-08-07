@@ -154,18 +154,18 @@ body {
         text-decoration: underline;
     }
 
- /*   #nav1 .closeBtn {
-        position: absolute;
-        top: 0;
-        right: 6.94vw;!*25px*!
-        font-size: 10vw;
-        margin-left: 13.9vw ;!*50px*!
-    }
-    body
-    {
-        transition: margin-left .5s;
-        !*padding: 4.4vw;!*16px*!*!
-    }*/
+    /*   #nav1 .closeBtn {
+           position: absolute;
+           top: 0;
+           right: 6.94vw;!*25px*!
+           font-size: 10vw;
+           margin-left: 13.9vw ;!*50px*!
+       }
+       body
+       {
+           transition: margin-left .5s;
+           !*padding: 4.4vw;!*16px*!*!
+       }*/
 
     /* !*new code*!
      #nav1 ul a{
@@ -213,7 +213,7 @@ body {
     /* BIG PICTURE SECTION*/
     .headerSection
     {
-       /* padding-top: 2.8vw;!*10px*!*/
+        /* padding-top: 2.8vw;!*10px*!*/
     }
     .bigPicSection
     {
@@ -435,8 +435,8 @@ body {
         padding-bottom:56.25%;
         position:relative;
         height:0;
-       /* margin-left: 1.39vw;!*5px*!
-        margin-right: 1.39vw;!*5px*!*/
+        /* margin-left: 1.39vw;!*5px*!
+         margin-right: 1.39vw;!*5px*!*/
     }
     .map iframe{
         left:0;
@@ -777,8 +777,8 @@ body {
 
     .pic
     {
-       /* width:700px;!*194.4vw*!
-        height: 810px;!*105vw*!*/
+        /* width:700px;!*194.4vw*!
+         height: 810px;!*105vw*!*/
         width: 100%;
         height: auto;
         max-width: 100%;
@@ -1282,6 +1282,7 @@ body {
     .recipesIcon
     {
         display: block;
+        text-align: center;
     }
 
     .aboutMeIcon

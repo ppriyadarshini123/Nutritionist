@@ -12,6 +12,14 @@
     let idPic2 = document.getElementById("idPic2");
     let idPic3 = document.getElementById("idPic3");
 
+    let workshops = document.getElementById("workshops");
+    let consultancy = document.getElementById("consultancy");
+    let corporateNutrition = document.getElementById("corporateNutrition");
+    let row1 = document.getElementById("row1");
+    let row2 = document.getElementById("row2");
+    let row3 = document.getElementById("row3");
+
+
     const tabWorkshop = document.getElementById("tabWorkshop");
     const tabConsultancy = document.getElementById("tabConsultancy");
     const tabCorporateNutrition = document.getElementById("tabCorporateNutrition");
@@ -105,12 +113,61 @@
             }
         });
 
+        enquire.register("screen and (min-width: 769px) and (max-width: 1200px)", {
+            match: function(){
+                /*Workshops*/
+                workshops.addEventListener("mouseleave", function(){
+                    workshops.style.backgroundColor = "#E6842E";
+                });/*MouseLeave event Workshops*/
+
+                workshops.addEventListener("click", function () {
+                    workshops.style.backgroundColor = "#402005";
+                    workshops.style.color = "#ffffff";
+                    idPic2.style.display = "none";
+                    idPic3.style.display = "none";
+                   /* pic1.src = "dist/imgs/home/optimized/workshops-700x810.png";*/
+                    idPic1.style.display = "block";
+                });/*Click event Workshops*/
+
+                /*Consultancy*/
+                consultancy.addEventListener("mouseleave", function(){
+                    consultancy.style.backgroundColor = "#E6842E";
+                });/*Mouseleave event tabConsultancy*/
+
+                consultancy.addEventListener("click", function () {
+                    consultancy.style.backgroundColor = "#402005";
+                    consultancy.style.color = "#ffffff";
+                    console.log(pic1.src);
+                    pic1.src = "dist/imgs/home/optimized/consultancy-700x810.png";
+                    idPic1.style.display = "block";
+                    pic1.style.display = "block";
+                });/*Click event consultancy*/
+
+                /*corporate Nutrition*/
+                corporateNutrition.addEventListener("mouseleave", function(){
+                    corporateNutrition.style.backgroundColor = "#E6842E";
+                });/*Mouseleave event corporateNutrition*/
+
+                corporateNutrition.addEventListener("click", function () {
+                    corporateNutrition.style.backgroundColor = "#402005";
+                    corporateNutrition.style.color = "#ffffff";
+                    console.log(pic1.src);
+                    pic1.src = "dist/imgs/home/optimized/apple-700x810.png";
+                    idPic1.style.display = "block";
+                    pic1.style.display = "block";
+                });/*Click event corporateNutrition*/
+            },
+            unmatch: function(){
+
+            }
+        });
+
 
         /*if (openNavigation != null) openNavigation.addEventListener("click", openNav);
         if (closeNavigation != null) closeNavigation.addEventListener("click", closeNav);
 */
 
-
+        /*CONTACT FORM SUBMIT BUTTON VALIDATION*/
         submit.addEventListener("click", function()
             {
                 let fName = document.getElementById("name");
