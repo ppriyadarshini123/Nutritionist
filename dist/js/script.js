@@ -15,6 +15,7 @@
     let workshops = document.getElementById("workshops");
     let consultancy = document.getElementById("consultancy");
     let corporateNutrition = document.getElementById("corporateNutrition");
+    let changingPic = document.getElementById("changingPic");
     let row1 = document.getElementById("row1");
     let row2 = document.getElementById("row2");
     let row3 = document.getElementById("row3");
@@ -54,14 +55,14 @@
     function bindBtns() {
 
         enquire.register("screen and (max-width:360px)", {
-           match: function(){
-               $menuIcon.click(function(){
-                   $('.topNav').slideToggle("fast");
-               });
-           },
-           unmatch: function(){
-               $('.topNav').show();
-           }
+            match: function(){
+                $menuIcon.click(function(){
+                    $('.topNav').slideToggle("fast");
+                });
+            },
+            unmatch: function(){
+                $('.topNav').show();
+            }
         });
 
         enquire.register("screen and (min-width: 361px) and (max-width: 768px)", {
@@ -120,12 +121,18 @@
                     workshops.style.backgroundColor = "#E6842E";
                 });/*MouseLeave event Workshops*/
 
-                workshops.addEventListener("click", function () {
+                workshops.addEventListener("click", function (e) {
+                    /*To prevent the anchor from working*/
+                    e.preventDefault();
                     workshops.style.backgroundColor = "#402005";
                     workshops.style.color = "#ffffff";
+
+                    /*Since the img tag is inside the picture element*/
+                    var htmlForPic;
+                    htmlForPic = " <img class=\"pic\" id=\"pic1\" alt=\"changingpic\" src=\"dist/imgs/home/optimized/workshops-700x810.png\">'>";
+                    changingPic.innerHTML = htmlForPic;
                     idPic2.style.display = "none";
                     idPic3.style.display = "none";
-                   /* pic1.src = "dist/imgs/home/optimized/workshops-700x810.png";*/
                     idPic1.style.display = "block";
                 });/*Click event Workshops*/
 
@@ -134,13 +141,19 @@
                     consultancy.style.backgroundColor = "#E6842E";
                 });/*Mouseleave event tabConsultancy*/
 
-                consultancy.addEventListener("click", function () {
+                consultancy.addEventListener("click", function (e) {
+                    /*To prevent the anchor from working*/
+                    e.preventDefault();
                     consultancy.style.backgroundColor = "#402005";
                     consultancy.style.color = "#ffffff";
-                    console.log(pic1.src);
-                    pic1.src = "dist/imgs/home/optimized/consultancy-700x810.png";
+
+                    /*Since the img tag is inside the picture element*/
+                    var htmlForPic;
+                    htmlForPic = " <img class=\"pic\" id=\"pic1\" alt=\"changingpic\" src=\"dist/imgs/home/optimized/consultancy-700x810.png\">";
+                    changingPic.innerHTML = htmlForPic;
+                    idPic2.style.display = "none";
+                    idPic3.style.display = "none";
                     idPic1.style.display = "block";
-                    pic1.style.display = "block";
                 });/*Click event consultancy*/
 
                 /*corporate Nutrition*/
@@ -148,13 +161,19 @@
                     corporateNutrition.style.backgroundColor = "#E6842E";
                 });/*Mouseleave event corporateNutrition*/
 
-                corporateNutrition.addEventListener("click", function () {
+                corporateNutrition.addEventListener("click", function (e) {
+                    /*To prevent the anchor from working*/
+                    e.preventDefault();
                     corporateNutrition.style.backgroundColor = "#402005";
                     corporateNutrition.style.color = "#ffffff";
-                    console.log(pic1.src);
-                    pic1.src = "dist/imgs/home/optimized/apple-700x810.png";
+                    idPic3.style.display = "none";
+                    idPic2.style.display = "none";
                     idPic1.style.display = "block";
-                    pic1.style.display = "block";
+
+                    /*Since the img tag is inside the picture element*/
+                    var htmlForPic;
+                    htmlForPic = " <img class=\"pic\" id=\"pic1\" alt=\"changingpic\" src=\"dist/imgs/home/optimized/apple-700x810.png\">";
+                    changingPic.innerHTML = htmlForPic;
                 });/*Click event corporateNutrition*/
             },
             unmatch: function(){

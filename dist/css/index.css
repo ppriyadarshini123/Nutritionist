@@ -697,6 +697,7 @@ body {
         position: sticky;
         top: 0;
     }
+
     #nav1 ul
     {
         position: relative;
@@ -1283,11 +1284,13 @@ body {
     {
         display: block;
         text-align: center;
+
     }
 
     .aboutMeIcon
     {
         display: block;
+
     }
 
     /* BIG PICTURE SECTION*/
@@ -1369,7 +1372,7 @@ body {
     .text
     {
         color: #ffffff;
-        font-size: 5vw;
+        font-size: 3vw;
         letter-spacing: .28vw;/*1px*/
         text-align: center;
         padding-top: 5.6vw;/*20px*/
@@ -1493,7 +1496,6 @@ body {
         margin-right: 5vw;
         max-height: 100%;
         max-width: 100%;
-
         display: flex;
         justify-content: space-around;
     }
@@ -1761,13 +1763,13 @@ body {
     }
     .recipesIcon
     {
-        width: 50px;
+        width: 60px;
         margin-bottom: 10px;
     }
     .aboutMeIcon
     {
-        width: 50px;
-        margin-bottom: 10px;
+        width: 70px;
+        margin-bottom: 15px;
     }
     .rightHandColumn
     {
