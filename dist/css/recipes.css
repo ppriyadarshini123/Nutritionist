@@ -228,18 +228,38 @@ body {
         padding-bottom: 2.8vw;
         width: 100%;
     }
-    .leftColumnBG
+    #idPic1
     {
-        width: 50%;
-        margin-right:2.8vw;/*10px*/
-        margin-left: 2.8vw;/*10px*/
+           position: relative;
     }
 
-    .rightColumnBG
+   .picNotice
+   {
+       position: absolute;
+       top: 20px;
+       right: 40px;
+       background-color: #ffffff;
+       width: 45vw;
+       height: 55vw;
+   }
+    h1
     {
-        width: 50%;
-        margin-right: 2.8vw;/*10px*/
-        vertical-align: middle;
+        margin-top: 10px;
+        font-size: 6vw;
+        letter-spacing: .28vw;/*1px*/
+        font-weight: bold;
+    }
+    .par
+    {
+        font-size: 5vw;
+        line-height: 5vw;
+        letter-spacing: .28vw;/*1px*/
+        font-weight: normal;
+    }
+    .txtBox
+    {
+        width: 100%;
+        max-width: 100%;
     }
     .txt
     {

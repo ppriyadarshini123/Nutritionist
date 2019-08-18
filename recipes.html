@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nutritionist</title>
+    <link rel="stylesheet" href="dist/css/recipes.css" media="screen">
+</head>
+<body>
+<div class="navContainer">
+    <header id="top">
+        <div class="wrapper">
+            <div class="logoAndHam" >
+                <div id="ham">
+                    <span class="hamburger" id="openNav">&#9776;</span>
+                </div><!--Hamburger Icon-->
+                <div id="showHomeP" class="logoName">
+                    <a href="index.html" class="showHome" id="showHome">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="dist/imgs/home/optimized/logo-optimized-100x83.png" alt="logo">
+                            <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/logo-optimized-300x249.png" alt="logo">
+                            <img class="logo" src="dist/imgs/home/optimized/logo-optimized-100x83.png" alt="logo">
+                        </picture>
+                    </a>
+                    <h1 class="heading">Nutritionist For You</h1>
+                </div><!--LogoName-->
+            </div><!--Logo and hamburger icon-->
+        </div><!--wrapper, Logo-->
+    </header><!--header-->
+
+    <nav id="nav1" role="navigation" class="topNav">
+        <div class="wrapper">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <picture>
+                            <!--<source media="(max-width: 1200px)" srcset="dist/imgs/home/menuicons/home.svg" class="homeIcon" alt="Home Icon">-->
+                            <img alt="Home" src="dist/imgs/home/menuicons/ezgif.com-optimize%20(4).gif" class="homeIcon">
+                        </picture>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <picture>
+                            <!--                        <source media="(max-width: 1200px)" srcset="dist/imgs/home/menuicons/recipes-59x59.png" class="recipesIcon" alt="Recipes Icon">-->
+                            <img alt="Recipes" src="dist/imgs/home/menuicons/ezgif.com-optimize%20(2).gif" class="recipesIcon">
+                        </picture>
+                        <p>Recipes</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <picture>
+                            <!-- <source media="(max-width: 1200px)" srcset="dist/imgs/home/menuicons/aboutme-59x59.png" class="aboutMeIcon" alt="About Me Icon">-->
+                            <img alt="About Me" src="dist/imgs/home/menuicons/ezgif.com-optimize%20(10).gif" class="aboutMeIcon">
+                        </picture>
+                        <p>About Me</p>
+                    </a>
+                </li>
+            </ul>
+        </div><!--wrapper-->
+    </nav>
+
+
+    <div class="headerSection">
+        <div class="wrapper">
+            <div class="bigPicSection">
+                <div class="rowBG" id="row1">
+
+                    <a href="#" id="idPic1">
+                        <picture id="changingPic">
+                            <source media="(max-width: 360px)" srcset="dist/imgs/recipes/imgs/mainpic.jpg" class="pic" alt="Workshops Image">
+                            <source media="(max-width: 768px)" srcset="dist/imgs/recipes/imgs/mainpic.jpg" class="pic" alt="Workshops Image">
+                            <img class="pic" id="pic1" alt="changingpic" src="dist/imgs/recipes/imgs/mainpic.jpg">
+                        </picture>
+
+                        <div class="picNotice">
+                            <h1>Welcome to Recipes Page !</h1>
+                            <p class="par">Enter an ingredient, a dish or a keyword. There will be something tempting for you !</p>
+                            <input class="key">
+                            <select class="key">
+                                <option value="0" selected>Select Category</option>
+                                <option value="chicken" >Chicken</option>
+                                <option value="fish">Fish</option>
+                                <option value="vegetables">Vegetables</option>
+                                <option value="desserts">Desserts</option>
+                            </select>
+                            <select class="key">
+                                <option value="lunch">Lunch</option>
+                                <option value="dinner">Dinner</option>
+                                <option value="breakfast">Breakfast</option>
+                                <option value="snacks">Snacks</option>
+                            </select>
+                            <select class="key">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+                    </a>
+
+
+                </div><!--row-->
+            </div><!--Big Pic Section-->
+        </div><!--wrapper-->
+    </div><!--Header Section-->
+
+    <div class="wrapper">
+        <main>
+            <div class="photoLinked">
+
+
+                <div class="linkedP">
+                    <div class="titleLP">The Feel Good Factor
+                    </div><!--title linkedpictures-->
+                    <div class="rowLP">
+                        <div class="leftColumnLP text">
+                            <a href="#">
+                                <picture>
+                                    <source media="(max-width: 360px)" srcset="dist/imgs/home/optimized/detoxyourbody-160x107.png" alt="Detox your body">
+                                    <source media="(max-width: 768px)" srcset="dist/imgs/home/optimized/detoxyourbody-160x107.png" alt="Detox your body">
+                                    <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/detoxyourbody-160x107.png" alt="Detox your body">
+                                    <img class="picLP" alt="changingpic"  src="dist/imgs/home/optimized/detoxyourbody-160x107.png">
+                                </picture>
+                            </a>
+                            <p>Detox Your Body</p>
+                        </div><!--leftColumn-->
+
+                        <div class="rightColumnLP text">
+                            <a href="#">
+                                <picture>
+                                    <source media="(max-width: 360px)" srcset="dist/imgs/home/optimized/boostbrainpower-160x107.png" alt="Boost your brain power">
+                                    <source media="(max-width: 768px)" srcset="dist/imgs/home/optimized/boostbrainpower-160x107.png" alt="Boost your brain power">
+                                    <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/boostbrainpower-160x107.png" alt="Boost your brain power">
+                                    <img class="picLP" alt="changingpic" src="dist/imgs/home/optimized/boostbrainpower-160x107.png">
+                                </picture>
+                            </a>
+                            <p>Boost Your Brain Power</p>
+                        </div><!--rightColumn-->
+                    </div><!--row-->
+                    <div class="rowLP">
+                        <div class="leftColumnLP text">
+                            <a href="#">
+                                <picture>
+                                    <source media="(max-width: 360px)" srcset="dist/imgs/home/optimized/reducestress-160x107.png" alt="Reduce stress">
+                                    <source media="(max-width: 768px)" srcset="dist/imgs/home/optimized/reducestress-160x107.png" alt="Reduce stress">
+                                    <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/reducestress-160x107.png" alt="Reduce stress">
+                                    <img class="picLP" alt="changingpic"  src="dist/imgs/home/optimized/reducestress-160x107.png">
+                                </picture>
+                            </a>
+                            <p>Reduce Stress</p>
+                        </div><!--leftColumn-->
+                        <div class="rightColumnLP text">
+                            <a href="#">
+                                <picture>
+                                    <source media="(max-width: 360px)" srcset="dist/imgs/home/optimized/weightcontrol-160x107.png" alt="Weight Control">
+                                    <source media="(max-width: 768px)" srcset="dist/imgs/home/optimized/weightcontrol-160x107.png" alt="Weight Control">
+                                    <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/weightcontrol-160x107.png" alt="Weight Control">
+                                    <img class="picLP" alt="changingpic" src="dist/imgs/home/optimized/weightcontrol-160x107.png">
+                                </picture>
+                            </a>
+                            <p>Weight Control</p>
+                        </div><!--rightColumn-->
+                    </div><!--row-->
+                </div><!--linkedPictures-->
+            </div><!--photoLinked-->
+
+        </main>
+    </div><!--/wrapper-->
+
+
+    <footer class="wrapper">
+        <div class="rowSiteMapSocial">
+            <div class="colSiteMapSocialM">
+                <div class="colSiteMap">
+                    <p class="txtSM">Sitemap</p>
+                    <nav id="nav2" class="links">
+                        <ul>
+                            <li><a class="linkSiteMap" href="#" >Home</a></li>
+                            <li><a class="linkSiteMap" href="#">About Me</a></li>
+                            <li><a class="linkSiteMap" href="#">Recipes</a></li>
+                            <li><a class="linkSiteMap" href="#">Consultancy</a></li>
+                        </ul>
+                    </nav><!--sitemap first column-->
+                </div><!--colSitemap-->
+
+                <div class="colSocialMedia">
+                    <div class="topSocial">
+                        <div class="goToTop">
+                            <a href="#top" class="linkTop" >Go to top</a>
+                        </div><!--go to top-->
+                        <div class="socialM">
+                            <h3 class="txtSM">Find me here:</h3>
+                            <a href="#">
+                                <picture>
+                                    <source media="(max-width: 360px)" srcset="dist/imgs/home/optimized/twitter-50x50.png" alt="Weight Control">
+                                    <source media="(max-width: 768px)" srcset="dist/imgs/home/optimized/twitter-50x50.png" alt="Weight Control">
+                                    <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/twitter-50x50.png" alt="Weight Contro">
+                                    <img src="dist/imgs/home/optimized/twitter-50x50.png" title="Find us on Twitter" alt="Twitter" class="socialMediaIcons">
+                                </picture>
+                            </a>
+                            <a href="#">
+                                <picture>
+                                    <source media="(max-width: 360px)" srcset="dist/imgs/home/optimized/facebook-50x50.png" alt="Weight Control">
+                                    <source media="(max-width: 768px)" srcset="dist/imgs/home/optimized/facebook-50x50.png" alt="Weight Control">
+                                    <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/facebook-50x50.png" alt="Weight Contro">
+                                    <img src="dist/imgs/home/optimized/facebook-50x50.png" title="Find us on Facebook" alt="Facebook" class="socialMediaIcons">
+                                </picture>
+
+                            </a>
+                        </div><!--Social media icons-->
+                    </div><!--Social media icons and go to top-->
+                </div><!--Social media icons and go to top border-->
+            </div><!--colSiteMapSocialM-->
+        </div><!-- rowSiteMapSocial-->
+        <div class="base">Copyright &copy; 2018 Nutritionist for you, Cambridge</div><!--Copyright-->
+    </footer>
+</div><!--Container for Navigation - position:sticky-->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="node_modules/enquire.js/dist/enquire.min.js"></script>
+<script src="dist/js/script.js"></script>
+
+</body>
+</html>
