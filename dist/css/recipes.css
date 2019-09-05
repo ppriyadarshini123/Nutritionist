@@ -259,18 +259,21 @@ body {
         padding-left: 3vw;
         padding-right: 3vw;
         box-sizing: border-box;
+        line-height: 6vw;
     }
 
     .par
     {
         font-size: 5vw;
-        line-height: 5vw;
+        line-height: 6vw;
         letter-spacing: .28vw;/*1px*/
         font-weight: normal;
         color: dimgrey;
         padding-left: 3vw;
         padding-right: 3vw;
+        padding-bottom: 3vw;
         box-sizing: border-box;
+
     }
    .btn
    {
@@ -682,10 +685,15 @@ body {
     /* HEADER SECTION*/
     .wrapper
     {
-        width: 100%; /*360px*/
+        width: 100vw; /*360px*/
         margin: 0 auto;
     }
 
+    #top
+    {
+        all: unset;
+        margin-left: 100%;
+    }
     .logoAndHam
     {
         margin-top: 2.8vw; /*10px*/
@@ -693,6 +701,11 @@ body {
         cursor: pointer;
         display: flex;
         justify-content: space-between;
+    }
+    .hamburger
+    {
+        font-size:17vw;
+        cursor: pointer;
     }
 
     .logoName
@@ -709,7 +722,7 @@ body {
 
     .showHome
     {
-        width: 26%;
+        width: 36%;
         margin-right: 3vw;
     }
     .logo
@@ -718,6 +731,7 @@ body {
         width: 100%;
         height: auto;
     }
+
     .heading
     {
         max-width: 100%;
@@ -731,50 +745,86 @@ body {
     }
 
     /*  NAVIGATION SECTION */
-    .hamburger
+    /*old code*/
+    .topNav
     {
         display: none;
     }
-
-    .topNav
-    {
-        display: block;
-    }
-
-
     #nav1
     {
-        margin-top: 1vw;
-        max-width: 100%;
-        position: sticky;
-        top: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        /*top: 0;*/
+        left: 0;
+        background-color: #402005;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 4.2vw;/*15px*/
+        padding-bottom: 4.2vw;/*15px*/
     }
 
-    #nav1 ul
-    {
-        position: relative;
-        display: flex;
-        background-color: #402005;
-        justify-content: space-around;
-        padding-top: 3.2vw;
-        padding-bottom: 3.2vw;
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-    #nav1 ul li
-    {
-        width: 100%;
-    }
+
     #nav1 ul li a
     {
-        position: absolute;
-        color: #ffffff;
+        padding: 2.2vw 2.2vw 2.2vw 8.9vw;/*8px 8px 8px 32px*/
         text-decoration: none;
-        top: 1.3vw;
-        font-size: 3.5vw;
+        font-size: 5vw;
+        letter-spacing: .28vw;/*1px*/
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
     }
 
-    /*Hide navigation Icons in tablet*/
+    #nav1 ul li a:hover {
+        color: #402005;
+        background-color: #fff;
+    }
+    #nav1 ul li a:active{
+        text-decoration: underline;
+    }
+
+    /*   #nav1 .closeBtn {
+           position: absolute;
+           top: 0;
+           right: 6.94vw;!*25px*!
+           font-size: 10vw;
+           margin-left: 13.9vw ;!*50px*!
+       }
+       body
+       {
+           transition: margin-left .5s;
+           !*padding: 4.4vw;!*16px*!*!
+       }*/
+
+    /* !*new code*!
+     #nav1 ul a{
+         display: block;
+         color:#fff;
+         text-decoration: none;
+         padding:10px;
+         background-color: #9F146D;
+         text-transform: capitalize;
+     }
+
+     !*
+         PSEUDO CLASSES
+     ELEMENT:hover   =>  styling the element while we hover over it
+
+     ELEMENT:active  =>  styling the element while we hold left mouse
+                             btn down on the element
+
+     *!
+     #nav1 ul a:hover{
+         background-color: #fff;
+         color: #9F146D;
+     }
+
+     #nav1 ul a:active{
+         text-decoration: underline;
+     }*/
+
+    /*Hide navigation Icons in mobile*/
     .homeIcon
     {
         display: none;
@@ -793,166 +843,138 @@ body {
     /* BIG PICTURE SECTION*/
     .headerSection
     {
-        margin-top: 2.8vw;/*10px*/
+        /* padding-top: 2.8vw;!*10px*!*/
     }
     .bigPicSection
     {
         box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        padding-top: 5vw;/*20px*/
-        padding-bottom: 5vw;/*20px*/
+        padding-top: 2.8vw;/*20px*/
         background-color:#8C470B;
     }
-
-    .leftColumnBG
+    .rowBG
     {
-        margin-left: 5vw;
-        margin-right: 5vw;
+        max-width: 100%;
+        display: flex;
+        padding-bottom: 2.8vw;
+        width: 100%;
+        position: relative;
+
     }
-    .rightColumnBG
+    #idPic1
     {
-        display: none;
+
+
     }
 
+    .picNotice
+    {
+        position: absolute;
+        top: 5vw;
+        right: 8vw;
+        background-color: #ffffff;
+        width: 50%;
+        max-width: 100%;
+        box-sizing: border-box;
+        height: 80%;
+    }
+
+    h1
+    {
+        margin-top: 2vw;
+        padding-bottom: 2vw;
+        font-size: 5vw;
+        letter-spacing: .28vw;/*1px*/
+        font-weight: bold;
+        color: #000000;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        box-sizing: border-box;
+        line-height: 6vw;
+    }
+
+    .par
+    {
+        font-size: 5vw;
+        line-height: 6vw;
+        letter-spacing: .28vw;/*1px*/
+        font-weight: normal;
+        color: dimgrey;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-bottom: 3vw;
+        box-sizing: border-box;
+    }
+
+    .btn
+    {
+        background-color: #BF6E26;
+        color: white;
+        letter-spacing: .28vw;
+        margin-top: 2vw;
+        font-size: 5vw;
+        display: block;
+        padding: 2vw 1vw;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: center;
+
+    }
+    .txtBox
+    {
+        width: 100%;
+        max-width: 100%;
+    }
     .txt
     {
         color: #ffffff;
-        font-size: 3.5vw;
+        font-size: 5vw;
         letter-spacing: .28vw;/*1px*/
         text-align: center;
-    }
-    .brownRect
-    {
-        box-sizing: border-box;
-        background-color: #E6842E;
-        border: .56vw solid #ffffff;/*2px*/
-        padding: 10px;
     }
 
     .pic
     {
-        /* width:700px;!*194.4vw*!
-         height: 810px;!*105vw*!*/
+        box-sizing: border-box;
         width: 100%;
-        height: auto;
         max-width: 100%;
+        max-height: 100%;
     }
 
-
-    #idPic1
-    {
-        display: block;
-    }
-    #idPic2
-    {
-        display: none;
-    }
-    #idPic3
-    {
-        display: none;
-    }
     .iconImage
     {
-        display: none;
+        max-width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /*padding-top: 2.8vw;!*15px*!*/
+        padding-bottom: 2.8vw;/*10px*/
     }
 
     .text
     {
         color: #ffffff;
-        font-size: 3.5vw;
+        font-size: 5vw;
         letter-spacing: .28vw;/*1px*/
         text-align: center;
+
+    }
+    .brownRect
+    {
+        box-sizing: border-box;
+        background-color: #E6842E;
+        max-width: 100%;
+        max-height: 100%;
+        text-align: center;
+        border: .56vw solid #ffffff;/*2px*/
     }
     .tab
     {
-        text-align: center;
-        width: 100%;
-    }
-
-    .tablinks
-    {
-        margin-right: 1vw;
+        display: none;
     }
 
 
-    /*  PHOTO GALLERY SECTION */
-    .photoLinked
-    {
-        border-top:  1.11vw solid #73290E;/*4px*/
-        margin-top: 5vw;/*20px*/
-        margin-bottom: 5vw;/*20px*/
-        box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        background-color: #ffffff;
-    }
-    .photoGallery
-    {
-        max-height: 100%;
-        max-width: 100%;
-        display: flex;
-        justify-content: space-around;
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
-
-    .rowPG
-    {
-        width: 100%;
-        padding-bottom: 1.94vw;/*7px*/
-        margin-right: 1vw;
-    }
-    .rowPG:last-child
-    {
-        padding-bottom: 5.6vw;/*20px*/
-    }
-
-    .leftColumnPG
-    {
-        width: 100%;
-        padding-right:2.8vw;/*10px*/
-    }
-
-    .rightColumnPG
-    {
-        width: 100%;
-        margin-right: 2.8vw;/*10px*/
-    }
-    .whiteRect
-    {
-        margin: 2.8vw;/*10px*/
-        max-width: 100%;
-        max-height: 100%;
-
-    }
-    .title
-    {
-        color: #000000;
-        letter-spacing: .28vw;/*1px*/
-        padding-top: 5vw;/*20px*/
-        padding-bottom: 2.8vw;/*10px*/
-        font-size: 5vw;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .picPG
-    {
-        max-width: 100%;
-        max-height: 100%;
-        width: 100%;
-        height: 100%;
-        border: 1.8vw solid white;
-        box-sizing: border-box;
-        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        object-fit: cover;
-        transition-duration: .2s;
-    }
-    .picPG:hover
-    {
-        transform: scale(2.0);
-    }
-    .leftColumnPG .picPG
-    {
-        margin-bottom: 1vw;
-    }
 
     /*LINKED PICTURES*/
     .linkedP
@@ -960,14 +982,13 @@ body {
         margin-top: 2.8vw;/*10px*/
         border-top: 1.11vw solid #ffffff;/*4px*/
         background-color: #BF6E26;
-
     }
 
     .titleLP
     {
         color: #ffffff;
         letter-spacing: .28vw;/*1px*/
-        padding-top: 5vw;/*20px*/
+        padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
         font-size: 5vw;
         text-align: center;
@@ -975,179 +996,47 @@ body {
     }
     .linkedPictures
     {
-        margin-left: 5vw;
-        margin-right: 5vw;
-        max-height: 100%;
-        max-width: 100%;
-
-        display: flex;
-        justify-content: space-around;
+        /*margin-top: 2.8vw;!*10px*!
+        background-color: #BF6E26;
+        border-top: 1.11vw solid #ffffff;!*4px*!*/
     }
-
     .leftColumnLP
     {
-        width: 100%;
-        padding-right:1vw;/*10px*/
+        width: 50%;
+        margin-right:2.8vw;/*10px*/
+        margin-left: 2.8vw;/*10px*/
     }
 
     .rightColumnLP
     {
-        width: 100%;
-        margin-right: 1vw;/*10px*/
-    }
-
-    .rowLP
-    {
-        width: 100%;
-        padding-bottom: 1.94vw;/*7px*/
-        display: flex;
-    }
-
-    .rowLP:last-child .rightColumnLP
-    {
-        margin-right: 0vw;
-        padding-bottom: 5.6vw;/*20px*/
+        width: 50%;
+        margin-right: 2.8vw;/*10px*/
     }
     .picLP
     {
         max-width: 100%;
         max-height: 100%;
-        border: 1.8vw solid white;/*10px*/
+        border: 2.8vw solid white;/*10px*/
         box-sizing: border-box;
     }
-
-
-    /*MAP & ADDRESS SECTION*/
-    .mapContact
+    .rowLP
     {
-        width: 100%;
+        max-width: 100%;
         display: flex;
-        margin-top: 5.56vw;/*20px*/
-        margin-bottom: 5.56vw;/*20px*/
-        background-color: white;
-        border-top: 1.11vw solid #73290E;/*4px*/
-        box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
+        padding-bottom: 2.8vw;/*7px*/
     }
-    .mapAddress
+    .rowLP:last-child
     {
-        width: 50%;
-        max-width: 100%;
+        padding-bottom: 5.6vw;/*20px*/
     }
 
-    .map
-    {
-        overflow:hidden;
-        padding-bottom:113.5%;
-        position:relative;
-        height:0;
-        max-width: 100%;
-    }
-    .mapFrame{
-        left:0;
-        top:0;
-        width:100%;
-        height: 100%;
-        max-width: 100%;
-        position:absolute;
-        border: 1px solid #BF6E26;
-    }
-    .mapArea
-    {
-        margin-left: 5vw;
-        height: 100%;
-    }
-    /* .mapFrame
-     {
-         border: 1px solid #BF6E26;
-         max-width: 100%;
 
-     }*/
-    .address
-    {
-        text-align: center;
-        padding-bottom: 2.8vw;/*10px*/
-        border-bottom: .56vw;/*2px*/
-        font-size: 3.5vw;
-        letter-spacing: .28vw;/*1px*/
-        max-width: 100%;
-
-    }
-
-    /* Contact Form area*/
-    .insideCF
-    {
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
-    .contactForm
-    {
-        text-align: center;
-        padding-bottom: 5.56vw;/*20px*/
-        max-width: 100%;
-        width: 50%;
-    }
-
-    .rowCF
-    {
-        max-width: 100%;
-    }
-
-    .labels {
-        text-align: left;
-        max-width: 100%;
-        margin-bottom: .78vw;/*10px*/
-        font-size: 3.5vw;
-        letter-spacing: .28vw;/*1px*/
-    }
-    .txtBox
-    {
-        box-sizing: border-box;
-        max-width: 100%;
-        width: 100%;
-        background-color: #E3EAE7;
-        color: darkgrey;
-        margin-bottom: 16px;
-        margin-top: 6px;
-        min-height: 3.3vw;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 4vw;
-        padding: 12px;
-        resize: vertical;
-        font-family: Roboto;
-    }
-
-    .submitBtn
-    {
-        width: 100%;
-        text-align: center;
-        letter-spacing: .28vw;/*1px*/
-        margin-top: 5vw;/*20px*/
-        font-size: 3.5vw;
-        background-color: #BF6E26;
-        color: white;
-        display: block;
-        padding: 4.56vw 7.33vw;/*20px 30px*/
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .formMessage
-    {
-        text-align: left;
-        max-width: 100%;
-        margin-bottom: .78vw;/*10px*/
-        font-size: 2.5vw;
-        letter-spacing: .28vw;/*1px*/
-        color: red;
-    }
 
     /*Sitemap & social media icons*/
     .rowSiteMapSocial
     {
         background-color: #8C470B;
         border-top: 1.11vw solid white;/*4px*/
-
     }
     .colSiteMapSocialM
     {
@@ -1225,7 +1114,6 @@ body {
         letter-spacing: .28vw;/*1px*/
         text-align: center;
     }
-
 }
 
 /* >768px and < 1200px - Laptop*/
@@ -1301,6 +1189,7 @@ body {
         max-width: 100%;
         position: sticky;
         top: 0;
+        z-index: 5;
     }
     #nav1 ul
     {
@@ -1444,84 +1333,61 @@ body {
         display: none;
     }
 
-    /*  PHOTO GALLERY SECTION */
-    .photoLinked
+    .picNotice
     {
-        border-top:  1.11vw solid #73290E;/*4px*/
-        margin-top: 5vw;/*20px*/
-        margin-bottom: 5vw;/*20px*/
-        box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
+        position: absolute;
+        top: 43vw;
+        right: 8vw;
         background-color: #ffffff;
-    }
-    .photoGallery
-    {
-        max-height: 100%;
+        width: 50%;
         max-width: 100%;
-        display: flex;
-        justify-content: space-around;
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
-
-    .rowPG
-    {
-        width: 100%;
-        padding-bottom: 1.94vw;/*7px*/
-        margin-right: 1vw;
-    }
-    .rowPG:last-child
-    {
-        padding-bottom: 5.6vw;/*20px*/
-    }
-
-    .leftColumnPG
-    {
-        width: 100%;
-        padding-right:2.8vw;/*10px*/
-    }
-
-    .rightColumnPG
-    {
-        width: 100%;
-        margin-right: 2.8vw;/*10px*/
-    }
-    .whiteRect
-    {
-        margin: 2.8vw;/*10px*/
-        max-width: 100%;
-        max-height: 100%;
-
-    }
-    .title
-    {
-        color: #000000;
-        letter-spacing: .28vw;/*1px*/
-        padding-top: 5vw;/*20px*/
-        padding-bottom: 2.8vw;/*10px*/
-        font-size: 5vw;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .picPG
-    {
-        max-width: 100%;
-        max-height: 100%;
-        width: 100%;
-        height: 100%;
-        border: 1.8vw solid white;
         box-sizing: border-box;
-        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        object-fit: cover;
-        transition-duration: .2s;
+        height: 105%;
+        z-index: 2;
     }
-    .picPG:hover
+
+    h1
     {
-        transform: scale(2.0);
+        margin-top: 2vw;
+        padding-bottom: 2vw;
+        font-size: 5vw;
+        letter-spacing: .28vw;/*1px*/
+        font-weight: bold;
+        color: #000000;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        box-sizing: border-box;
+        line-height: 6vw;
     }
-    .leftColumnPG .picPG
+
+    .par
     {
-        margin-bottom: 1vw;
+        font-size: 5vw;
+        line-height: 6vw;
+        letter-spacing: .28vw;/*1px*/
+        font-weight: normal;
+        color: dimgrey;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        box-sizing: border-box;
+        margin-bottom: 2vw;
+    }
+
+    .btn
+    {
+        background-color: #BF6E26;
+        color: white;
+        letter-spacing: .28vw;
+        margin-bottom: 2vw;
+        font-size: 5vw;
+        display: block;
+        padding: 2vw 1vw;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: center;
+
     }
 
     /*LINKED PICTURES*/
@@ -1586,130 +1452,6 @@ body {
     }
 
 
-    /*MAP & ADDRESS SECTION*/
-    .mapContact
-    {
-        width: 100%;
-        display: flex;
-        margin-top: 5.56vw;/*20px*/
-        margin-bottom: 5.56vw;/*20px*/
-        background-color: white;
-        border-top: 1.11vw solid #73290E;/*4px*/
-        box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
-    }
-    .mapAddress
-    {
-        width: 50%;
-        max-width: 100%;
-    }
-
-    .map
-    {
-        overflow:hidden;
-        padding-bottom:113.5%;
-        position:relative;
-        height:0;
-        max-width: 100%;
-    }
-    .mapFrame{
-        left:0;
-        top:0;
-        width:100%;
-        height: 100%;
-        max-width: 100%;
-        position:absolute;
-        border: 1px solid #BF6E26;
-    }
-    .mapArea
-    {
-        margin-left: 5vw;
-        height: 100%;
-    }
-    /* .mapFrame
-     {
-         border: 1px solid #BF6E26;
-         max-width: 100%;
-
-     }*/
-    .address
-    {
-        text-align: center;
-        padding-bottom: 2.8vw;/*10px*/
-        border-bottom: .56vw;/*2px*/
-        font-size: 3.5vw;
-        letter-spacing: .28vw;/*1px*/
-        max-width: 100%;
-
-    }
-
-    /* Contact Form area*/
-    .insideCF
-    {
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
-    .contactForm
-    {
-        text-align: center;
-        padding-bottom: 5.56vw;/*20px*/
-        max-width: 100%;
-        width: 50%;
-    }
-
-    .rowCF
-    {
-        max-width: 100%;
-    }
-
-    .labels {
-        text-align: left;
-        max-width: 100%;
-        margin-bottom: .78vw;/*10px*/
-        font-size: 3.5vw;
-        letter-spacing: .28vw;/*1px*/
-    }
-    .txtBox
-    {
-        box-sizing: border-box;
-        max-width: 100%;
-        width: 100%;
-        background-color: #E3EAE7;
-        color: darkgrey;
-        margin-bottom: 16px;
-        margin-top: 6px;
-        min-height: 3.3vw;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 4vw;
-        padding: 12px;
-        resize: vertical;
-        font-family: Roboto;
-    }
-
-    .submitBtn
-    {
-        width: 100%;
-        text-align: center;
-        letter-spacing: .28vw;/*1px*/
-        margin-top: 5vw;/*20px*/
-        font-size: 3.5vw;
-        background-color: #BF6E26;
-        color: white;
-        display: block;
-        padding: 4.56vw 7.33vw;/*20px 30px*/
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .formMessage
-    {
-        text-align: left;
-        max-width: 100%;
-        margin-bottom: .78vw;/*10px*/
-        font-size: 2.5vw;
-        letter-spacing: .28vw;/*1px*/
-        color: red;
-    }
 
     /*Sitemap & social media icons*/
     .rowSiteMapSocial
@@ -1801,52 +1543,423 @@ body {
 /* >1200px - Desktop*/
 @media screen and (min-width: 1200px)
 {
-    .wrapper{
-        width: 100%;
+    /* HEADER SECTION*/
+    .wrapper
+    {
+        width: 100%; /*360px*/
         margin: 0 auto;
+    }
+
+    .logoAndHam
+    {
+        margin-top: 2.8vw; /*10px*/
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logoName
+    {
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        height: auto;
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
+
+    .showHome
+    {
+        width: 26%;
+        margin-right: 3vw;
+    }
+    .logo
+    {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+    .heading
+    {
+        max-width: 100%;
+        color:#73290E;
+        font-weight: bold;
+        width: 60%;
+        font-size: 6vw;
+        letter-spacing: .28vw;/*1px*/
+        padding-top: 4.9vw;
+        height: auto;
+    }
+
+    /*  NAVIGATION SECTION */
+    .hamburger
+    {
+        display: none;
+    }
+
+    .topNav
+    {
+        display: block;
+    }
+
+
+    #nav1
+    {
+        margin-top: 1vw;
+        max-width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 5;
+    }
+    #nav1 ul
+    {
+        position: relative;
+        display: flex;
+        background-color: #402005;
+        justify-content: space-around;
+        padding-top: 4.2vw;
+        padding-bottom: 4.2vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
     #nav1 ul li
     {
-        margin-right: 100px;
+        width: 100%;
     }
+    #nav1 ul li a
+    {
+        position: absolute;
+        color: #ffffff;
+        text-decoration: none;
+        top: 1vw;
+        font-size: 2.0vw;
+    }
+
+    /*Hide navigation Icons in tablet*/
     .homeIcon
     {
-        width: 50px;
-        margin-bottom: 10px;
+        display: block;
+        width: 48px;
+        height: 48px;
     }
+
     .recipesIcon
     {
-        width: 60px;
-        margin-bottom: 10px;
+        display: block;
+        text-align: center;
+
     }
+
     .aboutMeIcon
     {
-        width: 70px;
-        margin-bottom: 15px;
+        display: block;
     }
-    .rightHandColumn
+
+    /* BIG PICTURE SECTION*/
+    .headerSection
     {
+        margin-top: 2.8vw;
+    }
+    .bigPicSection
+    {
+        box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
+        padding-top: 2.8vw;/*20px*/
+        background-color:#8C470B;
+    }
+    .rowBG
+    {
+        max-width: 100%;
+        display: flex;
+        margin-bottom: 2.8vw;
+        width: 100%;
+        height: auto;
+    }
+    .leftColumnBG
+    {
+        width: 75%;
+        margin-right:2.8vw;/*10px*/
+        margin-left: 2.8vw;/*10px*/
+    }
+    #pic1
+    {
+        height: auto;
+    }
+
+    #pic2, #pic3
+    {
+        display: none;
+    }
+
+    .rightColumnBG
+    {
+        width: 25%;
+        margin-right: 2.8vw;/*10px*/
+        height: 33%;
+    }
+    .txt
+    {
+        color: #ffffff;
+        font-size: 3vw;
+        letter-spacing: .28vw;/*1px*/
+        text-align: center;
+        padding-bottom: 4.2vw;
+    }
+
+    .pic
+    {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
         max-height: 100%;
     }
 
-    .iconConsultancy
+    .iconImage
     {
-        margin-bottom: 10px;
+        width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 2.1vw;
+        box-sizing: border-box;
+    }
+
+    #consultancy
+    {
+        margin-top: -56vw;
+    }
+    #corporateNutrition
+    {
+        margin-top: -32vw;
+    }
+    .text
+    {
+        color: #ffffff;
+        font-size: 3vw;
+        letter-spacing: .28vw;/*1px*/
+        text-align: center;
+        padding-top: 5.6vw;/*20px*/
+    }
+    .brownRect
+    {
+        box-sizing: border-box;
+        background-color: #E6842E;
+        max-width: 100%;
+        max-height: 100%;
+        text-align: center;
+        border: .56vw solid #ffffff;/*2px*/
+    }
+    .tab
+    {
+        display: none;
+    }
+
+    .picNotice
+    {
+        position: absolute;
+        top: 43vw;
+        right: 8vw;
+        background-color: #ffffff;
+        width: 50%;
+        max-width: 100%;
+        box-sizing: border-box;
+        height: 105%;
+        z-index: 2;
+    }
+
+    h1
+    {
+        margin-top: 2vw;
+        padding-bottom: 2vw;
+        font-size: 5vw;
+        letter-spacing: .28vw;/*1px*/
+        font-weight: bold;
+        color: #000000;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        box-sizing: border-box;
+        line-height: 6vw;
+    }
+
+    .par
+    {
+        font-size: 5vw;
+        line-height: 6vw;
+        letter-spacing: .28vw;/*1px*/
+        font-weight: normal;
+        color: dimgrey;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        box-sizing: border-box;
+        margin-bottom: 2vw;
+    }
+
+    .btn
+    {
+        background-color: #BF6E26;
+        color: white;
+        letter-spacing: .28vw;
+        margin-bottom: 2vw;
+        font-size: 5vw;
+        display: block;
+        padding: 2vw 1vw;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: center;
 
     }
-    .iconWorkshop
+
+    /*LINKED PICTURES*/
+    .linkedP
     {
-        margin-bottom: 10px;
-        width: 200px;
-        height: 200px;
+        margin-top: 2.8vw;/*10px*/
+        border-top: 1.11vw solid #ffffff;/*4px*/
+        background-color: #BF6E26;
 
     }
-    .iconCorporateNutrition
+
+    .titleLP
     {
-        margin-bottom: 10px;
-        width: 200px;
-        height: 200px;
+        color: #ffffff;
+        letter-spacing: .28vw;/*1px*/
+        padding-top: 5vw;/*20px*/
+        padding-bottom: 2.8vw;/*10px*/
+        font-size: 5vw;
+        text-align: center;
+        font-weight: bold;
     }
+    .linkedPictures
+    {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        max-height: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .leftColumnLP
+    {
+        width: 100%;
+        padding-right:1vw;/*10px*/
+    }
+
+    .rightColumnLP
+    {
+        width: 100%;
+        margin-right: 1vw;/*10px*/
+    }
+
+    .rowLP
+    {
+        width: 100%;
+        padding-bottom: 1.94vw;/*7px*/
+        display: flex;
+    }
+
+    .rowLP:last-child .rightColumnLP
+    {
+        margin-right: 0vw;
+        padding-bottom: 5.6vw;/*20px*/
+    }
+    .picLP
+    {
+        max-width: 100%;
+        max-height: 100%;
+        border: 1.8vw solid white;/*10px*/
+        box-sizing: border-box;
+    }
+
+
+
+    /*Sitemap & social media icons*/
+    .rowSiteMapSocial
+    {
+        background-color: #8C470B;
+        border-top: 1.11vw solid white;/*4px*/
+
+    }
+    .colSiteMapSocialM
+    {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding-bottom: 5.56vw;/*20px*/
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .colSiteMap
+    {
+        display: block;
+    }
+    .links
+    {
+        width: 2%;
+        line-height: 6.67vw;/*24px*/
+    }
+    .linkSiteMap
+    {
+        color: #ffffff;
+        font-size: 5vw;
+        letter-spacing: .28vw;/*1px*/
+        text-decoration: none;
+    }
+    .linkSiteMap:hover
+    {
+        background-color: white;
+    }
+    .txtSM
+    {
+        color: #ffffff;
+        font-size: 5vw;
+        letter-spacing: .28vw;/*1px*/
+        font-weight: bold;
+        padding-top: 5.56vw;/*20px*/
+        padding-bottom: 2.78vw;/*10px*/
+        text-align: left;
+    }
+    .txtSM:hover
+    {
+        text-decoration: #F2C166;
+        color: white;
+    }
+
+
+    .goToTop
+    {
+        /* padding-top: 5px;*/
+        display: none;
+    }
+    /* .linkTop
+     {
+         text-decoration: none;
+         color: #ffffff;
+     }*/
+    .socialM
+    {
+        padding-right: 5.56vw;/*20px*/
+    }
+    .socialMediaIcons
+    {
+        max-width: 100%;
+        width: 13.9vw;
+    }
+
+    .base
+    {
+        background-color: #0D0D0D;
+        padding-top: 5.56vw;/*20px*/
+        padding-bottom: 5.56vw;/*20px*/
+        color: #ffffff;
+        font-size: 5vw;
+        letter-spacing: .28vw;/*1px*/
+        text-align: center;
+    }
+
 
 
 }
