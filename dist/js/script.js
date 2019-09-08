@@ -61,12 +61,14 @@
                 });
             },
             unmatch: function(){
-                $('.topNav').show();
+
             }
         });
 
         enquire.register("screen and (min-width: 361px) and (max-width: 768px)", {
             match: function(){
+
+
                 /*tabWorkshop*/
                 tabWorkshop.addEventListener("mouseleave", function(){
                     tabWorkshop.style.backgroundColor = "#E6842E";
