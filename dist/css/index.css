@@ -56,15 +56,10 @@ body {
     /* HEADER SECTION*/
     .wrapper
     {
-        width: 100vw; /*360px*/
         margin: 0 auto;
     }
 
-    #top
-    {
-        all: unset;
-        margin-left: 100%;
-    }
+
     .logoAndHam
     {
         margin-top: 2.8vw; /*10px*/
@@ -360,13 +355,14 @@ body {
         box-sizing: border-box;
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
        /* object-fit: cover;*/
-        transition-duration: 2s;
+
     }
 
     .picPG:hover
     {
-        border: none;
-        transition-duration: .5s;
+        border: 2px solid white;
+        overflow: hidden;
+
 
     }
     /*For shaking an image*/
@@ -397,7 +393,6 @@ body {
     .linkedP
     {
         margin-top: 2.8vw;/*10px*/
-        border-top: 1.11vw solid #ffffff;/*4px*/
         background-color: #BF6E26;
 
     }
@@ -1302,7 +1297,7 @@ body {
         background-color: #402005;
         justify-content: space-around;
         padding-top: 4.2vw;
-        padding-bottom: 4.2vw;
+        padding-bottom: 5.2vw;
         padding-left: 5vw;
         padding-right: 5vw;
     }

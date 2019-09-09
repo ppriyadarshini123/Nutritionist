@@ -4,21 +4,21 @@
     /* const openNavigation = document.getElementById("openNav");
      const closeNavigation = document.getElementById("closeNav");*/
 
-    let pic1 = document.getElementById("pic1");
-    let pic2 = document.getElementById("pic2");
-    let pic3 = document.getElementById("pic3");
+    const pic1 = document.getElementById("pic1");
+    const pic2 = document.getElementById("pic2");
+    const pic3 = document.getElementById("pic3");
 
-    let idPic1 = document.getElementById("idPic1");
-    let idPic2 = document.getElementById("idPic2");
-    let idPic3 = document.getElementById("idPic3");
+    const cPic1 = document.getElementsByClassName("cPic1");
+    const cPic2 = document.getElementsByClassName("cPic2");
+    const cPic3 = document.getElementsByClassName("cPic3");
 
-    let workshops = document.getElementById("workshops");
-    let consultancy = document.getElementById("consultancy");
-    let corporateNutrition = document.getElementById("corporateNutrition");
-    let changingPic = document.getElementById("changingPic");
-    let row1 = document.getElementById("row1");
-    let row2 = document.getElementById("row2");
-    let row3 = document.getElementById("row3");
+    const workshops = document.getElementById("workshops");
+    const consultancy = document.getElementById("consultancy");
+    const corporateNutrition = document.getElementById("corporateNutrition");
+    const changingPic = document.getElementById("changingPic");
+    const row1 = document.getElementById("row1");
+    const row2 = document.getElementById("row2");
+    const row3 = document.getElementById("row3");
 
 
     const tabWorkshop = document.getElementById("tabWorkshop");
@@ -31,7 +31,7 @@
     /*  const topUI = $('.topNav').find('.wrapper')[0];*/
 
     /* FUNCTIONS */
-    /*
+    /* This is old way of implementing opening and closing of navigation.
        /!**
         *  Open Navigation when Hamburger is clicked
         *!/
@@ -50,13 +50,20 @@
        }//closeNav
    */
     /**
-     *  Bind fields to event handler
+     * @name bindBtns
+     * @desc this will bind all the elements to their events
      */
     function bindBtns() {
 
         enquire.register("screen and (max-width:360px)", {
             match: function(){
-                $menuIcon.click(function(){
+
+                /*old code*/
+               /* $menuIcon.click(function(){
+                    $('.topNav').slideToggle("fast");
+                });*/
+               /*new code*/
+                $menuIcon.on('click',function(){
                     $('.topNav').slideToggle("fast");
                 });
             },
@@ -68,7 +75,6 @@
         enquire.register("screen and (min-width: 361px) and (max-width: 768px)", {
             match: function(){
 
-
                 /*tabWorkshop*/
                 tabWorkshop.addEventListener("mouseleave", function(){
                     tabWorkshop.style.backgroundColor = "#E6842E";
@@ -77,10 +83,10 @@
                 tabWorkshop.addEventListener("click", function () {
                     tabWorkshop.style.backgroundColor = "#402005";
                     tabWorkshop.style.color = "#ffffff";
-                    idPic2.style.display = "none";
-                    idPic3.style.display = "none";
+                    cPic2.style.display = "none";
+                    cPic3.style.display = "none";
                     pic1.src = "dist/imgs/home/optimized/workshops-700x810.png";
-                    idPic1.style.display = "block";
+                    cPic1.style.display = "block";
                 });/*Click event tabWorkshop*/
 
                 /*tabConsultancy*/
@@ -91,10 +97,10 @@
                 tabConsultancy.addEventListener("click", function () {
                     tabConsultancy.style.backgroundColor = "#402005";
                     tabConsultancy.style.color = "#ffffff";
-                    idPic1.style.display = "none";
-                    idPic3.style.display = "none";
+                    cPic1.style.display = "none";
+                    cPic3.style.display = "none";
                     pic2.src = "dist/imgs/home/optimized/consultancy-700x810.png";
-                    idPic2.style.display = "block";
+                    cPic2.style.display = "block";
                 });/*Click event tabConsultancy*/
 
                 /*tabCorporate Nutrition*/
@@ -105,10 +111,10 @@
                 tabCorporateNutrition.addEventListener("click", function () {
                     tabCorporateNutrition.style.backgroundColor = "#402005";
                     tabCorporateNutrition.style.color = "#ffffff";
-                    idPic1.style.display = "none";
-                    idPic2.style.display = "none";
+                    cPic1.style.display = "none";
+                    cPic2.style.display = "none";
                     pic3.src = "dist/imgs/home/optimized/apple-700x810.png";
-                    idPic3.style.display = "block";
+                    cPic3.style.display = "block";
                 });/*Click event tabCorporateNutrition*/
             },
             unmatch: function(){
@@ -130,12 +136,12 @@
                     workshops.style.color = "#ffffff";
 
                     /*Since the img tag is inside the picture element*/
-                    var htmlForPic;
+                    let htmlForPic;
                     htmlForPic = " <img class=\"pic\" id=\"pic1\" alt=\"changingpic\" src=\"dist/imgs/home/optimized/workshops-700x810.png\">'>";
                     changingPic.innerHTML = htmlForPic;
-                    idPic2.style.display = "none";
-                    idPic3.style.display = "none";
-                    idPic1.style.display = "block";
+                    cPic2.style.display = "none";
+                    cPic3.style.display = "none";
+                    cPic1.style.display = "block";
                 });/*Click event Workshops*/
 
                 /*Consultancy*/
@@ -150,12 +156,12 @@
                     consultancy.style.color = "#ffffff";
 
                     /*Since the img tag is inside the picture element*/
-                    var htmlForPic;
+                    let htmlForPic;
                     htmlForPic = " <img class=\"pic\" id=\"pic1\" alt=\"changingpic\" src=\"dist/imgs/home/optimized/consultancy-700x810.png\">";
                     changingPic.innerHTML = htmlForPic;
-                    idPic2.style.display = "none";
-                    idPic3.style.display = "none";
-                    idPic1.style.display = "block";
+                    cPic2.style.display = "block";
+                    cPic3.style.display = "none";
+                    cPic1.style.display = "none";
                 });/*Click event consultancy*/
 
                 /*corporate Nutrition*/
@@ -168,14 +174,16 @@
                     e.preventDefault();
                     corporateNutrition.style.backgroundColor = "#402005";
                     corporateNutrition.style.color = "#ffffff";
-                    idPic3.style.display = "none";
-                    idPic2.style.display = "none";
-                    idPic1.style.display = "block";
 
                     /*Since the img tag is inside the picture element*/
-                    var htmlForPic;
+                    let htmlForPic;
                     htmlForPic = " <img class=\"pic\" id=\"pic1\" alt=\"changingpic\" src=\"dist/imgs/home/optimized/apple-700x810.png\">";
                     changingPic.innerHTML = htmlForPic;
+                    cPic1.style.display = "none";
+                    cPic2.style.display = "none";
+                    cPic3.style.display = "block";
+
+
                 });/*Click event corporateNutrition*/
             },
             unmatch: function(){
@@ -191,9 +199,9 @@
         /*CONTACT FORM SUBMIT BUTTON VALIDATION*/
         submit.addEventListener("click", function()
             {
-                let fName = document.getElementById("name");
-                let phone = document.getElementById("phone");
-                let email = document.getElementById("email");
+                const fName = document.getElementById("name");
+                const phone = document.getElementById("phone");
+                const email = document.getElementById("email");
 
                 if(!fName.checkValidity()) {
                     if(fName.validity.valueMissing)
@@ -223,12 +231,16 @@
     };//bindBtns
 
     /**
-     * initialising function
+     * @name init
+     * @desc Initializing function
      */
     function init() {
         bindBtns();
     }//end init
 
     //onload initialiser
-    window.onload = init;
+    //oldcode
+    /*window.onload = init;*/
+    //new code
+    window.addEventListener("load", init);
 })();

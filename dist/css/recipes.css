@@ -63,11 +63,7 @@ body {
         margin: 0 auto;
     }
 
-    #top
-    {
-        all: unset;
-        margin-left: 100%;
-    }
+
     .logoAndHam
     {
         margin-top: 2.8vw; /*10px*/
@@ -688,6 +684,7 @@ body {
         text-align: center;
     }
 }
+/* <360px - Mobile */
 
 /* >360px and <768px - Tablet*/
 @media screen and (min-width: 361px) and (max-width: 768px)
@@ -699,11 +696,6 @@ body {
         margin: 0 auto;
     }
 
-    #top
-    {
-        all: unset;
-        margin-left: 100%;
-    }
     .logoAndHam
     {
         margin-top: 2.8vw; /*10px*/
@@ -1127,6 +1119,7 @@ body {
         line-height: 7vw;
     }
 }
+/* >360px and <768px - Tablet*/
 
 /* >768px and < 1200px - Laptop*/
 @media screen and (min-width: 769px) and (max-width: 1200px)
@@ -1210,7 +1203,7 @@ body {
         background-color: #402005;
         justify-content: space-around;
         padding-top: 4.2vw;
-        padding-bottom: 4.2vw;
+        padding-bottom: 5.2vw;
         padding-left: 5vw;
         padding-right: 5vw;
     }
@@ -1551,6 +1544,7 @@ body {
 
 
 }
+/* >768px and < 1200px - Laptop*/
 
 /* >1200px - Desktop*/
 @media screen and (min-width: 1200px)
@@ -1981,3 +1975,4 @@ body {
 
 
 }
+/* >1200px - Desktop*/
