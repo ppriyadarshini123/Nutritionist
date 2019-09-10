@@ -12,6 +12,9 @@
     const cPic2 = document.getElementsByClassName("cPic2");
     const cPic3 = document.getElementsByClassName("cPic3");
 
+    const imgPic2 = document.getElementById("imgPic2");
+    const imgPic3 = document.getElementById("imgPic3");
+
     const workshops = document.getElementById("workshops");
     const consultancy = document.getElementById("consultancy");
     const corporateNutrition = document.getElementById("corporateNutrition");
@@ -66,7 +69,14 @@
                 $menuIcon.on('click',function(){
                     $('.topNav').slideToggle("fast");
                 });
-            },
+            /*Injecting HTML in the picture element to add img tag*/
+                let imgText1 = `<img class="pic"  alt="changingpic" src="dist/imgs/home/optimized/consultancy-700x810.png">`;
+                imgPic2.innerHTML = imgText1;
+
+                /*Injecting HTML in the picture element to add img tag*/
+                let imgText2 = `<img class="pic"  alt="changingpic" src="dist/imgs/home/optimized/apple-700x810.png">`;
+                imgPic3.innerHTML = imgText2;
+                },
             unmatch: function(){
 
             }
@@ -83,9 +93,9 @@
                 tabWorkshop.addEventListener("click", function () {
                     tabWorkshop.style.backgroundColor = "#402005";
                     tabWorkshop.style.color = "#ffffff";
+                    pic2.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
                     cPic2.style.display = "none";
                     cPic3.style.display = "none";
-                    pic1.src = "dist/imgs/home/optimized/workshops-700x810.png";
                     cPic1.style.display = "block";
                 });/*Click event tabWorkshop*/
 
@@ -97,9 +107,9 @@
                 tabConsultancy.addEventListener("click", function () {
                     tabConsultancy.style.backgroundColor = "#402005";
                     tabConsultancy.style.color = "#ffffff";
+                    pic2.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
                     cPic1.style.display = "none";
                     cPic3.style.display = "none";
-                    pic2.src = "dist/imgs/home/optimized/consultancy-700x810.png";
                     cPic2.style.display = "block";
                 });/*Click event tabConsultancy*/
 
@@ -111,9 +121,9 @@
                 tabCorporateNutrition.addEventListener("click", function () {
                     tabCorporateNutrition.style.backgroundColor = "#402005";
                     tabCorporateNutrition.style.color = "#ffffff";
+                    pic2.srcset = "dist/imgs/home/optimized/apple-700x810.png";
                     cPic1.style.display = "none";
                     cPic2.style.display = "none";
-                    pic3.src = "dist/imgs/home/optimized/apple-700x810.png";
                     cPic3.style.display = "block";
                 });/*Click event tabCorporateNutrition*/
             },
@@ -137,8 +147,18 @@
 
                     /*Since the img tag is inside the picture element*/
                     let htmlForPic;
-                    htmlForPic = " <img class=\"pic\" id=\"pic1\" alt=\"changingpic\" src=\"dist/imgs/home/optimized/workshops-700x810.png\">'>";
-                    changingPic.innerHTML = htmlForPic;
+                    //Old code
+                    /*htmlForPic = " <img class=\"pic\" id=\"pic1\" alt=\"changingpic\" src=\"dist/imgs/home/optimized/workshops-700x810.png\">'>";*/
+                    //New code using template literals, when you write html in a string
+                    /*htmlForPic = `<img class="pic" id="pic1" alt="changingpic" src="dist/imgs/home/optimized/workshops-700x810.png">`;*/
+                    //old code
+                   /* htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/workshops-700x810.png" id="pic1" class="pic">`;
+                    pic1.innerHTML = htmlForPic;*/
+                   //new code trial
+                    // did not work
+                   /* $('pic1').attr('srcset','dist/imgs/home/optimized/workshops-700x810.png');
+                    console.log(pic1.src)*/
+                    pic1.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
                     cPic2.style.display = "none";
                     cPic3.style.display = "none";
                     cPic1.style.display = "block";
@@ -156,9 +176,12 @@
                     consultancy.style.color = "#ffffff";
 
                     /*Since the img tag is inside the picture element*/
-                    let htmlForPic;
-                    htmlForPic = " <img class=\"pic\" id=\"pic1\" alt=\"changingpic\" src=\"dist/imgs/home/optimized/consultancy-700x810.png\">";
-                    changingPic.innerHTML = htmlForPic;
+                   /* let htmlForPic;
+                    htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/consultancy-700x810.png" id="pic1" class="pic">`;
+                    pic1.innerHTML = htmlForPic;*/
+                    // did not work
+                    /*$('pic1').attr('srcset','dist/imgs/home/optimized/consultancy-700x810.png');*/
+                    pic1.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
                     cPic2.style.display = "block";
                     cPic3.style.display = "none";
                     cPic1.style.display = "none";
@@ -176,14 +199,17 @@
                     corporateNutrition.style.color = "#ffffff";
 
                     /*Since the img tag is inside the picture element*/
-                    let htmlForPic;
-                    htmlForPic = " <img class=\"pic\" id=\"pic1\" alt=\"changingpic\" src=\"dist/imgs/home/optimized/apple-700x810.png\">";
-                    changingPic.innerHTML = htmlForPic;
+                    /*let htmlForPic;
+                    htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/apple-700x810.png" id="pic1" class="pic">`;
+                    pic1.innerHTML = htmlForPic;*/
+
+                    // did not work
+                    /*$('pic1').attr('srcset','dist/imgs/home/optimized/apple-700x810.png');*/
+
+                    pic1.srcset = "dist/imgs/home/optimized/apple-700x810.png";
                     cPic1.style.display = "none";
                     cPic2.style.display = "none";
                     cPic3.style.display = "block";
-
-
                 });/*Click event corporateNutrition*/
             },
             unmatch: function(){
