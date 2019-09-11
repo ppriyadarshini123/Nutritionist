@@ -345,85 +345,23 @@ body {
         display: none;
     }
 
-    /*  PHOTO GALLERY SECTION */
-    .photoLinked
-    {
-        border-top:  1.11vw solid #73290E;/*4px*/
-        margin-top: 5.56vw;/*20px*/
-        margin-bottom: 5.56vw;/*20px*/
-        box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        background-color: #ffffff;
-    }
-    .photoGallery
-    {
-        max-height: 100%;
-        max-width: 100%;
-    }
-    .rowPG
-    {
-        max-width: 100%;
-        display: flex;
-        padding-bottom: 2.8vw;/*7px*/
-    }
-    .rowPG:last-child
-    {
-        padding-bottom: 5.6vw;/*20px*/
-    }
 
-    .leftColumnPG
-    {
-        width: 50%;
-        margin-right:2.8vw;/*10px*/
-        margin-left: 2.8vw;/*10px*/
-    }
-
-    .rightColumnPG
+    /*LINKED PICTURES*/
+    .rightColumnLP
     {
         width: 50%;
         margin-right: 2.8vw;/*10px*/
     }
-    .whiteRect
-    {
-        margin: 2.8vw;/*10px*/
-        max-width: 100%;
-        max-height: 100%;
 
-    }
-    .title
-    {
-        color: #000000;
-        letter-spacing: .28vw;/*1px*/
-        padding-top: 5.6vw;/*20px*/
-        padding-bottom: 2.8vw;/*10px*/
-        font-size: 5vw;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .picPG
-    {
-        max-width: 100%;
-        max-height: 100%;
-        width: 100%;
-        height: 100%;
-        border: 10px solid white;
-        box-sizing: border-box;
-        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        object-fit: cover;
-        transition-duration: .5s;
-    }
-    .picPG:hover
-    {
-        transform: scale(1.5);
-    }
-
-    /*LINKED PICTURES*/
+    /*/newcode*/
     .linkedP
     {
-        margin-top: 2.8vw;/*10px*/
-        border-top: 1.11vw solid #ffffff;/*4px*/
+        border-top:  1.11vw solid #ffffff;/*4px*/
+        margin-bottom: 5.56vw;/*20px*/
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        margin-top: 2.8vw;
         background-color: #BF6E26;
-
+        width: 100%;
     }
     .titleLP
     {
@@ -435,166 +373,53 @@ body {
         text-align: center;
         font-weight: bold;
     }
-    .linkedPictures
-    {
-        /*margin-top: 2.8vw;!*10px*!
-        background-color: #BF6E26;
-        border-top: 1.11vw solid #ffffff;!*4px*!*/
-    }
-    .leftColumnLP
-    {
-        width: 50%;
-        margin-right:2.8vw;/*10px*/
-        margin-left: 2.8vw;/*10px*/
-    }
-
-    .rightColumnLP
-    {
-        width: 50%;
-        margin-right: 2.8vw;/*10px*/
-    }
-    .picLP
-    {
-        max-width: 100%;
-        max-height: 100%;
-        border: 2.8vw solid white;/*10px*/
-        box-sizing: border-box;
-    }
     .rowLP
     {
+        max-height: 100%;
         max-width: 100%;
-        display: flex;
-        padding-bottom: 2.8vw;/*7px*/
+        display: grid;
+        grid-template-columns: auto auto;
+        /*grid-gap: 1vw;*/
     }
-    .rowLP:last-child
-    {
-        padding-bottom: 5.6vw;/*20px*/
-    }
-
-
-    /*MAP & ADDRESS SECTION*/
-    .mapAddress
-    {
-        margin-top: 5.56vw;/*20px*/
-        background-color: white;
-        border-top: 1.11vw solid #73290E;/*4px*/
-    }
-    /* .map
-     {
-         max-width: 100%;
-         max-height: 100%;
-         text-align: center;
-
-     }*/
-    .map{
-        overflow:hidden;
-        padding-bottom:56.25%;
-        position:relative;
-        height:0;
-        /* margin-left: 1.39vw;!*5px*!
-         margin-right: 1.39vw;!*5px*!*/
-    }
-    .map iframe{
-        left:0;
-        top:0;
-        height:100%;
-        width:100%;
-        position:absolute;
-        border: 1px solid #BF6E26;
-    }
-    /* .mapFrame
-     {
-         border: 1px solid #BF6E26;
-         max-width: 100%;
-
-     }*/
-    .mapArea
-    {
-        margin-left: 2.8vw;
-        margin-right: 2.8vw;
-    }
-    .address
+    .rowLP > div
     {
         text-align: center;
+        padding-top: 1vw;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        padding-bottom: 2vw;
+    }
+    .rowLP > div p
+    {
+        padding-top: 2vw;
+    }
+
+    .titleLP
+    {
+        color: #ffffff;
+        letter-spacing: .28vw;/*1px*/
+        padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        border-bottom: .56vw;/*2px*/
         font-size: 5vw;
-        letter-spacing: .28vw;/*1px*/
-        max-width: 100%;
-    }
-
-
-    /* Contact Form area*/
-    .insideCF
-    {
-        margin-left: 2.8vw;
-        margin-right: 2.8vw;
-    }
-    .contactForm
-    {
         text-align: center;
-        padding-top: 2.8vw;/*10px*/
-        padding-bottom: 5.6vw;/*20px*/
-        border-top: .28vw solid #8C470B;/*1px*/
-        max-width: 100%;
-        background-color: white;
-    }
-    .rowCF
-    {
-        max-width: 100%;
+        font-weight: bold;
     }
 
-    .labels {
-        text-align: left;
-        max-width: 100%;
-        margin-bottom: .78vw;/*10px*/
-        font-size: 5vw;
-        letter-spacing: .28vw;/*1px*/
-    }
-    .txtBox
+    .picLP
     {
-        max-width: 100%;
-        width: 100%;
-        background-color: #E3EAE7;
-        color: darkgrey;
-        min-height: 3.3vw;/*48px*/
-        font-size: 5vw;
+        border: 1vw solid white;
         box-sizing: border-box;
-        margin-bottom: 10px;
-        margin-top: 6px;
-        border-radius: 4px;
-        cursor: pointer;
-        padding: 12px;
-        resize: vertical;
-        font-family: Roboto;
-    }
-
-
-    .submitBtn
-    {
-        letter-spacing: .28vw;/*1px*/
-        margin-top: 5.56vw;/*20px*/
-        font-size: 5vw;
-        background-color: #BF6E26;
-        color: white;
-        display: block;
-        padding: 5.56vw 8.33vw;/*20px 30px*/
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
         max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        text-align: center;
+        max-height: 100%;
     }
 
-    .formMessage
-    {
-        text-align: left;
-        max-width: 100%;
-        margin-bottom: 10px;/*10px*/
-        font-size: 4.5vw;
-        letter-spacing: .28vw;/*1px*/
-        color: red;
-    }
+    /*  .picLP:hover
+      {
+          border: none;
+          width: 97%;
+      }*/
+
 
     /*Sitemap & social media icons*/
     .rowSiteMapSocial

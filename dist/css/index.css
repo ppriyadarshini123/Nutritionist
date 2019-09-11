@@ -295,45 +295,26 @@ body {
         margin-bottom: 5.56vw;/*20px*/
         box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
         background-color: #ffffff;
+        width: 100%;
     }
     .photoGallery
     {
         max-height: 100%;
         max-width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        /*grid-gap: 1vw;*/
     }
-    .rowPG
+    .photoGallery > div
     {
-        max-width: 100%;
-        display: flex;
-        padding-bottom: 2.8vw;/*7px*/
-    }
-    .rowPG:last-child
-    {
-        padding-bottom: 5.6vw;/*20px*/
-    }
-
-    .leftColumnPG
-    {
-        width: 50%;
-        margin-right:2.8vw;/*10px*/
-        margin-left: 2.8vw;/*10px*/
-
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding-top: 1vw;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        padding-bottom: 1vw;
     }
 
-    .rightColumnPG
-    {
-        width: 50%;
-        margin-right: 2.8vw;/*10px*/
-
-
-    }
-    .whiteRect
-    {
-        margin: 2.8vw;/*10px*/
-        max-width: 100%;
-        max-height: 100%;
-
-    }
     .title
     {
         color: #000000;
@@ -347,23 +328,18 @@ body {
 
     .picPG
     {
-        max-width: 100%;
-        max-height: 100%;
-        width: 100%;
-        height: 100%;
-        border: 10px solid white;
-        box-sizing: border-box;
-        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        /* object-fit: cover;*/
 
+        border: 1vw solid white;
+        box-sizing: border-box;
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        width: 100%;
+        /* !* object-fit: cover;*!*/
     }
 
     .picPG:hover
     {
-        border: 2px solid white;
-        overflow: hidden;
-
-
+        border: none;
+        width: 97%;
     }
     /*For shaking an image*/
     /*
@@ -390,59 +366,59 @@ body {
         }*/
 
     /*LINKED PICTURES*/
+
+    /*new code*/
     .linkedP
     {
-        margin-top: 2.8vw;/*10px*/
+        border-top:  1.11vw solid #ffffff;/*4px*/
+        margin-bottom: 5.56vw;/*20px*/
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        margin-top: 2.8vw;
         background-color: #BF6E26;
-
+        width: 100%;
     }
+    .rowLP
+    {
+        max-height: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        /*grid-gap: 1vw;*/
+    }
+    .rowLP > div
+    {
+        text-align: center;
+        padding-top: 1vw;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        padding-bottom: 1vw;
+    }
+
     .titleLP
     {
         color: #ffffff;
         letter-spacing: .28vw;/*1px*/
         padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 5vw;
+        font-size: 7vw;
         text-align: center;
         font-weight: bold;
     }
-    .linkedPictures
-    {
-        /*margin-top: 2.8vw;!*10px*!
-        background-color: #BF6E26;
-        border-top: 1.11vw solid #ffffff;!*4px*!*/
-    }
-    .leftColumnLP
-    {
-        width: 50%;
-        margin-right:2.8vw;/*10px*/
-        margin-left: 2.8vw;/*10px*/
-    }
 
-    .rightColumnLP
-    {
-        width: 50%;
-        margin-right: 2.8vw;/*10px*/
-    }
     .picLP
     {
-        max-width: 100%;
-        max-height: 100%;
-        border: 2.8vw solid white;/*10px*/
+        border: 1vw solid white;
         box-sizing: border-box;
-    }
-    .rowLP
-    {
-        max-width: 100%;
-        display: flex;
-        padding-bottom: 2.8vw;/*7px*/
-    }
-    .rowLP:last-child
-    {
-        padding-bottom: 5.6vw;/*20px*/
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        width: 100%;
     }
 
-
+   /* .picLP:hover
+    {
+        border: none;
+        width: 97%;
+    }
+*/
     /*MAP & ADDRESS SECTION*/
     .mapAddress
     {
@@ -822,18 +798,7 @@ body {
     }
 
 
-    #idPic1
-    {
-        display: block;
-    }
-    #idPic2
-    {
-        display: none;
-    }
-    #idPic3
-    {
-        display: none;
-    }
+
     .iconImage
     {
         display: none;
@@ -842,7 +807,7 @@ body {
     .text
     {
         color: #ffffff;
-        font-size: 3.5vw;
+        font-size: 3vw;
         letter-spacing: .28vw;/*1px*/
         text-align: center;
     }
@@ -881,10 +846,10 @@ body {
     {
         background-color: rgba(255, 255, 255, 0.8);
         text-align: center;
-        padding-top: 5px;
-        padding-right: 0;
-        padding-left: 0;
-        padding-bottom: 5px;
+        padding-top: 1vw;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        padding-bottom: 1vw;
     }
 
     .title
@@ -893,7 +858,7 @@ body {
         letter-spacing: .28vw;/*1px*/
         padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 7vw;
+        font-size: 5vw;
         text-align: center;
         font-weight: bold;
     }
@@ -904,21 +869,23 @@ body {
             border: 1vw solid white;
             box-sizing: border-box;
             box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
-           /* !* object-fit: cover;*!*/
+           width: 100%;
+
         }
 
         .picPG:hover
         {
             border: none;
-            height: auto;
-
+            width: 97%;
         }
 
     /*LINKED PICTURES*/
-    .linkedP
+
+  /*  ?oldcode*/
+   /* .linkedP
     {
-        margin-top: 2.8vw;/*10px*/
-        border-top: 1.11vw solid #ffffff;/*4px*/
+        margin-top: 2.8vw;!*10px*!
+        border-top: 1.11vw solid #ffffff;!*4px*!
         background-color: #BF6E26;
 
     }
@@ -926,9 +893,9 @@ body {
     .titleLP
     {
         color: #ffffff;
-        letter-spacing: .28vw;/*1px*/
-        padding-top: 5vw;/*20px*/
-        padding-bottom: 2.8vw;/*10px*/
+        letter-spacing: .28vw;!*1px*!
+        padding-top: 5vw;!*20px*!
+        padding-bottom: 2.8vw;!*10px*!
         font-size: 5vw;
         text-align: center;
         font-weight: bold;
@@ -947,35 +914,90 @@ body {
     .leftColumnLP
     {
         width: 100%;
-        padding-right:1vw;/*10px*/
+        padding-right:1vw;!*10px*!
     }
 
     .rightColumnLP
     {
         width: 100%;
-        margin-right: 1vw;/*10px*/
+        margin-right: 1vw;!*10px*!
     }
 
     .rowLP
     {
         width: 100%;
-        padding-bottom: 1.94vw;/*7px*/
+        padding-bottom: 1.94vw;!*7px*!
         display: flex;
     }
 
     .rowLP:last-child .rightColumnLP
     {
         margin-right: 0vw;
-        padding-bottom: 5.6vw;/*20px*/
+        padding-bottom: 5.6vw;!*20px*!
     }
     .picLP
     {
         max-width: 100%;
         max-height: 100%;
-        border: 1.8vw solid white;/*10px*/
+        border: 1.8vw solid white;!*10px*!
         box-sizing: border-box;
     }
+*/
+    /*new code*/
+    .linkedP
+    {
+        border-top:  1.11vw solid #ffffff;/*4px*/
+        margin-bottom: 5.56vw;/*20px*/
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        margin-top: 2.8vw;
+        background-color: #BF6E26;
+        width: 100%;
+    }
+    .rowLP
+    {
+        max-height: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        /*grid-gap: 1vw;*/
+    }
+    .rowLP > div
+    {
+        text-align: center;
+        padding-top: 1vw;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        padding-bottom: 2vw;
+    }
+    .rowLP > div p
+    {
+        padding-top: 2vw;
+    }
 
+    .titleLP
+    {
+        color: #ffffff;
+        letter-spacing: .28vw;/*1px*/
+        padding-top: 5.6vw;/*20px*/
+        padding-bottom: 2.8vw;/*10px*/
+        font-size: 5vw;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .picLP
+    {
+        border: 1vw solid white;
+        box-sizing: border-box;
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        width: 100%;
+    }
+
+  /*  .picLP:hover
+    {
+        border: none;
+        width: 97%;
+    }*/
 
     /*MAP & ADDRESS SECTION*/
     .mapContact
@@ -1412,143 +1434,112 @@ body {
     .photoLinked
     {
         border-top:  1.11vw solid #73290E;/*4px*/
-        margin-top: 5vw;/*20px*/
-        margin-bottom: 5vw;/*20px*/
+        margin-top: 5.56vw;/*20px*/
+        margin-bottom: 5.56vw;/*20px*/
         box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
         background-color: #ffffff;
+        width: 100%;
     }
     .photoGallery
     {
         max-height: 100%;
         max-width: 100%;
-        display: flex;
-        justify-content: space-around;
-        margin-left: 5vw;
-        margin-right: 5vw;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        /*grid-gap: 1vw;*/
+    }
+    .photoGallery > div
+    {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding-top: 1vw;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        padding-bottom: 1vw;
     }
 
-    .rowPG
-    {
-        width: 100%;
-        padding-bottom: 1.94vw;/*7px*/
-        margin-right: 1vw;
-    }
-    .rowPG:last-child
-    {
-        padding-bottom: 5.6vw;/*20px*/
-    }
-
-    .leftColumnPG
-    {
-        width: 100%;
-        padding-right:2.8vw;/*10px*/
-    }
-
-    .rightColumnPG
-    {
-        width: 100%;
-        margin-right: 2.8vw;/*10px*/
-    }
-    .whiteRect
-    {
-        margin: 2.8vw;/*10px*/
-        max-width: 100%;
-        max-height: 100%;
-
-    }
     .title
     {
         color: #000000;
         letter-spacing: .28vw;/*1px*/
-        padding-top: 5vw;/*20px*/
+        padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 5vw;
+        font-size: 7vw;
         text-align: center;
         font-weight: bold;
     }
 
     .picPG
     {
-        max-width: 100%;
-        max-height: 100%;
-        width: 100%;
-        height: 100%;
-        border: 1.8vw solid white;
+
+        border: 1vw solid white;
         box-sizing: border-box;
-        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        object-fit: cover;
-        transition-duration: .2s;
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        width: 100%;
+        /* !* object-fit: cover;*!*/
     }
+
     .picPG:hover
     {
-        transform: scale(2.0);
-    }
-    .leftColumnPG .picPG
-    {
-        margin-bottom: 1vw;
+        border: none;
+        width: 97%;
     }
 
     /*LINKED PICTURES*/
     .linkedP
     {
-        margin-top: 2.8vw;/*10px*/
-        border-top: 1.11vw solid #ffffff;/*4px*/
+        border-top:  1.11vw solid #ffffff;/*4px*/
+        margin-bottom: 5.56vw;/*20px*/
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        margin-top: 2.8vw;
         background-color: #BF6E26;
-
+        width: 100%;
+    }
+    .rowLP
+    {
+        max-height: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        /*grid-gap: 1vw;*/
+    }
+    .rowLP > div
+    {
+        text-align: center;
+        padding-top: 1vw;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        padding-bottom: 2vw;
+    }
+    .rowLP > div p
+    {
+        padding-top: 2vw;
     }
 
     .titleLP
     {
         color: #ffffff;
         letter-spacing: .28vw;/*1px*/
-        padding-top: 5vw;/*20px*/
+        padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
         font-size: 5vw;
         text-align: center;
         font-weight: bold;
     }
-    .linkedPictures
-    {
-        margin-left: 5vw;
-        margin-right: 5vw;
-        max-height: 100%;
-        max-width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
 
-    .leftColumnLP
-    {
-        width: 100%;
-        padding-right:1vw;/*10px*/
-    }
-
-    .rightColumnLP
-    {
-        width: 100%;
-        margin-right: 1vw;/*10px*/
-    }
-
-    .rowLP
-    {
-        width: 100%;
-        padding-bottom: 1.94vw;/*7px*/
-        display: flex;
-    }
-
-    .rowLP:last-child .rightColumnLP
-    {
-        margin-right: 0vw;
-        padding-bottom: 5.6vw;/*20px*/
-    }
     .picLP
     {
-        max-width: 100%;
-        max-height: 100%;
-        border: 1.8vw solid white;/*10px*/
+        border: 1vw solid white;
         box-sizing: border-box;
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        width: 100%;
     }
 
+    /*  .picLP:hover
+      {
+          border: none;
+          width: 97%;
+      }*/
 
     /*MAP & ADDRESS SECTION*/
     .mapContact
@@ -1813,7 +1804,60 @@ body {
         width: 200px;
         height: 200px;
     }
+    /*LINKED PICTURES*/
+    .linkedP
+    {
+        border-top:  1.11vw solid #ffffff;/*4px*/
+        margin-bottom: 5.56vw;/*20px*/
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        margin-top: 2.8vw;
+        background-color: #BF6E26;
+        width: 100%;
+    }
+    .rowLP
+    {
+        max-height: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        /*grid-gap: 1vw;*/
+    }
+    .rowLP > div
+    {
+        text-align: center;
+        padding-top: 1vw;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        padding-bottom: 2vw;
+    }
+    .rowLP > div p
+    {
+        padding-top: 2vw;
+    }
 
+    .titleLP
+    {
+        color: #ffffff;
+        letter-spacing: .28vw;/*1px*/
+        padding-top: 5.6vw;/*20px*/
+        padding-bottom: 2.8vw;/*10px*/
+        font-size: 5vw;
+        text-align: center;
+        font-weight: bold;
+    }
 
+    .picLP
+    {
+        border: 1vw solid white;
+        box-sizing: border-box;
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        width: 100%;
+    }
+
+    /*  .picLP:hover
+      {
+          border: none;
+          width: 97%;
+      }*/
 }
 /* >1200px - Desktop*/
