@@ -347,11 +347,6 @@ body {
 
 
     /*LINKED PICTURES*/
-    .rightColumnLP
-    {
-        width: 50%;
-        margin-right: 2.8vw;/*10px*/
-    }
 
     /*/newcode*/
     .linkedP
@@ -361,7 +356,6 @@ body {
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
         margin-top: 2.8vw;
         background-color: #BF6E26;
-        width: 100%;
     }
     .titleLP
     {
@@ -378,8 +372,9 @@ body {
         max-height: 100%;
         max-width: 100%;
         display: grid;
-        grid-template-columns: auto auto;
-        /*grid-gap: 1vw;*/
+        grid-template-columns: auto;
+        grid-gap: 1vw;
+        width: 100%;
     }
     .rowLP > div
     {
@@ -388,10 +383,12 @@ body {
         padding-right: 1vw;
         padding-left: 1vw;
         padding-bottom: 2vw;
+
     }
     .rowLP > div p
     {
         padding-top: 2vw;
+        font-size: 6vw;
     }
 
     .titleLP
@@ -400,7 +397,7 @@ body {
         letter-spacing: .28vw;/*1px*/
         padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 5vw;
+        font-size: 7vw;
         text-align: center;
         font-weight: bold;
     }
@@ -410,8 +407,8 @@ body {
         border: 1vw solid white;
         box-sizing: border-box;
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
+
     }
 
     /*  .picLP:hover
@@ -453,7 +450,7 @@ body {
     .linkSiteMap
     {
         color: #ffffff;
-        font-size: 5vw;
+        font-size: 6vw;
         letter-spacing: .28vw;/*1px*/
         text-decoration: none;
     }
@@ -805,13 +802,15 @@ body {
 
 
     /*LINKED PICTURES*/
+    /*/newcode*/
     .linkedP
     {
-        margin-top: 2.8vw;/*10px*/
-        border-top: 1.11vw solid #ffffff;/*4px*/
+        border-top:  1.11vw solid #ffffff;/*4px*/
+        margin-bottom: 5.56vw;/*20px*/
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        margin-top: 2.8vw;
         background-color: #BF6E26;
     }
-
     .titleLP
     {
         color: #ffffff;
@@ -822,41 +821,55 @@ body {
         text-align: center;
         font-weight: bold;
     }
-    .linkedPictures
-    {
-        /*margin-top: 2.8vw;!*10px*!
-        background-color: #BF6E26;
-        border-top: 1.11vw solid #ffffff;!*4px*!*/
-    }
-    .leftColumnLP
-    {
-        width: 50%;
-        margin-right:2.8vw;/*10px*/
-        margin-left: 2.8vw;/*10px*/
-    }
-
-    .rightColumnLP
-    {
-        width: 50%;
-        margin-right: 2.8vw;/*10px*/
-    }
-    .picLP
-    {
-        max-width: 100%;
-        max-height: 100%;
-        border: 2.8vw solid white;/*10px*/
-        box-sizing: border-box;
-    }
     .rowLP
     {
+        max-height: 100%;
         max-width: 100%;
-        display: flex;
-        padding-bottom: 2.8vw;/*7px*/
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 1vw;
+        width: 100%;
     }
-    .rowLP:last-child
+    .rowLP > div
     {
-        padding-bottom: 5.6vw;/*20px*/
+        text-align: center;
+        padding-top: 1vw;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        padding-bottom: 2vw;
+
     }
+    .rowLP > div p
+    {
+        padding-top: 2vw;
+        font-size: 6vw;
+    }
+
+    .titleLP
+    {
+        color: #ffffff;
+        letter-spacing: .28vw;/*1px*/
+        padding-top: 5.6vw;/*20px*/
+        padding-bottom: 2.8vw;/*10px*/
+        font-size: 7vw;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .picLP
+    {
+        border: 1vw solid white;
+        box-sizing: border-box;
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        width: 100%;
+
+    }
+
+    /*  .picLP:hover
+      {
+          border: none;
+          width: 97%;
+      }*/
 
 
 
@@ -1049,20 +1062,20 @@ body {
     .homeIcon
     {
         display: block;
-        width: 48px;
-        height: 48px;
+        width: 5.5vw;
     }
 
     .recipesIcon
     {
         display: block;
         text-align: center;
-
+        width: 7vw;
     }
 
     .aboutMeIcon
     {
         display: block;
+        width: 9vw;
     }
 
     /* BIG PICTURE SECTION*/
@@ -1172,7 +1185,6 @@ body {
         width: 50%;
         max-width: 100%;
         box-sizing: border-box;
-        height: 100%;
         z-index: 2;
     }
 
@@ -1221,66 +1233,74 @@ body {
     }
 
     /*LINKED PICTURES*/
+    /*/newcode*/
     .linkedP
     {
-        margin-top: 2.8vw;/*10px*/
-        border-top: 1.11vw solid #ffffff;/*4px*/
+        border-top:  1.11vw solid #ffffff;/*4px*/
+        margin-bottom: 5.56vw;/*20px*/
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        margin-top: 2.8vw;
         background-color: #BF6E26;
+    }
+    .titleLP
+    {
+        color: #ffffff;
+        letter-spacing: .28vw;/*1px*/
+        padding-top: 5.6vw;/*20px*/
+        padding-bottom: 2.8vw;/*10px*/
+        font-size: 5vw;
+        text-align: center;
+        font-weight: bold;
+    }
+    .rowLP
+    {
+        max-height: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 1vw;
+        width: 100%;
+    }
+    .rowLP > div
+    {
+        text-align: center;
+        padding-top: 1vw;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        padding-bottom: 2vw;
 
+    }
+    .rowLP > div p
+    {
+        padding-top: 2vw;
+        font-size: 6vw;
     }
 
     .titleLP
     {
         color: #ffffff;
         letter-spacing: .28vw;/*1px*/
-        padding-top: 5vw;/*20px*/
+        padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 5vw;
+        font-size: 7vw;
         text-align: center;
         font-weight: bold;
     }
-    .linkedPictures
-    {
-        margin-left: 5vw;
-        margin-right: 5vw;
-        max-height: 100%;
-        max-width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
 
-    .leftColumnLP
-    {
-        width: 100%;
-        padding-right:1vw;/*10px*/
-    }
-
-    .rightColumnLP
-    {
-        width: 100%;
-        margin-right: 1vw;/*10px*/
-    }
-
-    .rowLP
-    {
-        width: 100%;
-        padding-bottom: 1.94vw;/*7px*/
-        display: flex;
-    }
-
-    .rowLP:last-child .rightColumnLP
-    {
-        margin-right: 0vw;
-        padding-bottom: 5.6vw;/*20px*/
-    }
     .picLP
     {
-        max-width: 100%;
-        max-height: 100%;
-        border: 1.8vw solid white;/*10px*/
+        border: 1vw solid white;
         box-sizing: border-box;
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        width: 100%;
+
     }
 
+    /*  .picLP:hover
+      {
+          border: none;
+          width: 97%;
+      }*/
 
 
     /*Sitemap & social media icons*/
@@ -1383,7 +1403,7 @@ body {
 
     .logoAndHam
     {
-        margin-top: 2.8vw; /*10px*/
+        margin-top: 1vw; /*10px*/
         width: 100%;
         cursor: pointer;
         display: flex;
@@ -1398,31 +1418,31 @@ body {
         box-sizing: border-box;
         text-align: center;
         height: auto;
-        margin-left: 7vw;
+        margin-left: 39vw;
         margin-right: 7vw;
     }
 
     .showHome
     {
-        width: 26%;
-        margin-right: 3vw;
+
     }
     .logo
     {
         max-width: 100%;
-        width: 100%;
-        height: auto;
+
+        width: 4vw;
+        height: 4vw;
+
     }
     .heading
     {
         max-width: 100%;
         color:#73290E;
         font-weight: bold;
-        width: 60%;
-        font-size: 6vw;
-        letter-spacing: .28vw;/*1px*/
-        padding-top: 4.9vw;
-        height: auto;
+        font-size: 2vw;
+        letter-spacing: .1vw;/*1px*/
+        padding-top: 1vw;
+        padding-left: 1vw;
     }
 
     /*  NAVIGATION SECTION */
@@ -1436,10 +1456,9 @@ body {
         display: block;
     }
 
-
     #nav1
     {
-        margin-top: 1vw;
+        margin-top: .5vw;
         max-width: 100%;
         position: sticky;
         top: 0;
@@ -1451,10 +1470,9 @@ body {
         display: flex;
         background-color: #402005;
         justify-content: space-around;
-        padding-top: 4.2vw;
-        padding-bottom: 4.2vw;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        padding-top: .7vw;
+        padding-bottom: 4.7vw;
+        text-align: center;
     }
     #nav1 ul li
     {
@@ -1465,39 +1483,41 @@ body {
         position: absolute;
         color: #ffffff;
         text-decoration: none;
-        top: 1vw;
-        font-size: 2.0vw;
+        font-size: 1.2vw;
     }
 
     /*Hide navigation Icons in tablet*/
     .homeIcon
     {
         display: block;
-        width: 48px;
-        height: 48px;
+        width: 3vw;
+
     }
 
     .recipesIcon
     {
         display: block;
         text-align: center;
-
+        width: 5vw;
+        margin-top: -0.8vw;
     }
 
     .aboutMeIcon
     {
         display: block;
+        width: 5vw;
+
     }
 
     /* BIG PICTURE SECTION*/
     .headerSection
     {
-        margin-top: 2.8vw;
+        margin-top: .8vw;
     }
     .bigPicSection
     {
         box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        padding-top: 2.8vw;/*20px*/
+        padding-top: .8vw;/*20px*/
         background-color:#8C470B;
     }
     .rowBG
@@ -1508,28 +1528,12 @@ body {
         width: 100%;
         height: auto;
     }
-    .leftColumnBG
-    {
-        width: 75%;
-        margin-right:2.8vw;/*10px*/
-        margin-left: 2.8vw;/*10px*/
-    }
+
     #pic1
     {
-        height: auto;
+        height: 75vh;
     }
 
-    #pic2, #pic3
-    {
-        display: none;
-    }
-
-    .rightColumnBG
-    {
-        width: 25%;
-        margin-right: 2.8vw;/*10px*/
-        height: 33%;
-    }
     .txt
     {
         color: #ffffff;
@@ -1547,24 +1551,7 @@ body {
         max-height: 100%;
     }
 
-    .iconImage
-    {
-        width: 30%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 2.1vw;
-        box-sizing: border-box;
-    }
 
-    #consultancy
-    {
-        margin-top: -56vw;
-    }
-    #corporateNutrition
-    {
-        margin-top: -32vw;
-    }
     .text
     {
         color: #ffffff;
@@ -1573,56 +1560,39 @@ body {
         text-align: center;
         padding-top: 5.6vw;/*20px*/
     }
-    .brownRect
-    {
-        box-sizing: border-box;
-        background-color: #E6842E;
-        max-width: 100%;
-        max-height: 100%;
-        text-align: center;
-        border: .56vw solid #ffffff;/*2px*/
-    }
-    .tab
-    {
-        display: none;
-    }
 
     .picNotice
     {
         position: absolute;
-        top: 43vw;
+        top: 37%;
         right: 8vw;
         background-color: #ffffff;
-        width: 50%;
+        width: 30%;
         max-width: 100%;
         box-sizing: border-box;
-        height: 105%;
         z-index: 2;
+        text-align: center;
     }
 
-    h1
+    .heads
     {
-        margin-top: 2vw;
-        padding-bottom: 2vw;
-        font-size: 5vw;
-        letter-spacing: .28vw;/*1px*/
+        font-size: 2vw;
+        letter-spacing: .1vw;/*1px*/
         font-weight: bold;
         color: #000000;
-        padding-left: 3vw;
-        padding-right: 3vw;
+        padding-top: 1vw;
         box-sizing: border-box;
-        line-height: 6vw;
+        line-height: 3.5vw;
     }
 
     .par
     {
-        font-size: 5vw;
-        line-height: 6vw;
+        font-size: 2vw;
+        line-height: 3vw;
         letter-spacing: .28vw;/*1px*/
         font-weight: normal;
         color: dimgrey;
-        padding-left: 3vw;
-        padding-right: 3vw;
+
         box-sizing: border-box;
         margin-bottom: 2vw;
     }
@@ -1633,78 +1603,84 @@ body {
         color: white;
         letter-spacing: .28vw;
         margin-bottom: 2vw;
-        font-size: 5vw;
+        font-size: 2vw;
         display: block;
         padding: 2vw 1vw;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
         text-align: center;
-
     }
 
     /*LINKED PICTURES*/
+    /*/newcode*/
     .linkedP
     {
-        margin-top: 2.8vw;/*10px*/
-        border-top: 1.11vw solid #ffffff;/*4px*/
+        border-top:  1.11vw solid #ffffff;/*4px*/
+        margin-bottom: 5.56vw;/*20px*/
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        margin-top: 2.8vw;
         background-color: #BF6E26;
+    }
+    .titleLP
+    {
+        color: #ffffff;
+        letter-spacing: .28vw;/*1px*/
+        padding-top: 5.6vw;/*20px*/
+        padding-bottom: 2.8vw;/*10px*/
+        font-size: 5vw;
+        text-align: center;
+        font-weight: bold;
+    }
+    .rowLP
+    {
+        max-height: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 1vw;
+        width: 100%;
+    }
+    .rowLP > div
+    {
+        text-align: center;
+        padding-top: 1vw;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        padding-bottom: 2vw;
 
+    }
+    .rowLP > div p
+    {
+        padding-top: 2vw;
+        font-size: 6vw;
     }
 
     .titleLP
     {
         color: #ffffff;
         letter-spacing: .28vw;/*1px*/
-        padding-top: 5vw;/*20px*/
+        padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 5vw;
+        font-size: 7vw;
         text-align: center;
         font-weight: bold;
     }
-    .linkedPictures
-    {
-        margin-left: 5vw;
-        margin-right: 5vw;
-        max-height: 100%;
-        max-width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
 
-    .leftColumnLP
-    {
-        width: 100%;
-        padding-right:1vw;/*10px*/
-    }
-
-    .rightColumnLP
-    {
-        width: 100%;
-        margin-right: 1vw;/*10px*/
-    }
-
-    .rowLP
-    {
-        width: 100%;
-        padding-bottom: 1.94vw;/*7px*/
-        display: flex;
-    }
-
-    .rowLP:last-child .rightColumnLP
-    {
-        margin-right: 0vw;
-        padding-bottom: 5.6vw;/*20px*/
-    }
     .picLP
     {
-        max-width: 100%;
-        max-height: 100%;
-        border: 1.8vw solid white;/*10px*/
+        border: 1vw solid white;
         box-sizing: border-box;
+        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        width: 100%;
+
     }
 
+    /*  .picLP:hover
+      {
+          border: none;
+          width: 97%;
+      }*/
 
 
     /*Sitemap & social media icons*/
