@@ -6,7 +6,6 @@
 
     const pic1 = document.getElementById("pic1");
     const pic2 = document.getElementById("pic2");
-    const pic3 = document.getElementById("pic3");
 
     const cPic1 = document.getElementsByClassName("cPic1");
     const cPic2 = document.getElementsByClassName("cPic2");
@@ -18,11 +17,6 @@
     const workshops = document.getElementById("workshops");
     const consultancy = document.getElementById("consultancy");
     const corporateNutrition = document.getElementById("corporateNutrition");
-    const changingPic = document.getElementById("changingPic");
-    const row1 = document.getElementById("row1");
-    const row2 = document.getElementById("row2");
-    const row3 = document.getElementById("row3");
-
 
     const tabWorkshop = document.getElementById("tabWorkshop");
     const tabConsultancy = document.getElementById("tabConsultancy");
@@ -51,40 +45,44 @@
            document.getElementById("nav1").style.width = "0";
            document.getElementById("top").style.marginLeft= "0";
        }//closeNav
-   */
-    /**
-     * @name bindBtns
-     * @desc this will bind all the elements to their events
-     */
-    function bindBtns() {
 
+   */
+
+    function mobile()
+    {
         enquire.register("screen and (max-width:360px)", {
             match: function(){
-
                 /*old code*/
-               /* $menuIcon.click(function(){
-                    $('.topNav').slideToggle("fast");
-                });*/
-               /*new code*/
+                /* $menuIcon.click(function(){
+                     $('.topNav').slideToggle("fast");
+                 });*/
+                /*new code*/
                 $menuIcon.on('click',function(){
                     $('.topNav').slideToggle("fast");
                 });
-            /*Injecting HTML in the picture element to add img tag*/
+                /*Injecting HTML in the picture element to add img tag*/
                 let imgText1 = `<img class="pic"  alt="changingpic" src="dist/imgs/home/optimized/consultancy-700x810.png">`;
                 imgPic2.innerHTML = imgText1;
 
                 /*Injecting HTML in the picture element to add img tag*/
                 let imgText2 = `<img class="pic"  alt="changingpic" src="dist/imgs/home/optimized/apple-700x810.png">`;
                 imgPic3.innerHTML = imgText2;
-                },
+
+                imgPic2.style.display = "block";
+                imgPic3.style.display = "block";
+            },
             unmatch: function(){
 
             }
         });
+    }//mobile
 
+    function tablet()
+    {
         enquire.register("screen and (min-width: 361px) and (max-width: 768px)", {
             match: function(){
-
+                imgPic2.style.display = "none";
+                imgPic3.style.display = "none";
                 /*tabWorkshop*/
                 tabWorkshop.addEventListener("mouseleave", function(){
                     tabWorkshop.style.backgroundColor = "#E6842E";
@@ -131,7 +129,11 @@
 
             }
         });
+    }//tablet
 
+
+    function laptop()
+    {
         enquire.register("screen and (min-width: 769px) and (max-width: 1200px)", {
             match: function(){
                 /*Workshops*/
@@ -146,18 +148,18 @@
                     workshops.style.color = "#ffffff";
 
                     /*Since the img tag is inside the picture element*/
-                    let htmlForPic;
+                    /*  let htmlForPic;*/
                     //Old code
                     /*htmlForPic = " <img class=\"pic\" id=\"pic1\" alt=\"changingpic\" src=\"dist/imgs/home/optimized/workshops-700x810.png\">'>";*/
                     //New code using template literals, when you write html in a string
                     /*htmlForPic = `<img class="pic" id="pic1" alt="changingpic" src="dist/imgs/home/optimized/workshops-700x810.png">`;*/
                     //old code
-                   /* htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/workshops-700x810.png" id="pic1" class="pic">`;
-                    pic1.innerHTML = htmlForPic;*/
-                   //new code trial
+                    /* htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/workshops-700x810.png" id="pic1" class="pic">`;
+                     pic1.innerHTML = htmlForPic;*/
+                    //new code trial
                     // did not work
-                   /* $('pic1').attr('srcset','dist/imgs/home/optimized/workshops-700x810.png');
-                    console.log(pic1.src)*/
+                    /* $('pic1').attr('srcset','dist/imgs/home/optimized/workshops-700x810.png');
+                     console.log(pic1.src)*/
                     pic1.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
                     cPic2.style.display = "none";
                     cPic3.style.display = "none";
@@ -176,9 +178,9 @@
                     consultancy.style.color = "#ffffff";
 
                     /*Since the img tag is inside the picture element*/
-                   /* let htmlForPic;
-                    htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/consultancy-700x810.png" id="pic1" class="pic">`;
-                    pic1.innerHTML = htmlForPic;*/
+                    /* let htmlForPic;
+                     htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/consultancy-700x810.png" id="pic1" class="pic">`;
+                     pic1.innerHTML = htmlForPic;*/
                     // did not work
                     /*$('pic1').attr('srcset','dist/imgs/home/optimized/consultancy-700x810.png');*/
                     pic1.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
@@ -216,12 +218,10 @@
 
             }
         });
+    }//laptop
 
-
-        /*if (openNavigation != null) openNavigation.addEventListener("click", openNav);
-        if (closeNavigation != null) closeNavigation.addEventListener("click", closeNav);
-*/
-
+    function validation()
+    {
         /*CONTACT FORM SUBMIT BUTTON VALIDATION*/
         submit.addEventListener("click", function()
             {
@@ -253,8 +253,26 @@
                 }/*if(!email.checkValidity())*/
             }/* if(!fName.checkValidity())*/
         )/*submit.addEventListener*/
+    }//validation
 
-    };//bindBtns
+    /**
+     * @name bindBtns
+     * @desc this will bind all the elements to their events
+     */
+    function bindBtns() {
+
+        mobile();
+
+        tablet();
+
+        laptop();
+
+        /*if (openNavigation != null) openNavigation.addEventListener("click", openNav);
+        if (closeNavigation != null) closeNavigation.addEventListener("click", closeNav);
+*/
+        validation();
+
+    }//bindBtns
 
     /**
      * @name init

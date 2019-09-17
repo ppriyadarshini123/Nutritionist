@@ -1418,8 +1418,7 @@ body {
         box-sizing: border-box;
         text-align: center;
         height: auto;
-        margin-left: 39vw;
-        margin-right: 7vw;
+        margin-left: 40%;
     }
 
     .showHome
@@ -1429,19 +1428,17 @@ body {
     .logo
     {
         max-width: 100%;
-
-        width: 4vw;
-        height: 4vw;
-
+        width: 9vh;
+        height: 9vh;
     }
     .heading
     {
         max-width: 100%;
         color:#73290E;
         font-weight: bold;
-        font-size: 2vw;
+        font-size: 2.5vh;
         letter-spacing: .1vw;/*1px*/
-        padding-top: 1vw;
+        padding-top: 3.3vh;
         padding-left: 1vw;
     }
 
@@ -1470,8 +1467,8 @@ body {
         display: flex;
         background-color: #402005;
         justify-content: space-around;
-        padding-top: .7vw;
-        padding-bottom: 4.7vw;
+        padding-top: 2vh;
+        padding-bottom: 8.7vh;
         text-align: center;
     }
     #nav1 ul li
@@ -1483,30 +1480,29 @@ body {
         position: absolute;
         color: #ffffff;
         text-decoration: none;
-        font-size: 1.2vw;
+        font-size: 2vh;
     }
 
     /*Hide navigation Icons in tablet*/
     .homeIcon
     {
         display: block;
-        width: 3vw;
-
+        width: 6vh;
     }
 
     .recipesIcon
     {
         display: block;
         text-align: center;
-        width: 5vw;
-        margin-top: -0.8vw;
+        width: 8.6vh;
+        margin-top: -0.6vh;
     }
 
     .aboutMeIcon
     {
         display: block;
-        width: 5vw;
-
+        width: 9vh;
+        margin-top: 0.5vh;
     }
 
     /* BIG PICTURE SECTION*/
@@ -1517,7 +1513,7 @@ body {
     .bigPicSection
     {
         box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        padding-top: .8vw;/*20px*/
+        padding-top: .5vw;/*20px*/
         background-color:#8C470B;
     }
     .rowBG
@@ -1555,10 +1551,8 @@ body {
     .text
     {
         color: #ffffff;
-        font-size: 3vw;
-        letter-spacing: .28vw;/*1px*/
-        text-align: center;
-        padding-top: 5.6vw;/*20px*/
+        font-size: 1.5vh;
+        letter-spacing: .2vw;/*1px*/
     }
 
     .picNotice
@@ -1576,23 +1570,22 @@ body {
 
     .heads
     {
-        font-size: 2vw;
-        letter-spacing: .1vw;/*1px*/
+        font-size: 1.5vw;
+        letter-spacing: .2vw;/*1px*/
         font-weight: bold;
         color: #000000;
         padding-top: 1vw;
         box-sizing: border-box;
-        line-height: 3.5vw;
+        line-height:2vw;
     }
 
     .par
     {
-        font-size: 2vw;
-        line-height: 3vw;
-        letter-spacing: .28vw;/*1px*/
+        font-size: 1.5vw;
+        line-height: 2vw;
+        letter-spacing: .2vw;/*1px*/
         font-weight: normal;
         color: dimgrey;
-
         box-sizing: border-box;
         margin-bottom: 2vw;
     }
@@ -1601,11 +1594,11 @@ body {
     {
         background-color: #BF6E26;
         color: white;
-        letter-spacing: .28vw;
+        letter-spacing: .2vw;
         margin-bottom: 2vw;
-        font-size: 2vw;
+        font-size: 1.5vw;
         display: block;
-        padding: 2vw 1vw;
+        padding: 1vw 1vw;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -1616,19 +1609,21 @@ body {
     /*/newcode*/
     .linkedP
     {
-        border-top:  1.11vw solid #ffffff;/*4px*/
-        margin-bottom: 5.56vw;/*20px*/
+        border-top:  .5vw solid #ffffff;/*4px*/
+        /*margin-bottom: 5.56vw;!*20px*!*/
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
-        margin-top: 2.8vw;
+       /* margin-top: 2.8vw;*/
         background-color: #BF6E26;
+        width: 96vh;
+        margin: 0 auto;
     }
     .titleLP
     {
         color: #ffffff;
-        letter-spacing: .28vw;/*1px*/
-        padding-top: 5.6vw;/*20px*/
-        padding-bottom: 2.8vw;/*10px*/
-        font-size: 5vw;
+        letter-spacing: .2vw;/*1px*/
+        padding-top: 2vw;/*20px*/
+        padding-bottom: 2vw;/*10px*/
+        font-size: 3.5vh;
         text-align: center;
         font-weight: bold;
     }
@@ -1653,19 +1648,9 @@ body {
     .rowLP > div p
     {
         padding-top: 2vw;
-        font-size: 6vw;
+
     }
 
-    .titleLP
-    {
-        color: #ffffff;
-        letter-spacing: .28vw;/*1px*/
-        padding-top: 5.6vw;/*20px*/
-        padding-bottom: 2.8vw;/*10px*/
-        font-size: 7vw;
-        text-align: center;
-        font-weight: bold;
-    }
 
     .picLP
     {
@@ -1687,15 +1672,15 @@ body {
     .rowSiteMapSocial
     {
         background-color: #8C470B;
-        border-top: 1.11vw solid white;/*4px*/
-
+        border-top: .5vw solid white;/*4px*/
+        margin-top: 3vw;
     }
     .colSiteMapSocialM
     {
         display: flex;
         justify-content: space-between;
         text-align: center;
-        padding-bottom: 5.56vw;/*20px*/
+        padding-bottom: 1vw;/*20px*/
         margin-left: 5vw;
         margin-right: 5vw;
     }
@@ -1711,14 +1696,14 @@ body {
 
     .linkSpace
     {
-        line-height: 9vw;
+        line-height: 2vw;
     }
 
     .linkSiteMap
     {
         color: #ffffff;
-        font-size: 5vw;
-        letter-spacing: .28vw;/*1px*/
+        font-size: 1.5vw;
+        letter-spacing: .2vw;/*1px*/
         text-decoration: none;
     }
     .linkSiteMap:hover
@@ -1728,11 +1713,11 @@ body {
     .txtSM
     {
         color: #ffffff;
-        font-size: 5vw;
-        letter-spacing: .28vw;/*1px*/
+        font-size: 1.5vw;
+        letter-spacing: .2vw;/*1px*/
         font-weight: bold;
-        padding-top: 5.56vw;/*20px*/
-        padding-bottom: 2.78vw;/*10px*/
+        padding-top: 2vw;/*20px*/
+        padding-bottom: 2vw;/*10px*/
         text-align: left;
     }
     .txtSM:hover
@@ -1765,11 +1750,11 @@ body {
     .base
     {
         background-color: #0D0D0D;
-        padding-top: 5.56vw;/*20px*/
-        padding-bottom: 5.56vw;/*20px*/
+        padding-top: 2vw;/*20px*/
+        padding-bottom: 2vw;/*20px*/
         color: #ffffff;
-        font-size: 5vw;
-        letter-spacing: .28vw;/*1px*/
+        font-size: 1.5vw;
+        letter-spacing: .2vw;/*1px*/
         text-align: center;
     }
 
