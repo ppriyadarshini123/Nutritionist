@@ -78,17 +78,16 @@ body {
     {
         display: flex;
         max-width: 100%;
-        width: 100%;
+        width:80vw;
         box-sizing: border-box;
         text-align: center;
         height: auto;
-        margin-left: 7vw;
-        margin-right: 7vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .showHome
     {
-        width: 36%;
         margin-right: 3vw;
     }
     .logo
@@ -96,6 +95,7 @@ body {
         max-width: 100%;
         width: 100%;
         height: auto;
+        width: 20vw;
     }
 
     .heading
@@ -103,10 +103,9 @@ body {
         max-width: 100%;
         color:#73290E;
         font-weight: bold;
-        width: 60%;
-        font-size: 6vw;
+        font-size: 5.2vw;
         letter-spacing: .28vw;/*1px*/
-        padding-top: 4.9vw;
+        padding-top: 5.9vw;
         height: auto;
     }
 
@@ -206,60 +205,45 @@ body {
     /* BIG PICTURE SECTION*/
     .headerSection
     {
-        /* padding-top: 2.8vw;!*10px*!*/
+        margin-top: 2.8vw;/*10px*/
     }
     .bigPicSection
     {
         box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
         padding-top: 2.8vw;/*20px*/
-        background-color:#8C470B;
-    }
-    .rowBG
-    {
-        max-width: 100%;
-        display: flex;
         padding-bottom: 2.8vw;
-        width: 100%;
-    }
-    .leftColumnBG
-    {
-        width: 50%;
-        margin-right:2.8vw;/*10px*/
-        margin-left: 2.8vw;/*10px*/
+        background-color:#8C470B;
+        display: grid;
+
     }
 
-    .rightColumnBG
-    {
-        width: 50%;
-        margin-right: 2.8vw;/*10px*/
-        vertical-align: middle;
-    }
     .txt
     {
         color: #ffffff;
         font-size: 5vw;
         letter-spacing: .28vw;/*1px*/
         text-align: center;
-        line-height: 7vw;
+        line-height: 1.2;
+    }
+
+    .brownRect
+    {
+        box-sizing: border-box;
+        background-color: #E6842E;
+        border: 1vw solid #ffffff;/*2px*/
+        padding-top: 10vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
     }
 
     .pic
     {
-        box-sizing: border-box;
         width: 100%;
+        height: auto;
         max-width: 100%;
-        max-height: 100%;
+
     }
 
-    .iconImage
-    {
-        max-width: 30%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        /*padding-top: 2.8vw;!*15px*!*/
-        padding-bottom: 2.8vw;/*10px*/
-    }
 
     .text
     {
@@ -267,22 +251,46 @@ body {
         font-size: 5vw;
         letter-spacing: .28vw;/*1px*/
         text-align: center;
-        padding-top: 5.6vw;/*20px*/
-        line-height: 7vw;
     }
-    .brownRect
-    {
-        box-sizing: border-box;
-        background-color: #E6842E;
-        max-width: 100%;
-        max-height: 100%;
-        text-align: center;
-        border: .56vw solid #ffffff;/*2px*/
-    }
+
     .tab
     {
         display: none;
     }
+
+    #changingPic
+    {
+        grid-area: 1/1/1/1;
+        background-color: #ffffff;
+    }
+
+    .leftColumnBG2
+    {
+        grid-area: 2/2/2/2;
+        background-color: #ffffff;
+    }
+    .leftColumnBG3
+    {
+        grid-area: 3/1/3/1;
+        background-color: #ffffff;
+    }
+    .rightColumnBG1
+    {
+        grid-area: 1/2/1/2;
+    }
+    .rightColumnBG2
+    {
+        grid-area: 2/1/2/1;
+    }
+    .rightColumnBG3
+    {
+        grid-area: 3/2/3/2;
+    }
+    .iconImage
+    {
+        padding-bottom: 3vw;
+    }
+
 
     /*  PHOTO GALLERY SECTION */
     .photoLinked
@@ -318,14 +326,13 @@ body {
         letter-spacing: .28vw;/*1px*/
         padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 7vw;
+        font-size: 5vw;
         text-align: center;
         font-weight: bold;
     }
 
     .picPG
     {
-
         border: 1vw solid white;
         box-sizing: border-box;
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
@@ -403,7 +410,7 @@ body {
         letter-spacing: .28vw;/*1px*/
         padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 7vw;
+        font-size: 6vw;
         text-align: center;
         font-weight: bold;
     }
@@ -423,6 +430,14 @@ body {
      }
  */
     /*MAP & ADDRESS SECTION*/
+    .titleMap
+    {
+        font-size: 5vw;
+        font-weight: bold;
+        padding-top: 5.6vw;
+        padding-bottom: 2.8vw;
+        text-align: center;
+    }
     .mapAddress
     {
         margin-top: 5.56vw;/*20px*/
@@ -468,7 +483,7 @@ body {
         text-align: center;
         padding-bottom: 2.8vw;/*10px*/
         border-bottom: .56vw;/*2px*/
-        font-size: 7vw;
+        font-size: 5vw;
         letter-spacing: .28vw;/*1px*/
         max-width: 100%;
     }
@@ -498,7 +513,7 @@ body {
         text-align: left;
         max-width: 100%;
         margin-bottom: .78vw;/*10px*/
-        font-size: 7vw;
+        font-size: 5vw;
         letter-spacing: .28vw;/*1px*/
     }
     .txtBox
@@ -508,7 +523,7 @@ body {
         background-color: #E3EAE7;
         color: darkgrey;
         min-height: 3.3vw;/*48px*/
-        font-size: 7vw;
+        font-size: 5vw;
         box-sizing: border-box;
         margin-bottom: 10px;
         margin-top: 6px;
@@ -580,7 +595,7 @@ body {
     }
     .linkSiteMap:hover
     {
-        background-color: white;
+        text-decoration: underline;
     }
     .linkSpace
     {
@@ -589,17 +604,12 @@ body {
     .txtSM
     {
         color: #ffffff;
-        font-size: 6vw;
+        font-size: 5vw;
         letter-spacing: .28vw;/*1px*/
         font-weight: bold;
         padding-top: 5.56vw;/*20px*/
         padding-bottom: 2.78vw;/*10px*/
         text-align: left;
-    }
-    .txtSM:hover
-    {
-        text-decoration: underline;
-
     }
 
 
@@ -666,34 +676,31 @@ body {
     {
         display: flex;
         max-width: 100%;
-        width: 100%;
+        width:60vw;
         box-sizing: border-box;
-        text-align: center;
-        height: auto;
-        margin-left: 7vw;
-        margin-right: 7vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .showHome
     {
-        width: 26%;
-        margin-right: 3vw;
+        margin-right: 1vw;
     }
     .logo
     {
         max-width: 100%;
         width: 100%;
         height: auto;
+        width: 12vw;
     }
     .heading
     {
         max-width: 100%;
         color:#73290E;
         font-weight: bold;
-        width: 60%;
-        font-size: 6vw;
+        font-size: 4vw;
         letter-spacing: .28vw;/*1px*/
-        padding-top: 4.9vw;
+        padding-top: 3vw;
         height: auto;
     }
 
@@ -712,8 +719,6 @@ body {
         top: 0;
         z-index: 5;
     }
-
-
 
     .topNav ul
     {
@@ -764,17 +769,13 @@ body {
     .bigPicSection
     {
         box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        padding-top: 5vw;/*20px*/
+        padding-top: 3vw;/*20px*/
         padding-bottom: 5vw;/*20px*/
         background-color:#8C470B;
     }
 
-    .leftColumnBG
-    {
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
-    .rightColumnBG
+
+    .rightColumnBG1, .rightColumnBG2, .rightColumnBG3
     {
         display: none;
     }
@@ -782,7 +783,7 @@ body {
     .txt
     {
         color: #ffffff;
-        font-size: 3.5vw;
+        font-size: 3vw;
         letter-spacing: .28vw;/*1px*/
         text-align: center;
     }
@@ -796,11 +797,10 @@ body {
 
     .pic
     {
-        /* width:700px;!*194.4vw*!
-         height: 810px;!*105vw*!*/
         width: 100%;
         height: auto;
         max-width: 100%;
+        padding-left: .2vw;
     }
 
 
@@ -813,7 +813,7 @@ body {
     .text
     {
         color: #ffffff;
-        font-size: 3vw;
+        font-size: 2.5vw;
         letter-spacing: .28vw;/*1px*/
         text-align: center;
     }
@@ -821,6 +821,10 @@ body {
     {
         text-align: center;
         width: 100%;
+    }
+    .tablinks
+    {
+        margin-right: .4vw;
     }
 
 
@@ -859,7 +863,7 @@ body {
         letter-spacing: .28vw;/*1px*/
         padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 5vw;
+        font-size: 3vw;
         text-align: center;
         font-weight: bold;
     }
@@ -882,69 +886,6 @@ body {
 
     /*LINKED PICTURES*/
 
-    /*  ?oldcode*/
-    /* .linkedP
-     {
-         margin-top: 2.8vw;!*10px*!
-         border-top: 1.11vw solid #ffffff;!*4px*!
-         background-color: #BF6E26;
-
-     }
-
-     .titleLP
-     {
-         color: #ffffff;
-         letter-spacing: .28vw;!*1px*!
-         padding-top: 5vw;!*20px*!
-         padding-bottom: 2.8vw;!*10px*!
-         font-size: 5vw;
-         text-align: center;
-         font-weight: bold;
-     }
-     .linkedPictures
-     {
-         margin-left: 5vw;
-         margin-right: 5vw;
-         max-height: 100%;
-         max-width: 100%;
-
-         display: flex;
-         justify-content: space-around;
-     }
-
-     .leftColumnLP
-     {
-         width: 100%;
-         padding-right:1vw;!*10px*!
-     }
-
-     .rightColumnLP
-     {
-         width: 100%;
-         margin-right: 1vw;!*10px*!
-     }
-
-     .rowLP
-     {
-         width: 100%;
-         padding-bottom: 1.94vw;!*7px*!
-         display: flex;
-     }
-
-     .rowLP:last-child .rightColumnLP
-     {
-         margin-right: 0vw;
-         padding-bottom: 5.6vw;!*20px*!
-     }
-     .picLP
-     {
-         max-width: 100%;
-         max-height: 100%;
-         border: 1.8vw solid white;!*10px*!
-         box-sizing: border-box;
-     }
- */
-    /*new code*/
     .linkedP
     {
         border-top:  1.11vw solid #ffffff;/*4px*/
@@ -981,7 +922,7 @@ body {
         letter-spacing: .28vw;/*1px*/
         padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 5vw;
+        font-size: 3vw;
         text-align: center;
         font-weight: bold;
     }
@@ -994,13 +935,18 @@ body {
         width: 100%;
     }
 
-    /*  .picLP:hover
-      {
-          border: none;
-          width: 97%;
-      }*/
 
     /*MAP & ADDRESS SECTION*/
+    .titleMap
+    {
+        color: #000000;
+        letter-spacing: .28vw;/*1px*/
+        padding-top: 5.6vw;/*20px*/
+        padding-bottom: 2.8vw;/*10px*/
+        font-size: 3vw;
+        text-align: center;
+        font-weight: bold;
+    }
     .mapContact
     {
         width: 100%;
@@ -1039,18 +985,13 @@ body {
         margin-left: 5vw;
         height: 100%;
     }
-    /* .mapFrame
-     {
-         border: 1px solid #BF6E26;
-         max-width: 100%;
 
-     }*/
     .address
     {
         text-align: center;
         padding-bottom: 2.8vw;/*10px*/
         border-bottom: .56vw;/*2px*/
-        font-size: 3.5vw;
+        font-size: 2.5vw;
         letter-spacing: .28vw;/*1px*/
         max-width: 100%;
 
@@ -1079,7 +1020,7 @@ body {
         text-align: left;
         max-width: 100%;
         margin-bottom: .78vw;/*10px*/
-        font-size: 3.5vw;
+        font-size: 2.5vw;
         letter-spacing: .28vw;/*1px*/
     }
     .txtBox
@@ -1094,7 +1035,7 @@ body {
         min-height: 3.3vw;
         border-radius: 4px;
         cursor: pointer;
-        font-size: 4vw;
+        font-size: 2.5vw;
         padding: 12px;
         resize: vertical;
         font-family: Roboto;
@@ -1106,7 +1047,7 @@ body {
         text-align: center;
         letter-spacing: .28vw;/*1px*/
         margin-top: 5vw;/*20px*/
-        font-size: 3.5vw;
+        font-size: 3vw;
         background-color: #BF6E26;
         color: white;
         display: block;
@@ -1153,29 +1094,25 @@ body {
     .linkSiteMap
     {
         color: #ffffff;
-        font-size: 3.5vw;
+        font-size: 3vw;
         letter-spacing: .2vw;/*1px*/
         text-decoration: none;
     }
     .linkSiteMap:hover
     {
-        background-color: white;
+        text-decoration: underline;
     }
     .txtSM
     {
         color: #ffffff;
-        font-size: 5vw;
+        font-size: 3vw;
         letter-spacing: .2vw;/*1px*/
         font-weight: bold;
         padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
         text-align: left;
     }
-    .txtSM:hover
-    {
-        text-decoration: underline;
 
-    }
 
 
     .goToTop
@@ -1226,6 +1163,14 @@ body {
     {
         width: 100%; /*360px*/
         margin: 0 auto;
+        width: 80vw;
+    }
+
+    .wrapper2
+    {
+        width: 100%; /*360px*/
+        margin: 0 auto;
+        max-width: 100%;
     }
 
     .logoAndHam
@@ -1241,34 +1186,32 @@ body {
     {
         display: flex;
         max-width: 100%;
-        width: 100%;
+        width: 35vw;
         box-sizing: border-box;
-        text-align: center;
-        height: auto;
-        margin-left: 7vw;
-        margin-right: 7vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .showHome
     {
-        width: 26%;
-        margin-right: 3vw;
+        margin-right: 2vw;
     }
     .logo
     {
         max-width: 100%;
         width: 100%;
         height: auto;
+        width: 9vw;
     }
     .heading
     {
         max-width: 100%;
         color:#73290E;
         font-weight: bold;
-        width: 60%;
-        font-size: 4vw;
+        width: 100%;
+        font-size: 2vw;
         letter-spacing: .28vw;/*1px*/
-        padding-top: 4.9vw;
+        padding-top: 2vw;
         height: auto;
     }
 
@@ -1308,7 +1251,7 @@ body {
         color: #ffffff;
         text-decoration: none;
         top: 1vw;
-        font-size: 2.5vw;
+        font-size: 1.5vw;
     }
 
     /*Hide navigation Icons in tablet*/
@@ -1339,58 +1282,42 @@ body {
     .headerSection
     {
         margin-top: 2.8vw;
+        width: 100%;
+        max-width: 100%;
     }
+
     .bigPicSection
     {
         box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
         padding-top: 2.8vw;/*20px*/
         background-color:#8C470B;
-    }
-    .rowBG
-    {
-        max-width: 100%;
-        display: flex;
-        margin-bottom: 1.5vw;
-        width: 100%;
-        height: auto;
-    }
-    .leftColumnBG
-    {
-        width: 75%;
-        margin-right:2.8vw;/*10px*/
-        margin-left: 2.8vw;/*10px*/
-    }
-    #pic1
-    {
-        height: auto;
+        display: grid;
+        grid-gap: 1vw;
+        padding-bottom: 3vw;
     }
 
-    #pic2, #pic3
+
+    #changingPic
+    {
+        grid-area: 1/1/4/3;
+        padding-left: 1vw;
+    }
+
+    .leftColumnBG
     {
         display: none;
     }
-
-    .rightColumnBG
+    .rightColumnBG1
     {
-        width: 25%;
-        margin-right: 2.8vw;/*10px*/
-        height: 25%;
+        grid-area: 1/3/1/3;
     }
-    .txt
+    .rightColumnBG2
     {
-        color: #ffffff;
-        font-size: 3vw;
-        letter-spacing: .28vw;/*1px*/
-        text-align: center;
-        padding-bottom: 4.2vw;
+        grid-area: 2/3/2/3;
     }
-
-    .pic
+    .rightColumnBG3
     {
-        box-sizing: border-box;
-        width: 100%;
-        max-width: 100%;
-        max-height: 100%;
+        grid-area: 3/3/3/3;
     }
 
     .iconImage
@@ -1402,22 +1329,21 @@ body {
         padding-bottom: 2.1vw;
         box-sizing: border-box;
     }
+    .pic
+    {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
 
-    #consultancy
-    {
-        margin-top: -54.5vw;
     }
-    #corporateNutrition
-    {
-        margin-top: -29.4vw;
-    }
-    .text
+    .txt
     {
         color: #ffffff;
-        font-size: 3vw;
-        letter-spacing: .28vw;/*1px*/
+        font-size: 1.5vw;
+        letter-spacing: .28vw;
         text-align: center;
-        padding-top: 5.6vw;/*20px*/
+        padding-bottom: 4.2vw;
     }
     .brownRect
     {
@@ -1426,12 +1352,50 @@ body {
         max-width: 100%;
         max-height: 100%;
         text-align: center;
-        border: .56vw solid #ffffff;/*2px*/
+        border: .56vw solid #ffffff;
+        margin-right: 1vw;
     }
     .tab
     {
         display: none;
     }
+
+
+    /* .rowBG
+     {
+         max-width: 100%;
+         display: flex;
+         margin-bottom: 1.5vw;
+         width: 100%;
+         height: auto;
+     }
+
+     #pic1
+     {
+         height: auto;
+     }
+
+     #pic2, #pic3
+     {
+         display: none;
+     }
+     #consultancy
+     {
+         margin-top: -42.56vw;
+     }
+     #corporateNutrition
+     {
+         margin-top: -22.85vw;
+     }
+     .text
+     {
+         color: #ffffff;
+         font-size: 1vw;
+         letter-spacing: .28vw;!*1px*!
+         text-align: center;
+         padding-top: 5.6vw;!*20px*!
+     }*/
+
 
     /*  PHOTO GALLERY SECTION */
     .photoLinked
@@ -1465,9 +1429,9 @@ body {
     {
         color: #000000;
         letter-spacing: .28vw;/*1px*/
-        padding-top: 5.6vw;/*20px*/
-        padding-bottom: 2.8vw;/*10px*/
-        font-size: 3vw;
+        padding-top: 2vw;/*20px*/
+        padding-bottom: 1.2vw;
+        font-size: 1.5vw;
         text-align: center;
         font-weight: bold;
     }
@@ -1522,9 +1486,9 @@ body {
     {
         color: #ffffff;
         letter-spacing: .28vw;/*1px*/
-        padding-top: 5.6vw;/*20px*/
-        padding-bottom: 2.8vw;/*10px*/
-        font-size: 3vw;
+        padding-top: 2vw;/*20px*/
+        padding-bottom: 1.2vw;/*10px*/
+        font-size: 1.5vw;
         text-align: center;
         font-weight: bold;
     }
@@ -1582,6 +1546,17 @@ body {
         margin-left: 5vw;
         height: 100%;
     }
+    .titleMap
+    {
+        color: #000000;
+        letter-spacing: .28vw;/*1px*/
+        padding-top: 2vw;/*20px*/
+        font-size: 1.5vw;
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 1.2vw;
+    }
+
     /* .mapFrame
      {
          border: 1px solid #BF6E26;
@@ -1591,7 +1566,7 @@ body {
     .address
     {
         text-align: center;
-        font-size: 3vw;
+        font-size: 1.5vw;
         line-height: 4vw;
         letter-spacing: .2vw;/*1px*/
         max-width: 100%;
@@ -1619,8 +1594,8 @@ body {
     .labels {
         text-align: left;
         max-width: 100%;
-        margin-bottom: .78vw;/*10px*/
-        font-size: 3vw;
+        margin-bottom: .2vw;/*10px*/
+        font-size: 1.5vw;
         letter-spacing: .2vw;/*1px*/
     }
     .txtBox
@@ -1635,7 +1610,7 @@ body {
         min-height: 3.3vw;
         border-radius: 4px;
         cursor: pointer;
-        font-size: 2.7vw;
+        font-size: 1.5vw;
         padding: 12px;
         resize: vertical;
         font-family: Roboto;
@@ -1647,11 +1622,11 @@ body {
         text-align: center;
         letter-spacing: .28vw;/*1px*/
         margin-top: 5vw;/*20px*/
-        font-size: 3vw;
+        font-size: 1.5vw;
         background-color: #BF6E26;
         color: white;
         display: block;
-        padding: 4.56vw 7.33vw;/*20px 30px*/
+        padding: 1vw 1vw;/*20px 30px*/
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -1661,7 +1636,7 @@ body {
         text-align: left;
         max-width: 100%;
         margin-bottom: .78vw;/*10px*/
-        font-size: 2.5vw;
+        font-size: 1vw;
         letter-spacing: .28vw;/*1px*/
         color: red;
     }
@@ -1679,45 +1654,42 @@ body {
         display: flex;
         justify-content: space-between;
         text-align: center;
-        padding-bottom: 5.6vw;/*20px*/
         margin-left: 5vw;
         margin-right: 5vw;
     }
     .colSiteMap
     {
         display: block;
+        padding-bottom: 1vw;
     }
     .links
     {
         width: 2%;
-        line-height: 6vw;/*24px*/
+        line-height: 2vw;/*24px*/
     }
     .linkSiteMap
     {
         color: #ffffff;
-        font-size: 3vw;
+        font-size: 1.5vw;
         letter-spacing: .2vw;/*1px*/
         text-decoration: none;
     }
     .linkSiteMap:hover
     {
-        background-color: white;
+        text-decoration: underline;
+
     }
     .txtSM
     {
         color: #ffffff;
-        font-size: 3vw;
+        font-size: 1.5vw;
         letter-spacing: .2vw;/*1px*/
         font-weight: bold;
-        padding-top: 5.6vw;/*20px*/
-        padding-bottom: 2.8vw;/*10px*/
+        padding-top: 1.5vw;/*20px*/
+        padding-bottom:1.5vw;/*10px*/
         text-align: left;
     }
-    .txtSM:hover
-    {
-        text-decoration: underline;
 
-    }
 
 
     .goToTop
@@ -1743,10 +1715,10 @@ body {
     .base
     {
         background-color: #0D0D0D;
-        padding-top: 3vw;/*20px*/
-        padding-bottom: 3vw;/*20px*/
+        padding-top: 2vw;/*20px*/
+        padding-bottom: 2vw;/*20px*/
         color: #ffffff;
-        font-size: 2.5vw;
+        font-size: 1.5vw;
         letter-spacing: .2vw;/*1px*/
         text-align: center;
     }
@@ -2240,7 +2212,7 @@ body {
     }
     .linkSiteMap:hover
     {
-        background-color: white;
+        text-decoration: underline;
     }
     .txtSM
     {
@@ -2251,10 +2223,6 @@ body {
         padding-top: 5.56vw;/*20px*/
         padding-bottom: 2.78vw;/*10px*/
         text-align: left;
-    }
-    .txtSM:hover
-    {
-        text-decoration: underline;
     }
 
 

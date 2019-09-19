@@ -83,6 +83,7 @@
             match: function(){
                 imgPic2.style.display = "none";
                 imgPic3.style.display = "none";
+
                 /*tabWorkshop*/
                 tabWorkshop.addEventListener("mouseleave", function(){
                     tabWorkshop.style.backgroundColor = "#E6842E";
