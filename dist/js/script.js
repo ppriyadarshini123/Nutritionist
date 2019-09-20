@@ -6,6 +6,7 @@
 
     const pic1 = document.getElementById("pic1");
     const pic2 = document.getElementById("pic2");
+    const pic6 = document.getElementById("pic6");
 
     const cPic1 = document.getElementsByClassName("cPic1");
     const cPic2 = document.getElementsByClassName("cPic2");
@@ -221,6 +222,94 @@
         });
     }//laptop
 
+    function desktop()
+    {
+        enquire.register("screen and (min-width: 1200px)", {
+            match: function(){
+                /*Workshops*/
+                workshops.addEventListener("mouseleave", function(){
+                    workshops.style.backgroundColor = "#E6842E";
+                });/*MouseLeave event Workshops*/
+
+                workshops.addEventListener("click", function (e) {
+                    /*To prevent the anchor from working*/
+                    e.preventDefault();
+                    workshops.style.backgroundColor = "#402005";
+                    workshops.style.color = "#ffffff";
+
+                    /*Since the img tag is inside the picture element*/
+                    /*  let htmlForPic;*/
+                    //Old code
+                    /*htmlForPic = " <img class=\"pic\" id=\"pic1\" alt=\"changingpic\" src=\"dist/imgs/home/optimized/workshops-700x810.png\">'>";*/
+                    //New code using template literals, when you write html in a string
+                    /*htmlForPic = `<img class="pic" id="pic1" alt="changingpic" src="dist/imgs/home/optimized/workshops-700x810.png">`;*/
+                    //old code
+                    /* htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/workshops-700x810.png" id="pic1" class="pic">`;
+                     pic1.innerHTML = htmlForPic;*/
+                    //new code trial
+                    // did not work
+                    /* $('pic1').attr('srcset','dist/imgs/home/optimized/workshops-700x810.png');
+                     console.log(pic1.src)*/
+                    pic6.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
+                    cPic2.style.display = "none";
+                    cPic3.style.display = "none";
+                    cPic1.style.display = "block";
+                });/*Click event Workshops*/
+
+                /*Consultancy*/
+                consultancy.addEventListener("mouseleave", function(){
+                    consultancy.style.backgroundColor = "#E6842E";
+                });/*Mouseleave event tabConsultancy*/
+
+                consultancy.addEventListener("click", function (e) {
+                    /*To prevent the anchor from working*/
+                    e.preventDefault();
+                    consultancy.style.backgroundColor = "#402005";
+                    consultancy.style.color = "#ffffff";
+
+                    /*Since the img tag is inside the picture element*/
+                    /* let htmlForPic;
+                     htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/consultancy-700x810.png" id="pic1" class="pic">`;
+                     pic1.innerHTML = htmlForPic;*/
+                    // did not work
+                    /*$('pic1').attr('srcset','dist/imgs/home/optimized/consultancy-700x810.png');*/
+                    pic6.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
+                    cPic2.style.display = "block";
+                    cPic3.style.display = "none";
+                    cPic1.style.display = "none";
+                });/*Click event consultancy*/
+
+                /*corporate Nutrition*/
+                corporateNutrition.addEventListener("mouseleave", function(){
+                    corporateNutrition.style.backgroundColor = "#E6842E";
+                });/*Mouseleave event corporateNutrition*/
+
+                corporateNutrition.addEventListener("click", function (e) {
+                    /*To prevent the anchor from working*/
+                    e.preventDefault();
+                    corporateNutrition.style.backgroundColor = "#402005";
+                    corporateNutrition.style.color = "#ffffff";
+
+                    /*Since the img tag is inside the picture element*/
+                    /*let htmlForPic;
+                    htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/apple-700x810.png" id="pic1" class="pic">`;
+                    pic1.innerHTML = htmlForPic;*/
+
+                    // did not work
+                    /*$('pic1').attr('srcset','dist/imgs/home/optimized/apple-700x810.png');*/
+
+                    pic6.srcset = "dist/imgs/home/optimized/apple-700x810.png";
+                    cPic1.style.display = "none";
+                    cPic2.style.display = "none";
+                    cPic3.style.display = "block";
+                });/*Click event corporateNutrition*/
+            },
+            unmatch: function(){
+
+            }
+        });
+    }//desktop
+
     function validation()
     {
         /*CONTACT FORM SUBMIT BUTTON VALIDATION*/
@@ -267,6 +356,8 @@
         tablet();
 
         laptop();
+
+        desktop();
 
         /*if (openNavigation != null) openNavigation.addEventListener("click", openNav);
         if (closeNavigation != null) closeNavigation.addEventListener("click", closeNav);
