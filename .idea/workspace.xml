@@ -2,162 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07967b48-5693-43e0-8265-6fce4bf2b90d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/New_MWD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/New_MWD.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nutritionist" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nutritionist/dist/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/dist/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nutritionist/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/dist/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nutritionist/dist/css/recipes.css" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/dist/css/recipes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nutritionist/dist/imgs/recipes/imgs/mainpic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/recipes/imgs/mainpic.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nutritionist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nutritionist/recipes.html" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/recipes.html" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.56696427">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Nutritionist/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="280">
-                  <caret line="226" column="43" lean-forward="true" selection-start-line="226" selection-start-column="43" selection-end-line="226" selection-end-column="43" />
-                  <folding>
-                    <element signature="e#954#961#1" expanded="true" />
-                    <element signature="e#10941#10947#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Nutritionist/dist/js/script.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Nutritionist/dist/css/index.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="348">
-                  <caret line="424" column="5" lean-forward="true" selection-start-line="424" selection-start-column="5" selection-end-line="424" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>&quot;img/</find>
-      <find>imgs/</find>
-      <find>topNav</find>
-      <find>hover</find>
-      <find>hamburger</find>
-      <find>marBottom</find>
-      <find>.marBottom</find>
-      <find>mar</find>
-      <find>consultancy</find>
-      <find>font-size</find>
-      <find>color</find>
-      <find>backgr</find>
-      <find>360</find>
-      <find>360px</find>
-      <find>header</find>
-      <find>pic</find>
-      <find>address</find>
-      <find>text</find>
-      <find>rightcolumn</find>
-      <find>.links</find>
-      <find>.row</find>
-      <find>text/css</find>
-      <find>logon</find>
-      <find>bigpic</find>
-      <find>logo</find>
-      <find>onclick</find>
-      <find>nav</find>
-      <find>font</find>
-      <find>labels</find>
-      <find>closeBtn</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>&quot;imgs/</replace>
-      <replace>dist/imgs/</replace>
-      <replace>nav</replace>
-    </replaceStrings>
+  <component name="FavoritesManager">
+    <favorites_list name="Payal_Priyadarshini_MWD_Project" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Nutritionist" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Nutritionist/dist/css/indexCSS.css" />
-        <option value="$PROJECT_DIR$/Nutritionist/dist/js/script.js" />
-        <option value="$PROJECT_DIR$/Nutritionist/dist/css/index.css" />
-        <option value="$PROJECT_DIR$/Nutritionist/index.html" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1391" />
-    <option name="height" value="1068" />
-  </component>
+  <component name="ProjectId" id="1RHGFCIV8EnnX5HimK44RnMOXQs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Payal_Priyadarshini_MWD_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Payal_Priyadarshini_MWD_Project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Payal_Priyadarshini_MWD_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Payal_Priyadarshini_MWD_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="Nutritionist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Payal_Priyadarshini_MWD_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Payal_Priyadarshini_MWD_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="Nutritionist" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Payal_Priyadarshini_MWD_Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Payal_Priyadarshini_MWD_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="Nutritionist" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Payal\Training Dragon\My Projects\Payal_Priyadarshini_MWD_Project\Nutritionist\dist\css" />
+      <recent name="C:\Payal\Training Dragon\My Projects\Payal_Priyadarshini_MWD_Project\Nutritionist" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Payal\Training Dragon\My Projects\Payal_Priyadarshini_MWD_Project\Nutritionist\dist\js" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -170,6 +54,16 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Payal_Priyadarshini_MWD_Project/Nutritionist/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -190,75 +84,69 @@
       <workItem from="1563266700697" duration="18413000" />
       <workItem from="1563350466746" duration="20559000" />
       <workItem from="1563438079355" duration="3441000" />
-      <workItem from="1563443905990" duration="18128000" />
+      <workItem from="1563443905990" duration="18859000" />
+      <workItem from="1563537331699" duration="16613000" />
+      <workItem from="1563725162312" duration="12356000" />
+      <workItem from="1563802908160" duration="8110000" />
+      <workItem from="1563886078136" duration="17357000" />
+      <workItem from="1563960556941" duration="4755000" />
+      <workItem from="1563966862997" duration="12402000" />
+      <workItem from="1564048572600" duration="15448000" />
+      <workItem from="1564130481937" duration="23306000" />
+      <workItem from="1564316412410" duration="2103000" />
+      <workItem from="1564397520277" duration="15990000" />
+      <workItem from="1564487248937" duration="21133000" />
+      <workItem from="1564571127696" duration="9579000" />
+      <workItem from="1565122955953" duration="9446000" />
+      <workItem from="1565166336251" duration="10593000" />
+      <workItem from="1565354903115" duration="8580000" />
+      <workItem from="1565682883619" duration="1444000" />
+      <workItem from="1566059473690" duration="6813000" />
+      <workItem from="1566132507795" duration="12545000" />
+      <workItem from="1566247856960" duration="3060000" />
+      <workItem from="1566287496068" duration="6908000" />
+      <workItem from="1566424228911" duration="4343000" />
+      <workItem from="1566507878536" duration="3638000" />
+      <workItem from="1567590559811" duration="24067000" />
+      <workItem from="1567758675405" duration="21280000" />
+      <workItem from="1568018954634" duration="16995000" />
+      <workItem from="1568103373797" duration="20300000" />
+      <workItem from="1568188590980" duration="10645000" />
+      <workItem from="1568235110959" duration="4081000" />
+      <workItem from="1568278281950" duration="16057000" />
+      <workItem from="1568365382948" duration="6057000" />
+      <workItem from="1568453064866" duration="2969000" />
+      <workItem from="1568622425221" duration="13170000" />
+      <workItem from="1568708792203" duration="14061000" />
+      <workItem from="1568799898228" duration="13924000" />
+      <workItem from="1568880883946" duration="14708000" />
+      <workItem from="1568968230630" duration="8985000" />
+      <workItem from="1569225513123" duration="14982000" />
+      <workItem from="1569316533629" duration="13571000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136842000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18898809" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3797054" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Nutritionist/imgs/Home/Menu icons/recipes.svg" />
-    <entry file="file://$PROJECT_DIR$/Nutritionist/dist/css/indexCSS.css" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Save For Web AI/almond vector_002.tmp/almond vector.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Save For Web AI/almond vector_001.tmp/almond vector.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Save For Web AI/almond vector.tmp/almond vector.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nutritionist/dist/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nutritionist/dist/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="424" column="5" lean-forward="true" selection-start-line="424" selection-start-column="5" selection-end-line="424" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nutritionist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="226" column="43" lean-forward="true" selection-start-line="226" selection-start-column="43" selection-end-line="226" selection-end-column="43" />
-          <folding>
-            <element signature="e#954#961#1" expanded="true" />
-            <element signature="e#10941#10947#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Nutritionist/enquire.js" />
+      <path value="$PROJECT_DIR$/Nutritionist/dist/js/enquire" />
+      <path value="$PROJECT_DIR$/Nutritionist/dist/js/enquire.js" />
+      <path value="$PROJECT_DIR$/Nutritionist/Nutritionist" />
+      <path value="$PROJECT_DIR$/Nutritionist/dist/js/lib" />
+    </ignored-roots>
   </component>
 </project>
