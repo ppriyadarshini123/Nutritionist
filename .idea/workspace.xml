@@ -7,6 +7,7 @@
       <change beforePath="$PROJECT_DIR$/Nutritionist/dist/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/dist/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nutritionist/dist/css/recipes.css" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/dist/css/recipes.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nutritionist/dist/imgs/recipes/imgs/mainpic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/recipes/imgs/mainpic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nutritionist/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/dist/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nutritionist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nutritionist/recipes.html" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/recipes.html" afterDir="false" />
     </list>
@@ -121,7 +122,8 @@
       <workItem from="1568968230630" duration="8985000" />
       <workItem from="1569225513123" duration="14982000" />
       <workItem from="1569316533629" duration="13849000" />
-      <workItem from="1569400103447" duration="21765000" />
+      <workItem from="1569400103447" duration="22204000" />
+      <workItem from="1569489316685" duration="14432000" />
     </task>
     <servers />
   </component>
