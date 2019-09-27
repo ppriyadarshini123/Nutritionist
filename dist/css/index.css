@@ -205,7 +205,7 @@ body {
     /* BIG PICTURE SECTION*/
     .headerSection
     {
-        margin-top: 2.8vw;/*10px*/
+        margin-top: 2vw;/*10px*/
     }
     .bigPicSection
     {
@@ -214,7 +214,6 @@ body {
         padding-bottom: 2.8vw;
         background-color:#8C470B;
         display: grid;
-
     }
 
     .txt
@@ -300,8 +299,8 @@ body {
     .photoLinked
     {
         border-top:  1.11vw solid #73290E;/*4px*/
-        margin-top: 5.56vw;/*20px*/
-        margin-bottom: 5.56vw;/*20px*/
+        margin-top: 2vw;/*20px*/
+        margin-bottom: 2vw;/*20px*/
         box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
         background-color: #ffffff;
         width: 100%;
@@ -380,9 +379,9 @@ body {
     .linkedP
     {
         border-top:  1.11vw solid #ffffff;/*4px*/
-        margin-bottom: 5.56vw;/*20px*/
+        margin-bottom: 2vw;/*20px*/
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
-        margin-top: 2.8vw;
+        margin-top: 2vw;
         background-color: #BF6E26;
         width: 100%;
     }
@@ -414,7 +413,7 @@ body {
         letter-spacing: .28vw;/*1px*/
         padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 6vw;
+        font-size: 5vw;
         text-align: center;
         font-weight: bold;
     }
@@ -444,7 +443,7 @@ body {
     }
     .mapAddress
     {
-        margin-top: 5.56vw;/*20px*/
+        margin-top: 2vw;/*20px*/
         background-color: white;
         border-top: 1.11vw solid #73290E;/*4px*/
     }
@@ -501,6 +500,7 @@ body {
     }
     .contactForm
     {
+        margin-bottom: 2vw;
         text-align: center;
         padding-top: 2.8vw;/*10px*/
         padding-bottom: 5.6vw;/*20px*/
@@ -634,7 +634,7 @@ body {
     .socialMediaIcons
     {
         max-width: 100%;
-        margin-left: 2vw;
+
     }
 
     /*This is to remove the unwanted underscore in the a tag*/
@@ -777,7 +777,7 @@ body {
     /* BIG PICTURE SECTION*/
     .headerSection
     {
-        margin-top: 2.8vw;/*10px*/
+        margin-top: 2vw;/*10px*/
     }
     .bigPicSection
     {
@@ -797,7 +797,7 @@ body {
     .txt
     {
         color: #ffffff;
-        font-size: 3vw;
+        font-size: 3.4vw;
         letter-spacing: .28vw;/*1px*/
         text-align: center;
     }
@@ -830,7 +830,7 @@ body {
     .text
     {
         color: #ffffff;
-        font-size: 2.5vw;
+        font-size: 3.4vw;
         letter-spacing: .28vw;/*1px*/
         text-align: center;
     }
@@ -850,8 +850,8 @@ body {
     .photoLinked
     {
         border-top:  1.11vw solid #73290E;/*4px*/
-        margin-top: 5.56vw;/*20px*/
-        margin-bottom: 5.56vw;/*20px*/
+        margin-top: 2vw;/*20px*/
+        margin-bottom: 2vw;/*20px*/
         box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
         background-color: #ffffff;
         width: 100%;
@@ -880,7 +880,7 @@ body {
         letter-spacing: .28vw;/*1px*/
         padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 3.5vw;
+        font-size: 3.7vw;
         text-align: center;
         font-weight: bold;
     }
@@ -906,9 +906,9 @@ body {
     .linkedP
     {
         border-top:  1.11vw solid #ffffff;/*4px*/
-        margin-bottom: 5.56vw;/*20px*/
+        margin-bottom: 2vw;/*20px*/
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
-        margin-top: 2.8vw;
+        margin-top: 2vw;
         background-color: #BF6E26;
         width: 100%;
     }
@@ -939,7 +939,7 @@ body {
         letter-spacing: .28vw;/*1px*/
         padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 3vw;
+        font-size: 3.7vw;
         text-align: center;
         font-weight: bold;
     }
@@ -960,7 +960,7 @@ body {
         letter-spacing: .28vw;/*1px*/
         padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 3vw;
+        font-size: 3.7vw;
         text-align: center;
         font-weight: bold;
     }
@@ -968,8 +968,8 @@ body {
     {
         width: 100%;
         display: flex;
-        margin-top: 5.56vw;/*20px*/
-        margin-bottom: 5.56vw;/*20px*/
+        margin-top: 2vw;/*20px*/
+        margin-bottom: 2vw;/*20px*/
         background-color: white;
         border-top: 1.11vw solid #73290E;/*4px*/
         box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
@@ -1008,10 +1008,10 @@ body {
         text-align: center;
         padding-bottom: 2.8vw;/*10px*/
         border-bottom: .56vw;/*2px*/
-        font-size: 2.5vw;
+        font-size: 3.4vw;
         letter-spacing: .28vw;/*1px*/
         max-width: 100%;
-
+        line-height: 4vw;
     }
 
     /* Contact Form area*/
@@ -1037,7 +1037,7 @@ body {
         text-align: left;
         max-width: 100%;
         margin-bottom: .78vw;/*10px*/
-        font-size: 2.5vw;
+        font-size: 3.4vw;
         letter-spacing: .28vw;/*1px*/
     }
     .txtBox
@@ -1052,7 +1052,7 @@ body {
         min-height: 3.3vw;
         border-radius: 4px;
         cursor: pointer;
-        font-size: 2.5vw;
+        font-size: 3.4vw;
         padding: 12px;
         resize: vertical;
         font-family: Roboto;
@@ -1064,7 +1064,7 @@ body {
         text-align: center;
         letter-spacing: .28vw;/*1px*/
         margin-top: 5vw;/*20px*/
-        font-size: 3vw;
+        font-size: 3.7vw;
         background-color: #BF6E26;
         color: white;
         display: block;
@@ -1150,7 +1150,7 @@ body {
     .socialMediaIcons
     {
         max-width: 100%;
-        margin-left: 2vw;
+
     }
 
     .removeUnderscore
@@ -1175,13 +1175,11 @@ body {
 /* >768px and < 1200px - Laptop*/
 @media screen and (min-width: 769px) and (max-width: 1200px)
 {
-
     /* HEADER SECTION*/
     .wrapper
     {
         width: 100%; /*360px*/
         margin: 0 auto;
-
     }
 
     .wrapper2
@@ -1269,7 +1267,7 @@ body {
         color: #ffffff;
         text-decoration: none;
         top: 1vw;
-        font-size: 1.5vw;
+        font-size: 2.1vw;
     }
 
     /*Hide navigation Icons in tablet*/
@@ -1299,7 +1297,7 @@ body {
     /* BIG PICTURE SECTION*/
     .headerSection
     {
-        margin-top: 2.8vw;
+        margin-top: 2vw;
         width: 100%;
         max-width: 100%;
     }
@@ -1307,11 +1305,10 @@ body {
     .bigPicSection
     {
         box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        padding-top: 2.8vw;/*20px*/
+        padding-top: 2vw;/*20px*/
         background-color:#8C470B;
         display: grid;
-        grid-gap: 1vw;
-        padding-bottom: 3vw;
+        padding-bottom: 2vw;
     }
 
 
@@ -1319,6 +1316,7 @@ body {
     {
         grid-area: 1/1/4/3;
         padding-left: 1vw;
+        padding-right: 1vw;
     }
 
     .leftColumnBG
@@ -1358,8 +1356,8 @@ body {
     .txt
     {
         color: #ffffff;
-        font-size: 1.5vw;
-        letter-spacing: .28vw;
+        font-size: 2vw;
+        letter-spacing: .1vw;
         text-align: center;
         padding-bottom: 4.2vw;
     }
@@ -1378,49 +1376,12 @@ body {
         display: none;
     }
 
-
-    /* .rowBG
-     {
-         max-width: 100%;
-         display: flex;
-         margin-bottom: 1.5vw;
-         width: 100%;
-         height: auto;
-     }
-
-     #pic1
-     {
-         height: auto;
-     }
-
-     #pic2, #pic3
-     {
-         display: none;
-     }
-     #consultancy
-     {
-         margin-top: -42.56vw;
-     }
-     #corporateNutrition
-     {
-         margin-top: -22.85vw;
-     }
-     .text
-     {
-         color: #ffffff;
-         font-size: 1vw;
-         letter-spacing: .28vw;!*1px*!
-         text-align: center;
-         padding-top: 5.6vw;!*20px*!
-     }*/
-
-
     /*  PHOTO GALLERY SECTION */
     .photoLinked
     {
         border-top:  1.11vw solid #73290E;/*4px*/
-        margin-top: 5.56vw;/*20px*/
-        margin-bottom: 5.56vw;/*20px*/
+        margin-top: 2vw;/*20px*/
+        margin-bottom: 2vw;/*20px*/
         box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
         background-color: #ffffff;
         width: 100%;
@@ -1430,7 +1391,7 @@ body {
         max-height: 100%;
         max-width: 100%;
         display: grid;
-        grid-template-columns: repeat(2, minmax(50%, 1vw));
+        grid-template-columns: repeat(3, minmax(33%, 1vw));
         /*grid-gap: 1vw;*/
     }
     .photoGallery > div
@@ -1446,10 +1407,10 @@ body {
     .title
     {
         color: #000000;
-        letter-spacing: .28vw;/*1px*/
+        letter-spacing: .2vw;/*1px*/
         padding-top: 2vw;/*20px*/
         padding-bottom: 1.2vw;
-        font-size: 1.5vw;
+        font-size: 2vw;
         text-align: center;
         font-weight: bold;
     }
@@ -1473,9 +1434,9 @@ body {
     .linkedP
     {
         border-top:  1.11vw solid #ffffff;/*4px*/
-        margin-bottom: 5.56vw;/*20px*/
+        margin-bottom: 2vw;/*20px*/
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
-        margin-top: 2.8vw;
+        margin-top: 2vw;
         background-color: #BF6E26;
         width: 100%;
     }
@@ -1487,6 +1448,15 @@ body {
         grid-template-columns: repeat(2, minmax(50%, 1vw));
         /*grid-gap: 1vw;*/
     }
+
+    .text
+    {
+        color: #ffffff;
+        font-size: 2vw;
+        letter-spacing: .2vw;/*1px*/
+        text-align: center;
+    }
+
     .rowLP > div
     {
         text-align: center;
@@ -1504,10 +1474,10 @@ body {
     .titleLP
     {
         color: #ffffff;
-        letter-spacing: .28vw;/*1px*/
+        letter-spacing: .2vw;/*1px*/
         padding-top: 2vw;/*20px*/
         padding-bottom: 1.2vw;/*10px*/
-        font-size: 1.5vw;
+        font-size: 2vw;
         text-align: center;
         font-weight: bold;
     }
@@ -1531,8 +1501,8 @@ body {
     {
         width: 100%;
         display: flex;
-        margin-top: 5.56vw;/*20px*/
-        margin-bottom: 5.56vw;/*20px*/
+        margin-top: 2vw;/*20px*/
+        margin-bottom: 2vw;/*20px*/
         background-color: white;
         border-top: 1.11vw solid #73290E;/*4px*/
         box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
@@ -1568,9 +1538,9 @@ body {
     .titleMap
     {
         color: #000000;
-        letter-spacing: .28vw;/*1px*/
+        letter-spacing: .2vw;/*1px*/
         padding-top: 2vw;/*20px*/
-        font-size: 1.5vw;
+        font-size: 2vw;
         text-align: center;
         font-weight: bold;
         padding-bottom: 1.2vw;
@@ -1585,7 +1555,7 @@ body {
     .address
     {
         text-align: center;
-        font-size: 1.5vw;
+        font-size: 2vw;
         line-height: 4vw;
         letter-spacing: .2vw;/*1px*/
         max-width: 100%;
@@ -1614,7 +1584,7 @@ body {
         text-align: left;
         max-width: 100%;
         margin-bottom: .2vw;/*10px*/
-        font-size: 1.5vw;
+        font-size: 2vw;
         letter-spacing: .2vw;/*1px*/
     }
     .txtBox
@@ -1629,7 +1599,7 @@ body {
         min-height: 3.3vw;
         border-radius: 4px;
         cursor: pointer;
-        font-size: 1.5vw;
+        font-size: 2vw;
         padding: 12px;
         resize: vertical;
         font-family: Roboto;
@@ -1641,7 +1611,7 @@ body {
         text-align: center;
         letter-spacing: .28vw;/*1px*/
         margin-top: 5vw;/*20px*/
-        font-size: 1.5vw;
+        font-size: 2vw;
         background-color: #BF6E26;
         color: white;
         display: block;
@@ -1660,7 +1630,7 @@ body {
         color: red;
     }
 
-    /*Sitemap & social media icons*/
+
     /*Sitemap & social media icons*/
     .rowSiteMapSocial
     {
@@ -1680,16 +1650,17 @@ body {
     {
         display: block;
         padding-bottom: 1vw;
+        text-align: left;
     }
     .links
     {
-        width: 2%;
-        line-height: 2vw;/*24px*/
+        width: 77%;
+        line-height: 2.5vw;/*24px*/
     }
     .linkSiteMap
     {
         color: #ffffff;
-        font-size: 1.5vw;
+        font-size: 1.8vw;
         letter-spacing: .2vw;/*1px*/
         text-decoration: none;
     }
@@ -1701,7 +1672,7 @@ body {
     .txtSM
     {
         color: #ffffff;
-        font-size: 1.5vw;
+        font-size: 2vw;
         letter-spacing: .2vw;/*1px*/
         font-weight: bold;
         padding-top: 1.5vw;/*20px*/
@@ -1728,7 +1699,7 @@ body {
     .socialMediaIcons
     {
         max-width: 100%;
-        margin-left: 2vw;
+
     }
 
     .base
@@ -1828,7 +1799,7 @@ body {
         position: relative;
         display: flex;
         background-color: #402005;
-        padding-top: 2.2vw;
+        padding-top: 3vw;
         padding-bottom: 2.4vw;
         text-align: center;
         box-sizing: border-box;
@@ -1843,7 +1814,7 @@ body {
         color: #ffffff;
         text-decoration: none;
         top: 1vw;
-        font-size: 1vw;
+        font-size: 1.5vw;
         letter-spacing: .1vw;
     }
 
@@ -1876,7 +1847,7 @@ body {
     /* BIG PICTURE SECTION*/
     .headerSection
     {
-        margin-top: 1.5vw;
+        margin-top: 1vw;
         width: 100%;
         max-width: 100%;
     }
@@ -1889,7 +1860,6 @@ body {
         display: grid;
         grid-gap: 1vw;
         grid-template-columns: repeat(2, minmax(40%, 1vw));
-
     }
 
 
@@ -1897,7 +1867,6 @@ body {
     {
         grid-area: 1/1/4/3;
         padding-left: 1vw;
-
     }
 
     .leftColumnBG
@@ -1937,7 +1906,7 @@ body {
     .txt
     {
         color: #ffffff;
-        font-size: 1vw;
+        font-size: 1.3vw;
         letter-spacing: .1vw;
         padding-bottom: 4.2vw;
         line-height: 2vh;
@@ -1957,14 +1926,12 @@ body {
         display: none;
     }
 
-
-
     /*  PHOTO GALLERY SECTION */
     .photoLinked
     {
-        border-top:  1.11vw solid #73290E;/*4px*/
-        margin-top: 5.56vw;/*20px*/
-        margin-bottom: 5.56vw;/*20px*/
+        border-top:  .5vw solid #73290E;/*4px*/
+        margin-top: 1vw;/*20px*/
+
         box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
         background-color: #ffffff;
         width: 100%;
@@ -1991,9 +1958,9 @@ body {
     {
         color: #000000;
         letter-spacing: .1vw;/*1px*/
-        padding-top: 1vw;/*20px*/
+        padding-top: 1.5vw;/*20px*/
         padding-bottom: 1vw;
-        font-size: 1.2vw;
+        font-size: 1.5vw;
         text-align: center;
         font-weight: bold;
     }
@@ -2017,11 +1984,11 @@ body {
     .linkedP
     {
         border-top:  1.11vw solid #ffffff;/*4px*/
-        margin-bottom: 5.56vw;/*20px*/
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
-        margin-top: 2.8vw;
+        margin-top:1vw;
         background-color: #BF6E26;
         width: 100%;
+
     }
     .rowLP
     {
@@ -2037,13 +2004,13 @@ body {
         padding-top: 1vw;
         padding-right: 1vw;
         padding-left: 1vw;
-        padding-bottom: 2vw;
+        padding-bottom: 1vw;
     }
     .rowLP > div p
     {
-        padding-top: 2vw;
+        padding-top: 1vw;
         color: #ffffff;
-        font-size: 1vw;
+        font-size: 1.3vw;
         letter-spacing: .1vw ;
     }
 
@@ -2051,9 +2018,9 @@ body {
     {
         color: #ffffff;
         letter-spacing: .1vw;/*1px*/
-        padding-top: 2vw;/*20px*/
-        padding-bottom: 1.2vw;/*10px*/
-        font-size: 1.2vw;
+        padding-top: 1.5vw;/*20px*/
+
+        font-size: 1.5vw;
         text-align: center;
         font-weight: bold;
     }
@@ -2077,10 +2044,10 @@ body {
     {
         width: 100%;
         display: flex;
-        margin-top: 5.56vw;/*20px*/
-        margin-bottom: 5.56vw;/*20px*/
+        margin-top: 1vw;/*20px*/
+        margin-bottom: 1vw;/*20px*/
         background-color: white;
-        border-top: 1.11vw solid #73290E;/*4px*/
+        border-top: .5vw solid #73290E;/*4px*/
         box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
     }
     .mapAddress
@@ -2092,19 +2059,23 @@ body {
     .map
     {
         overflow:hidden;
-        padding-bottom:113.5%;
+        padding-bottom:89%;
         position:relative;
         height:0;
         max-width: 100%;
+        box-sizing: border-box;
     }
     .mapFrame{
         left:0;
         top:0;
         width:100%;
-        height: 100%;
+        height: 93%;
         max-width: 100%;
         position:absolute;
         border: 1px solid #BF6E26;
+        /*margin:0;
+        padding: 0;*/
+        display: block;
     }
     .mapArea
     {
@@ -2115,11 +2086,11 @@ body {
     {
         color: #000000;
         letter-spacing: .1vw;/*1px*/
-        padding-top: 2vw;/*20px*/
-        font-size: 1.2vw;
+        padding-top: 1.5vw;/*20px*/
+        font-size: 1.5vw;
         text-align: center;
         font-weight: bold;
-        padding-bottom: 1.2vw;
+        padding-bottom: 1vw;
     }
 
     /* .mapFrame
@@ -2131,8 +2102,8 @@ body {
     .address
     {
         text-align: center;
-        font-size: 1vw;
-        line-height: 4vw;
+        font-size: 1.3vw;
+        line-height: 1.5vw;
         letter-spacing: .1vw;/*1px*/
         max-width: 100%;
     }
@@ -2146,7 +2117,7 @@ body {
     .contactForm
     {
         text-align: center;
-        padding-bottom: 5.56vw;/*20px*/
+        padding-bottom: 2.5vw;/*20px*/
         max-width: 100%;
         width: 50%;
     }
@@ -2160,7 +2131,7 @@ body {
         text-align: left;
         max-width: 100%;
         margin-bottom: .2vw;/*10px*/
-        font-size: 1vw;
+        font-size: 1.3vw;
         letter-spacing: .1vw;/*1px*/
     }
     .txtBox
@@ -2170,13 +2141,13 @@ body {
         width: 100%;
         background-color: #E3EAE7;
         color: darkgrey;
-        margin-bottom: 16px;
-        margin-top: 6px;
-        min-height: 3.3vw;
-        border-radius: 4px;
+        margin-bottom: .2vw;
+        margin-top: .1vw;
+        min-height: 2vw;
+        border-radius: .4vw;
         cursor: pointer;
-        font-size: 1vw;
-        padding: 12px;
+        font-size: 1.3vw;
+        padding: .5vw;
         resize: vertical;
         font-family: Roboto;
     }
@@ -2186,8 +2157,8 @@ body {
         width: 100%;
         text-align: center;
         letter-spacing: .1vw;/*1px*/
-        margin-top: 5vw;/*20px*/
-        font-size: 1vw;
+        margin-top: 2vw;/*20px*/
+        font-size: 1.5vw;
         background-color: #BF6E26;
         color: white;
         display: block;
@@ -2206,12 +2177,12 @@ body {
         color: red;
     }
 
-    /*Sitemap & social media icons*/
+
     /*Sitemap & social media icons*/
     .rowSiteMapSocial
     {
         background-color: #8C470B;
-        border-top: 1.11vw solid white;/*4px*/
+        border-top: .5vw solid white;/*4px*/
 
     }
     .colSiteMapSocialM
@@ -2225,19 +2196,21 @@ body {
     .colSiteMap
     {
         display: block;
-        padding-bottom: 1vw;
+        padding-bottom: .5vw;
     }
     .links
     {
-        width: 2%;
-        line-height: 2vw;/*24px*/
+        width: 77%;
+        line-height: 1.5vw;/*24px*/
+        text-align: left;
     }
     .linkSiteMap
     {
         color: #ffffff;
-        font-size: 1.5vw;
+        font-size: 1.2vw;
         letter-spacing: .2vw;/*1px*/
         text-decoration: none;
+        line-height: 2vw;
     }
     .linkSiteMap:hover
     {
@@ -2251,11 +2224,9 @@ body {
         letter-spacing: .2vw;/*1px*/
         font-weight: bold;
         padding-top: 1.5vw;/*20px*/
-        padding-bottom:1.5vw;/*10px*/
+        padding-bottom:1vw;/*10px*/
         text-align: left;
     }
-
-
 
     .goToTop
     {
@@ -2274,16 +2245,15 @@ body {
     .socialMediaIcons
     {
         max-width: 100%;
-        margin-left: 2vw;
     }
 
     .base
     {
         background-color: #0D0D0D;
-        padding-top: 2vw;/*20px*/
-        padding-bottom: 2vw;/*20px*/
+        padding-top: 1vw;/*20px*/
+        padding-bottom: 1vw;/*20px*/
         color: #ffffff;
-        font-size: 1.5vw;
+        font-size: 1vw;
         letter-spacing: .2vw;/*1px*/
         text-align: center;
     }

@@ -49,6 +49,82 @@
 
    */
 
+    /**
+     * @name tabClicked
+     * @desc code for the changing picture in the Big Picture section when the tabs are clicked
+     */
+    function tabClicked(tabName)
+    {
+        /* tabName.addEventListener("mouseleave", function(){
+             tabName.style.backgroundColor = "#E6842E";
+         });*/
+        tabName.addEventListener("click", function(e){
+            e.preventDefault();
+            console.log(workshops);
+            if((tabName.id == "tabWorkshop") || (tabName.id == "workshops")){
+                console.log(tabName.id);
+                if(tabName.id == "tabWorkshop") {
+                    tabWorkshop.style.backgroundColor = "#402005";
+                    tabConsultancy.style.backgroundColor = "#E6842E";
+                    tabCorporateNutrition.style.backgroundColor = "#E6842E";
+                    pic2.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
+                }
+                if(tabName.id == "workshops")
+                {
+                    workshops.style.backgroundColor = "#402005";
+                    consultancy.style.backgroundColor = "#E6842E";
+                    corporateNutrition.style.backgroundColor = "#E6842E";
+                    pic1.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
+                    pic6.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
+                }
+            }
+            else if((tabName.id == "tabConsultancy")|| (tabName.id == "consultancy"))
+            {
+                console.log(tabName.id);
+                if(tabName.id == "tabConsultancy") {
+                    tabConsultancy.style.backgroundColor = "#402005";
+                    tabWorkshop.style.backgroundColor = "#E6842E";
+                    tabCorporateNutrition.style.backgroundColor = "#E6842E";
+                    pic2.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
+                }
+                if(tabName.id == "consultancy")
+                {
+                    consultancy.style.backgroundColor = "#402005";
+                    workshops.style.backgroundColor = "#E6842E";
+                    corporateNutrition.style.backgroundColor = "#E6842E";
+                    pic1.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
+                    pic6.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
+                }
+
+            }
+            else if((tabName.id == "tabCorporateNutrition") || (tabName.id == "corporateNutrition"))
+            {
+                console.log(tabName.id);
+                if(tabName.id == "tabCorporateNutrition") {
+                    tabCorporateNutrition.style.backgroundColor = "#402005";
+                    tabWorkshop.style.backgroundColor = "#E6842E";
+                    tabConsultancy.style.backgroundColor = "#E6842E";
+                    pic2.srcset = "dist/imgs/home/optimized/apple-700x810.png";
+                }
+                if(tabName.id == "corporateNutrition")
+                {
+                    consultancy.style.backgroundColor = "#E6842E";
+                    workshops.style.backgroundColor = "#E6842E";
+                    corporateNutrition.style.backgroundColor = "#402005";
+                    pic1.srcset = "dist/imgs/home/optimized/apple-700x810.png";
+                    pic6.srcset = "dist/imgs/home/optimized/apple-700x810.png";
+                }
+            }
+            cPic1[0].style.display = "block";
+            cPic2[0].style.display = "none";
+            cPic3[0].style.display = "none";
+        });
+    }//tabClicked
+
+    /**
+     * @name mobile
+     * @desc code for the changing picture when the tabs are clicked, for the mobile viewport
+     */
     function mobile()
     {
         enquire.register("screen and (max-width:360px)", {
@@ -78,6 +154,10 @@
         });
     }//mobile
 
+    /**
+     * @name tablet
+     * @desc code for the changing picture when the tabs are clicked, for the tablet viewport
+     */
     function tablet()
     {
         enquire.register("screen and (min-width: 361px) and (max-width: 768px)", {
@@ -85,47 +165,52 @@
                 imgPic2.style.display = "none";
                 imgPic3.style.display = "none";
 
-                /*tabWorkshop*/
-                tabWorkshop.addEventListener("mouseleave", function(){
-                    tabWorkshop.style.backgroundColor = "#E6842E";
-                });/*MouseLeave event tabWorkshop*/
+                tabClicked(tabWorkshop);
+                tabClicked(tabConsultancy);
+                tabClicked(tabCorporateNutrition);
 
-                tabWorkshop.addEventListener("click", function () {
-                    tabWorkshop.style.backgroundColor = "#402005";
-                    tabWorkshop.style.color = "#ffffff";
-                    pic2.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
-                    cPic2.style.display = "none";
-                    cPic3.style.display = "none";
-                    cPic1.style.display = "block";
-                });/*Click event tabWorkshop*/
+                /*old and repetitive code*/
+                /*  /!*tabWorkshop*!/
+                  tabWorkshop.addEventListener("mouseleave", function(){
+                      tabWorkshop.style.backgroundColor = "#E6842E";
+                  });/!*MouseLeave event tabWorkshop*!/
 
-                /*tabConsultancy*/
-                tabConsultancy.addEventListener("mouseleave", function(){
-                    tabConsultancy.style.backgroundColor = "#E6842E";
-                });/*Mouseleave event tabConsultancy*/
+                  tabWorkshop.addEventListener("click", function () {
+                      tabWorkshop.style.backgroundColor = "#402005";
+                      tabWorkshop.style.color = "#ffffff";
+                      pic2.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
+                      cPic2.style.display = "none";
+                      cPic3.style.display = "none";
+                      cPic1.style.display = "block";
+                  });/!*Click event tabWorkshop*!/
 
-                tabConsultancy.addEventListener("click", function () {
-                    tabConsultancy.style.backgroundColor = "#402005";
-                    tabConsultancy.style.color = "#ffffff";
-                    pic2.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
-                    cPic1.style.display = "none";
-                    cPic3.style.display = "none";
-                    cPic2.style.display = "block";
-                });/*Click event tabConsultancy*/
+                  /!*tabConsultancy*!/
+                  tabConsultancy.addEventListener("mouseleave", function(){
+                      tabConsultancy.style.backgroundColor = "#E6842E";
+                  });/!*Mouseleave event tabConsultancy*!/
 
-                /*tabCorporate Nutrition*/
-                tabCorporateNutrition.addEventListener("mouseleave", function(){
-                    tabCorporateNutrition.style.backgroundColor = "#E6842E";
-                });/*Mouseleave event tabCorporateNutrition*/
+                  tabConsultancy.addEventListener("click", function () {
+                      tabConsultancy.style.backgroundColor = "#402005";
+                      tabConsultancy.style.color = "#ffffff";
+                      pic2.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
+                      cPic1.style.display = "none";
+                      cPic3.style.display = "none";
+                      cPic2.style.display = "block";
+          });/!*Click event tabConsultancy*!/
 
-                tabCorporateNutrition.addEventListener("click", function () {
-                    tabCorporateNutrition.style.backgroundColor = "#402005";
-                    tabCorporateNutrition.style.color = "#ffffff";
-                    pic2.srcset = "dist/imgs/home/optimized/apple-700x810.png";
-                    cPic1.style.display = "none";
-                    cPic2.style.display = "none";
-                    cPic3.style.display = "block";
-                });/*Click event tabCorporateNutrition*/
+          /!*tabCorporate Nutrition*!/
+          tabCorporateNutrition.addEventListener("mouseleave", function(){
+              tabCorporateNutrition.style.backgroundColor = "#E6842E";
+          });/!*Mouseleave event tabCorporateNutrition*!/
+
+          tabCorporateNutrition.addEventListener("click", function () {
+              tabCorporateNutrition.style.backgroundColor = "#402005";
+              tabCorporateNutrition.style.color = "#ffffff";
+              pic2.srcset = "dist/imgs/home/optimized/apple-700x810.png";
+              cPic1.style.display = "none";
+              cPic2.style.display = "none";
+              cPic3.style.display = "block";
+          });*//*Click event tabCorporateNutrition*/
             },
             unmatch: function(){
 
@@ -133,88 +218,98 @@
         });
     }//tablet
 
-
+    /**
+     * @name laptop
+     * @desc code for the changing picture when the tabs are clicked, for the laptop viewport
+     */
     function laptop()
     {
         enquire.register("screen and (min-width: 769px) and (max-width: 1200px)", {
             match: function(){
-                /*Workshops*/
+
+                tabClicked(workshops);
+                tabClicked(consultancy);
+                tabClicked(corporateNutrition);
+                /*old and repetitive code*/
+                /*/!*Workshops*!/
                 workshops.addEventListener("mouseleave", function(){
                     workshops.style.backgroundColor = "#E6842E";
-                });/*MouseLeave event Workshops*/
+                });/!*MouseLeave event Workshops*!/
 
                 workshops.addEventListener("click", function (e) {
-                    /*To prevent the anchor from working*/
+                    /!*To prevent the anchor from working*!/
                     e.preventDefault();
                     workshops.style.backgroundColor = "#402005";
                     workshops.style.color = "#ffffff";
 
-                    /*Since the img tag is inside the picture element*/
-                    /*  let htmlForPic;*/
+                    /!*Since the img tag is inside the picture element*!/
+                    /!*  let htmlForPic;*!/
                     //Old code
-                    /*htmlForPic = " <img class=\"pic\" id=\"pic1\" alt=\"changingpic\" src=\"dist/imgs/home/optimized/workshops-700x810.png\">'>";*/
+                    /!*htmlForPic = " <img class=\"pic\" id=\"pic1\" alt=\"changingpic\" src=\"dist/imgs/home/optimized/workshops-700x810.png\">'>";*!/
                     //New code using template literals, when you write html in a string
-                    /*htmlForPic = `<img class="pic" id="pic1" alt="changingpic" src="dist/imgs/home/optimized/workshops-700x810.png">`;*/
+                    /!*htmlForPic = `<img class="pic" id="pic1" alt="changingpic" src="dist/imgs/home/optimized/workshops-700x810.png">`;*!/
                     //old code
-                    /* htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/workshops-700x810.png" id="pic1" class="pic">`;
-                     pic1.innerHTML = htmlForPic;*/
+                    /!* htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/workshops-700x810.png" id="pic1" class="pic">`;
+                     pic1.innerHTML = htmlForPic;*!/
                     //new code trial
                     // did not work
-                    /* $('pic1').attr('srcset','dist/imgs/home/optimized/workshops-700x810.png');
-                     console.log(pic1.src)*/
+                    /!* $('pic1').attr('srcset','dist/imgs/home/optimized/workshops-700x810.png');
+                     console.log(pic1.src)*!/
                     pic1.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
                     cPic2.style.display = "none";
                     cPic3.style.display = "none";
                     cPic1.style.display = "block";
-                });/*Click event Workshops*/
+                });/!*Click event Workshops*!/
 
-                /*Consultancy*/
+                /!*Consultancy*!/
                 consultancy.addEventListener("mouseleave", function(){
                     consultancy.style.backgroundColor = "#E6842E";
-                });/*Mouseleave event tabConsultancy*/
+                });/!*Mouseleave event tabConsultancy*!/
 
                 consultancy.addEventListener("click", function (e) {
-                    /*To prevent the anchor from working*/
+                    /!*To prevent the anchor from working*!/
                     e.preventDefault();
                     consultancy.style.backgroundColor = "#402005";
                     consultancy.style.color = "#ffffff";
 
-                    /*Since the img tag is inside the picture element*/
-                    /* let htmlForPic;
+                    /!*Since the img tag is inside the picture element*!/
+                    /!* let htmlForPic;
                      htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/consultancy-700x810.png" id="pic1" class="pic">`;
-                     pic1.innerHTML = htmlForPic;*/
+                     pic1.innerHTML = htmlForPic;*!/
                     // did not work
-                    /*$('pic1').attr('srcset','dist/imgs/home/optimized/consultancy-700x810.png');*/
+                    /!*$('pic1').attr('srcset','dist/imgs/home/optimized/consultancy-700x810.png');*!/
                     pic1.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
                     cPic2.style.display = "block";
                     cPic3.style.display = "none";
                     cPic1.style.display = "none";
-                });/*Click event consultancy*/
+                });/!*Click event consultancy*!/
 
-                /*corporate Nutrition*/
+                /!*corporate Nutrition*!/
                 corporateNutrition.addEventListener("mouseleave", function(){
                     corporateNutrition.style.backgroundColor = "#E6842E";
-                });/*Mouseleave event corporateNutrition*/
+                });/!*Mouseleave event corporateNutrition*!/
 
                 corporateNutrition.addEventListener("click", function (e) {
-                    /*To prevent the anchor from working*/
+                    /!*To prevent the anchor from working*!/
                     e.preventDefault();
                     corporateNutrition.style.backgroundColor = "#402005";
                     corporateNutrition.style.color = "#ffffff";
 
-                    /*Since the img tag is inside the picture element*/
-                    /*let htmlForPic;
+                    /!*Since the img tag is inside the picture element*!/
+                    /!*let htmlForPic;
                     htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/apple-700x810.png" id="pic1" class="pic">`;
-                    pic1.innerHTML = htmlForPic;*/
+                    pic1.innerHTML = htmlForPic;*!/
 
                     // did not work
-                    /*$('pic1').attr('srcset','dist/imgs/home/optimized/apple-700x810.png');*/
+                    /!*$('pic1').attr('srcset','dist/imgs/home/optimized/apple-700x810.png');*!/
 
                     pic1.srcset = "dist/imgs/home/optimized/apple-700x810.png";
                     cPic1.style.display = "none";
                     cPic2.style.display = "none";
                     cPic3.style.display = "block";
-                });/*Click event corporateNutrition*/
+                });/!*Click event corporateNutrition*!/*/
+
+
             },
             unmatch: function(){
 
@@ -222,87 +317,95 @@
         });
     }//laptop
 
+    /**
+     * @name desktop
+     * @desc code for the changing picture when the tabs are clicked, for the desktop viewport
+     */
     function desktop()
     {
         enquire.register("screen and (min-width: 1200px)", {
             match: function(){
-                /*Workshops*/
+                tabClicked(workshops);
+                tabClicked(consultancy);
+                tabClicked(corporateNutrition);
+                /*/!*Workshops*!/
                 workshops.addEventListener("mouseleave", function(){
                     workshops.style.backgroundColor = "#E6842E";
-                });/*MouseLeave event Workshops*/
+                });/!*MouseLeave event Workshops*!/
 
                 workshops.addEventListener("click", function (e) {
-                    /*To prevent the anchor from working*/
+                    /!*To prevent the anchor from working*!/
                     e.preventDefault();
                     workshops.style.backgroundColor = "#402005";
                     workshops.style.color = "#ffffff";
 
-                    /*Since the img tag is inside the picture element*/
-                    /*  let htmlForPic;*/
+                    /!*Since the img tag is inside the picture element*!/
+                    /!*  let htmlForPic;*!/
                     //Old code
-                    /*htmlForPic = " <img class=\"pic\" id=\"pic1\" alt=\"changingpic\" src=\"dist/imgs/home/optimized/workshops-700x810.png\">'>";*/
+                    /!*htmlForPic = " <img class=\"pic\" id=\"pic1\" alt=\"changingpic\" src=\"dist/imgs/home/optimized/workshops-700x810.png\">'>";*!/
                     //New code using template literals, when you write html in a string
-                    /*htmlForPic = `<img class="pic" id="pic1" alt="changingpic" src="dist/imgs/home/optimized/workshops-700x810.png">`;*/
+                    /!*htmlForPic = `<img class="pic" id="pic1" alt="changingpic" src="dist/imgs/home/optimized/workshops-700x810.png">`;*!/
                     //old code
-                    /* htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/workshops-700x810.png" id="pic1" class="pic">`;
-                     pic1.innerHTML = htmlForPic;*/
+                    /!* htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/workshops-700x810.png" id="pic1" class="pic">`;
+                     pic1.innerHTML = htmlForPic;*!/
                     //new code trial
                     // did not work
-                    /* $('pic1').attr('srcset','dist/imgs/home/optimized/workshops-700x810.png');
-                     console.log(pic1.src)*/
+                    /!* $('pic1').attr('srcset','dist/imgs/home/optimized/workshops-700x810.png');
+                     console.log(pic1.src)*!/
                     pic6.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
                     cPic2.style.display = "none";
                     cPic3.style.display = "none";
                     cPic1.style.display = "block";
-                });/*Click event Workshops*/
+                });/!*Click event Workshops*!/
 
-                /*Consultancy*/
+                /!*Consultancy*!/
                 consultancy.addEventListener("mouseleave", function(){
                     consultancy.style.backgroundColor = "#E6842E";
-                });/*Mouseleave event tabConsultancy*/
+                });/!*Mouseleave event tabConsultancy*!/
 
                 consultancy.addEventListener("click", function (e) {
-                    /*To prevent the anchor from working*/
+                    /!*To prevent the anchor from working*!/
                     e.preventDefault();
                     consultancy.style.backgroundColor = "#402005";
                     consultancy.style.color = "#ffffff";
 
-                    /*Since the img tag is inside the picture element*/
-                    /* let htmlForPic;
+                    /!*Since the img tag is inside the picture element*!/
+                    /!* let htmlForPic;
                      htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/consultancy-700x810.png" id="pic1" class="pic">`;
-                     pic1.innerHTML = htmlForPic;*/
+                     pic1.innerHTML = htmlForPic;*!/
                     // did not work
-                    /*$('pic1').attr('srcset','dist/imgs/home/optimized/consultancy-700x810.png');*/
+                    /!*$('pic1').attr('srcset','dist/imgs/home/optimized/consultancy-700x810.png');*!/
                     pic6.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
                     cPic2.style.display = "block";
                     cPic3.style.display = "none";
                     cPic1.style.display = "none";
-                });/*Click event consultancy*/
+                });/!*Click event consultancy*!/
 
-                /*corporate Nutrition*/
+                /!*corporate Nutrition*!/
                 corporateNutrition.addEventListener("mouseleave", function(){
                     corporateNutrition.style.backgroundColor = "#E6842E";
-                });/*Mouseleave event corporateNutrition*/
+                });/!*Mouseleave event corporateNutrition*!/
 
                 corporateNutrition.addEventListener("click", function (e) {
-                    /*To prevent the anchor from working*/
+                    /!*To prevent the anchor from working*!/
                     e.preventDefault();
                     corporateNutrition.style.backgroundColor = "#402005";
                     corporateNutrition.style.color = "#ffffff";
 
-                    /*Since the img tag is inside the picture element*/
-                    /*let htmlForPic;
+                    /!*Since the img tag is inside the picture element*!/
+                    /!*let htmlForPic;
                     htmlForPic = `<source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/apple-700x810.png" id="pic1" class="pic">`;
-                    pic1.innerHTML = htmlForPic;*/
+                    pic1.innerHTML = htmlForPic;*!/
 
                     // did not work
-                    /*$('pic1').attr('srcset','dist/imgs/home/optimized/apple-700x810.png');*/
+                    /!*$('pic1').attr('srcset','dist/imgs/home/optimized/apple-700x810.png');*!/
 
                     pic6.srcset = "dist/imgs/home/optimized/apple-700x810.png";
                     cPic1.style.display = "none";
                     cPic2.style.display = "none";
                     cPic3.style.display = "block";
                 });/*Click event corporateNutrition*/
+
             },
             unmatch: function(){
 
@@ -310,6 +413,10 @@
         });
     }//desktop
 
+    /**
+     * @name validation
+     * @desc CONTACT FORM SUBMIT BUTTON VALIDATION - validation for name, phone and email
+     */
     function validation()
     {
         /*CONTACT FORM SUBMIT BUTTON VALIDATION*/
@@ -379,4 +486,4 @@
     /*window.onload = init;*/
     //new code
     window.addEventListener("load", init);
-})();
+})();//close iffy
