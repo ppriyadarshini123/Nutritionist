@@ -9,15 +9,40 @@
       <change afterPath="$PROJECT_DIR$/Nutritionist/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Nutritionist/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Nutritionist/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/aboutme-583x375-gif.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/aboutme-finalgif-300x197.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/aboutme-gif-140x90.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/aboutme-gif-200x129.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/recipes-833x838.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/recipes.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/aboutme-300x197-firstout-svg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/aboutme-300x197-fourthout-svg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/aboutme-300x197-original-svg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/aboutme-300x197-secondout-svg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/aboutme-300x197-thirdout-svg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/aboutme-80x48-original-png.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes with 3 layers for gif.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes-48x48-svg-200x201.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes-48x48-svg-200x201.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes-48x48.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes-48x48.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes-down-48x48-svg-200x201.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes-going down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes-going down.shv.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes-mid-48x48-svg-200x201.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/optimized/aboutme-140x90-firstout-psd.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/optimized/aboutme-140x90-firstout-svg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/optimized/aboutme-140x90-fourthout-svg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/optimized/aboutme-140x90-original-svg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/optimized/aboutme-140x90-secondout-svg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/optimized/aboutme-140x90-thirdout-svg.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nutritionist" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nutritionist/Nutritionist" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/Nutritionist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recipes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nutritionist/dist/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/dist/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nutritionist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/imgs/home/menuicons/aboutme.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/aboutme.svg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +57,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Nutritionist" />
   </component>
   <component name="ProjectId" id="1RHGFCIV8EnnX5HimK44RnMOXQs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -133,7 +160,9 @@
       <workItem from="1569316533629" duration="13849000" />
       <workItem from="1569400103447" duration="22204000" />
       <workItem from="1569489316685" duration="14586000" />
-      <workItem from="1569572330343" duration="10847000" />
+      <workItem from="1569572330343" duration="12313000" />
+      <workItem from="1569771349847" duration="2034000" />
+      <workItem from="1569835977090" duration="9227000" />
     </task>
     <servers />
   </component>
@@ -154,6 +183,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/Nutritionist/enquire.js" />
       <path value="$PROJECT_DIR$/Nutritionist/dist/js/enquire" />
@@ -161,5 +191,7 @@
       <path value="$PROJECT_DIR$/Nutritionist/Nutritionist" />
       <path value="$PROJECT_DIR$/Nutritionist/dist/js/lib" />
     </ignored-roots>
+    <MESSAGE value="Merge branch 'master' of https://github.com/ppriyadarshini123/Nutritionist&#10;&#10;# Conflicts:&#10;#&#9;Nutritionist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/ppriyadarshini123/Nutritionist&#10;&#10;# Conflicts:&#10;#&#9;Nutritionist" />
   </component>
 </project>
