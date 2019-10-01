@@ -13,36 +13,26 @@
       <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/aboutme-finalgif-300x197.gif" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/aboutme-gif-140x90.gif" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/aboutme-gif-200x129.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/almonds-663x440.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/boostbrainpower-663x442.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/citrus-663x440.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/detoxyourbody-663x440.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/recipes-833x838.gif" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/recipes.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/aboutme-300x197-firstout-svg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/aboutme-300x197-fourthout-svg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/aboutme-300x197-original-svg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/aboutme-300x197-secondout-svg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/aboutme-300x197-thirdout-svg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/aboutme-80x48-original-png.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes with 3 layers for gif.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes-48x48-svg-200x201.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes-48x48-svg-200x201.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes-48x48.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes-48x48.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes-down-48x48-svg-200x201.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes-going down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes-going down.shv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes-mid-48x48-svg-200x201.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/recipes1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/optimized/aboutme-140x90-firstout-psd.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/optimized/aboutme-140x90-firstout-svg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/optimized/aboutme-140x90-fourthout-svg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/optimized/aboutme-140x90-original-svg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/optimized/aboutme-140x90-secondout-svg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/optimized/aboutme-140x90-thirdout-svg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/reducestress-663x440.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/salad-663x440.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/salads-663x440.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/soup-663x440.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/strawberry-663x440.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/weightcontrol-663x440.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/workshops-994x1238.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/imgs/home/optimized/salads-663x440.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nutritionist" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nutritionist/Nutritionist" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/Nutritionist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nutritionist/dist/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/dist/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nutritionist/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/dist/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nutritionist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/imgs/home/menuicons/aboutme.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/imgs/home/menuicons/aboutme.svg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +152,8 @@
       <workItem from="1569489316685" duration="14586000" />
       <workItem from="1569572330343" duration="12313000" />
       <workItem from="1569771349847" duration="2034000" />
-      <workItem from="1569835977090" duration="9227000" />
+      <workItem from="1569835977090" duration="9325000" />
+      <workItem from="1569916921380" duration="16992000" />
     </task>
     <servers />
   </component>
