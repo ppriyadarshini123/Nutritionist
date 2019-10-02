@@ -26,7 +26,6 @@
       <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/strawberry-663x440.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/weightcontrol-663x440.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Nutritionist/dist/imgs/home/optimized/workshops-994x1238.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/imgs/home/optimized/salads-663x440.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nutritionist" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Nutritionist/Nutritionist" beforeDir="false" afterPath="$PROJECT_DIR$/Nutritionist/Nutritionist" afterDir="false" />
@@ -153,7 +152,8 @@
       <workItem from="1569572330343" duration="12313000" />
       <workItem from="1569771349847" duration="2034000" />
       <workItem from="1569835977090" duration="9325000" />
-      <workItem from="1569916921380" duration="16992000" />
+      <workItem from="1569916921380" duration="17180000" />
+      <workItem from="1570022973580" duration="10911000" />
     </task>
     <servers />
   </component>
