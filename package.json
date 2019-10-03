@@ -1,0 +1,29 @@
+{
+  "name": "payal_priyadarshini_mwd_project",
+  "version": "1.0.0",
+  "description": "mobile web development project",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppriyadarshini123/Nutritionist.git"
+  },
+  "keywords": [
+    "mobile",
+    "laptop",
+    "desktop",
+    "tablet"
+  ],
+  "author": "Payal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ppriyadarshini123/Nutritionist/issues"
+  },
+  "homepage": "https://github.com/ppriyadarshini123/Nutritionist#readme"
+}
