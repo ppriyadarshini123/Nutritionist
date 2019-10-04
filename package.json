@@ -1,12 +1,16 @@
 {
-  "name": "nutritionist",
+  "name": "payal_priyadarshini_mwd_project",
   "version": "1.0.0",
-  "description": "Mobile web design project",
-  "main": "index.html",
+  "description": "mobile web development project",
+  "main": "index.js",
   "dependencies": {
+<<<<<<< HEAD
     "enquire.js": "2.1.6",
     "jquery": "3.4.1",
     "browser-sync": "2.26.7"
+=======
+    "browser-sync": "^2.26.7"
+>>>>>>> 213e68297ff12c9af17bbd6c163ed024dcb9d76e
   },
   "devDependencies": {},
   "scripts": {
@@ -17,7 +21,13 @@
     "type": "git",
     "url": "git+https://github.com/ppriyadarshini123/Nutritionist.git"
   },
-  "author": "",
+  "keywords": [
+    "mobile",
+    "laptop",
+    "desktop",
+    "tablet"
+  ],
+  "author": "Payal",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ppriyadarshini123/Nutritionist/issues"
