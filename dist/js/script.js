@@ -12,8 +12,14 @@
     const cPic2 = document.getElementsByClassName("cPic2");
     const cPic3 = document.getElementsByClassName("cPic3");
 
+    const imgPic1 = document.getElementById("imgPic1");
     const imgPic2 = document.getElementById("imgPic2");
     const imgPic3 = document.getElementById("imgPic3");
+
+    const picLP1 = document.getElementById("picLP1");
+    const picLP2 = document.getElementById("picLP2");
+    const picLP3 = document.getElementById("picLP3");
+    const picLP4 = document.getElementById("picLP4");
 
     const workshops = document.getElementById("workshops");
     const consultancy = document.getElementById("consultancy");
@@ -60,33 +66,37 @@
          });*/
         tabName.addEventListener("click", function(e){
             e.preventDefault();
-            console.log(workshops);
+
             if((tabName.id == "tabWorkshop") || (tabName.id == "workshops")){
-                console.log(tabName.id);
+
+                /*For tablet size*/
                 if(tabName.id == "tabWorkshop") {
                     tabWorkshop.style.backgroundColor = "#402005";
                     tabConsultancy.style.backgroundColor = "#E6842E";
                     tabCorporateNutrition.style.backgroundColor = "#E6842E";
                     pic2.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
-                }
+
+                }//if tabWorkshop
                 if(tabName.id == "workshops")
                 {
                     workshops.style.backgroundColor = "#402005";
                     consultancy.style.backgroundColor = "#E6842E";
                     corporateNutrition.style.backgroundColor = "#E6842E";
+
                     pic1.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
                     pic6.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
-                }
-            }
+                    /*  imgPic1.style.display = "block";*/
+                }//if workshops
+            }//if((tabName.id == "tabWorkshop") || (tabName.id == "workshops"))
             else if((tabName.id == "tabConsultancy")|| (tabName.id == "consultancy"))
             {
-                console.log(tabName.id);
+                /*For tablet size*/
                 if(tabName.id == "tabConsultancy") {
                     tabConsultancy.style.backgroundColor = "#402005";
                     tabWorkshop.style.backgroundColor = "#E6842E";
                     tabCorporateNutrition.style.backgroundColor = "#E6842E";
                     pic2.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
-                }
+                }//if(tabName.id == "tabConsultancy")
                 if(tabName.id == "consultancy")
                 {
                     consultancy.style.backgroundColor = "#402005";
@@ -94,18 +104,17 @@
                     corporateNutrition.style.backgroundColor = "#E6842E";
                     pic1.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
                     pic6.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
-                }
-
-            }
+                }//if(tabName.id == "consultancy")
+            }//else if((tabName.id == "tabConsultancy")|| (tabName.id == "consultancy"))
             else if((tabName.id == "tabCorporateNutrition") || (tabName.id == "corporateNutrition"))
             {
-                console.log(tabName.id);
+                /*For tablet size*/
                 if(tabName.id == "tabCorporateNutrition") {
                     tabCorporateNutrition.style.backgroundColor = "#402005";
                     tabWorkshop.style.backgroundColor = "#E6842E";
                     tabConsultancy.style.backgroundColor = "#E6842E";
                     pic2.srcset = "dist/imgs/home/optimized/apple-700x810.png";
-                }
+                }//if(tabName.id == "tabCorporateNutrition")
                 if(tabName.id == "corporateNutrition")
                 {
                     consultancy.style.backgroundColor = "#E6842E";
@@ -113,12 +122,14 @@
                     corporateNutrition.style.backgroundColor = "#402005";
                     pic1.srcset = "dist/imgs/home/optimized/apple-700x810.png";
                     pic6.srcset = "dist/imgs/home/optimized/apple-700x810.png";
-                }
-            }
-            cPic1[0].style.display = "block";
+                }// if(tabName.id == "corporateNutrition")
+            }// else if((tabName.id == "tabCorporateNutrition") || (tabName.id == "corporateNutrition"))
+
+            //Display inline, there is no change in the height and width property of image, Display block starts a new line and takes up the whole width
+            cPic1[0].style.display = "inline";
             cPic2[0].style.display = "none";
             cPic3[0].style.display = "none";
-        });
+        });//tabName.addEventListener("click", function(e)
     }//tabClicked
 
     /**
@@ -406,6 +417,10 @@
                     cPic3.style.display = "block";
                 });/*Click event corporateNutrition*/
 
+                /*To display tooltip in 'Feel good factor section'*/
+             /*   $('picLP1').mousemove(function(e){
+                   $('span', this).css({left: e.pageX - 100, top: e.pageY + 10});
+                });*/
             },
             unmatch: function(){
 

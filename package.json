@@ -5,11 +5,13 @@
   "main": "index.html",
   "dependencies": {
     "enquire.js": "2.1.6",
-    "jquery": "3.4.1"
+    "jquery": "3.4.1",
+    "browser-sync": "2.26.7"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startServer": "browser-sync start --directory --server --files '*.js, *.html, *.css'"
   },
   "repository": {
     "type": "git",
