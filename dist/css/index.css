@@ -59,6 +59,12 @@ body {
         margin: 0 auto;
     }
 
+    .wrapper2
+    {
+        width: 100%; /*360px*/
+        margin: 0 auto;
+        max-width: 100%;
+    }
 
     .logoAndHam
     {
@@ -240,7 +246,6 @@ body {
         width: 100%;
         height: auto;
         max-width: 100%;
-
     }
 
     .tab
@@ -276,7 +281,7 @@ body {
     {
         grid-area: 3/2/3/2;
     }
-    .rightColumnBG1:hover, .rightColumnBG2:hover, .rightColumnBG2:hover
+    .rightColumnBG1:hover, .rightColumnBG2:hover, .rightColumnBG3:hover
     {
         background-color: #402005;
     }
@@ -333,7 +338,7 @@ body {
         width: 100%;
         /* !* object-fit: cover;*!*/
     }
-
+    /*Made the border color transparent, earlier there was no border on hover, this gave an unnecessary transitioning effect*/
     .picPG:hover
     {
         border: 1vw transparent;
@@ -389,15 +394,18 @@ body {
         max-width: 100%;
         display: grid;
         grid-template-columns: repeat(1, minmax(100%, 1vw));
-        /*grid-gap: 1vw;*/
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
-    .rowLP > div
+
+    .subTitleDetox, .subTitleBrain, .subTitleStress, .subTitleWeight
     {
         text-align: center;
-        padding-top: 1vw;
+        padding-top: 2vw;
         padding-right: 1vw;
         padding-left: 1vw;
-        padding-bottom: 1vw;
+        padding-bottom: 3vw;
         color: #ffffff;
         font-size: 5vw;
         letter-spacing: .28vw;/*1px*/
@@ -414,12 +422,12 @@ body {
         font-weight: bold;
     }
 
-    .picLP
+    .picLP1, .picLP2, .picLP3, .picLP4
     {
         border: 1vw solid white;
         box-sizing: border-box;
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
-        width: 100%;
+        width: 99%;
     }
 
     /* .picLP:hover
@@ -1437,41 +1445,44 @@ body {
         margin-top:1vw;
         background-color: #BF6E26;
         width: 100%;
-        padding-bottom: 14vw;
+        padding-bottom: 20%;
     }
     .titleLP
     {
         color: #ffffff;
         letter-spacing: .1vw;/*1px*/
         padding-top: 1.5vw;/*20px*/
-        font-size: 2vw;
+        font-size: 1.5vw;
         text-align: center;
         font-weight: bold;
-        padding-bottom: 1.2vw;
     }
 
     .rowLP
     {
         max-height: 100%;
         max-width: 100%;
-        width: 100%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 3%;
         position: relative;
     }
+
+
+
     .lpGap
     {
 
     }
     .detox
     {
-        position: absolute;
-        top: 5%;
-        left: 5%;
+        text-align: center;
     }
     .subTitleDetox
     {
         transform: rotate(-7deg);
         color: #ffffff;
-        font-size: 1.2vw;
+        font-size: .9vw;
         letter-spacing: .1vw ;
         display: none;
         border-bottom: dotted #73290E ;
@@ -1479,8 +1490,8 @@ body {
         position: absolute;
         z-index: 4;
         line-height: 1.2vw;
-        bottom: -15%;
-        left: 3%;
+        top: 1vw;
+        left: 12vw;
     }
     .detox:hover .subTitleDetox
     {
@@ -1493,8 +1504,10 @@ body {
         border: 0.2vw solid white;
         box-sizing: border-box;
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
-        width: 50%;
+        width: 35%;
         transform: rotate(-7deg);
+        position: absolute;
+        left:7%;
     }
 
     .picLP2
@@ -1506,7 +1519,8 @@ body {
     }
     .brain
     {
-      text-align: center;
+        text-align: center;
+
     }
     .brain:hover .subTitleBrain
     {
@@ -1516,32 +1530,32 @@ body {
     .subTitleBrain
     {
         color: #ffffff;
-        font-size: 1.2vw;
+        font-size: .9vw;
         letter-spacing: .1vw ;
         display: none;
         border-bottom: dotted #73290E ;
         font-weight: bold;
         position: absolute;
         z-index: 4;
-        line-height: 1.4vw;
-        width: 8vw;
-        top: 2%;
-        right: 9%;
+        line-height: 1.2vw;
+        top: 1vw;
+        left: 39vw;
     }
     .picLP3
     {
         border: 0.2vw solid white;
         box-sizing: border-box;
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
-        width: 45%;
+        width: 37%;
         transform: rotate(-10deg);
+        position: absolute;
+        bottom: -42%;
     }
 
     .stress
     {
-        position: absolute;
-        top: 76%;
-        left: 20%;
+
+
     }
     .stress:hover .subTitleStress
     {
@@ -1552,7 +1566,7 @@ body {
     {
         transform: rotate(-10deg);
         color: #ffffff;
-        font-size: 1.2vw;
+        font-size: .9vw;
         letter-spacing: .1vw ;
         display: none;
         border-bottom: dotted #73290E ;
@@ -1560,8 +1574,8 @@ body {
         position: absolute;
         z-index: 4;
         line-height: 1.2vw;
-        bottom: -13%;
-        left:17%;
+        bottom: -15.5vw;
+        left: 11vw;
     }
 
     .picLP4
@@ -1569,14 +1583,15 @@ body {
         border: 0.2vw solid white;
         box-sizing: border-box;
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
-        width: 45%;
+        width: 37%;
         transform: rotate(10deg);
+        position: absolute;
+        bottom: -7vw;
+        right: -1vw;
     }
     .weight
     {
-        position: absolute;
-        right: -27%;
-        bottom: -22%;
+        text-align: center;
     }
     .weight:hover .subTitleWeight
     {
@@ -1587,7 +1602,7 @@ body {
     {
         transform: rotate(10deg);
         color: #ffffff;
-        font-size: 1.2vw;
+        font-size: .9vw;
         letter-spacing: .1vw ;
         display: none;
         border-bottom: dotted #73290E ;
@@ -1595,8 +1610,8 @@ body {
         position: absolute;
         z-index: 4;
         line-height: 1.2vw;
-        left: 12%;
-        bottom: -12%;
+        bottom: -9vw;
+        left: 55vw;
     }
     /*
 
@@ -1613,6 +1628,7 @@ body {
         margin-left: -5vw;
     }
     */
+
     /*MAP & ADDRESS SECTION*/
     .mapContact
     {
@@ -1834,11 +1850,13 @@ body {
 /* >1200px - Desktop*/
 @media screen and (min-width: 1200px)
 {
+
     /* HEADER SECTION*/
     .wrapper
     {
         width: 100%; /*360px*/
         margin: 0 auto;
+        max-width: 100%;
     }
 
     .wrapper2
@@ -1974,12 +1992,12 @@ body {
         display: grid;
         grid-gap: 1vw;
         grid-template-columns: repeat(3, minmax(32.2%, 1vw));
-       /* grid-template-columns: repeat(3, 1vw);
-        grid-auto-rows: minmax(4vw, auto);
-        grid-template-areas:
-        "mainpic mainpic col1"
-        "mainpic mainpic col2";
-        "mainpic mainpic col3"*/
+        /* grid-template-columns: repeat(3, 1vw);
+         grid-auto-rows: minmax(4vw, auto);
+         grid-template-areas:
+         "mainpic mainpic col1"
+         "mainpic mainpic col2";
+         "mainpic mainpic col3"*/
         padding-bottom: 1vw;
     }
 
@@ -2000,11 +2018,11 @@ body {
     .rightColumnBG1
     {
         /*grid-area: col1;*/
-       grid-area: 1/3/1/3;
+        grid-area: 1/3/1/3;
     }
     .rightColumnBG2
     {
-       /* grid-area: col2;*/
+        /* grid-area: col2;*/
         grid-area: 2/3/2/3;
     }
     .rightColumnBG3
@@ -2116,6 +2134,7 @@ body {
         margin-top:1vw;
         background-color: #BF6E26;
         width: 100%;
+        padding-bottom: 20%;
     }
     .titleLP
     {
@@ -2134,33 +2153,34 @@ body {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 5%;
-        padding-bottom: 3vw;
+        padding-top: 4%;
+        position: relative;
     }
+
+
+
     .lpGap
     {
 
     }
     .detox
     {
-       text-align: center;
-       margin-bottom: -20%;
-        margin-left: -60%;
+        text-align: center;
     }
-     .subTitleDetox
+    .subTitleDetox
     {
         transform: rotate(-7deg);
         color: #ffffff;
         font-size: .9vw;
         letter-spacing: .1vw ;
-         display: none;
-         border-bottom: dotted #73290E ;
-         font-weight: bold;
-         position: absolute;
-         z-index: 4;
-         line-height: 1.2vw;
-         margin-top: 15%;
-         margin-left: -20%;
+        display: none;
+        border-bottom: dotted #73290E ;
+        font-weight: bold;
+        position: absolute;
+        z-index: 4;
+        line-height: 1.2vw;
+        top: 1vw;
+        left: 6vw;
     }
     .detox:hover .subTitleDetox
     {
@@ -2173,9 +2193,10 @@ body {
         border: 0.2vw solid white;
         box-sizing: border-box;
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
-        width: 27%;
+        width: 35%;
         transform: rotate(-7deg);
-        position: relative;
+        position: absolute;
+        left:7%;
     }
 
     .picLP2
@@ -2188,7 +2209,7 @@ body {
     .brain
     {
         text-align: center;
-        margin-top: -14vw;
+
     }
     .brain:hover .subTitleBrain
     {
@@ -2200,14 +2221,14 @@ body {
         color: #ffffff;
         font-size: .9vw;
         letter-spacing: .1vw ;
-         display: none;
-         border-bottom: dotted #73290E ;
-         font-weight: bold;
-         position: absolute;
-         z-index: 4;
-         line-height: 1.2vw;
-         margin-top: -1.5%;
-         margin-left: -15%;
+        display: none;
+        border-bottom: dotted #73290E ;
+        font-weight: bold;
+        position: absolute;
+        z-index: 4;
+        line-height: 1.2vw;
+        top: .9vw;
+        left: 23vw;
     }
     .picLP3
     {
@@ -2216,12 +2237,14 @@ body {
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
         width: 37%;
         transform: rotate(-10deg);
+        position: absolute;
+        bottom: -42%;
     }
 
     .stress
     {
 
-        margin-left: 15%;
+
     }
     .stress:hover .subTitleStress
     {
@@ -2240,8 +2263,8 @@ body {
         position: absolute;
         z-index: 4;
         line-height: 1.2vw;
-        margin-top: 11%;
-        margin-left: -9%;
+        bottom: -11vw;
+        left: 7vw;
     }
 
     .picLP4
@@ -2249,14 +2272,15 @@ body {
         border: 0.2vw solid white;
         box-sizing: border-box;
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
-        width: 30%;
+        width: 37%;
         transform: rotate(10deg);
+        position: absolute;
+        bottom: -7vw;
+        right: -1vw;
     }
     .weight
     {
-       text-align: center;
-        margin-top: -30%;
-        margin-right: -65%;
+        text-align: center;
     }
     .weight:hover .subTitleWeight
     {
@@ -2275,8 +2299,8 @@ body {
         position: absolute;
         z-index: 4;
         line-height: 1.2vw;
-        margin-top: 17%;
-        margin-left: -17%;
+        bottom: -8.5vw;
+        left: 35vw;
     }
     /*
 
