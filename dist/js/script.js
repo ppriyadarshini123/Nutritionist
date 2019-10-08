@@ -74,7 +74,7 @@
                     tabWorkshop.style.backgroundColor = "#402005";
                     tabConsultancy.style.backgroundColor = "#E6842E";
                     tabCorporateNutrition.style.backgroundColor = "#E6842E";
-                    pic2.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
+                    pic2.srcset = "dist/imgs/home/optimized/workshops-new-700x810.png";
 
                 }//if tabWorkshop
                 if(tabName.id == "workshops")
@@ -83,8 +83,8 @@
                     consultancy.style.backgroundColor = "#E6842E";
                     corporateNutrition.style.backgroundColor = "#E6842E";
 
-                    pic1.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
-                    pic6.srcset = "dist/imgs/home/optimized/workshops-700x810.png";
+                    pic1.srcset = "dist/imgs/home/optimized/workshops-new-700x810.png";
+                    pic6.srcset = "dist/imgs/home/optimized/workshops-new-700x810.png";
                     /*  imgPic1.style.display = "block";*/
                 }//if workshops
             }//if((tabName.id == "tabWorkshop") || (tabName.id == "workshops"))
@@ -95,15 +95,15 @@
                     tabConsultancy.style.backgroundColor = "#402005";
                     tabWorkshop.style.backgroundColor = "#E6842E";
                     tabCorporateNutrition.style.backgroundColor = "#E6842E";
-                    pic2.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
+                    pic2.srcset = "dist/imgs/home/optimized/consultancy-new-700x810.png";
                 }//if(tabName.id == "tabConsultancy")
                 if(tabName.id == "consultancy")
                 {
                     consultancy.style.backgroundColor = "#402005";
                     workshops.style.backgroundColor = "#E6842E";
                     corporateNutrition.style.backgroundColor = "#E6842E";
-                    pic1.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
-                    pic6.srcset = "dist/imgs/home/optimized/consultancy-700x810.png";
+                    pic1.srcset = "dist/imgs/home/optimized/consultancy-new-700x810.png";
+                    pic6.srcset = "dist/imgs/home/optimized/consultancy-new-700x810.png";
                 }//if(tabName.id == "consultancy")
             }//else if((tabName.id == "tabConsultancy")|| (tabName.id == "consultancy"))
             else if((tabName.id == "tabCorporateNutrition") || (tabName.id == "corporateNutrition"))
@@ -113,15 +113,15 @@
                     tabCorporateNutrition.style.backgroundColor = "#402005";
                     tabWorkshop.style.backgroundColor = "#E6842E";
                     tabConsultancy.style.backgroundColor = "#E6842E";
-                    pic2.srcset = "dist/imgs/home/optimized/apple-700x810.png";
+                    pic2.srcset = "dist/imgs/home/optimized/corporateNutritionNew-700x810.png";
                 }//if(tabName.id == "tabCorporateNutrition")
                 if(tabName.id == "corporateNutrition")
                 {
                     consultancy.style.backgroundColor = "#E6842E";
                     workshops.style.backgroundColor = "#E6842E";
                     corporateNutrition.style.backgroundColor = "#402005";
-                    pic1.srcset = "dist/imgs/home/optimized/apple-700x810.png";
-                    pic6.srcset = "dist/imgs/home/optimized/apple-700x810.png";
+                    pic1.srcset = "dist/imgs/home/optimized/corporateNutritionNew-700x810.png";
+                    pic6.srcset = "dist/imgs/home/optimized/corporateNutritionNew-700x810.png";
                 }// if(tabName.id == "corporateNutrition")
             }// else if((tabName.id == "tabCorporateNutrition") || (tabName.id == "corporateNutrition"))
 
@@ -149,11 +149,11 @@
                     $('.topNav').slideToggle("fast");
                 });
                 /*Injecting HTML in the picture element to add img tag*/
-                let imgText1 = `<img class="pic"  alt="changingpic" src="dist/imgs/home/optimized/consultancy-700x810.png">`;
+                let imgText1 = `<img class="pic"  alt="changingpic" src="dist/imgs/home/optimized/consultancy-new-180x200.png">`;
                 imgPic2.innerHTML = imgText1;
 
                 /*Injecting HTML in the picture element to add img tag*/
-                let imgText2 = `<img class="pic"  alt="changingpic" src="dist/imgs/home/optimized/apple-700x810.png">`;
+                let imgText2 = `<img class="pic"  alt="changingpic" src="dist/imgs/home/optimized/corporateNutritionNew-180x200.png">`;
                 imgPic3.innerHTML = imgText2;
 
                 imgPic2.style.display = "block";
@@ -175,7 +175,7 @@
             match: function(){
                 imgPic2.style.display = "none";
                 imgPic3.style.display = "none";
-
+                console.log("tablet");
                 tabClicked(tabWorkshop);
                 tabClicked(tabConsultancy);
                 tabClicked(tabCorporateNutrition);

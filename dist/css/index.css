@@ -256,18 +256,18 @@ body {
     #changingPic
     {
         grid-area: 1/1/1/1;
-        background-color: #ffffff;
+
     }
 
     .leftColumnBG2
     {
         grid-area: 2/2/2/2;
-        background-color: #ffffff;
+
     }
     .leftColumnBG3
     {
         grid-area: 3/1/3/1;
-        background-color: #ffffff;
+
     }
     .rightColumnBG1
     {
@@ -792,7 +792,6 @@ body {
         padding-right: 1.6vw;
     }
 
-
     .rightColumnBG1, .rightColumnBG2, .rightColumnBG3
     {
         display: none;
@@ -838,10 +837,8 @@ body {
     }
     .tablinks
     {
-        margin-right: .4vw;
+
     }
-
-
 
     /*  PHOTO GALLERY SECTION */
     .photoLinked
@@ -892,10 +889,12 @@ body {
 
     }
 
+    /*Made the border color transparent, earlier there was no border on hover, this gave an unnecessary transitioning effect*/
     .picPG:hover
     {
-        border: none;
-        width: 97%;
+        border: 1vw transparent;
+        width: 100%;
+        cursor: pointer;
     }
 
     /*LINKED PICTURES*/
@@ -944,9 +943,9 @@ body {
         font-weight: bold;
     }
 
-    .picLP
+    .picLP1, .picLP2, .picLP3, .picLP4
     {
-        border: 1vw solid white;
+        border: .2vw solid white;
         box-sizing: border-box;
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
         width: 100%;
@@ -1431,10 +1430,12 @@ body {
         /* !* object-fit: cover;*!*/
     }
 
+    /*Made the border color transparent, earlier there was no border on hover, this gave an unnecessary transitioning effect*/
     .picPG:hover
     {
-        border: none;
-        width: 97%;
+        border: 1vw transparent;
+        width: 100%;
+        cursor: pointer;
     }
 
     /*LINKED PICTURES*/
@@ -1452,7 +1453,7 @@ body {
         color: #ffffff;
         letter-spacing: .1vw;/*1px*/
         padding-top: 1.5vw;/*20px*/
-        font-size: 1.5vw;
+        font-size: 2vw;
         text-align: center;
         font-weight: bold;
     }
@@ -1482,7 +1483,7 @@ body {
     {
         transform: rotate(-7deg);
         color: #ffffff;
-        font-size: .9vw;
+        font-size: 1.2vw;
         letter-spacing: .1vw ;
         display: none;
         border-bottom: dotted #73290E ;
@@ -1530,7 +1531,7 @@ body {
     .subTitleBrain
     {
         color: #ffffff;
-        font-size: .9vw;
+        font-size: 1.2vw;
         letter-spacing: .1vw ;
         display: none;
         border-bottom: dotted #73290E ;
@@ -1566,7 +1567,7 @@ body {
     {
         transform: rotate(-10deg);
         color: #ffffff;
-        font-size: .9vw;
+        font-size: 1.2vw;
         letter-spacing: .1vw ;
         display: none;
         border-bottom: dotted #73290E ;
@@ -1602,7 +1603,7 @@ body {
     {
         transform: rotate(10deg);
         color: #ffffff;
-        font-size: .9vw;
+        font-size: 1.2vw;
         letter-spacing: .1vw ;
         display: none;
         border-bottom: dotted #73290E ;
@@ -2120,10 +2121,12 @@ body {
         /* !* object-fit: cover;*!*/
     }
 
+    /*Made the border color transparent, earlier there was no border on hover, this gave an unnecessary transitioning effect*/
     .picPG:hover
     {
-        border: none;
-        width: 97%;
+        border: 1vw transparent;
+        width: 100%;
+        cursor: pointer;
     }
 
     /*LINKED PICTURES*/
