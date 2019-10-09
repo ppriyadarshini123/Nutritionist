@@ -590,8 +590,9 @@ body {
     }
     .links
     {
-        width: 2%;
+        width: 78%;
         line-height: 6.67vw;/*24px*/
+        text-align: left;
     }
 
     .linkSiteMap
