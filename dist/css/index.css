@@ -873,7 +873,7 @@ body {
     {
         color: #000000;
         letter-spacing: .28vw;/*1px*/
-        padding-top: 5.6vw;/*20px*/
+        padding-top: 3vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
         font-size: 3.7vw;
         text-align: center;
@@ -980,22 +980,20 @@ body {
         max-width: 100%;
     }
 
+
     .map
     {
-        overflow:hidden;
-        padding-bottom:113.5%;
-        position:relative;
-        height:0;
+        width: 100%;
         max-width: 100%;
     }
-    .mapFrame{
-        left:0;
-        top:0;
+
+    .mapFrame
+    {
         width:100%;
-        height: 100%;
         max-width: 100%;
-        position:absolute;
         border: 1px solid #BF6E26;
+        display: block;
+        height: 70.3vw;
     }
     .mapArea
     {
@@ -1063,7 +1061,6 @@ body {
         width: 100%;
         text-align: center;
         letter-spacing: .28vw;/*1px*/
-        margin-top: 5vw;/*20px*/
         font-size: 3.7vw;
         background-color: #BF6E26;
         color: white;
@@ -1415,8 +1412,7 @@ body {
     {
         color: #000000;
         letter-spacing: .2vw;/*1px*/
-        padding-top: 2vw;/*20px*/
-        padding-bottom: 1.2vw;
+        padding-top: 6vh;/*20px*/
         font-size: 2vw;
         text-align: center;
         font-weight: bold;
@@ -1650,20 +1646,18 @@ body {
 
     .map
     {
-        overflow:hidden;
-        padding-bottom:113.5%;
-        position:relative;
-        height:0;
+        width: 100%;
         max-width: 100%;
     }
-    .mapFrame{
-        left:0;
-        top:0;
+
+    .mapFrame
+    {
         width:100%;
-        height: 100%;
         max-width: 100%;
-        position:absolute;
         border: 1px solid #BF6E26;
+        display: block;
+        height: 43.7vh;
+        height: 100%;
     }
     .mapArea
     {
@@ -1690,8 +1684,8 @@ body {
     .address
     {
         text-align: center;
-        font-size: 2vw;
-        line-height: 4vw;
+        font-size: 1.8vw;
+        line-height: 3vw;
         letter-spacing: .2vw;/*1px*/
         max-width: 100%;
     }
@@ -1745,7 +1739,6 @@ body {
         width: 100%;
         text-align: center;
         letter-spacing: .28vw;/*1px*/
-        margin-top: 5vw;/*20px*/
         font-size: 2vw;
         background-color: #BF6E26;
         color: white;
@@ -1866,7 +1859,7 @@ body {
         width: 100%; /*360px*/
         margin: 0 auto;
         max-width: 100%;
-        width: 60vw;
+        width: 77vw;
     }
 
     .logoAndHam
@@ -2106,8 +2099,8 @@ body {
     {
         color: #000000;
         letter-spacing: .1vw;/*1px*/
-        padding-top: 1.5vw;/*20px*/
-        padding-bottom: 1vw;
+        padding-top: 1vw;/*20px*/
+        padding-bottom: 0.7vw;
         font-size: 1.5vw;
         text-align: center;
         font-weight: bold;
@@ -2341,24 +2334,17 @@ body {
 
     .map
     {
-        overflow:hidden;
-        padding-bottom:89%;
-        position:relative;
-        height:0;
+        width: 100%;
         max-width: 100%;
-        box-sizing: border-box;
     }
-    .mapFrame{
-        left:0;
-        top:0;
+
+    .mapFrame
+    {
         width:100%;
-        height: 93%;
         max-width: 100%;
-        position:absolute;
         border: 1px solid #BF6E26;
-        /*margin:0;
-        padding: 0;*/
         display: block;
+        height: 24.3vw;
     }
     .mapArea
     {
@@ -2440,7 +2426,6 @@ body {
         width: 100%;
         text-align: center;
         letter-spacing: .1vw;/*1px*/
-        margin-top: 2vw;/*20px*/
         font-size: 1.5vw;
         background-color: #BF6E26;
         color: white;
