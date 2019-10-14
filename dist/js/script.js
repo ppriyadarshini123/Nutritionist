@@ -175,7 +175,7 @@
             match: function(){
                 imgPic2.style.display = "none";
                 imgPic3.style.display = "none";
-                console.log("tablet");
+
                 tabClicked(tabWorkshop);
                 tabClicked(tabConsultancy);
                 tabClicked(tabCorporateNutrition);

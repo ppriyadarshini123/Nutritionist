@@ -133,7 +133,7 @@ body {
     }
 
 
-    .topNav ul li a
+    .txtNav
     {
         padding: 2.2vw 2.2vw 2.2vw 8.9vw;/*8px 8px 8px 32px*/
         text-decoration: none;
@@ -144,11 +144,11 @@ body {
         transition: 0.3s;
     }
 
-    .topNav ul li a:hover {
+    .txtNav:hover {
         color: #402005;
         background-color: #fff;
     }
-    .topNav ul li a:active{
+    .txtNav:active{
         text-decoration: underline;
     }
 
@@ -215,7 +215,7 @@ body {
     }
     .bigPicSection
     {
-        box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
+        /*box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;!*-4px 6px 8px 1px*!*/
         padding-top: 2.8vw;/*20px*/
         padding-bottom: 2.8vw;
         background-color:#8C470B;
@@ -295,9 +295,9 @@ body {
     .photoLinked
     {
         border-top:  1.11vw solid #73290E;/*4px*/
-        margin-top: 2vw;/*20px*/
+        margin-top: 9vw;/*20px*/
         margin-bottom: 2vw;/*20px*/
-        box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
+        /*box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;!*-4px 6px 8px 1px*!*/
         background-color: #ffffff;
         width: 100%;
     }
@@ -378,7 +378,7 @@ body {
     {
         border-top:  1.11vw solid #ffffff;/*4px*/
         margin-bottom: 2vw;/*20px*/
-        box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
+        /*box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;*/
         margin-top: 2vw;
         background-color: #BF6E26;
         width: 100%;
@@ -447,7 +447,7 @@ body {
     }
     .mapAddress
     {
-        margin-top: 2vw;/*20px*/
+        margin-top: 9vw;/*20px*/
         background-color: white;
         border-top: 1.11vw solid #73290E;/*4px*/
     }
@@ -504,7 +504,7 @@ body {
     }
     .contactForm
     {
-        margin-bottom: 2vw;
+        margin-bottom: 9vw;
         text-align: center;
         padding-top: 2.8vw;/*10px*/
         padding-bottom: 5.6vw;/*20px*/
@@ -533,8 +533,6 @@ body {
         min-height: 3.3vw;/*48px*/
         font-size: 5vw;
         box-sizing: border-box;
-        margin-bottom: 10px;
-        margin-top: 6px;
         border-radius: 4px;
         cursor: pointer;
         padding: 12px;
@@ -546,8 +544,8 @@ body {
     .submitBtn
     {
         letter-spacing: .28vw;/*1px*/
-        margin-top: 5.56vw;/*20px*/
-        font-size: 7vw;
+        margin-top: 5.6vw;/*20px*/
+        font-size: 9vw;
         background-color: #BF6E26;
         color: white;
         display: block;
@@ -563,10 +561,11 @@ body {
     {
         text-align: left;
         max-width: 100%;
-        margin-bottom: 10px;/*10px*/
+        margin-bottom: 3vw;/*10px*/
         font-size: 4.5vw;
         letter-spacing: .28vw;/*1px*/
         color: red;
+        height: 4vw;
     }
 
     /*Sitemap & social media icons*/
@@ -726,41 +725,75 @@ body {
     {
         display: none;
     }
+    /*
+        .topNav
+        {
+            display: block;
+            margin-top: 1vw;
+            max-width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 5;
+        }
+
+        .topNav ul
+        {
+            position: relative;
+            display: flex;
+            background-color: #402005;
+            justify-content: space-around;
+            padding-top: 3.2vw;
+            padding-bottom: 3.2vw;
+            text-align: center;
+            !*padding-left: 5vw;
+            padding-right: 5vw;*!
+
+        }
+        .topNav ul li
+        {
+            width: 100%;
+        }
+        .topNav ul li a
+        {
+            position: absolute;
+            color: #ffffff;
+            text-decoration: none;
+            top: 1.3vw;
+            font-size: 3.5vw;
+        }*/
 
     .topNav
     {
-        display: block;
-        margin-top: 1vw;
+        /* display: block;*/
+        margin-top: .5vw;
         max-width: 100%;
         position: sticky;
         top: 0;
         z-index: 5;
-    }
-
-    .topNav ul
-    {
-        position: relative;
         display: flex;
         background-color: #402005;
+        padding-top: 1.5vw;
+        padding-bottom: 1.5vw;
         justify-content: space-around;
-        padding-top: 3.2vw;
-        padding-bottom: 3.2vw;
-        text-align: center;
-        /*padding-left: 5vw;
-        padding-right: 5vw;*/
+    }
 
-    }
-    .topNav ul li
+    .txtNav
     {
-        width: 100%;
-    }
-    .topNav ul li a
-    {
-        position: absolute;
         color: #ffffff;
-        text-decoration: none;
-        top: 1.3vw;
-        font-size: 3.5vw;
+        text-decoration-color: transparent;
+        top: 1vw;
+        font-size: 3.4vw;
+        letter-spacing: .1vw;
+    }
+    .txtNav:hover
+    {
+        text-decoration: underline;
+        text-color: #ffffff;
+    }
+
+    .navItemHome, .navItemRecipes, .navItemAboutMe
+    {
+        text-align: center;
     }
 
     /*Hide navigation Icons in tablet*/
@@ -783,14 +816,17 @@ body {
     .headerSection
     {
         margin-top: 2vw;/*10px*/
+        cursor: default;
     }
     .bigPicSection
     {
         box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        padding-top: 3vw;/*20px*/
+        padding-top: 1vw;/*20px*/
         padding-bottom: 5vw;/*20px*/
         background-color:#8C470B;
-        padding-right: 1.6vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        cursor: default;
     }
 
     .rightColumnBG1, .rightColumnBG2, .rightColumnBG3
@@ -818,7 +854,6 @@ body {
         width: 100%;
         height: auto;
         max-width: 100%;
-        padding-left: .2vw;
     }
 
     .cPic1
@@ -834,10 +869,15 @@ body {
     .tab
     {
         text-align: center;
-        width: 100%;
+        width:100%;
     }
     .tablinks
     {
+
+    }
+    .tablinks:hover
+    {
+        cursor: pointer;
 
     }
 
@@ -1021,7 +1061,7 @@ body {
     .contactForm
     {
         text-align: center;
-        padding-bottom: 5.56vw;/*20px*/
+        padding-bottom: 5.6vw;/*20px*/
         max-width: 100%;
         width: 50%;
     }
@@ -1034,9 +1074,9 @@ body {
     .labels {
         text-align: left;
         max-width: 100%;
-        margin-bottom: .78vw;/*10px*/
         font-size: 3.4vw;
         letter-spacing: .28vw;/*1px*/
+        box-sizing: border-box;
     }
     .txtBox
     {
@@ -1045,7 +1085,7 @@ body {
         width: 100%;
         background-color: #E3EAE7;
         color: darkgrey;
-        margin-bottom: 16px;
+        margin-bottom: .5vw;
         margin-top: 6px;
         min-height: 3.3vw;
         border-radius: 4px;
@@ -1069,15 +1109,17 @@ body {
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
+        cursor: pointer;
     }
     .formMessage
     {
         text-align: left;
         max-width: 100%;
-        margin-bottom: .78vw;/*10px*/
         font-size: 2.5vw;
         letter-spacing: .28vw;/*1px*/
         color: red;
+        height: 2vw;
+        padding-bottom: 2vw;
     }
 
     /*Sitemap & social media icons*/
@@ -1235,18 +1277,41 @@ body {
         display: none;
     }
 
+
     .topNav
     {
-        display: block;
-        margin-top: 1vw;
+        /* display: block;*/
+        margin-top: .5vw;
         max-width: 100%;
         position: sticky;
         top: 0;
         z-index: 5;
+        display: flex;
+        background-color: #402005;
+        padding-top: .5vw;
+        padding-bottom: .5vw;
+        justify-content: space-around;
     }
 
+    .txtNav
+    {
+        color: #ffffff;
+        text-decoration-color: transparent;
+        top: 1vw;
+        font-size: 1.5vw;
+        letter-spacing: .1vw;
+    }
+    .txtNav:hover
+    {
+        text-decoration: underline;
+        color: #ffffff;
+    }
 
-    .topNav ul
+    .navItemHome, .navItemRecipes, .navItemAboutMe
+    {
+        text-align: center;
+    }
+ /*   .topNav ul
     {
         position: relative;
         display: flex;
@@ -1266,7 +1331,7 @@ body {
         text-decoration: none;
         top: 1vw;
         font-size: 2.1vw;
-    }
+    }*/
 
     /*Hide navigation Icons in tablet*/
     .homeIcon
@@ -1412,7 +1477,7 @@ body {
     {
         color: #000000;
         letter-spacing: .2vw;/*1px*/
-        padding-top: 6vh;/*20px*/
+        padding-top: 3vw;/*20px*/
         font-size: 2vw;
         text-align: center;
         font-weight: bold;
@@ -1642,6 +1707,8 @@ body {
     {
         width: 50%;
         max-width: 100%;
+        height: 100%;
+        padding-bottom: 2vw;
     }
 
     .map
@@ -1656,8 +1723,7 @@ body {
         max-width: 100%;
         border: 1px solid #BF6E26;
         display: block;
-        height: 43.7vh;
-        height: 100%;
+        height: 42.6vw;
     }
     .mapArea
     {
@@ -1691,7 +1757,7 @@ body {
     }
 
     /* Contact Form area*/
-    .insideCF
+   /* .insideCF
     {
         margin-left: 5vw;
         margin-right: 5vw;
@@ -1699,7 +1765,7 @@ body {
     .contactForm
     {
         text-align: center;
-        padding-bottom: 5.56vw;/*20px*/
+        padding-bottom: 2vw;!*20px*!
         max-width: 100%;
         width: 50%;
     }
@@ -1712,9 +1778,9 @@ body {
     .labels {
         text-align: left;
         max-width: 100%;
-        margin-bottom: .2vw;/*10px*/
+        margin-bottom: .2vw;!*10px*!
         font-size: 2vw;
-        letter-spacing: .2vw;/*1px*/
+        letter-spacing: .2vw;!*1px*!
     }
     .txtBox
     {
@@ -1738,12 +1804,12 @@ body {
     {
         width: 100%;
         text-align: center;
-        letter-spacing: .28vw;/*1px*/
+        letter-spacing: .28vw;!*1px*!
         font-size: 2vw;
         background-color: #BF6E26;
         color: white;
         display: block;
-        padding: 1vw 1vw;/*20px 30px*/
+        padding: 1vw 1vw;!*20px 30px*!
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -1752,13 +1818,81 @@ body {
     {
         text-align: left;
         max-width: 100%;
-        margin-bottom: .78vw;/*10px*/
+        margin-bottom: .78vw;!*10px*!
         font-size: 1vw;
-        letter-spacing: .28vw;/*1px*/
+        letter-spacing: .28vw;!*1px*!
         color: red;
     }
 
+*/
+    .insideCF
+    {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .contactForm
+    {
+        text-align: center;
+        padding-bottom: 2vw;/*20px*/
+        max-width: 100%;
+        width: 50%;
+    }
 
+    .rowCF
+    {
+        max-width: 100%;
+    }
+
+    .labels {
+        text-align: left;
+        max-width: 100%;
+        font-size: 1.8vw;
+        letter-spacing: .28vw;/*1px*/
+        box-sizing: border-box;
+    }
+    .txtBox
+    {
+        box-sizing: border-box;
+        max-width: 100%;
+        width: 100%;
+        background-color: #E3EAE7;
+        color: darkgrey;
+        margin-bottom: .3vw;
+        margin-top: 6px;
+        min-height: 3.3vw;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1.8vw;
+        padding: 12px;
+        resize: vertical;
+        font-family: Roboto;
+    }
+
+    .submitBtn
+    {
+        width: 100%;
+        text-align: center;
+        letter-spacing: .28vw;/*1px*/
+        font-size: 2vw;
+        background-color: #BF6E26;
+        color: white;
+        display: block;
+        padding: 2vw 5vw;/*20px 30px*/
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+    }
+    .formMessage
+    {
+        text-align: left;
+        max-width: 100%;
+        font-size: 1.8vw;
+        letter-spacing: .28vw;/*1px*/
+        color: red;
+        height: 1.5vw;
+        padding-bottom: 1.5vw;
+    }
     /*Sitemap & social media icons*/
     .rowSiteMapSocial
     {
@@ -1912,15 +2046,29 @@ body {
 
     .topNav
     {
-        display: block;
-        margin-top: 1vw;
+        /* display: block;*/
+        margin-top: .5vw;
         max-width: 100%;
         position: sticky;
         top: 0;
         z-index: 5;
+        display: flex;
+        background-color: #402005;
+        padding-top: 1.5vw;
+        padding-bottom: .5vw;
+        justify-content: space-around;
     }
 
+    .txtNav
+    {
+        color: #ffffff;
+        text-decoration-color: transparent;
+        top: 1vw;
+        font-size: 1.5vw;
+        letter-spacing: .1vw;
+    }
 
+    /*
     .topNav ul
     {
         position: relative;
@@ -1943,6 +2091,12 @@ body {
         top: 1vw;
         font-size: 1.5vw;
         letter-spacing: .1vw;
+    }
+    */
+
+    .navItemHome, .navItemRecipes, .navItemAboutMe
+    {
+        text-align: center;
     }
 
     /*Hide navigation Icons in tablet*/
@@ -1968,7 +2122,7 @@ body {
         display: block;
         margin: auto;
         width: 4.5vw;
-        margin-top: -.4vw;
+        margin-top: -.5vw;
     }
 
     /* BIG PICTURE SECTION*/
@@ -2176,8 +2330,8 @@ body {
         position: absolute;
         z-index: 4;
         line-height: 1.2vw;
-        top: 1vw;
-        left: 6vw;
+        top: 1.8vw;
+        left: 8.7vw;
     }
     .detox:hover .subTitleDetox
     {
@@ -2224,8 +2378,8 @@ body {
         position: absolute;
         z-index: 4;
         line-height: 1.2vw;
-        top: .9vw;
-        left: 23vw;
+        top: 1.5vw;
+        left: 28vw;
     }
     .picLP3
     {
@@ -2260,8 +2414,8 @@ body {
         position: absolute;
         z-index: 4;
         line-height: 1.2vw;
-        bottom: -11vw;
-        left: 7vw;
+        bottom: -14vw;
+        left: 8.3vw;
     }
 
     .picLP4
@@ -2296,8 +2450,8 @@ body {
         position: absolute;
         z-index: 4;
         line-height: 1.2vw;
-        bottom: -8.5vw;
-        left: 35vw;
+        bottom: -8.7vw;
+        left: 45vw;
     }
     /*
 
@@ -2377,6 +2531,7 @@ body {
         max-width: 100%;
     }
 
+
     /* Contact Form area*/
     .insideCF
     {
@@ -2410,8 +2565,6 @@ body {
         width: 100%;
         background-color: #E3EAE7;
         color: darkgrey;
-        margin-bottom: .2vw;
-        margin-top: .1vw;
         min-height: 2vw;
         border-radius: .4vw;
         cursor: pointer;
@@ -2434,15 +2587,19 @@ body {
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
+        margin-top: .5vw;
     }
+
     .formMessage
     {
         text-align: left;
         max-width: 100%;
-        margin-bottom: .78vw;/*10px*/
-        font-size: 1vw;
-        letter-spacing: .28vw;/*1px*/
+        font-size: 1.2vw;
+        letter-spacing: .1vw;/*1px*/
         color: red;
+        height: 1.3vw;
+        padding-bottom: .9vw;
+        padding-top: .3vw;
     }
 
 
