@@ -145,19 +145,24 @@
                      $('.topNav').slideToggle("fast");
                  });*/
                 /*new code*/
-                $menuIcon.on('click',function(){
-                    $('.topNav').slideToggle("fast");
+                $menuIcon.on('click', function () {
+                    $('.topNav').slideToggle("fast", "linear");
                 });
-                /*Injecting HTML in the picture element to add img tag*/
-                let imgText1 = `<img class="pic"  alt="changingpic" src="dist/imgs/home/optimized/consultancy-new-180x200.png">`;
-                imgPic2.innerHTML = imgText1;
 
-                /*Injecting HTML in the picture element to add img tag*/
-                let imgText2 = `<img class="pic"  alt="changingpic" src="dist/imgs/home/optimized/corporateNutritionNew-180x200.png">`;
-                imgPic3.innerHTML = imgText2;
+                var sPath = window.location.pathname;
+                var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+                if(sPage == "index.html") {
+                    /*Injecting HTML in the picture element to add img tag*/
+                    let imgText1 = `<img class="pic"  alt="changingpic" src="dist/imgs/home/optimized/consultancy-new-180x200.png">`;
+                    imgPic2.innerHTML = imgText1;
 
-                imgPic2.style.display = "block";
-                imgPic3.style.display = "block";
+                    /*Injecting HTML in the picture element to add img tag*/
+                    let imgText2 = `<img class="pic"  alt="changingpic" src="dist/imgs/home/optimized/corporateNutritionNew-180x200.png">`;
+                    imgPic3.innerHTML = imgText2;
+
+                    imgPic2.style.display = "block";
+                    imgPic3.style.display = "block";
+                }
             },
             unmatch: function(){
 
@@ -172,13 +177,18 @@
     function tablet()
     {
         enquire.register("screen and (min-width: 361px) and (max-width: 768px)", {
-            match: function(){
-                imgPic2.style.display = "none";
-                imgPic3.style.display = "none";
+            match: function() {
+                const sPath = window.location.pathname;
+                const sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+                if (sPage == "index.html") {
+                    imgPic2.style.display = "none";
+                    imgPic3.style.display = "none";
 
-                tabClicked(tabWorkshop);
-                tabClicked(tabConsultancy);
-                tabClicked(tabCorporateNutrition);
+                    tabClicked(tabWorkshop);
+                    tabClicked(tabConsultancy);
+                    tabClicked(tabCorporateNutrition);
+                }
+
 
                 /*old and repetitive code*/
                 /*  /!*tabWorkshop*!/
@@ -237,10 +247,13 @@
     {
         enquire.register("screen and (min-width: 769px) and (max-width: 1200px)", {
             match: function(){
-
-                tabClicked(workshops);
-                tabClicked(consultancy);
-                tabClicked(corporateNutrition);
+                const sPath = window.location.pathname;
+                const sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+                if(sPage == "index.html") {
+                    tabClicked(workshops);
+                    tabClicked(consultancy);
+                    tabClicked(corporateNutrition);
+                }
                 /*old and repetitive code*/
                 /*/!*Workshops*!/
                 workshops.addEventListener("mouseleave", function(){
@@ -336,9 +349,13 @@
     {
         enquire.register("screen and (min-width: 1200px)", {
             match: function(){
-                tabClicked(workshops);
-                tabClicked(consultancy);
-                tabClicked(corporateNutrition);
+                const sPath = window.location.pathname;
+                const sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+                if(sPage == "index.html") {
+                    tabClicked(workshops);
+                    tabClicked(consultancy);
+                    tabClicked(corporateNutrition);
+                }
                 /*/!*Workshops*!/
                 workshops.addEventListener("mouseleave", function(){
                     workshops.style.backgroundColor = "#E6842E";
@@ -434,37 +451,41 @@
      */
     function validation()
     {
-        /*CONTACT FORM SUBMIT BUTTON VALIDATION*/
-        submit.addEventListener("click", function()
-            {
-                const fName = document.getElementById("name");
-                const phone = document.getElementById("phone");
-                const email = document.getElementById("email");
+        var sPath = window.location.pathname;
+        var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+        if(sPage == "index.html") {
 
-                if(!fName.checkValidity()) {
-                    if(fName.validity.valueMissing)
-                        document.getElementById("nameMessage").innerHTML = fName.validationMessage;
-                    else if (!isNaN(fName.value))
-                        document.getElementById("nameMessage").innerHTML = "Please enter characters only.";
-                }/*if(!fName.checkValidity())*/
+            /*CONTACT FORM SUBMIT BUTTON VALIDATION*/
+            submit.addEventListener("click", function () {
+                    const fName = document.getElementById("name");
+                    const phone = document.getElementById("phone");
+                    const email = document.getElementById("email");
 
-                if(!phone.checkValidity()) {
+                    if (!fName.checkValidity()) {
+                        if (fName.validity.valueMissing)
+                            document.getElementById("nameMessage").innerHTML = fName.validationMessage;
+                        else if (!isNaN(fName.value))
+                            document.getElementById("nameMessage").innerHTML = "Please enter characters only.";
+                    }/*if(!fName.checkValidity())*/
 
-                    if(phone.validity.valueMissing)
-                        document.getElementById("phoneMessage").innerHTML = phone.validationMessage;
-                    else if (isNaN(parseInt(phone.value))) {
-                        document.getElementById("phoneMessage").innerHTML = "Please enter numbers only.";
-                    }
-                }/* if(!phone.checkValidity())*/
+                    if (!phone.checkValidity()) {
 
-                if(!email.checkValidity()) {
-                    if (email.validity.valueMissing)
-                        document.getElementById("emailMessage").innerHTML = email.validationMessage;
-                    else if (email.validity.patternMismatch)
-                        document.getElementById("emailMessage").innerHTML = "Please enter a valid email address.";
-                }/*if(!email.checkValidity())*/
-            }/* if(!fName.checkValidity())*/
-        )/*submit.addEventListener*/
+                        if (phone.validity.valueMissing)
+                            document.getElementById("phoneMessage").innerHTML = phone.validationMessage;
+                        else if (isNaN(parseInt(phone.value))) {
+                            document.getElementById("phoneMessage").innerHTML = "Please enter numbers only.";
+                        }
+                    }/* if(!phone.checkValidity())*/
+
+                    if (!email.checkValidity()) {
+                        if (email.validity.valueMissing)
+                            document.getElementById("emailMessage").innerHTML = email.validationMessage;
+                        else if (email.validity.patternMismatch)
+                            document.getElementById("emailMessage").innerHTML = "Please enter a valid email address.";
+                    }/*if(!email.checkValidity())*/
+                }/* if(!fName.checkValidity())*/
+            )/*submit.addEventListener*/
+        }
     }//validation
 
     /**

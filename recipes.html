@@ -33,51 +33,48 @@
         </div><!--wrapper, Logo-->
     </header><!--header-->
 
-
-    <nav id="nav1" class="topNav">
-        <div class="wrapper">
-            <ul>
-                <li>
-                    <a href="index.html">
-                        <picture>
-                            <!--<source media="(max-width: 1200px)" srcset="dist/imgs/home/menuicons/home.svg" class="homeIcon" alt="Home Icon">-->
-                            <img alt="Home" src="dist/imgs/home/menuicons/ezgif.com-optimize%20(4).gif" class="homeIcon">
-                        </picture>
-                        <p>Home</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <picture>
-                            <!--                        <source media="(max-width: 1200px)" srcset="dist/imgs/home/menuicons/recipes-59x59.png" class="recipesIcon" alt="Recipes Icon">-->
-                            <img alt="Recipes" src="dist/imgs/home/menuicons/ezgif.com-optimize%20(2).gif" class="recipesIcon">
-                        </picture>
-                        <p>Recipes</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <picture>
-                            <!-- <source media="(max-width: 1200px)" srcset="dist/imgs/home/menuicons/aboutme-59x59.png" class="aboutMeIcon" alt="About Me Icon">-->
-                            <img alt="About Me" src="dist/imgs/home/menuicons/ezgif.com-optimize%20(10).gif" class="aboutMeIcon">
-                        </picture>
-                        <p>About Me</p>
-                    </a>
-                </li>
-            </ul>
-        </div><!--wrapper-->
-    </nav>
+        <nav id="nav1" class="topNav">
+            <div class="navItemHome">
+                <a href="index.html">
+                    <picture>
+                        <source media="(max-width: 1200px)" srcset="dist/imgs/home/menuicons/ezgif.com-optimize%20(4).gif" class="homeIcon" alt="Home Icon">
+                        <img alt="Home" src="dist/imgs/home/menuicons/ezgif.com-optimize%20(4).gif" class="homeIcon">
+                    </picture>
+                    <p class="txtNav">Home</p>
+                </a>
+            </div>
+            <div class="navItemRecipes">
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/recipes-833x838.gif" alt="Recipes Icon">
+                        <img alt="Recipes" src="dist/imgs/home/optimized/recipes-833x838.gif" class="recipesIcon">
+                    </picture>
+                    <p class="txtNav">Recipes</p>
+                </a>
+            </div>
+            <div class="navItemAboutMe">
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/aboutme-finalgif-300x197.gif" class="aboutMeIcon" alt="About Me Icon">
+                        <img alt="About Me" src="dist/imgs/home/optimized/aboutme-finalgif-300x197.gif" class="aboutMeIcon">
+                    </picture>
+                    <p class="txtNav">About Me</p>
+                </a>
+            </div>
+        </nav>
 
     <div class="headerSection">
-        <div class="wrapper">
+        <div class="wrapper2">
             <div class="bigPicSection">
                 <div class="rowBG" id="row1">
                     <div class="ht">
                         <a href="#" id="idPic1">
                             <picture id="changingPic">
-                                <source media="(max-width: 360px)" srcset="dist/imgs/recipes/imgs/mainpic.jpg" class="pic">
-                                <source media="(max-width: 768px)" srcset="dist/imgs/recipes/imgs/mainpic.jpg" class="pic">
-                                <img class="pic" id="pic1" alt="changingpic" src="dist/imgs/recipes/imgs/mainpic.jpg">
+                                <source media="(max-width: 360px)" srcset="dist/imgs/recipes/mainpic-359x256.png" class="pic">
+                                <source media="(max-width: 768px)" srcset="dist/imgs/recipes/mainpic.jpg" class="pic">
+                                <source media="(max-width: 1200px)" srcset="dist/imgs/recipes/mainpic.jpg" class="pic">
+                                <source media="(min-width: 1200px)" srcset="dist/imgs/recipes/mainpic.jpg" class="pic">
+                                <img class="pic" id="pic1" alt="changingpic" src="dist/imgs/recipes/mainpic-359x256.png">
                             </picture>
                         </a>
                         <div class="picNotice">
@@ -100,10 +97,10 @@
                     <div class="text">
                         <a href="#">
                             <picture>
-                                <source media="(max-width: 360px)" srcset="dist/imgs/recipes/imgs/moong-160x107.png">
-                                <source media="(max-width: 768px)" srcset="dist/imgs/recipes/imgs/moongSalad-260x173.png">
-                                <source media="(max-width: 1200px)" srcset="dist/imgs/recipes/imgs/moongSalad-360x240.png">
-                                <img class="picLP" alt="changingpic"  src="dist/imgs/recipes/imgs/moongSalad-360x240.png">
+                                <source media="(max-width: 360px)" srcset="dist/imgs/recipes/moongSalad-293x195.png">
+                                <source media="(max-width: 768px)" srcset="dist/imgs/recipes/moongSalad-344x229.png">
+                                <source media="(max-width: 1200px)" srcset="dist/imgs/recipes/moongSalad-360x240.png">
+                                <img class="picLP" alt="changingpic"  src="dist/imgs/recipes/moongSalad-360x240.png">
                             </picture>
                         </a>
                         <p>Moong Salad</p>
@@ -112,10 +109,10 @@
                     <div class="text">
                         <a href="#">
                             <picture>
-                                <source media="(max-width: 360px)" srcset="dist/imgs/recipes/imgs/sugarlessPudding-160x106.png">
-                                <source media="(max-width: 768px)" srcset="dist/imgs/recipes/imgs/sugarlesspudding-260x173.png">
-                                <source media="(max-width: 1200px)" srcset="dist/imgs/recipes/imgs/sugarlesspudding-360x240.png">
-                                <img class="picLP" alt="changingpic" src="dist/imgs/recipes/imgs/sugarlesspudding-360x240.png">
+                                <source media="(max-width: 360px)" srcset="dist/imgs/recipes/sugarlesspudding-293x195.png">
+                                <source media="(max-width: 768px)" srcset="dist/imgs/recipes/sugarlesspudding-344x230.png">
+                                <source media="(max-width: 1200px)" srcset="dist/imgs/recipes/sugarlesspudding-360x240.png">
+                                <img class="picLP" alt="changingpic" src="dist/imgs/recipes/sugarlesspudding-360x240.png">
                             </picture>
                         </a>
                         <p>Sugarless pudding</p>
@@ -123,10 +120,10 @@
                     <div class="text">
                         <a href="#">
                             <picture>
-                                <source media="(max-width: 360px)" srcset="dist/imgs/recipes/imgs/broccoli-wonder-160x107.png">
-                                <source media="(max-width: 768px)" srcset="dist/imgs/recipes/imgs/broccoli-wonder-260x173.png">
-                                <source media="(max-width: 1200px)" srcset="dist/imgs/recipes/imgs/broccoli-wonder-360x240.png">
-                                <img class="picLP" alt="changingpic"  src="dist/imgs/recipes/imgs/broccoli-wonder-360x240.png">
+                                <source media="(max-width: 360px)" srcset="dist/imgs/recipes/broccoli-wonder-293x195.png">
+                                <source media="(max-width: 768px)" srcset="dist/imgs/recipes/broccoli-wonder-344x229.png">
+                                <source media="(max-width: 1200px)" srcset="dist/imgs/recipes/broccoli-wonder-360x240.png">
+                                <img class="picLP" alt="changingpic"  src="dist/imgs/recipes/broccoli-wonder-360x240.png">
                             </picture>
                         </a>
                         <p>Broccoli wonder</p>
@@ -134,10 +131,10 @@
                     <div class="text">
                         <a href="#">
                             <picture>
-                                <source media="(max-width: 360px)" srcset="dist/imgs/recipes/imgs/granola-160x106.png">
-                                <source media="(max-width: 768px)" srcset="dist/imgs/recipes/imgs/granola-260x173.png">
-                                <source media="(max-width: 1200px)" srcset="dist/imgs/recipes/imgs/granola-360x240.png">
-                                <img class="picLP" alt="changingpic" src="dist/imgs/recipes/imgs/granola-360x240.png">
+                                <source media="(max-width: 360px)" srcset="dist/imgs/recipes/granola-293x195.png">
+                                <source media="(max-width: 768px)" srcset="dist/imgs/recipes/granola-344x229.png">
+                                <source media="(max-width: 1200px)" srcset="dist/imgs/recipes/granola-360x240.png">
+                                <img class="picLP" alt="changingpic" src="dist/imgs/recipes/granola-360x240.png">
                             </picture>
                         </a>
                         <p>Healthy granola</p>
@@ -145,10 +142,10 @@
                     <div class="text">
                         <a href="#">
                             <picture>
-                                <source media="(max-width: 360px)" srcset="dist/imgs/recipes/imgs/yoghurtdip-160x107.png">
-                                <source media="(max-width: 768px)" srcset="dist/imgs/recipes/imgs/yoghurtdip-260x173.png">
-                                <source media="(max-width: 1200px)" srcset="dist/imgs/recipes/imgs/yoghurtdip-360x240.png">
-                                <img class="picLP" alt="changingpic"  src="dist/imgs/recipes/imgs/yoghurtdip-360x240.png">
+                                <source media="(max-width: 360px)" srcset="dist/imgs/recipes/yoghurtdip-293x195.png">
+                                <source media="(max-width: 768px)" srcset="dist/imgs/recipes/yoghurtdip-344x230.png">
+                                <source media="(max-width: 1200px)" srcset="dist/imgs/recipes/yoghurtdip-360x240.png">
+                                <img class="picLP" alt="changingpic"  src="dist/imgs/recipes/yoghurtdip-360x240.png">
                             </picture>
                         </a>
                         <p>Yoghurt dip</p>
@@ -156,10 +153,10 @@
                     <div class="text">
                         <a href="#">
                             <picture>
-                                <source media="(max-width: 360px)" srcset="dist/imgs/recipes/imgs/houmous-160x107.png">
-                                <source media="(max-width: 768px)" srcset="dist/imgs/recipes/imgs/houmous-260x173.png">
-                                <source media="(max-width: 1200px)" srcset="dist/imgs/recipes/imgs/houmous-360x240.png">
-                                <img class="picLP" alt="changingpic" src="dist/imgs/recipes/imgs/houmous-360x240.png">
+                                <source media="(max-width: 360px)" srcset="dist/imgs/recipes/houmous-293x195.png">
+                                <source media="(max-width: 768px)" srcset="dist/imgs/recipes/houmous-344x230.png">
+                                <source media="(max-width: 1200px)" srcset="dist/imgs/recipes/houmous-360x240.png">
+                                <img class="picLP" alt="changingpic" src="dist/imgs/recipes/houmous-360x240.png">
                             </picture>
                         </a>
                         <p>Healthy Houmous</p>
@@ -197,7 +194,7 @@
                                 <picture>
                                     <source media="(max-width: 360px)" srcset="dist/imgs/home/optimized/twitter-50x50.png">
                                     <source media="(max-width: 768px)" srcset="dist/imgs/home/optimized/twitter-50x50.png">
-                                    <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/twitter-50x50.png">
+                                    <source media="(min-width: 768px)" srcset="dist/imgs/home/optimized/twitter-50x50.png">
                                     <img src="dist/imgs/home/optimized/twitter-50x50.png" title="Find us on Twitter" alt="Twitter" class="socialMediaIcons">
                                 </picture>
                             </a>
@@ -205,7 +202,7 @@
                                 <picture>
                                     <source media="(max-width: 360px)" srcset="dist/imgs/home/optimized/facebook-50x50.png">
                                     <source media="(max-width: 768px)" srcset="dist/imgs/home/optimized/facebook-50x50.png">
-                                    <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/facebook-50x50.png">
+                                    <source media="(min-width: 768px)" srcset="dist/imgs/home/optimized/facebook-50x50.png">
                                     <img src="dist/imgs/home/optimized/facebook-50x50.png" title="Find us on Facebook" alt="Facebook" class="socialMediaIcons">
                                 </picture>
                             </a>
