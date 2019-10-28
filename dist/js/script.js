@@ -149,9 +149,10 @@
                     $('.topNav').slideToggle("fast", "linear");
                 });
 
-                var sPath = window.location.pathname;
-                var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
-                if(sPage == "index.html") {
+                /*const sPath = window.location.pathname;
+                const sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+                if(sPage == "index.html")*/
+                if(imgPic2){
                     /*Injecting HTML in the picture element to add img tag*/
                     let imgText1 = `<img class="pic"  alt="changingpic" src="dist/imgs/home/optimized/consultancy-new-180x200.png">`;
                     imgPic2.innerHTML = imgText1;
@@ -178,9 +179,12 @@
     {
         enquire.register("screen and (min-width: 361px) and (max-width: 768px)", {
             match: function() {
-                const sPath = window.location.pathname;
+                //To check which page we are in
+               /* const sPath = window.location.pathname;
                 const sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
-                if (sPage == "index.html") {
+                if (sPage == "index.html") {*/
+               if(tabWorkshop){
+
                     imgPic2.style.display = "none";
                     imgPic3.style.display = "none";
 
@@ -247,9 +251,7 @@
     {
         enquire.register("screen and (min-width: 769px) and (max-width: 1200px)", {
             match: function(){
-                const sPath = window.location.pathname;
-                const sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
-                if(sPage == "index.html") {
+                if(workshops) {
                     tabClicked(workshops);
                     tabClicked(consultancy);
                     tabClicked(corporateNutrition);
@@ -349,9 +351,10 @@
     {
         enquire.register("screen and (min-width: 1200px)", {
             match: function(){
-                const sPath = window.location.pathname;
+                /*const sPath = window.location.pathname;
                 const sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
-                if(sPage == "index.html") {
+                if(sPage == "index.html")*/
+                if(workshops){
                     tabClicked(workshops);
                     tabClicked(consultancy);
                     tabClicked(corporateNutrition);
@@ -451,10 +454,10 @@
      */
     function validation()
     {
-        var sPath = window.location.pathname;
-        var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
-        if(sPage == "index.html") {
-
+        /*const sPath = window.location.pathname;
+        const sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+        if(sPage == "index.html")*/
+        if(submit){
             /*CONTACT FORM SUBMIT BUTTON VALIDATION*/
             submit.addEventListener("click", function () {
                     const fName = document.getElementById("name");

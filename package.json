@@ -4,13 +4,8 @@
   "description": "mobile web development project",
   "main": "index.js",
   "dependencies": {
-<<<<<<< HEAD
     "enquire.js": "2.1.6",
-    "jquery": "3.4.1",
-    "browser-sync": "2.26.7"
-=======
-    "browser-sync": "^2.26.7"
->>>>>>> 213e68297ff12c9af17bbd6c163ed024dcb9d76e
+    "jquery": "3.4.1"
   },
   "devDependencies": {},
   "scripts": {
