@@ -31,7 +31,7 @@ html, body{  width: 100%;  height: 100%;  }
 
 /*   GENERAL SECTION */
 body {
-   /* font-family: "Merriweather", serif;*/
+    /* font-family: "Merriweather", serif;*/
     font-family: Roboto, sans-serif;
     background-color: #E3EAE7;
 }
@@ -41,15 +41,6 @@ body {
 /*.roboto {
     font-family: Roboto;
 }*/
-
-
-
-/*    LOGO AND HAMBURGER SECTION */
-
-
-/*    HEADER/BIG PIC SECTION */
-
-
 
 /* MEDIA QUERIES*/
 
@@ -93,6 +84,10 @@ body {
     {
         margin-right: 3vw;
     }
+    .showHome:hover
+    {
+        cursor: pointer;
+    }
     .logo
     {
         max-width: 100%;
@@ -100,6 +95,7 @@ body {
         height: auto;
         width: 20vw;
     }
+
 
     .heading
     {
@@ -208,83 +204,114 @@ body {
     /* BIG PICTURE SECTION*/
     .headerSection
     {
-        margin-top: 2vw;
-    }
-    .bigPicSection
-    {
-        box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        padding-top: 2.8vw;/*20px*/
-        background-color:#8C470B;
-    }
-    .rowBG
-    {
-        max-width: 100%;
-        display: flex;
-        padding-bottom: 2.8vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
         width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .ht
+    {
+        display: inline-flex; /*To display the picNotice*/
         position: relative;
-    }
-    #idPic1
-    {
-
-
+        overflow: hidden;
+        box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;
     }
 
-   .picNotice
-   {
-      position: absolute;
 
-      /* background-color: #ffffff;
-       width: 50%;
-       max-width: 100%;
-       box-sizing: border-box;
-       height: 80%;
-       text-align: center;*/
-        z-index: 2;
-   }
-
- /*   h1
+    .pic
     {
-        margin-top: 2vw;
-        padding-bottom: 2vw;
-        font-size: 5vw;
-        letter-spacing: .28vw;!*1px*!
-        font-weight: bold;
-        color: #000000;
-        padding-left: 3vw;
-        padding-right: 3vw;
         box-sizing: border-box;
-        line-height: 6vw;
+        /*width: 100%;*/
+        object-fit: cover;
+        max-width: 100%;
+        /*display: inline;*/
+        vertical-align: top;/*To remove white border below the picture*/
+        /* transform: scale(1.1);
+         transition: 2s;*/
+        /*background-size: auto;*/
+    }
+    /*  .pic:hover
+      {
+          transform: scale(1);
+      }*/
+
+
+  /*  .picNotice
+    {
+        position: absolute;
+
+        background-color: #ffffff;
+        width: 45vw;
+        height: 45vw;
+        max-width: 100%;
+        box-sizing: border-box;
+        z-index: 2;
+        text-align: center;
     }*/
+    .picNotice
+    {
+        position: absolute;
+        bottom: -4vw;
+        right: 5vw;
+        /* background-color: #ffffff;
+         width: 50%;
+         max-width: 100%;
+         box-sizing: border-box;
+         height: 80%;
+         text-align: center;*/
+        z-index: 2;
+    }
+
+    /*   h1
+       {
+           margin-top: 2vw;
+           padding-bottom: 2vw;
+           font-size: 5vw;
+           letter-spacing: .28vw;!*1px*!
+           font-weight: bold;
+           color: #000000;
+           padding-left: 3vw;
+           padding-right: 3vw;
+           box-sizing: border-box;
+           line-height: 6vw;
+       }*/
 
     .par
     {
-       /* font-size: 5vw;
-        line-height: 6vw;
-        letter-spacing: .28vw;!*1px*!
-        font-weight: normal;
-        color: dimgrey;
-        padding-left: 3vw;
-        padding-right: 3vw;
-        padding-bottom: 3vw;
-        box-sizing: border-box;*/
+        /* font-size: 5vw;
+         line-height: 6vw;
+         letter-spacing: .28vw;!*1px*!
+         font-weight: normal;
+         color: dimgrey;
+         padding-left: 3vw;
+         padding-right: 3vw;
+         padding-bottom: 3vw;
+         box-sizing: border-box;*/
         display: none;
     }
-   .btn
-   {
-       background-color: #BF6E26;
-       color: white;
-       letter-spacing: .28vw;
-       margin-top: -19vw;
-       font-size: 5vw;
-       display: block;
-       padding: 2vw 1vw;
-       max-width: 100%;
-       margin-left: 55vw;
-       width: 40%;
-       text-align: center;
+    .btn
+    {
+        background-color: #BF6E26;
+        color: white;
+        letter-spacing: .28vw;
+        margin-top: -19vw;
+        font-size: 5vw;
+        display: block;
+        padding: 2vw 1vw;
+        max-width: 100%;
+        margin-left: 55vw;
+        width: 40%;
+        text-align: center;
+        text-decoration: none;
+    }
+    .btn:hover
+    {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 
-   }
 
     .heads
     {
@@ -310,26 +337,6 @@ body {
         text-align: center;
     }
 
-    .pic
-    {
-        box-sizing: border-box;
-        height: 76vh;
-        width: 100%;
-        max-width: 100%;
-        object-fit: contain;
-        vertical-align: top;/*To remove white border below the picture*/
-        /* transform: scale(1.1);
-         transition: 2s;*/
-        /*background-size: auto;*/
-    }
-
-    /*new code*/
-    .ht
-    {
-        height: auto;
-        overflow: hidden;
-    }
-
 
     .iconImage
     {
@@ -349,6 +356,12 @@ body {
         text-align: center;
         padding-top: 5.6vw;/*20px*/
         line-height: 7vw;
+        text-decoration: none;
+    }
+    .text:hover
+    {
+        text-decoration: underline;
+        cursor: pointer;
     }
     .brownRect
     {
@@ -371,9 +384,9 @@ body {
     .linkedP
     {
         border-top:  1.11vw solid #ffffff;/*4px*/
-        margin-bottom: 9vw;/*20px*/
+        margin-bottom: 5vw;/*20px*/
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
-        margin-top: 9vw;
+        margin-top: 5vw;
         background-color: #BF6E26;
     }
     .titleLP
@@ -395,21 +408,21 @@ body {
         grid-gap: 1vw;
         width: 100%;
     }
-    .rowLP > div
+    .pics
     {
         text-align: center;
-        padding-top: 1vw;
+        padding-top: 2vw;
         padding-right: 1vw;
         padding-left: 1vw;
-        padding-bottom: 2vw;
-
     }
-    .rowLP > div p
+    .pics:hover
     {
-        padding-top: 2vw;
-
+        cursor: pointer;
     }
-
+    .pics:last-child
+    {
+        padding-bottom: 4vw;
+    }
 
 
     .picLP
@@ -464,6 +477,7 @@ body {
     .linkSiteMap:hover
     {
         text-decoration: underline;
+        cursor: pointer;
     }
     .linkSpace
     {
@@ -498,6 +512,10 @@ body {
     .socialMediaIcons
     {
         max-width: 100%;
+    }
+    .socialMediaIcons:hover
+    {
+        cursor: pointer;
     }
 
     /*This is to remove the unwanted underscore in the a tag*/
@@ -552,6 +570,11 @@ body {
     {
         margin-right: 1vw;
     }
+    .showHome:hover
+    {
+        cursor: pointer;
+    }
+
     .logo
     {
         max-width: 100%;
@@ -559,6 +582,7 @@ body {
         height: auto;
         width: 12vw;
     }
+
     .heading
     {
         max-width: 100%;
@@ -573,7 +597,7 @@ body {
     /*  NAVIGATION SECTION */
     .wrapper2
     {
-        width: 100%; /*360px*/
+        width: 100vw;
         margin: 0 auto;
         max-width: 100%;
     }
@@ -647,6 +671,7 @@ body {
     {
         text-decoration: underline;
         text-color: #ffffff;
+        cursor: pointer;
     }
 
     .navItemHome, .navItemRecipes, .navItemAboutMe
@@ -673,42 +698,51 @@ body {
     /* BIG PICTURE SECTION*/
     .headerSection
     {
-        margin-top: 2vw;
-    }
-    .bigPicSection
-    {
-        box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
-        padding-top: 1vw;/*20px*/
-        padding-bottom: 1vw;/*20px*/
-        background-color:#8C470B;
-    }
-    .rowBG
-    {
-        max-width: 100%;
-        display: flex;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
         width: 100%;
-        position: relative;
-
+        max-width: 100%;
+        text-align: center;
     }
-    #idPic1
+
+    .ht
     {
-
-
+        display: inline-flex; /*To display the picNotice*/
+        position: relative;
+        overflow: hidden;
+        box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;
     }
+
+
+    .pic
+    {
+        box-sizing: border-box;
+        object-fit: cover;
+        max-width: 100%;
+        /*display: inline;*/
+        vertical-align: top;/*To remove white border below the picture*/
+        /* transform: scale(1.1);
+         transition: 2s;*/
+        /*background-size: auto;*/
+    }
+    /*  .pic:hover
+      {
+          transform: scale(1);
+      }*/
 
     .picNotice
     {
         position: absolute;
-        top: 42vw;
-        right: 1.5vw;
+        bottom: 1vw;
+        right: 1vw;
         background-color: #ffffff;
-        width: 35%;
+        width: 38vw;
+        height: 28vw;
         max-width: 100%;
         box-sizing: border-box;
         z-index: 2;
         text-align: center;
     }
-
     /* h1
      {
          margin-top: 2vw;
@@ -737,7 +771,7 @@ body {
 
     .par
     {
-        font-size: 2.9vw;
+        font-size: 3vw;
         line-height: 3vw;
         letter-spacing: .1vw;/*1px*/
         font-weight: normal;
@@ -753,17 +787,21 @@ body {
         background-color: #BF6E26;
         color: white;
         letter-spacing: .1vw;
-        margin-bottom: 1vw;
-        font-size: 2.9vw;
+        font-size: 3.9vw;
         display: block;
-        padding: 1vw 1vw;
+        padding: .5vw 1.1vw;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
-        width: 65%;
+        width: 90%;
         text-align: center;
+        text-decoration: none;
     }
-
+    .btn:hover
+    {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 
     .txtBox
     {
@@ -778,26 +816,15 @@ body {
         text-align: center;
     }
 
-    .pic
-    {
-        box-sizing: border-box;
-        height: 76vh;
-        width: 100%;
-        object-fit: contain;
-        max-width: 100%;
-        vertical-align: top;/*To remove white border below the picture*/
-        /* transform: scale(1.1);
-         transition: 2s;*/
-        /*background-size: auto;*/
-    }
 
-    /*new code*/
-    .ht
-    {
-        height: auto;
-        overflow: hidden;
-    }
 
+    /*  !*new code*!
+      .ht
+      {
+          height: auto;
+          overflow: hidden;
+      }
+  */
 
     /*new code*/
 
@@ -818,7 +845,12 @@ body {
         font-size: 3.4vw;
         letter-spacing: .28vw;/*1px*/
         text-align: center;
-
+        text-decoration: none;
+    }
+    .text:hover
+    {
+        text-decoration: underline;
+        cursor: pointer;
     }
 
     .brownRect
@@ -842,9 +874,9 @@ body {
     .linkedP
     {
         border-top:  1.11vw solid #ffffff;/*4px*/
-        margin-bottom: 2vw;/*20px*/
+        margin-bottom: 4vw;/*20px*/
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
-        margin-top: 2vw;
+        margin-top: 4vw;
         background-color: #BF6E26;
         width: 100%;
     }
@@ -866,19 +898,24 @@ body {
         grid-template-columns: repeat(2, minmax(50%, 1vw));
 
     }
-    .rowLP > div
+    .pics
     {
         text-align: center;
         padding-top: 1vw;
         padding-right: 1vw;
         padding-left: 1vw;
         padding-bottom: 2vw;
-       /*!* overflow: hidden;*/
-       /* height: auto;*!*/
+        /*!* overflow: hidden;*/
+        /* height: auto;*!*/
     }
-    .rowLP > div p
+
+    .pics:hover
     {
-        padding-top: 2vw;
+        cursor: pointer;
+    }
+    .pics:last-child
+    {
+        padding-bottom: 4vw;
     }
     .picLP
     {
@@ -889,14 +926,14 @@ body {
     }
 
 
- /*   .picLP:hover
-      {
-        transform: scale(1.1);
-        transition: 1s;
-          width: 100%;
-        border: transparent;
+    /*   .picLP:hover
+         {
+           transform: scale(1.1);
+           transition: 1s;
+             width: 100%;
+           border: transparent;
 
-      }*/
+         }*/
     /*Sitemap & social media icons*/
     .rowSiteMapSocial
     {
@@ -933,6 +970,7 @@ body {
     .linkSiteMap:hover
     {
         text-decoration: underline;
+        cursor: pointer;
     }
     .txtSM
     {
@@ -964,9 +1002,11 @@ body {
     .socialMediaIcons
     {
         max-width: 100%;
-
     }
-
+    .socialMediaIcons:hover
+    {
+        cursor: pointer;
+    }
     .removeUnderscore
     {
         text-decoration: none;
@@ -1025,6 +1065,10 @@ body {
     {
         padding-right: 2vw;
     }
+    .showHome:hover
+    {
+        cursor: pointer;
+    }
     .logo
     {
         max-width: 100%;
@@ -1078,6 +1122,7 @@ body {
     {
         text-decoration: underline;
         color: #ffffff;
+        cursor: pointer;
     }
 
     .navItemHome, .navItemRecipes, .navItemAboutMe
@@ -1132,87 +1177,82 @@ body {
         margin-top: 1.2vw;
     }
 
-    /* BIG PICTURE SECTION*/
+
+    /*BIG PIC SECTION*/
     .headerSection
     {
-        margin-top: 2vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
         width: 100%;
         max-width: 100%;
+        text-align: center;
     }
-    .bigPicSection
-    {
+    /* .bigPicSection
+     {
 
-        background-color:#8C470B;
-        padding-bottom: 1vw;/*20px*/
-        padding-top: 1vw;/*20px*/
-        padding-left: 1vw;/*20px*/
-        padding-right: 1vw;/*20px*/
-    }
-    .rowBG
-    {
-        max-width: 100%;
-        display: flex;
+     }*/
+    /* .rowBG
+     {
+         max-width: 100%;
+         margin-bottom: 1vw;
+         width: 100%;
+         text-align: center;
 
-        width: 100%;
-        height: auto;
-    }
-
-
-    /*new code*/
+     }*/
     .ht
     {
-        height: auto;
+        display: inline-flex; /*To display the picNotice*/
+        position: relative;
         overflow: hidden;
+        box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;
     }
 
-
-    .txt
-    {
-        color: #ffffff;
-        font-size: 3vw;
-        letter-spacing: .28vw;/*1px*/
-        text-align: center;
-        padding-bottom: 4.2vw;
-    }
 
     .pic
     {
         box-sizing: border-box;
-        height: 76vh;
-        width: 100%;
+        /*height: 76vh;*/
+        /*width: 100%;*/
+        object-fit: cover;
         max-width: 100%;
-        object-fit: contain;
+        /*display: inline;*/
         vertical-align: top;/*To remove white border below the picture*/
-        box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;/*-4px 6px 8px 1px*/
         /* transform: scale(1.1);
          transition: 2s;*/
         /*background-size: auto;*/
     }
+    /*  .pic:hover
+      {
+          transform: scale(1);
+      }*/
 
-    /*new code*/
 
     .text
     {
         color: #ffffff;
-        font-size: 2vw;
-        letter-spacing: .2vw;/*1px*/
-        text-align: center;
-        padding-top: 5.6vw;/*20px*/
+        font-size: 1.3vw;
+        letter-spacing: .1vw;/*1px*/
+        text-decoration: none;
     }
+    .text:hover
+    {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
 
     .picNotice
     {
         position: absolute;
-        top: 60.5vw;
-        right: 7vw;
+        bottom: 1vw;
+        right: 1vw;
         background-color: #ffffff;
-        width: 27%;
+        width: 25vw;
         max-width: 100%;
         box-sizing: border-box;
         z-index: 2;
         text-align: center;
     }
-
     /* h1
      {
          margin-top: 2vw;
@@ -1268,7 +1308,11 @@ body {
         text-align: center;
     }
 
-
+    .btn:hover
+    {
+        cursor: pointer;
+        text-decoration: underline;
+    }
 
     /*LINKED PICTURES*/
     .linkedP
@@ -1288,7 +1332,7 @@ body {
         grid-template-columns: repeat(3, minmax(33.3%, 1vw));
         /*grid-gap: 1vw;*/
     }
-    .rowLP > div
+    .pics
     {
         text-align: center;
         padding-top: 1vw;
@@ -1296,11 +1340,7 @@ body {
         padding-left: 1vw;
         padding-bottom: 2vw;
     }
-    .rowLP > div p
-    {
-        padding-top: 2vw;
-        color: #ffffff;
-    }
+
 
     .titleLP
     {
@@ -1359,7 +1399,7 @@ body {
     .linkSiteMap:hover
     {
         text-decoration: underline;
-
+        cursor: pointer;
     }
     .txtSM
     {
@@ -1387,6 +1427,7 @@ body {
     .removeUnderscore
     {
         text-decoration: none;
+        cursor: pointer;
     }
     .socialMediaIcons
     {
@@ -1423,7 +1464,7 @@ body {
         width: 100%; /*360px*/
         margin: 0 auto;
         max-width: 100%;
-        width: 90vw;
+        width: 77vw;
     }
 
     .logoAndHam
@@ -1448,6 +1489,10 @@ body {
     .showHome
     {
         margin-right: 1vw;
+    }
+    .showHome:hover
+    {
+        cursor: pointer;
     }
     .logo
     {
@@ -1529,7 +1574,6 @@ body {
         text-align: center;
     }
 
-    /*Hide navigation Icons in tablet*/
     .homeIcon
     {
         display: block;
@@ -1559,53 +1603,49 @@ body {
     .headerSection
     {
         margin-top: 1vw;
-
-    }
-    .bigPicSection
-    {
-
-    }
-    .rowBG
-    {
-        max-width: 100%;
         margin-bottom: 1vw;
         width: 100%;
+        max-width: 100%;
         text-align: center;
-
     }
+    /* .bigPicSection
+     {
+
+     }*/
+    /* .rowBG
+     {
+         max-width: 100%;
+         margin-bottom: 1vw;
+         width: 100%;
+         text-align: center;
+
+     }*/
     .ht
     {
-        /*overflow: hidden;*/
-        /*background-size: cover;*/
-        display: inline-flex;
+        display: inline-flex; /*To display the picNotice*/
         position: relative;
-        background-size: cover;
-        height: 76vh;
+        /*overflow: hidden;*/
+        box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;
     }
-   /* .cPic1
-    {
-        width: 100%;
-        height: 100%;
-    }*/
+
 
     .pic
     {
         box-sizing: border-box;
-        height: 76vh;
-        /*width: 100%;*/
-        object-fit: contain;
+        /*height: 76vh;*/
+        width: 100%;
+        object-fit: cover;
         max-width: 100%;
-        display: inline;
+        /*display: inline;*/
         vertical-align: top;/*To remove white border below the picture*/
-        box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;
-       /* transform: scale(1.1);
-        transition: 2s;*/
+        /* transform: scale(1.1);
+         transition: 2s;*/
         /*background-size: auto;*/
     }
-  /*  .pic:hover
-    {
-        transform: scale(1);
-    }*/
+    /*  .pic:hover
+      {
+          transform: scale(1);
+      }*/
 
 
     .text
@@ -1613,6 +1653,12 @@ body {
         color: #ffffff;
         font-size: 1.3vw;
         letter-spacing: .1vw;/*1px*/
+        text-decoration: none;
+    }
+    .text:hover
+    {
+        text-decoration: underline;
+        cursor: pointer;
     }
 
     .picNotice
@@ -1665,6 +1711,11 @@ body {
         width: 50%;
         text-align: center;
     }
+    .btn:hover
+    {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 
     /*LINKED PICTURES*/
     /*/newcode*/
@@ -1694,19 +1745,13 @@ body {
         /*grid-gap: 1vw;*/
         width: 100%;
     }
-    .rowLP > div
+    .pics
     {
         text-align: center;
         padding-top: 1vw;
         padding-right: 1vw;
         padding-left: 1vw;
         padding-bottom: 1vw;
-
-    }
-    .rowLP > div p
-    {
-        padding-top: 1vw;
-
     }
 
 
@@ -1762,7 +1807,7 @@ body {
     .linkSiteMap:hover
     {
         text-decoration: underline;
-
+        cursor: pointer;
     }
     .txtSM
     {
@@ -1788,6 +1833,7 @@ body {
     .removeUnderscore
     {
         text-decoration: none;
+        cursor: pointer;
     }
     .socialMediaIcons
     {

@@ -883,11 +883,6 @@ body {
         max-width: 100%;
     }
 
-    .cPic1
-    {
-
-    }
-
     .iconImage
     {
         display: none;
@@ -898,14 +893,10 @@ body {
         text-align: center;
         width:100%;
     }
-    .tablinks
-    {
 
-    }
     .tablinks:hover
     {
         cursor: pointer;
-
     }
 
     /*  PHOTO GALLERY SECTION */
