@@ -273,6 +273,7 @@ body {
         width: 100%;
         height: auto;
         max-width: 100%;
+        display: block;
     }
 
     .tab
@@ -464,6 +465,20 @@ body {
      }
  */
     /*MAP & ADDRESS SECTION*/
+    .mapAddress
+    {
+        margin-top: 9vw;/*20px*/
+        background-color: white;
+        border-top: 1.11vw solid #73290E;/*4px*/
+        width: 100%;
+    }
+
+    .mapArea
+    {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
     .titleMap
     {
         font-size: 5vw;
@@ -471,13 +486,9 @@ body {
         padding-top: 5.6vw;
         padding-bottom: 2.8vw;
         text-align: center;
+        letter-spacing: .28vw;/*1px*/
     }
-    .mapAddress
-    {
-        margin-top: 9vw;/*20px*/
-        background-color: white;
-        border-top: 1.11vw solid #73290E;/*4px*/
-    }
+
     /* .map
      {
          max-width: 100%;
@@ -507,10 +518,9 @@ body {
          max-width: 100%;
 
      }*/
-    .mapArea
+    .titAdd
     {
-        margin-left: 2.8vw;
-        margin-right: 2.8vw;
+
     }
     .address
     {
@@ -521,27 +531,26 @@ body {
         letter-spacing: .28vw;/*1px*/
         max-width: 100%;
     }
-
-
     /* Contact Form area*/
-    .insideCF
-    {
-        margin-left: 2.8vw;
-        margin-right: 2.8vw;
-    }
     .contactForm
     {
         margin-bottom: 9vw;
         text-align: center;
-        padding-top: 2.8vw;/*10px*/
-        padding-bottom: 5.6vw;/*20px*/
         border-top: .28vw solid #8C470B;/*1px*/
         max-width: 100%;
         background-color: white;
+        padding-bottom: 2.8vw;
+    }
+    .btn
+    {
+        padding-left: 1vw;
+        padding-right: 1vw;
     }
     .rowCF
     {
         max-width: 100%;
+        padding-left: 1vw;
+        padding-right: 1vw;
     }
 
     .labels {
@@ -583,7 +592,16 @@ body {
         width: 100%;
         text-align: center;
         cursor: pointer;
+        height: 24vw;
     }
+
+    .submitBtn:hover
+    {
+        cursor: pointer;
+        text-decoration: underline;
+        border: .7vw solid #73290E;
+    }
+
 
     .formMessage
     {
@@ -594,6 +612,7 @@ body {
         letter-spacing: .28vw;/*1px*/
         color: red;
         height: 4vw;
+        margin-top: 1vw;
     }
 
     /*Sitemap & social media icons*/
@@ -609,7 +628,7 @@ body {
         text-align: center;
         padding-bottom: 5.56vw;/*20px*/
         margin-left: 5vw;
-        margin-right: 5vw;
+        margin-right: 1vw;
     }
     .colSiteMap
     {
@@ -640,7 +659,7 @@ body {
     .txtSM
     {
         color: #ffffff;
-        font-size: 5vw;
+        font-size: 7vw;
         letter-spacing: .28vw;/*1px*/
         font-weight: bold;
         padding-top: 5.56vw;/*20px*/
@@ -661,7 +680,7 @@ body {
      }*/
     .socialM
     {
-        padding-right: 5.56vw;/*20px*/
+
     }
     .socialMediaIcons
     {
@@ -810,7 +829,7 @@ body {
         color: #ffffff;
         text-decoration-color: transparent;
         top: 1vw;
-        font-size: 3.4vw;
+        font-size: 3.9vw;
         letter-spacing: .1vw;
     }
     .txtNav:hover
@@ -931,9 +950,8 @@ body {
     {
         color: #000000;
         letter-spacing: .28vw;/*1px*/
-        padding-top: 3vw;/*20px*/
-        padding-bottom: 2.8vw;/*10px*/
-        font-size: 3.7vw;
+        padding-bottom: .8vw;/*10px*/
+        font-size: 3.9vw;
         text-align: center;
         font-weight: bold;
     }
@@ -963,7 +981,6 @@ body {
         border-top:  1.11vw solid #ffffff;/*4px*/
         margin-bottom: 2vw;/*20px*/
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
-        margin-top: 2vw;
         background-color: #BF6E26;
         width: 100%;
     }
@@ -978,7 +995,7 @@ body {
     .rowLP > div
     {
         color: #ffffff;
-        font-size: 3.4vw;
+        font-size: 3.8vw;
         letter-spacing: .28vw;/*1px*/
         text-align: center;
         padding-top: 1vw;
@@ -997,7 +1014,7 @@ body {
         letter-spacing: .28vw;/*1px*/
         padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 3.7vw;
+        font-size: 3.9vw;
         text-align: center;
         font-weight: bold;
     }
@@ -1012,37 +1029,42 @@ body {
 
 
     /*MAP & ADDRESS SECTION*/
+    .mapAddress
+    {
+        margin-top: 2vw;/*20px*/
+        margin-bottom: 2vw;/*20px*/
+        background-color: white;
+        border-top: 1.11vw solid #73290E;/*4px*/
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+    }
+
+    .mapArea
+    {
+        margin-left: 1vw;
+        margin-right: 3vw;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
     .titleMap
     {
         color: #000000;
         letter-spacing: .28vw;/*1px*/
         padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 3.7vw;
-        text-align: center;
+        font-size: 3.9vw;
         font-weight: bold;
+        text-align: center;
     }
-    .mapContact
-    {
-        width: 100%;
-        display: flex;
-        margin-top: 2vw;/*20px*/
-        margin-bottom: 2vw;/*20px*/
-        background-color: white;
-        border-top: 1.11vw solid #73290E;/*4px*/
-        box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
-    }
-    .mapAddress
-    {
-        width: 50%;
-        max-width: 100%;
-    }
-
 
     .map
     {
-        width: 100%;
         max-width: 100%;
+        display: inline-flex;/*This is to make the map height same as its container*/
+        align-self: stretch;
+        height: 100%;
     }
 
     .mapFrame
@@ -1050,38 +1072,44 @@ body {
         width:100%;
         max-width: 100%;
         border: 1px solid #BF6E26;
-        display: block;
-        height: 70.3vw;
+        border-radius: .4vw;
     }
-    .mapArea
+
+    .titAdd
     {
-        margin-left: 5vw;
-        height: 100%;
+        margin-top: 3.5vw;
+        padding-bottom: 2vw;
     }
 
     .address
     {
         text-align: center;
-        padding-bottom: 2.8vw;/*10px*/
-        border-bottom: .56vw;/*2px*/
-        font-size: 3.4vw;
+        font-size: 3.9vw;
         letter-spacing: .28vw;/*1px*/
         max-width: 100%;
-        line-height: 4vw;
+        line-height: 4.5vw;
     }
 
     /* Contact Form area*/
-    .insideCF
+    .contactFormArea
     {
-        margin-left: 5vw;
-        margin-right: 5vw;
+
+    }
+
+    .btn
+    {
+        margin-top: 1.2vw;
     }
     .contactForm
     {
         text-align: center;
-        padding-bottom: 5.6vw;/*20px*/
-        max-width: 100%;
         width: 50%;
+        margin-right: 1vw;
+        max-width: 100%;
+        padding-bottom: 2vw;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
     }
 
     .rowCF
@@ -1092,9 +1120,9 @@ body {
     .labels {
         text-align: left;
         max-width: 100%;
-        font-size: 3.4vw;
+        font-size: 3.9vw;
+        margin-bottom: .2vw;/*10px*/
         letter-spacing: .28vw;/*1px*/
-        box-sizing: border-box;
     }
     .txtBox
     {
@@ -1103,12 +1131,12 @@ body {
         width: 100%;
         background-color: #E3EAE7;
         color: darkgrey;
-        margin-bottom: .5vw;
         margin-top: 6px;
         min-height: 3.3vw;
         border-radius: 4px;
         cursor: pointer;
-        font-size: 3.4vw;
+        font-size: 3.7vw;
+        letter-spacing: .1vw;
         padding: 12px;
         resize: vertical;
         font-family: Roboto;
@@ -1119,7 +1147,7 @@ body {
         width: 100%;
         text-align: center;
         letter-spacing: .28vw;/*1px*/
-        font-size: 3.7vw;
+        font-size: 4.2vw;
         background-color: #BF6E26;
         color: white;
         display: block;
@@ -1128,6 +1156,14 @@ body {
         margin-left: auto;
         margin-right: auto;
         cursor: pointer;
+        height: 14.5vw;
+    }
+
+    .submitBtn:hover
+    {
+        cursor: pointer;
+        text-decoration: underline;
+        border: .4vw solid #73290E;
     }
     .formMessage
     {
@@ -1136,8 +1172,9 @@ body {
         font-size: 2.5vw;
         letter-spacing: .28vw;/*1px*/
         color: red;
-        height: 2vw;
+        height: 3vw;
         padding-bottom: 2vw;
+        padding-top: .7vw;
     }
 
     /*Sitemap & social media icons*/
@@ -1169,7 +1206,7 @@ body {
     .linkSiteMap
     {
         color: #ffffff;
-        font-size: 3vw;
+        font-size: 3.9vw;
         letter-spacing: .2vw;/*1px*/
         text-decoration: none;
     }
@@ -1180,7 +1217,7 @@ body {
     .txtSM
     {
         color: #ffffff;
-        font-size: 3vw;
+        font-size: 3.9vw;
         letter-spacing: .2vw;/*1px*/
         font-weight: bold;
         padding-top: 5.6vw;/*20px*/
@@ -1497,7 +1534,6 @@ body {
     {
         color: #000000;
         letter-spacing: .2vw;/*1px*/
-        padding-top: 3vw;/*20px*/
         font-size: 2vw;
         text-align: center;
         font-weight: bold;
@@ -1713,70 +1749,72 @@ body {
     */
 
     /*MAP & ADDRESS SECTION*/
-    .mapContact
+    .mapAddress
     {
-        width: 100%;
-        display: flex;
         margin-top: 2vw;/*20px*/
         margin-bottom: 2vw;/*20px*/
         background-color: white;
         border-top: 1.11vw solid #73290E;/*4px*/
-        box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
-    }
-    .mapAddress
-    {
-        width: 50%;
-        max-width: 100%;
-        height: 100%;
-        padding-bottom: 2vw;
-    }
-
-    .map
-    {
         width: 100%;
         max-width: 100%;
+        display: flex;
     }
-
+    .mapArea
+    {
+        margin-left: 1vw;
+        margin-right: 3vw;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .titleMap
+    {
+        color: #000000;
+        letter-spacing: .1vw;/*1px*/
+        padding-top: 1.5vw;/*20px*/
+        padding-bottom: 1.5vw;/*10px*/
+        font-size: 2vw;
+        font-weight: bold;
+        text-align: center;
+    }
+    .map
+    {
+        max-width: 100%;
+        display: inline-flex;/*This is to make the map height same as its container*/
+        align-self: stretch;
+        height: 100%;
+    }
     .mapFrame
     {
         width:100%;
         max-width: 100%;
         border: 1px solid #BF6E26;
-        display: block;
-        height: 42.6vw;
+        border-radius: .4vw;
     }
-    .mapArea
+    .titAdd
     {
-        margin-left: 5vw;
-        height: 100%;
+        margin-top: 2.5vw;
+        padding-bottom: 2vw;
     }
-    .titleMap
+    .address
     {
-        color: #000000;
-        letter-spacing: .2vw;/*1px*/
-        padding-top: 2vw;/*20px*/
-        font-size: 2vw;
         text-align: center;
-        font-weight: bold;
-        padding-bottom: 1.2vw;
+        font-size: 2.2vw;
+        letter-spacing: .28vw;/*1px*/
+        max-width: 100%;
+        line-height: 4vw;
     }
+    /*Contact Form Area*/
+    .contactFormArea
+    {
 
+    }
     /* .mapFrame
      {
          border: 1px solid #BF6E26;
          max-width: 100%;
 
      }*/
-    .address
-    {
-        text-align: center;
-        font-size: 1.8vw;
-        line-height: 3vw;
-        letter-spacing: .2vw;/*1px*/
-        max-width: 100%;
-    }
-
-    /* Contact Form area*/
    /* .insideCF
     {
         margin-left: 5vw;
@@ -1845,17 +1883,20 @@ body {
     }
 
 */
-    .insideCF
+    .btn
     {
-        margin-left: 5vw;
-        margin-right: 5vw;
+        margin-top: 1.2vw;
     }
     .contactForm
     {
         text-align: center;
-        padding-bottom: 2vw;/*20px*/
-        max-width: 100%;
         width: 50%;
+        margin-right: 1vw;
+        max-width: 100%;
+        padding-bottom: 2vw;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
     }
 
     .rowCF
@@ -1902,6 +1943,14 @@ body {
         margin-left: auto;
         margin-right: auto;
         cursor: pointer;
+        height: 7vw;
+    }
+
+    .submitBtn:hover
+    {
+        cursor: pointer;
+        text-decoration: underline;
+        border: .2vw solid #73290E;
     }
     .formMessage
     {
@@ -1937,7 +1986,7 @@ body {
     .links
     {
         width: 77%;
-        line-height: 2.5vw;/*24px*/
+        line-height: 3vw;/*24px*/
     }
     .linkSiteMap
     {
@@ -2494,15 +2543,15 @@ body {
     */
 
     /*MAP & ADDRESS SECTION*/
-    .mapContact
+    /*.mapContact
     {
         width: 100%;
         display: flex;
-        margin-top: 1vw;/*20px*/
-        margin-bottom: 1vw;/*20px*/
+        margin-top: 1vw;!*20px*!
+        margin-bottom: 1vw;!*20px*!
         background-color: white;
-        border-top: .5vw solid #73290E;/*4px*/
-        box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;/*-4px 6px 8px 1px*/
+        border-top: .5vw solid #73290E;!*4px*!
+        box-shadow: 1.11vw 1.7vw 2.2vw .28vw #40444B;!*-4px 6px 8px 1px*!
     }
     .mapAddress
     {
@@ -2532,20 +2581,151 @@ body {
     .titleMap
     {
         color: #000000;
-        letter-spacing: .1vw;/*1px*/
-        padding-top: 1.5vw;/*20px*/
+        letter-spacing: .1vw;!*1px*!
+        padding-top: 1.5vw;!*20px*!
         font-size: 1.5vw;
         text-align: center;
         font-weight: bold;
         padding-bottom: 1vw;
     }
 
-    /* .mapFrame
+    !* .mapFrame
      {
          border: 1px solid #BF6E26;
          max-width: 100%;
 
-     }*/
+     }*!
+    .address
+    {
+        text-align: center;
+        font-size: 1.3vw;
+        line-height: 1.5vw;
+        letter-spacing: .1vw;!*1px*!
+        max-width: 100%;
+    }
+
+
+    !* Contact Form area*!
+    .insideCF
+    {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .contactForm
+    {
+        text-align: center;
+        padding-bottom: 2.5vw;!*20px*!
+        max-width: 100%;
+        width: 50%;
+    }
+
+    .rowCF
+    {
+        max-width: 100%;
+    }
+
+    .labels {
+        text-align: left;
+        max-width: 100%;
+        margin-bottom: .2vw;!*10px*!
+        font-size: 1.3vw;
+        letter-spacing: .1vw;!*1px*!
+    }
+    .txtBox
+    {
+        box-sizing: border-box;
+        max-width: 100%;
+        width: 100%;
+        background-color: #E3EAE7;
+        color: darkgrey;
+        min-height: 2vw;
+        border-radius: .4vw;
+        cursor: pointer;
+        font-size: 1.3vw;
+        padding: .5vw;
+        resize: vertical;
+        font-family: Roboto;
+    }
+
+    .submitBtn
+    {
+        width: 100%;
+        text-align: center;
+        letter-spacing: .1vw;!*1px*!
+        font-size: 1.5vw;
+        background-color: #BF6E26;
+        color: white;
+        display: block;
+        padding: 1vw 1vw;!*20px 30px*!
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: .5vw;
+        cursor: pointer;
+    }
+
+    .formMessage
+    {
+        text-align: left;
+        max-width: 100%;
+        font-size: 1.2vw;
+        letter-spacing: .1vw;!*1px*!
+        color: red;
+        height: 1.3vw;
+        padding-bottom: .9vw;
+        padding-top: .3vw;
+    }
+*/
+
+    .mapAddress
+    {
+        margin-top: 2vw;/*20px*/
+        margin-bottom: 2vw;/*20px*/
+        background-color: white;
+        border-top: 1.11vw solid #73290E;/*4px*/
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+    }
+    .titleMap
+    {
+        color: #000000;
+        letter-spacing: .1vw;/*1px*/
+        padding-top: 1.5vw;/*20px*/
+        padding-bottom: 1.5vw;/*10px*/
+        font-size: 1.5vw;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .mapArea
+    {
+        margin-left: 1vw;
+        margin-right: 3vw;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .map
+    {
+        max-width: 100%;
+        display: inline-flex;/*This is to make the map height same as its container*/
+        align-self: stretch;
+        height: 100%;
+    }
+    .mapFrame
+    {
+        width:100%;
+        max-width: 100%;
+        border: 1px solid #BF6E26;
+        border-radius: .4vw;
+    }
+    .titAdd
+    {
+        margin-top: 1.4vw;
+        padding-bottom: 2vw;
+    }
+
     .address
     {
         text-align: center;
@@ -2556,20 +2736,29 @@ body {
     }
 
 
+
     /* Contact Form area*/
-    .insideCF
+    .contactFormArea
     {
-        margin-left: 5vw;
-        margin-right: 5vw;
+
     }
+
+    .btn
+    {
+        margin-top: 1.2vw;
+    }
+
     .contactForm
     {
         text-align: center;
-        padding-bottom: 2.5vw;/*20px*/
-        max-width: 100%;
         width: 50%;
+        margin-right: 1vw;
+        max-width: 100%;
+        padding-bottom: 2vw;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
     }
-
     .rowCF
     {
         max-width: 100%;
@@ -2600,7 +2789,6 @@ body {
 
     .submitBtn
     {
-        width: 100%;
         text-align: center;
         letter-spacing: .1vw;/*1px*/
         font-size: 1.5vw;
@@ -2613,6 +2801,14 @@ body {
         margin-right: auto;
         margin-top: .5vw;
         cursor: pointer;
+        width: 100%;
+        height: 4vw;
+    }
+    .submitBtn:hover
+    {
+        cursor: pointer;
+        text-decoration: underline;
+        border: .2vw solid #73290E;
     }
 
     .formMessage
@@ -2651,7 +2847,7 @@ body {
     .links
     {
         width: 77%;
-        line-height: 1.5vw;/*24px*/
+        line-height: 2.5vw;/*24px*/
         text-align: left;
     }
     .linkSiteMap

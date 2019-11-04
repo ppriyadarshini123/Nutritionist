@@ -305,11 +305,13 @@ body {
         width: 40%;
         text-align: center;
         text-decoration: none;
+        height: 12vw;
     }
     .btn:hover
     {
         text-decoration: underline;
         cursor: pointer;
+        border: .2vw solid #ffffff;
     }
 
 
@@ -454,7 +456,7 @@ body {
         text-align: center;
         padding-bottom: 5.56vw;/*20px*/
         margin-left: 5vw;
-        margin-right: 5vw;
+        margin-right: 1vw;
     }
     .colSiteMap
     {
@@ -486,7 +488,7 @@ body {
     .txtSM
     {
         color: #ffffff;
-        font-size: 5vw;
+        font-size: 7vw;
         letter-spacing: .28vw;/*1px*/
         font-weight: bold;
         padding-top: 5.56vw;/*20px*/
@@ -507,7 +509,6 @@ body {
      }*/
     .socialM
     {
-        padding-right: 5.56vw;/*20px*/
     }
     .socialMediaIcons
     {
@@ -664,7 +665,7 @@ body {
         color: #ffffff;
         text-decoration-color: transparent;
         top: 1vw;
-        font-size: 3.4vw;
+        font-size: 3.9vw;
         letter-spacing: .1vw;
     }
     .txtNav:hover
@@ -737,7 +738,7 @@ body {
         right: 1vw;
         background-color: #ffffff;
         width: 38vw;
-        height: 28vw;
+        height: 33vw;
         max-width: 100%;
         box-sizing: border-box;
         z-index: 2;
@@ -760,19 +761,19 @@ body {
 
     .heads
     {
-        font-size: 3vw;
+        font-size: 3.4vw;
         font-weight: bold;
-        letter-spacing: .2vw;
+        letter-spacing: .1vw;
         padding-top: 1.5vw;
         padding-bottom: 1vw;
-        line-height: 3.2vw;
+        line-height: 3.6vw;
     }
 
 
     .par
     {
-        font-size: 3vw;
-        line-height: 3vw;
+        font-size: 3.2vw;
+        line-height: 3.5vw;
         letter-spacing: .1vw;/*1px*/
         font-weight: normal;
         color: dimgrey;
@@ -789,18 +790,19 @@ body {
         letter-spacing: .1vw;
         font-size: 3.9vw;
         display: block;
-        padding: .5vw 1.1vw;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
         width: 90%;
         text-align: center;
         text-decoration: none;
+        height: 8.5vw;
     }
     .btn:hover
     {
         text-decoration: underline;
         cursor: pointer;
+        border: .2vw solid #73290E;
     }
 
     .txtBox
@@ -842,7 +844,7 @@ body {
     .text
     {
         color: #ffffff;
-        font-size: 3.4vw;
+        font-size: 3.8vw;
         letter-spacing: .28vw;/*1px*/
         text-align: center;
         text-decoration: none;
@@ -886,7 +888,7 @@ body {
         letter-spacing: .28vw;/*1px*/
         padding-top: 5.6vw;/*20px*/
         padding-bottom: 2.8vw;/*10px*/
-        font-size: 3.7vw;
+        font-size: 3.9vw;
         text-align: center;
         font-weight: bold;
     }
@@ -963,7 +965,7 @@ body {
     .linkSiteMap
     {
         color: #ffffff;
-        font-size: 3vw;
+        font-size: 3.9vw;
         letter-spacing: .2vw;/*1px*/
         text-decoration: none;
     }
@@ -975,7 +977,7 @@ body {
     .txtSM
     {
         color: #ffffff;
-        font-size: 3vw;
+        font-size: 3.9vw;
         letter-spacing: .2vw;/*1px*/
         font-weight: bold;
         padding-top: 5.6vw;/*20px*/
@@ -1017,7 +1019,7 @@ body {
         padding-top: 3vw;/*20px*/
         padding-bottom: 3vw;/*20px*/
         color: #ffffff;
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         letter-spacing: .2vw;/*1px*/
         text-align: center;
     }
@@ -1300,18 +1302,19 @@ body {
         margin-bottom: 1vw;
         font-size: 2vw;
         display: block;
-        padding: 1vw 1vw;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
         width: 60%;
         text-align: center;
+        height: 5vw;
     }
 
     .btn:hover
     {
         cursor: pointer;
         text-decoration: underline;
+        border: .2vw solid #73290E;
     }
 
     /*LINKED PICTURES*/
@@ -1386,7 +1389,7 @@ body {
     .links
     {
         width: 77%;
-        line-height: 2vw;/*24px*/
+        line-height: 3vw;/*24px*/
     }
     .linkSiteMap
     {
@@ -1704,17 +1707,18 @@ body {
         margin-bottom: 1vw;
         font-size: 1.5vw;
         display: block;
-        padding: 1vw 1vw;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
         text-align: center;
+        height: 4vw;
     }
     .btn:hover
     {
         text-decoration: underline;
         cursor: pointer;
+        border: .2vw solid #73290E;
     }
 
     /*LINKED PICTURES*/
@@ -1793,7 +1797,7 @@ body {
     .links
     {
         width: 77%;
-        line-height: 1.5vw;/*24px*/
+        line-height: 2.5vw;/*24px*/
         text-align: left;
     }
     .linkSiteMap
