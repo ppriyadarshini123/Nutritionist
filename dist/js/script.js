@@ -4,32 +4,25 @@
     /* const openNavigation = document.getElementById("openNav");
      const closeNavigation = document.getElementById("closeNav");*/
 
-    const pic1 = document.getElementById("pic1");
-    const pic2 = document.getElementById("pic2");
-    const pic6 = document.getElementById("pic6");
+    const pic = document.getElementsByClassName("pic");
 
     const cPic1 = document.getElementsByClassName("cPic1");
     const cPic2 = document.getElementsByClassName("cPic2");
     const cPic3 = document.getElementsByClassName("cPic3");
 
-    const imgPic1 = document.getElementById("imgPic1");
-    const imgPic2 = document.getElementById("imgPic2");
-    const imgPic3 = document.getElementById("imgPic3");
+    const imgPic1 = document.getElementsByClassName("imgPic1");
+    const imgPic2 = document.getElementsByClassName("imgPic2");
+    const imgPic3 = document.getElementsByClassName("imgPic3");
 
-    const picLP1 = document.getElementById("picLP1");
-    const picLP2 = document.getElementById("picLP2");
-    const picLP3 = document.getElementById("picLP3");
-    const picLP4 = document.getElementById("picLP4");
+    const workshops = document.getElementsByClassName("workshops");
+    const consultancy = document.getElementsByClassName("consultancy");
+    const corporateNutrition = document.getElementsByClassName("corporateNutrition");
 
-    const workshops = document.getElementById("workshops");
-    const consultancy = document.getElementById("consultancy");
-    const corporateNutrition = document.getElementById("corporateNutrition");
+    const tabWorkshop = document.getElementsByClassName("tabWorkshop");
+    const tabConsultancy = document.getElementsByClassName("tabConsultancy");
+    const tabCorporateNutrition = document.getElementsByClassName("tabCorporateNutrition");
 
-    const tabWorkshop = document.getElementById("tabWorkshop");
-    const tabConsultancy = document.getElementById("tabConsultancy");
-    const tabCorporateNutrition = document.getElementById("tabCorporateNutrition");
-
-    const submit = document.getElementById("submit");
+    const submit = document.getElementsByClassName("submitBtn");
 
     const $menuIcon = $('#openNav');
     /*  const topUI = $('.topNav').find('.wrapper')[0];*/
@@ -64,72 +57,133 @@
         /* tabName.addEventListener("mouseleave", function(){
              tabName.style.backgroundColor = "#E6842E";
          });*/
-        tabName.addEventListener("click", function(e){
-            e.preventDefault();
 
-            if((tabName.id == "tabWorkshop") || (tabName.id == "workshops")){
+        /*.getElementByClassName returns an Array like objects of the elements matching the criteria*/
+        for(let i=0; i< tabName.length; i++) {
+            tabName[i].addEventListener("click", function (e) {
+                e.preventDefault();
+                if ((tabName[i].classList[0] == "tabWorkshop") || (tabName[i].classList[0] == "workshops")) {
+                    /*For tablet size*/
+                    if (tabName[i].classList[0] == "tabWorkshop") {
+                        tabWorkshop[0].style.backgroundColor = "#402005";
+                        tabConsultancy[0].style.backgroundColor = "#E6842E";
+                        tabCorporateNutrition[0].style.backgroundColor = "#E6842E";
+                        pic[1].srcset = "dist/imgs/home/optimized/workshops-new-700x810.png";
+                    }//if tabWorkshop
 
-                /*For tablet size*/
-                if(tabName.id == "tabWorkshop") {
-                    tabWorkshop.style.backgroundColor = "#402005";
-                    tabConsultancy.style.backgroundColor = "#E6842E";
-                    tabCorporateNutrition.style.backgroundColor = "#E6842E";
-                    pic2.srcset = "dist/imgs/home/optimized/workshops-new-700x810.png";
+                    if (tabName[i].classList[0] == "workshops") {
 
-                }//if tabWorkshop
-                if(tabName.id == "workshops")
-                {
-                    workshops.style.backgroundColor = "#402005";
-                    consultancy.style.backgroundColor = "#E6842E";
-                    corporateNutrition.style.backgroundColor = "#E6842E";
+                        workshops[0].style.backgroundColor = "#402005";
+                        consultancy[0].style.backgroundColor = "#E6842E";
+                        corporateNutrition[0].style.backgroundColor = "#E6842E";
 
-                    pic1.srcset = "dist/imgs/home/optimized/workshops-new-700x810.png";
-                    pic6.srcset = "dist/imgs/home/optimized/workshops-new-700x810.png";
-                    /*  imgPic1.style.display = "block";*/
-                }//if workshops
-            }//if((tabName.id == "tabWorkshop") || (tabName.id == "workshops"))
-            else if((tabName.id == "tabConsultancy")|| (tabName.id == "consultancy"))
-            {
-                /*For tablet size*/
-                if(tabName.id == "tabConsultancy") {
-                    tabConsultancy.style.backgroundColor = "#402005";
-                    tabWorkshop.style.backgroundColor = "#E6842E";
-                    tabCorporateNutrition.style.backgroundColor = "#E6842E";
-                    pic2.srcset = "dist/imgs/home/optimized/consultancy-new-700x810.png";
-                }//if(tabName.id == "tabConsultancy")
-                if(tabName.id == "consultancy")
-                {
-                    consultancy.style.backgroundColor = "#402005";
-                    workshops.style.backgroundColor = "#E6842E";
-                    corporateNutrition.style.backgroundColor = "#E6842E";
-                    pic1.srcset = "dist/imgs/home/optimized/consultancy-new-700x810.png";
-                    pic6.srcset = "dist/imgs/home/optimized/consultancy-new-700x810.png";
-                }//if(tabName.id == "consultancy")
-            }//else if((tabName.id == "tabConsultancy")|| (tabName.id == "consultancy"))
-            else if((tabName.id == "tabCorporateNutrition") || (tabName.id == "corporateNutrition"))
-            {
-                /*For tablet size*/
-                if(tabName.id == "tabCorporateNutrition") {
-                    tabCorporateNutrition.style.backgroundColor = "#402005";
-                    tabWorkshop.style.backgroundColor = "#E6842E";
-                    tabConsultancy.style.backgroundColor = "#E6842E";
-                    pic2.srcset = "dist/imgs/home/optimized/corporateNutritionNew-700x810.png";
-                }//if(tabName.id == "tabCorporateNutrition")
-                if(tabName.id == "corporateNutrition")
-                {
-                    consultancy.style.backgroundColor = "#E6842E";
-                    workshops.style.backgroundColor = "#E6842E";
-                    corporateNutrition.style.backgroundColor = "#402005";
-                    pic1.srcset = "dist/imgs/home/optimized/corporateNutritionNew-700x810.png";
-                    pic6.srcset = "dist/imgs/home/optimized/corporateNutritionNew-700x810.png";
-                }// if(tabName.id == "corporateNutrition")
-            }// else if((tabName.id == "tabCorporateNutrition") || (tabName.id == "corporateNutrition"))
+                        pic[2].srcset = "dist/imgs/home/optimized/workshops-new-700x810.png";
+                        pic[3].srcset = "dist/imgs/home/optimized/workshops-new-700x810.png";
+                        /*  imgPic1.style.display = "block";*/
+                    }//if workshops
+                }//if((tabName.id == "tabWorkshop") || (tabName.id == "workshops"))
+                else if ((tabName[i].classList[0] == "tabConsultancy") || (tabName[i].classList[0] == "consultancy")) {
+                    /*For tablet size*/
+                    if (tabName[i].classList[0] == "tabConsultancy") {
+                        tabConsultancy[0].style.backgroundColor = "#402005";
+                        tabWorkshop[0].style.backgroundColor = "#E6842E";
+                        tabCorporateNutrition[0].style.backgroundColor = "#E6842E";
+                        pic[1].srcset = "dist/imgs/home/optimized/consultancy-new-700x810.png";
+                    }//if(tabName.id == "tabConsultancy")
+                    if (tabName[i].classList[0] == "consultancy") {
+                        consultancy[0].style.backgroundColor = "#402005";
+                        workshops[0].style.backgroundColor = "#E6842E";
+                        corporateNutrition[0].style.backgroundColor = "#E6842E";
+                        pic[2].srcset = "dist/imgs/home/optimized/consultancy-new-700x810.png";
+                        pic[3].srcset = "dist/imgs/home/optimized/consultancy-new-700x810.png";
+                    }//if(tabName.id == "consultancy")
+                }//else if((tabName.id == "tabConsultancy")|| (tabName.id == "consultancy"))
+                else if ((tabName[i].classList[0] == "tabCorporateNutrition") || (tabName[i].classList[0] == "corporateNutrition")) {
+                    /*For tablet size*/
+                    if (tabName[i].classList[0] == "tabCorporateNutrition") {
+                        tabCorporateNutrition[0].style.backgroundColor = "#402005";
+                        tabWorkshop[0].style.backgroundColor = "#E6842E";
+                        tabConsultancy[0].style.backgroundColor = "#E6842E";
+                        pic[1].srcset = "dist/imgs/home/optimized/corporateNutritionNew-700x810.png";
+                    }//if(tabName.id == "tabCorporateNutrition")
+                    if (tabName[i].classList[0] == "corporateNutrition") {
+                        consultancy[0].style.backgroundColor = "#E6842E";
+                        workshops[0].style.backgroundColor = "#E6842E";
+                        corporateNutrition[0].style.backgroundColor = "#402005";
+                        pic[2].srcset = "dist/imgs/home/optimized/corporateNutritionNew-700x810.png";
+                        pic[3].srcset = "dist/imgs/home/optimized/corporateNutritionNew-700x810.png";
+                    }// if(tabName.id == "corporateNutrition")
+                }// else if((tabName.id == "tabCorporateNutrition") || (tabName.id == "corporateNutrition"))
 
-            //Display inline, there is no change in the height and width property of image, Display block starts a new line and takes up the whole width
-            cPic1[0].style.display = "inline";
-            cPic2[0].style.display = "none";
-            cPic3[0].style.display = "none";
-        });//tabName.addEventListener("click", function(e)
+                //Display inline, there is no change in the height and width property of image, Display block starts a new line and takes up the whole width
+                cPic1[0].display = "inline";
+                cPic2[0].display = "none";
+                cPic3[0].display = "none";
+            }, false);//tabName.addEventListener("click", function(e)
+        }
+        /*or else*/
+       /* Array.from(tabName).forEach(function(element) {
+            element.addEventListener('click', function (e) {
+                e.preventDefault();
+                if ((tabName.class == "tabWorkshop") || (tabName.class == "workshops")) {
+
+                    /!*For tablet size*!/
+                    if (tabName.class == "tabWorkshop") {
+                        tabWorkshop.backgroundColor = "#402005";
+                        tabConsultancy.backgroundColor = "#E6842E";
+                        tabCorporateNutrition.backgroundColor = "#E6842E";
+                        pic2.srcset = "dist/imgs/home/optimized/workshops-new-700x810.png";
+
+                    }//if tabWorkshop
+                    if (tabName.class == "workshops") {
+                        workshops.backgroundColor = "#402005";
+                        consultancy.backgroundColor = "#E6842E";
+                        corporateNutrition.backgroundColor = "#E6842E";
+
+                        pic1.srcset = "dist/imgs/home/optimized/workshops-new-700x810.png";
+                        pic6.srcset = "dist/imgs/home/optimized/workshops-new-700x810.png";
+                        /!*  imgPic1.style.display = "block";*!/
+                    }//if workshops
+                }//if((tabName.id == "tabWorkshop") || (tabName.id == "workshops"))
+                else if ((tabName.class == "tabConsultancy") || (tabName.class == "consultancy")) {
+                    /!*For tablet size*!/
+                    if (tabName.class == "tabConsultancy") {
+                        tabConsultancy.backgroundColor = "#402005";
+                        tabWorkshop.backgroundColor = "#E6842E";
+                        tabCorporateNutrition.backgroundColor = "#E6842E";
+                        pic2.srcset = "dist/imgs/home/optimized/consultancy-new-700x810.png";
+                    }//if(tabName.id == "tabConsultancy")
+                    if (tabName.class == "consultancy") {
+                        consultancy.backgroundColor = "#402005";
+                        workshops.backgroundColor = "#E6842E";
+                        corporateNutrition.backgroundColor = "#E6842E";
+                        pic1.srcset = "dist/imgs/home/optimized/consultancy-new-700x810.png";
+                        pic6.srcset = "dist/imgs/home/optimized/consultancy-new-700x810.png";
+                    }//if(tabName.id == "consultancy")
+                }//else if((tabName.id == "tabConsultancy")|| (tabName.id == "consultancy"))
+                else if ((tabName.class == "tabCorporateNutrition") || (tabName.class == "corporateNutrition")) {
+                    /!*For tablet size*!/
+                    if (tabName.class == "tabCorporateNutrition") {
+                        tabCorporateNutrition.backgroundColor = "#402005";
+                        tabWorkshop.backgroundColor = "#E6842E";
+                        tabConsultancy.backgroundColor = "#E6842E";
+                        pic2.srcset = "dist/imgs/home/optimized/corporateNutritionNew-700x810.png";
+                    }//if(tabName.id == "tabCorporateNutrition")
+                    if (tabName.class == "corporateNutrition") {
+                        consultancy.backgroundColor = "#E6842E";
+                        workshops.backgroundColor = "#E6842E";
+                        corporateNutrition.backgroundColor = "#402005";
+                        pic1.srcset = "dist/imgs/home/optimized/corporateNutritionNew-700x810.png";
+                        pic6.srcset = "dist/imgs/home/optimized/corporateNutritionNew-700x810.png";
+                    }// if(tabName.id == "corporateNutrition")
+                }// else if((tabName.id == "tabCorporateNutrition") || (tabName.id == "corporateNutrition"))
+
+                //Display inline, there is no change in the height and width property of image, Display block starts a new line and takes up the whole width
+                cPic1[0].display = "inline";
+                cPic2[0].display = "none";
+                cPic3[0].display = "none";
+            });
+        });*/
     }//tabClicked
 
     /**
@@ -161,8 +215,8 @@
                     let imgText2 = `<img class="pic"  alt="changingpic" src="dist/imgs/home/optimized/corporateNutritionNew-180x200.png">`;
                     imgPic3.innerHTML = imgText2;
 
-                    imgPic2.style.display = "block";
-                    imgPic3.style.display = "block";
+                    imgPic2.display = "block";
+                    imgPic3.display = "block";
                 }
             },
             unmatch: function(){
@@ -183,10 +237,12 @@
                /* const sPath = window.location.pathname;
                 const sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
                 if (sPage == "index.html") {*/
-               if(tabWorkshop){
 
-                    imgPic2.style.display = "none";
-                    imgPic3.style.display = "none";
+               if(tabWorkshop.length > 0){
+
+                    /*With getElementByClassName, we get a a HTML collection, therefore we use imgPic2[0]*/
+                    imgPic2[0].style.display = "none";
+                    imgPic3[0].style.display = "none";
 
                     tabClicked(tabWorkshop);
                     tabClicked(tabConsultancy);
@@ -251,7 +307,8 @@
     {
         enquire.register("screen and (min-width: 769px) and (max-width: 1200px)", {
             match: function(){
-                if(workshops) {
+
+                if(workshops.length > 0) {
                     tabClicked(workshops);
                     tabClicked(consultancy);
                     tabClicked(corporateNutrition);
@@ -354,7 +411,7 @@
                 /*const sPath = window.location.pathname;
                 const sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
                 if(sPage == "index.html")*/
-                if(workshops){
+                if(workshops.length > 0){
                     tabClicked(workshops);
                     tabClicked(consultancy);
                     tabClicked(corporateNutrition);
@@ -459,35 +516,38 @@
         if(sPage == "index.html")*/
         if(submit){
             /*CONTACT FORM SUBMIT BUTTON VALIDATION*/
-            submit.addEventListener("click", function () {
-                    const fName = document.getElementById("name");
-                    const phone = document.getElementById("phone");
-                    const email = document.getElementById("email");
+            for(let j=0; j< submit.length; j++) {
+                submit[j].addEventListener("click", function () {
+                        const txtBox = document.getElementsByClassName("txtBox");
 
-                    if (!fName.checkValidity()) {
-                        if (fName.validity.valueMissing)
-                            document.getElementById("nameMessage").innerHTML = fName.validationMessage;
-                        else if (!isNaN(fName.value))
-                            document.getElementById("nameMessage").innerHTML = "Please enter characters only.";
-                    }/*if(!fName.checkValidity())*/
+                        /*const fName = document.getElementsByClassName("name");
+                        const phone = document.getElementById("phone");
+                        const email = document.getElementById("email");*/
 
-                    if (!phone.checkValidity()) {
+                        if (!txtBox[0].checkValidity()) {
+                            if (txtBox.name.validity.valueMissing)
+                                document.getElementsByClassName("formMessage")[0].innerHTML = txtBox.name.validationMessage;
+                            else if (!isNaN(parseInt(document.getElementsByClassName("txtBox")[0].value)))
+                                document.getElementsByClassName("formMessage")[0].innerHTML = "Please enter characters only.";
+                        }/*if(!fName.checkValidity())*/
 
-                        if (phone.validity.valueMissing)
-                            document.getElementById("phoneMessage").innerHTML = phone.validationMessage;
-                        else if (isNaN(parseInt(phone.value))) {
-                            document.getElementById("phoneMessage").innerHTML = "Please enter numbers only.";
-                        }
-                    }/* if(!phone.checkValidity())*/
+                        if (!txtBox[1].checkValidity()) {
+                            if (txtBox[1].validity.valueMissing)
+                                document.getElementsByClassName("formMessage")[1].innerHTML = txtBox[1].validationMessage;
+                            else if (isNaN(parseInt(txtBox[1].value))) {
+                                document.getElementsByClassName("formMessage")[1].innerHTML = "Please enter numbers only.";
+                            }
+                        }/* if(!phone.checkValidity())*/
 
-                    if (!email.checkValidity()) {
-                        if (email.validity.valueMissing)
-                            document.getElementById("emailMessage").innerHTML = email.validationMessage;
-                        else if (email.validity.patternMismatch)
-                            document.getElementById("emailMessage").innerHTML = "Please enter a valid email address.";
-                    }/*if(!email.checkValidity())*/
-                }/* if(!fName.checkValidity())*/
-            )/*submit.addEventListener*/
+                        if (!txtBox[2].checkValidity()) {
+                            if (txtBox[2].validity.valueMissing)
+                                document.getElementById("emailMessage").innerHTML = email.validationMessage;
+                            else if (email.validity.patternMismatch)
+                                document.getElementById("emailMessage").innerHTML = "Please enter a valid email address.";
+                        }/*if(!email.checkValidity())*/
+                    }/* if(!fName.checkValidity())*/
+                )/*submit.addEventListener*/
+            }/*For tabName*/
         }
     }//validation
 
