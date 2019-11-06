@@ -438,6 +438,20 @@ body {
         font-size: 5vw;
         letter-spacing: .28vw;/*1px*/
     }
+    .detox, .stress, .brain, .weight
+    {
+        text-align: center;
+        padding-top: 1vw;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        padding-bottom: 2vw;
+    }
+
+    .subTitleWeight:hover, .subTitleStress:hover, .subTitleBrain:hover, .subTitleDetox:hover
+    {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 
     .titleLP
     {
@@ -992,20 +1006,25 @@ body {
         grid-template-columns: repeat(2, minmax(50%, 1vw));
         /*grid-gap: 1vw;*/
     }
-    .rowLP > div
+    .detox, .stress, .brain, .weight
     {
-        color: #ffffff;
-        font-size: 3.8vw;
-        letter-spacing: .28vw;/*1px*/
         text-align: center;
         padding-top: 1vw;
         padding-right: 1vw;
         padding-left: 1vw;
         padding-bottom: 2vw;
     }
-    .rowLP > div p
+    .subTitleWeight, .subTitleStress, .subTitleBrain, .subTitleDetox
     {
-        padding-top: 2vw;
+        color: #ffffff;
+        font-size: 2.8vw;
+        letter-spacing: .28vw;/*1px*/
+        text-decoration: none;
+    }
+    .subTitleWeight:hover, .subTitleStress:hover, .subTitleBrain:hover, .subTitleDetox:hover
+    {
+        text-decoration: underline;
+        cursor: pointer;
     }
 
     .titleLP
@@ -1435,9 +1454,8 @@ body {
     }
 
 
-    #changingPic
+    .changingPic
     {
-        /*grid-area: 1/1/4/3;*/
         grid-column-end: span 2;
         grid-row-end: span 3;
         margin-left: 1vw;
@@ -1447,17 +1465,11 @@ body {
     {
         display: none;
     }
-    .rightColumnBG1
-    {
-        /*grid-area: 1/3/1/3;*/
-    }
-    .rightColumnBG2
-    {
-        grid-area: 2/3/2/3;
-    }
+
+
     .rightColumnBG3
     {
-        /*grid-area: 3/3/3/3;*/
+        grid-area: 3/3/3/3;
     }
 
     .iconImage
@@ -2220,35 +2232,34 @@ body {
     }
 
 
-    #changingPic
+    .changingPic
     {
         /*grid-area: 1/1/3/3;*/
         grid-column-end: span 2;
         grid-row-end: span 3;
         /*grid-area: mainpic;*/
         padding-left: 1vw;
-
     }
 
     .leftColumnBG2, .leftColumnBG3
     {
         display: none;
     }
-    .rightColumnBG1
+   /* .rightColumnBG1
     {
-        /*grid-area: col1;*/
+        !*grid-area: col1;*!
         grid-area: 1/3/1/3;
-    }
-    .rightColumnBG2
+    }*/
+  /*  .rightColumnBG2
     {
-        /* grid-area: col2;*/
+        !* grid-area: col2;*!
         grid-area: 2/3/2/3;
-    }
-    .rightColumnBG3
+    }*/
+  /*  .rightColumnBG3
     {
-        /*grid-area: col3;*/
+        !*grid-area: col3;*!
         grid-area: 3/3/3/3;
-    }
+    }*/
 
     .iconImage
     {
