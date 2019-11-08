@@ -31,16 +31,10 @@ html, body{  width: 100%;  height: 100%;  }
 
 /*   GENERAL SECTION */
 body {
-    /* font-family: "Merriweather", serif;*/
     font-family: Roboto, sans-serif;
     background-color: #E3EAE7;
 }
 
-
-
-/*.roboto {
-    font-family: Roboto;
-}*/
 
 /* MEDIA QUERIES*/
 
@@ -53,10 +47,9 @@ body {
         margin: 0 auto;
     }
 
-
     .logoAndHam
     {
-        margin-top: 2.8vw; /*10px*/
+        margin-top: 2.8vw;
         width: 100%;
         cursor: pointer;
         display: flex;
@@ -103,35 +96,33 @@ body {
         color:#73290E;
         font-weight: bold;
         font-size: 5.2vw;
-        letter-spacing: .28vw;/*1px*/
+        letter-spacing: .28vw;
         padding-top: 5.9vw;
         height: auto;
     }
 
     /*  NAVIGATION SECTION */
-    /*old code*/
     .topNav
     {
         display: none;
         width: 100%;
         position: fixed;
         z-index: 1;
-        /*top: 0;*/
         left: 0;
         background-color: #402005;
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 4.2vw;/*15px*/
-        padding-bottom: 4.2vw;/*15px*/
+        padding-top: 4.2vw;
+        padding-bottom: 4.2vw;
     }
 
 
     .txtNav
     {
-        padding: 2.2vw 2.2vw 2.2vw 8.9vw;/*8px 8px 8px 32px*/
+        padding: 2.2vw 2.2vw 2.2vw 8.9vw;
         text-decoration: none;
         font-size: 5vw;
-        letter-spacing: .28vw;/*1px*/
+        letter-spacing: .28vw;
         color: #ffffff;
         display: block;
         transition: 0.3s;
@@ -144,46 +135,6 @@ body {
     .txtNav:active{
         text-decoration: underline;
     }
-
-    /*   #nav1 .closeBtn {
-           position: absolute;
-           top: 0;
-           right: 6.94vw;!*25px*!
-           font-size: 10vw;
-           margin-left: 13.9vw ;!*50px*!
-       }
-       body
-       {
-           transition: margin-left .5s;
-           !*padding: 4.4vw;!*16px*!*!
-       }*/
-
-    /* !*new code*!
-     #nav1 ul a{
-         display: block;
-         color:#fff;
-         text-decoration: none;
-         padding:10px;
-         background-color: #9F146D;
-         text-transform: capitalize;
-     }
-
-     !*
-         PSEUDO CLASSES
-     ELEMENT:hover   =>  styling the element while we hover over it
-
-     ELEMENT:active  =>  styling the element while we hold left mouse
-                             btn down on the element
-
-     *!
-     #nav1 ul a:hover{
-         background-color: #fff;
-         color: #9F146D;
-     }
-
-     #nav1 ul a:active{
-         text-decoration: underline;
-     }*/
 
     /*Hide navigation Icons in mobile*/
     .homeIcon
@@ -223,72 +174,21 @@ body {
     .pic
     {
         box-sizing: border-box;
-        /*width: 100%;*/
         object-fit: cover;
         max-width: 100%;
-        /*display: inline;*/
         vertical-align: top;/*To remove white border below the picture*/
-        /* transform: scale(1.1);
-         transition: 2s;*/
-        /*background-size: auto;*/
+
     }
-    /*  .pic:hover
-      {
-          transform: scale(1);
-      }*/
 
-
-  /*  .picNotice
-    {
-        position: absolute;
-
-        background-color: #ffffff;
-        width: 45vw;
-        height: 45vw;
-        max-width: 100%;
-        box-sizing: border-box;
-        z-index: 2;
-        text-align: center;
-    }*/
     .picNotice
     {
         position: absolute;
         bottom: -4vw;
         right: 5vw;
-        /* background-color: #ffffff;
-         width: 50%;
-         max-width: 100%;
-         box-sizing: border-box;
-         height: 80%;
-         text-align: center;*/
         z-index: 2;
     }
-
-    /*   h1
-       {
-           margin-top: 2vw;
-           padding-bottom: 2vw;
-           font-size: 5vw;
-           letter-spacing: .28vw;!*1px*!
-           font-weight: bold;
-           color: #000000;
-           padding-left: 3vw;
-           padding-right: 3vw;
-           box-sizing: border-box;
-           line-height: 6vw;
-       }*/
-
     .par
     {
-        /* font-size: 5vw;
-         line-height: 6vw;
-         letter-spacing: .28vw;!*1px*!
-         font-weight: normal;
-         color: dimgrey;
-         padding-left: 3vw;
-         padding-right: 3vw;
-         padding-bottom: 3vw;
-         box-sizing: border-box;*/
         display: none;
     }
     .btn
@@ -317,12 +217,6 @@ body {
 
     .heads
     {
-        /*font-size: 4.5vw;
-        font-weight: bold;
-        letter-spacing: .2vw;
-        padding-top: 1.5vw;
-        padding-bottom: 1vw;
-        line-height: 6vw;*/
         display: none;
     }
 
@@ -335,7 +229,7 @@ body {
     {
         color: #ffffff;
         font-size: 5vw;
-        letter-spacing: .28vw;/*1px*/
+        letter-spacing: .28vw;
         text-align: center;
     }
 
@@ -346,17 +240,16 @@ body {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        /*padding-top: 2.8vw;!*15px*!*/
-        padding-bottom: 2.8vw;/*10px*/
+        padding-bottom: 2.8vw;
     }
 
     .text
     {
         color: #ffffff;
         font-size: 5vw;
-        letter-spacing: .28vw;/*1px*/
+        letter-spacing: .28vw;
         text-align: center;
-        padding-top: 5.6vw;/*20px*/
+        padding-top: 5.6vw;
         line-height: 7vw;
         text-decoration: none;
     }
@@ -372,7 +265,7 @@ body {
         max-width: 100%;
         max-height: 100%;
         text-align: center;
-        border: .56vw solid #ffffff;/*2px*/
+        border: .56vw solid #ffffff;
     }
     .tab
     {
@@ -381,12 +274,10 @@ body {
 
 
     /*LINKED PICTURES*/
-
-    /*/newcode*/
     .linkedP
     {
-        border-top:  1.11vw solid #ffffff;/*4px*/
-        margin-bottom: 5vw;/*20px*/
+        border-top:  1.11vw solid #ffffff;
+        margin-bottom: 5vw;
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
         margin-top: 5vw;
         background-color: #BF6E26;
@@ -394,9 +285,9 @@ body {
     .titleLP
     {
         color: #ffffff;
-        letter-spacing: .28vw;/*1px*/
-        padding-top: 5.6vw;/*20px*/
-        padding-bottom: 2.8vw;/*10px*/
+        letter-spacing: .28vw;
+        padding-top: 5.6vw;
+        padding-bottom: 2.8vw;
         font-size: 5vw;
         text-align: center;
         font-weight: bold;
@@ -436,25 +327,18 @@ body {
 
     }
 
-    /*  .picLP:hover
-      {
-          border: none;
-          width: 97%;
-      }*/
-
-
     /*Sitemap & social media icons*/
     .rowSiteMapSocial
     {
         background-color: #8C470B;
-        border-top: 1.11vw solid white;/*4px*/
+        border-top: 1.11vw solid white;
     }
     .colSiteMapSocialM
     {
         display: flex;
         justify-content: space-between;
         text-align: center;
-        padding-bottom: 5.56vw;/*20px*/
+        padding-bottom: 5.56vw;
         margin-left: 5vw;
         margin-right: 1vw;
     }
@@ -465,7 +349,7 @@ body {
     .links
     {
         width: 78%;
-        line-height: 6.67vw;/*24px*/
+        line-height: 6.67vw;
         text-align: left;
     }
 
@@ -473,7 +357,7 @@ body {
     {
         color: #ffffff;
         font-size: 7vw;
-        letter-spacing: .28vw;/*1px*/
+        letter-spacing: .28vw;
         text-decoration: none;
     }
     .linkSiteMap:hover
@@ -489,27 +373,19 @@ body {
     {
         color: #ffffff;
         font-size: 7vw;
-        letter-spacing: .28vw;/*1px*/
+        letter-spacing: .28vw;
         font-weight: bold;
-        padding-top: 5.56vw;/*20px*/
-        padding-bottom: 2.78vw;/*10px*/
+        padding-top: 5.56vw;
+        padding-bottom: 2.78vw;
         text-align: left;
     }
 
 
     .goToTop
     {
-        /* padding-top: 5px;*/
         display: none;
     }
-    /* .linkTop
-     {
-         text-decoration: none;
-         color: #ffffff;
-     }*/
-    .socialM
-    {
-    }
+
     .socialMediaIcons
     {
         max-width: 100%;
@@ -527,11 +403,11 @@ body {
     .base
     {
         background-color: #0D0D0D;
-        padding-top: 5.56vw;/*20px*/
-        padding-bottom: 5.56vw;/*20px*/
+        padding-top: 5.56vw;
+        padding-bottom: 5.56vw;
         color: #ffffff;
         font-size: 5vw;
-        letter-spacing: .28vw;/*1px*/
+        letter-spacing: .28vw;
         text-align: center;
         line-height: 7vw;
     }
@@ -544,13 +420,13 @@ body {
     /* HEADER SECTION*/
     .wrapper
     {
-        width: 100%; /*360px*/
+        width: 100%;
         margin: 0 auto;
     }
 
     .logoAndHam
     {
-        margin-top: 2.8vw; /*10px*/
+        margin-top: 2.8vw;
         width: 100%;
         cursor: pointer;
         display: flex;
@@ -590,7 +466,7 @@ body {
         color:#73290E;
         font-weight: bold;
         font-size: 4vw;
-        letter-spacing: .28vw;/*1px*/
+        letter-spacing: .28vw;
         padding-top: 3vw;
         height: auto;
     }
@@ -608,46 +484,9 @@ body {
     {
         display: none;
     }
-    /*
-        .topNav
-        {
-            display: block;
-            margin-top: 1vw;
-            max-width: 100%;
-            position: sticky;
-            top: 0;
-            z-index: 5;
-        }
-
-        .topNav ul
-        {
-            position: relative;
-            display: flex;
-            background-color: #402005;
-            justify-content: space-around;
-            padding-top: 3.2vw;
-            padding-bottom: 3.2vw;
-            text-align: center;
-            !*padding-left: 5vw;
-            padding-right: 5vw;*!
-
-        }
-        .topNav ul li
-        {
-            width: 100%;
-        }
-        .topNav ul li a
-        {
-            position: absolute;
-            color: #ffffff;
-            text-decoration: none;
-            top: 1.3vw;
-            font-size: 3.5vw;
-        }*/
 
     .topNav
     {
-        /* display: block;*/
         margin-top: .5vw;
         max-width: 100%;
         position: sticky;
@@ -712,24 +551,15 @@ body {
         position: relative;
         overflow: hidden;
         box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;
+        width: 100%;
     }
-
-
     .pic
     {
         box-sizing: border-box;
         object-fit: cover;
         max-width: 100%;
-        /*display: inline;*/
         vertical-align: top;/*To remove white border below the picture*/
-        /* transform: scale(1.1);
-         transition: 2s;*/
-        /*background-size: auto;*/
     }
-    /*  .pic:hover
-      {
-          transform: scale(1);
-      }*/
 
     .picNotice
     {
@@ -744,20 +574,6 @@ body {
         z-index: 2;
         text-align: center;
     }
-    /* h1
-     {
-         margin-top: 2vw;
-         padding-bottom: 2vw;
-         font-size: 5vw;
-         letter-spacing: .28vw;!*1px*!
-         font-weight: bold;
-         color: #000000;
-         padding-left: 3vw;
-         padding-right: 3vw;
-         box-sizing: border-box;
-         line-height: 6vw;
-     }*/
-
 
     .heads
     {
@@ -774,7 +590,7 @@ body {
     {
         font-size: 3.2vw;
         line-height: 3.5vw;
-        letter-spacing: .1vw;/*1px*/
+        letter-spacing: .1vw;
         font-weight: normal;
         color: dimgrey;
         padding-left: 1.5vw;
@@ -814,38 +630,23 @@ body {
     {
         color: #ffffff;
         font-size: 5vw;
-        letter-spacing: .28vw;/*1px*/
+        letter-spacing: .28vw;
         text-align: center;
     }
-
-
-
-    /*  !*new code*!
-      .ht
-      {
-          height: auto;
-          overflow: hidden;
-      }
-  */
-
-    /*new code*/
-
-
     .iconImage
     {
         max-width: 30%;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        /*padding-top: 2.8vw;!*15px*!*/
-        padding-bottom: 2.8vw;/*10px*/
+        padding-bottom: 2.8vw;
     }
 
     .text
     {
         color: #ffffff;
         font-size: 3.8vw;
-        letter-spacing: .28vw;/*1px*/
+        letter-spacing: .28vw;
         text-align: center;
         text-decoration: none;
     }
@@ -862,7 +663,7 @@ body {
         max-width: 100%;
         max-height: 100%;
         text-align: center;
-        border: .56vw solid #ffffff;/*2px*/
+        border: .56vw solid #ffffff;
     }
     .tab
     {
@@ -872,10 +673,9 @@ body {
 
 
     /*LINKED PICTURES*/
-    /*/newcode*/
     .linkedP
     {
-        border-top:  1.11vw solid #ffffff;/*4px*/
+        border-top:  1.11vw solid #ffffff;
         margin-bottom: 4vw;/*20px*/
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
         margin-top: 4vw;
@@ -885,9 +685,9 @@ body {
     .titleLP
     {
         color: #ffffff;
-        letter-spacing: .28vw;/*1px*/
-        padding-top: 5.6vw;/*20px*/
-        padding-bottom: 2.8vw;/*10px*/
+        letter-spacing: .28vw;
+        padding-top: 5.6vw;
+        padding-bottom: 2.8vw;
         font-size: 3.9vw;
         text-align: center;
         font-weight: bold;
@@ -907,8 +707,6 @@ body {
         padding-right: 1vw;
         padding-left: 1vw;
         padding-bottom: 2vw;
-        /*!* overflow: hidden;*/
-        /* height: auto;*!*/
     }
 
     .pics:hover
@@ -927,20 +725,11 @@ body {
         width: 100%;
     }
 
-
-    /*   .picLP:hover
-         {
-           transform: scale(1.1);
-           transition: 1s;
-             width: 100%;
-           border: transparent;
-
-         }*/
     /*Sitemap & social media icons*/
     .rowSiteMapSocial
     {
         background-color: #8C470B;
-        border-top: 1.11vw solid white;/*4px*/
+        border-top: 1.11vw solid white;
 
     }
     .colSiteMapSocialM
@@ -948,7 +737,7 @@ body {
         display: flex;
         justify-content: space-between;
         text-align: center;
-        padding-bottom: 2.8vw;/*20px*/
+        padding-bottom: 2.8vw;
         margin-left: 5vw;
         margin-right: 5vw;
     }
@@ -959,14 +748,14 @@ body {
     .links
     {
         width: 79%;
-        line-height: 6vw;/*24px*/
+        line-height: 6vw;
         text-align: left;
     }
     .linkSiteMap
     {
         color: #ffffff;
         font-size: 3.9vw;
-        letter-spacing: .2vw;/*1px*/
+        letter-spacing: .2vw;
         text-decoration: none;
     }
     .linkSiteMap:hover
@@ -978,28 +767,21 @@ body {
     {
         color: #ffffff;
         font-size: 3.9vw;
-        letter-spacing: .2vw;/*1px*/
+        letter-spacing: .2vw;
         font-weight: bold;
-        padding-top: 5.6vw;/*20px*/
-        padding-bottom: 2.8vw;/*10px*/
+        padding-top: 5.6vw;
+        padding-bottom: 2.8vw;
         text-align: left;
     }
 
-
-
     .goToTop
     {
-        /* padding-top: 5px;*/
         display: none;
     }
-    /* .linkTop
-     {
-         text-decoration: none;
-         color: #ffffff;
-     }*/
+
     .socialM
     {
-        padding-right: 5.56vw;/*20px*/
+        padding-right: 5.56vw;
     }
     .socialMediaIcons
     {
@@ -1016,11 +798,11 @@ body {
     .base
     {
         background-color: #0D0D0D;
-        padding-top: 3vw;/*20px*/
-        padding-bottom: 3vw;/*20px*/
+        padding-top: 3vw;
+        padding-bottom: 3vw;
         color: #ffffff;
         font-size: 3.5vw;
-        letter-spacing: .2vw;/*1px*/
+        letter-spacing: .2vw;
         text-align: center;
     }
 
@@ -1030,23 +812,22 @@ body {
 /* >768px and < 1200px - Laptop*/
 @media screen and (min-width: 769px) and (max-width: 1200px)
 {
-
     .wrapper
     {
-        width: 100%; /*360px*/
+        width: 100%;
         margin: 0 auto;
     }
 
     .wrapper2
     {
-        width: 90vw; /*360px*/
+        width: 90vw;
         margin: 0 auto;
         max-width: 100%;
     }
 
     .logoAndHam
     {
-        padding-top: 2.8vw; /*10px*/
+        padding-top: 2.8vw;
         width: 100%;
         cursor: pointer;
         display: flex;
@@ -1085,7 +866,7 @@ body {
         font-weight: bold;
         width: 100%;
         font-size: 2vw;
-        letter-spacing: .28vw;/*1px*/
+        letter-spacing: .28vw;
         padding-top: 2vw;
         height: auto;
     }
@@ -1096,10 +877,8 @@ body {
         display: none;
     }
 
-
     .topNav
     {
-        /* display: block;*/
         margin-top: .5vw;
         max-width: 100%;
         position: sticky;
@@ -1131,27 +910,6 @@ body {
     {
         text-align: center;
     }
-    /*   .topNav ul
-       {
-           position: relative;
-           display: flex;
-           background-color: #402005;
-           padding-top: 4.2vw;
-           padding-bottom: 5.2vw;
-           text-align: center;
-       }
-       .topNav ul li
-       {
-           width: 100%;
-       }
-       .topNav ul li a
-       {
-           position: absolute;
-           color: #ffffff;
-           text-decoration: none;
-           top: 1vw;
-           font-size: 2.1vw;
-       }*/
 
     /*Hide navigation Icons in tablet*/
     .homeIcon
@@ -1159,8 +917,7 @@ body {
         display: block;
         width: 5vw;
         height: 5vw;
-        margin: auto;
-        margin-top: -2.3vw;
+        margin: -2.3vw auto auto;
     }
 
     .recipesIcon
@@ -1174,12 +931,9 @@ body {
     .aboutMeIcon
     {
         display: block;
-        margin: auto;
         width: 6.5vw;
-        margin-top: 1.2vw;
+        margin: 1.2vw auto auto;
     }
-
-
     /*BIG PIC SECTION*/
     .headerSection
     {
@@ -1189,18 +943,7 @@ body {
         max-width: 100%;
         text-align: center;
     }
-    /* .bigPicSection
-     {
 
-     }*/
-    /* .rowBG
-     {
-         max-width: 100%;
-         margin-bottom: 1vw;
-         width: 100%;
-         text-align: center;
-
-     }*/
     .ht
     {
         display: inline-flex; /*To display the picNotice*/
@@ -1208,32 +951,19 @@ body {
         overflow: hidden;
         box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;
     }
-
-
     .pic
     {
         box-sizing: border-box;
-        /*height: 76vh;*/
-        /*width: 100%;*/
         object-fit: cover;
         max-width: 100%;
-        /*display: inline;*/
         vertical-align: top;/*To remove white border below the picture*/
-        /* transform: scale(1.1);
-         transition: 2s;*/
-        /*background-size: auto;*/
     }
-    /*  .pic:hover
-      {
-          transform: scale(1);
-      }*/
-
 
     .text
     {
         color: #ffffff;
-        font-size: 1.3vw;
-        letter-spacing: .1vw;/*1px*/
+        font-size: 2vw;
+        letter-spacing: .1vw;
         text-decoration: none;
     }
     .text:hover
@@ -1241,7 +971,6 @@ body {
         text-decoration: underline;
         cursor: pointer;
     }
-
 
     .picNotice
     {
@@ -1255,20 +984,6 @@ body {
         z-index: 2;
         text-align: center;
     }
-    /* h1
-     {
-         margin-top: 2vw;
-         padding-bottom: 2vw;
-         font-size: 5vw;
-         letter-spacing: .28vw;!*1px*!
-         font-weight: bold;
-         color: #000000;
-         padding-left: 3vw;
-         padding-right: 3vw;
-         box-sizing: border-box;
-         line-height: 6vw;
-     }*/
-
 
     .heads
     {
@@ -1280,12 +995,11 @@ body {
         line-height: 2vw;
     }
 
-
     .par
     {
         font-size: 2vw;
         line-height: 2.3vw;
-        letter-spacing: .1vw;/*1px*/
+        letter-spacing: .1vw;
         font-weight: normal;
         color: dimgrey;
         padding-left: 1.5vw;
@@ -1320,8 +1034,8 @@ body {
     /*LINKED PICTURES*/
     .linkedP
     {
-        border-top:  1.11vw solid #ffffff;/*4px*/
-        margin-bottom: 2vw;/*20px*/
+        border-top:  1.11vw solid #ffffff;
+        margin-bottom: 2vw;
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
         margin-top: 2vw;
         background-color: #BF6E26;
@@ -1333,7 +1047,6 @@ body {
         max-width: 100%;
         display: grid;
         grid-template-columns: repeat(3, minmax(33.3%, 1vw));
-        /*grid-gap: 1vw;*/
     }
     .pics
     {
@@ -1348,9 +1061,9 @@ body {
     .titleLP
     {
         color: #ffffff;
-        letter-spacing: .28vw;/*1px*/
-        padding-top: 2vw;/*20px*/
-        padding-bottom: 1.2vw;/*10px*/
+        letter-spacing: .28vw;
+        padding-top: 2vw;
+        padding-bottom: 1.2vw;
         font-size: 2vw;
         text-align: center;
         font-weight: bold;
@@ -1369,7 +1082,7 @@ body {
     .rowSiteMapSocial
     {
         background-color: #8C470B;
-        border-top: 1.11vw solid white;/*4px*/
+        border-top: 1.11vw solid white;
 
     }
     .colSiteMapSocialM
@@ -1389,13 +1102,13 @@ body {
     .links
     {
         width: 77%;
-        line-height: 3vw;/*24px*/
+        line-height: 3vw;
     }
     .linkSiteMap
     {
         color: #ffffff;
         font-size: 1.8vw;
-        letter-spacing: .2vw;/*1px*/
+        letter-spacing: .2vw;
         text-decoration: none;
         line-height: 2.4vw;
     }
@@ -1408,24 +1121,21 @@ body {
     {
         color: #ffffff;
         font-size: 2vw;
-        letter-spacing: .2vw;/*1px*/
+        letter-spacing: .2vw;
         font-weight: bold;
-        padding-top: 1.5vw;/*20px*/
-        padding-bottom:1.5vw;/*10px*/
+        padding-top: 1.5vw;
+        padding-bottom:1.5vw;
         text-align: left;
     }
 
-
-
     .goToTop
     {
-        /* padding-top: 5px;*/
         display: none;
     }
 
     .socialM
     {
-        padding-right: 5.56vw;/*20px*/
+        padding-right: 5.56vw;
     }
     .removeUnderscore
     {
@@ -1440,11 +1150,11 @@ body {
     .base
     {
         background-color: #0D0D0D;
-        padding-top: 2vw;/*20px*/
-        padding-bottom: 2vw;/*20px*/
+        padding-top: 2vw;
+        padding-bottom: 2vw;
         color: #ffffff;
         font-size: 1.5vw;
-        letter-spacing: .2vw;/*1px*/
+        letter-spacing: .2vw;
         text-align: center;
     }
 
@@ -1457,14 +1167,14 @@ body {
     /* HEADER SECTION*/
     .wrapper
     {
-        width: 100%; /*360px*/
+        width: 100%;
         margin: 0 auto;
         max-width: 100%;
     }
 
     .wrapper2
     {
-        width: 100%; /*360px*/
+        width: 100%;
         margin: 0 auto;
         max-width: 100%;
         width: 77vw;
@@ -1472,7 +1182,7 @@ body {
 
     .logoAndHam
     {
-        margin-top: .3vw; /*10px*/
+        margin-top: .3vw;
         width: 100%;
         cursor: pointer;
         display: flex;
@@ -1500,7 +1210,6 @@ body {
     .logo
     {
         max-width: 100%;
-        width: 100%;
         height: auto;
         width: 7vw;
     }
@@ -1511,7 +1220,7 @@ body {
         font-weight: bold;
         width: 100%;
         font-size: 1.5vw;
-        letter-spacing: .2vw;/*1px*/
+        letter-spacing: .2vw;
         padding-top: 2vw;
         height: auto;
     }
@@ -1524,7 +1233,6 @@ body {
 
     .topNav
     {
-        /* display: block;*/
         margin-top: .5vw;
         max-width: 100%;
         position: sticky;
@@ -1546,32 +1254,6 @@ body {
         letter-spacing: .1vw;
     }
 
-    /*
-    .topNav ul
-    {
-        position: relative;
-        display: flex;
-        background-color: #402005;
-        padding-top: 3vw;
-        padding-bottom: 2.4vw;
-        text-align: center;
-        box-sizing: border-box;
-    }
-    .topNav ul li
-    {
-        width: 100%;
-    }
-    .topNav ul li a
-    {
-        position: absolute;
-        color: #ffffff;
-        text-decoration: none;
-        top: 1vw;
-        font-size: 1.5vw;
-        letter-spacing: .1vw;
-    }
-    */
-
     .navItemHome, .navItemRecipes, .navItemAboutMe
     {
         text-align: center;
@@ -1581,25 +1263,22 @@ body {
     {
         display: block;
         width: 3vw;
-        margin: auto;
-        margin-top: -.5vw;
+        margin: -.5vw auto auto;
     }
 
     .recipesIcon
     {
         display: block;
-        margin: auto;
         padding-bottom: .1vw;
         width: 3.5vw;
-        margin-top: -1.1vw;
+        margin: -1.1vw auto auto;
     }
 
     .aboutMeIcon
     {
         display: block;
-        margin: auto;
         width: 4.5vw;
-        margin-top: -.5vw;
+        margin: -.5vw auto auto;
     }
 
     /* BIG PICTURE SECTION*/
@@ -1611,23 +1290,10 @@ body {
         max-width: 100%;
         text-align: center;
     }
-    /* .bigPicSection
-     {
-
-     }*/
-    /* .rowBG
-     {
-         max-width: 100%;
-         margin-bottom: 1vw;
-         width: 100%;
-         text-align: center;
-
-     }*/
     .ht
     {
         display: inline-flex; /*To display the picNotice*/
         position: relative;
-        /*overflow: hidden;*/
         box-shadow: -1.11vw 1.7vw 2.22vw .28vw #40444B;
     }
 
@@ -1635,27 +1301,17 @@ body {
     .pic
     {
         box-sizing: border-box;
-        /*height: 76vh;*/
         width: 100%;
         object-fit: cover;
         max-width: 100%;
-        /*display: inline;*/
         vertical-align: top;/*To remove white border below the picture*/
-        /* transform: scale(1.1);
-         transition: 2s;*/
-        /*background-size: auto;*/
     }
-    /*  .pic:hover
-      {
-          transform: scale(1);
-      }*/
-
 
     .text
     {
         color: #ffffff;
         font-size: 1.3vw;
-        letter-spacing: .1vw;/*1px*/
+        letter-spacing: .1vw;
         text-decoration: none;
     }
     .text:hover
@@ -1690,7 +1346,7 @@ body {
     {
         font-size: 1.3vw;
         line-height: 1.7vw;
-        letter-spacing: .1vw;/*1px*/
+        letter-spacing: .1vw;
         font-weight: normal;
         color: dimgrey;
         padding-left: 1.5vw;
@@ -1722,10 +1378,9 @@ body {
     }
 
     /*LINKED PICTURES*/
-    /*/newcode*/
     .linkedP
     {
-        border-top:  .5vw solid #ffffff;/*4px*/
+        border-top:  .5vw solid #ffffff;
         box-shadow:1.11vw 1.7vw 2.2vw .28vw #40444B;
         background-color: #BF6E26;
         margin-bottom: 1vw;
@@ -1734,8 +1389,8 @@ body {
     .titleLP
     {
         color: #ffffff;
-        letter-spacing: .1vw;/*1px*/
-        padding-top: 1.5vw;/*20px*/
+        letter-spacing: .1vw;
+        padding-top: 1.5vw;
         font-size: 1.5vw;
         text-align: center;
         font-weight: bold;
@@ -1746,16 +1401,12 @@ body {
         max-width: 100%;
         display: grid;
         grid-template-columns: repeat(3, minmax(33.2%, 1vw));
-        /*grid-gap: 1vw;*/
         width: 100%;
     }
     .pics
     {
         text-align: center;
-        padding-top: 1vw;
-        padding-right: 1vw;
-        padding-left: 1vw;
-        padding-bottom: 1vw;
+        padding: 1vw;
     }
 
 
@@ -1767,18 +1418,11 @@ body {
         width: 100%;
     }
 
-    /*  .picLP:hover
-      {
-          border: none;
-          width: 97%;
-      }*/
-
-
     /*Sitemap & social media icons*/
     .rowSiteMapSocial
     {
         background-color: #8C470B;
-        border-top: .5vw solid white;/*4px*/
+        border-top: .5vw solid white;
 
     }
     .colSiteMapSocialM
@@ -1797,14 +1441,14 @@ body {
     .links
     {
         width: 77%;
-        line-height: 2.5vw;/*24px*/
+        line-height: 2.5vw;
         text-align: left;
     }
     .linkSiteMap
     {
         color: #ffffff;
         font-size: 1.2vw;
-        letter-spacing: .2vw;/*1px*/
+        letter-spacing: .2vw;
         text-decoration: none;
         line-height: 2vw;
     }
@@ -1817,22 +1461,21 @@ body {
     {
         color: #ffffff;
         font-size: 1.5vw;
-        letter-spacing: .2vw;/*1px*/
+        letter-spacing: .2vw;
         font-weight: bold;
-        padding-top: 1.5vw;/*20px*/
-        padding-bottom:1vw;/*10px*/
+        padding-top: 1.5vw;
+        padding-bottom:1vw;
         text-align: left;
     }
 
     .goToTop
     {
-        /* padding-top: 5px;*/
         display: none;
     }
 
     .socialM
     {
-        padding-right: 5.56vw;/*20px*/
+        padding-right: 5.56vw;
     }
     .removeUnderscore
     {
@@ -1847,13 +1490,12 @@ body {
     .base
     {
         background-color: #0D0D0D;
-        padding-top: 1vw;/*20px*/
-        padding-bottom: 1vw;/*20px*/
+        padding-top: 1vw;
+        padding-bottom: 1vw;
         color: #ffffff;
         font-size: 1vw;
-        letter-spacing: .2vw;/*1px*/
+        letter-spacing: .2vw;
         text-align: center;
     }
-
 }
 /* >1200px - Desktop*/

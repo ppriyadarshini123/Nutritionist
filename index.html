@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nutritionist</title>
     <link rel="stylesheet" href="dist/css/index.css" media="screen">
+
     <!--FAVICON CODE-->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -16,7 +17,7 @@
     <header id="top">
         <div class="wrapper2">
             <div class="logoAndHam" >
-                <div id="ham">
+                <div>
                     <span class="hamburger" id="openNav">&#9776;</span>
                 </div><!--Hamburger Icon-->
                 <div  class="logoName">
@@ -32,13 +33,15 @@
             </div><!--Logo and hamburger icon-->
         </div><!--wrapper, Logo-->
     </header><!--header-->
+
+
     <div class="wrapper">
         <nav class="topNav">
             <div class="navItemHome">
                 <a href="#" class="removeUnderscore">
                     <picture>
-                        <source media="(max-width: 1200px)" srcset="dist/imgs/home/menuicons/ezgif.com-optimize%20(4).gif" class="homeIcon" alt="Home Icon">
-                        <img alt="Home" src="dist/imgs/home/menuicons/ezgif.com-optimize%20(4).gif" class="homeIcon">
+                        <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/ezgif.com-optimize%20(4).gif" class="homeIcon" alt="Home Icon">
+                        <img alt="Home" src="dist/imgs/home/optimized/ezgif.com-optimize%20(4).gif" class="homeIcon">
                     </picture>
                     <p class="txtNav">Home</p>
                 </a>
@@ -85,7 +88,7 @@
                             <source media="(min-width: 768px)" srcset="dist/imgs/home/optimized/workshop-130x130.png" class="iconImage">
                             <img alt="Icon Workshops" src="dist/imgs/home/optimized/workshop-130x130.png" class="iconImage">
                         </picture>
-                    </a><div class="lblBigPic">Workshops</div>
+                    </a><div class="lblBigPic">Workshops</div><!--lblBigPic-->
                 </div><!--rightColumn-->
                 <div class="leftColumnBG2">
                     <a href="#" class="cPic2">
@@ -104,7 +107,8 @@
                             <source media="(max-width: 768px)" srcset="dist/imgs/home/optimized/consultancy-48x48.png" class="iconImage">
                             <img alt="Icon Consultancy" src="dist/imgs/home/optimized/consultancy-130x130.png" class="iconImage">
                         </picture>
-                    </a><div class="lblBigPic">Consultancy</div>
+                    </a>
+                    <div class="lblBigPic">Consultancy</div><!--lblBigPic-->
                 </div><!--rightColumn-->
                 <div class="leftColumnBG3">
                     <a href="#" class="cPic3">
@@ -124,9 +128,10 @@
                             <source media="(min-width: 768px)" srcset="dist/imgs/home/optimized/corporatenutrition-130x130.png" class="iconImage">
                             <img alt="Icon Corporate Nutrition" src="dist/imgs/home/optimized/corporatenutrition-48x48.png" class="iconImage">
                         </picture>
-                        <!-- <img alt="Icon Corporate Nutrition" src="dist/imgs/home/optimized/corporatenutrition-48x48.png" class="iconImage">-->
-                    </a><div class="lblBigPicCN">Corporate Nutrition</div>
+                    </a>
+                    <div class="lblBigPicCN">Corporate Nutrition</div><!--lblBigPicCN-->
                 </div><!--rightColumn-->
+
                 <!-- Tab links -->
                 <div class="tab">
                     <span class="tabWorkshop tablinks brownRect txt">Workshops</span>
@@ -170,7 +175,6 @@
                             <img class="picPG" alt="changingpic" src="dist/imgs/home/optimized/almonds-160x107.png">
                         </picture>
                     </div><!--colPG1-->
-
                     <div class="colPG1">
                         <picture>
                             <source media="(max-width: 360px)" srcset="dist/imgs/home/optimized/soup-342x229.png">
@@ -189,7 +193,6 @@
                             <img class="picPG" alt="changingpic" src="dist/imgs/home/optimized/citrus-160x106.png">
                         </picture>
                     </div><!--colPG1-->
-
                     <div class="colPG1">
                         <picture>
                             <source media="(max-width: 360px)" srcset="dist/imgs/home/optimized/salad-342x229.png">
@@ -199,8 +202,8 @@
                             <img class="picPG" alt="changingpic" src="dist/imgs/home/optimized/salad-160x107.png">
                         </picture>
                     </div><!--colPG1-->
-
                 </div><!--photoGallery-->
+
                 <div class="linkedP">
                     <div class="titleLP">The Feel Good Factor
                     </div><!--title linkedpictures-->
@@ -215,7 +218,7 @@
                                     <img class="picLP1" alt="changingpic"  src="dist/imgs/home/optimized/detoxyourbody-260x174.png">
                                 </picture>
                             </a>
-                            <p class="subTitleDetox">Detox your body</p>
+                            <p class="subTitleDetox text">Detox your body</p>
                         </div><!--detox-->
                         <div class="brain">
                             <a href="#">
@@ -225,12 +228,10 @@
                                     <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/boostbrainpower-663x442.png">
                                     <source media="(min-width: 1200px)" srcset="dist/imgs/home/optimized/boostbrainpower-663x442.png">
                                     <img class="picLP2" alt="changingpic" src="dist/imgs/home/optimized/boostbrainpower-260x174.png">
-
                                 </picture>
                             </a>
-                            <p class="subTitleBrain">Boost your brain power</p>
+                            <p class="subTitleBrain text">Boost your brain power</p>
                         </div><!--brain-->
-
                         <div class="stress">
                             <a href="#">
                                 <picture>
@@ -239,10 +240,9 @@
                                     <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/reducestress-663x440.png">
                                     <source media="(min-width: 1200px)" srcset="dist/imgs/home/optimized/reducestress-663x440.png">
                                     <img class="picLP3" alt="changingpic"  src="dist/imgs/home/optimized/reducestress-160x107.png">
-                                    <!-- <span class="toolTipText">Reduce Stress</span>-->
                                 </picture>
                             </a>
-                            <p class="subTitleStress">Reduce Stress</p>
+                            <p class="subTitleStress text">Reduce Stress</p>
                         </div><!--stress-->
                         <div class="weight">
                             <a href="#">
@@ -252,76 +252,21 @@
                                     <source media="(max-width: 1200px)" srcset="dist/imgs/home/optimized/weightcontrol-663x440.png">
                                     <source media="(min-width: 1200px)" srcset="dist/imgs/home/optimized/weightcontrol-663x440.png">
                                     <img class="picLP4" alt="changingpic" src="dist/imgs/home/optimized/weightcontrol-160x107.png">
-                                    <!--<span class="toolTipText">Weight Control</span>-->
                                 </picture>
                             </a>
-                            <p class="subTitleWeight">Weight Control</p>
+                            <p class="subTitleWeight text">Weight Control</p>
                         </div><!--weight-->
                     </div><!--rowLP-->
                 </div><!--linkedPictures-->
             </div><!--photoLinked-->
 
-
-
-            <!--  <div class="mapContact">
-                  <div class="mapAddress">
-                      <div class="mapArea">
-                          <div class="titleMap">Find Us Here
-                          </div>&lt;!&ndash;title&ndash;&gt;
-                          <div class="map">
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78254.48455913832!2d0.04994763499338952!3d52.19882136780877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d85d89f32a012d%3A0x63a320e1a35e3d21!2sCambridge!5e0!3m2!1sen!2suk!4v1563278465266!5m2!1sen!2suk"   class="mapFrame"></iframe>
-                          </div>&lt;!&ndash;map&ndash;&gt;
-                          <div class="titAdd">
-                              <div class="title">
-                                  Address:
-                              </div>&lt;!&ndash;addressTitle&ndash;&gt;
-                              <div class="address">
-                                  95 Osier Close,
-                                  Cambridge, UK.
-                              </div>&lt;!&ndash;addressArea&ndash;&gt;
-                          </div>
-                      </div>&lt;!&ndash;mapArea&ndash;&gt;
-                  </div>&lt;!&ndash;mapAddress&ndash;&gt;
-                  <div class="contactForm">
-                      <div class="insideCF">
-                          <div class="titleMap">Contact Us</div>&lt;!&ndash;title&ndash;&gt;
-                          <div class="rowCF">
-                              <p class="labels">Name
-                              </p>
-                              <input name="name" id="name"  type="text" pattern="[a-zA-Z]" class="txtBox" placeholder="Your Name.."  required >
-                              <p id="nameMessage" class="formMessage"></p>
-                          </div>&lt;!&ndash;name area&ndash;&gt;
-                          <div class="rowCF">
-                              <p class="labels">Phone
-                              </p>&lt;!&ndash;phone label&ndash;&gt;
-                              <input name="phone" type="tel" id="phone" placeholder="Your Phone.." pattern="[a-zA-Z]" class="txtBox" required>
-                              <p id="phoneMessage" class="formMessage"></p>
-                          </div>&lt;!&ndash;phone area&ndash;&gt;
-                          <div class="rowCF">
-                              <p class="labels">Email
-                              </p>&lt;!&ndash;Email label&ndash;&gt;
-                              <input type="email" name="textbox" pattern = "^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" id="email" placeholder="Your Email.." class="txtBox" required>
-                              <p id="emailMessage" class="formMessage"></p>
-                          </div>&lt;!&ndash;email area&ndash;&gt;
-                          <div class="rowCF">
-                              <p class="labels">Message
-                              </p>&lt;!&ndash;message label&ndash;&gt;
-                              <textarea name="message" rows="4"  cols="23" class="txtBox" placeholder="Your Message.." required></textarea>
-                          </div>&lt;!&ndash;message textarea&ndash;&gt;
-                          <input type="submit" name="Submit" class="submitBtn" id="submit">
-                      </div>&lt;!&ndash;insideCF&ndash;&gt;
-                  </div>&lt;!&ndash;contactform&ndash;&gt;
-              </div>mapContact-->
             <div class="mapAddress">
                 <div class="mapArea">
                     <div class="titleMap">Find Us Here
-                    </div><!--title--><!--<div class="mapArea">-->
+                    </div><!--title-->
                     <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78254.48455913832!2d0.04994763499338952!3d52.19882136780877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d85d89f32a012d%3A0x63a320e1a35e3d21!2sCambridge!5e0!3m2!1sen!2suk!4v1563278465266!5m2!1sen!2suk"   class="mapFrame"></iframe>
                     </div><!--map-->
-                    <!--</div>&lt;!&ndash;mapArea&ndash;&gt;-->
-                    <!--<div class="contactForm">-->
-                    <!-- <div class="insideCF">-->
                     <div class="titAdd">
                         <div class="title">
                             Address:
@@ -381,7 +326,7 @@
                             <li class="linkSpace"><a class="linkSiteMap" href="#">About Me</a></li>
                             <li class="linkSpace"><a class="linkSiteMap" href="#">Consultancy</a></li>
                         </ul>
-                    </nav><!--sitemap firs t column-->
+                    </nav><!--sitemap first column-->
                 </div><!--colSitemap-->
 
                 <div class="colSocialMedia">

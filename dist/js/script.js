@@ -32,6 +32,7 @@
             tabName[i].addEventListener("click", function (e) {
                 e.preventDefault();
                 if ((tabName[i].classList[0] == "tabWorkshop") || (tabName[i].classList[0] == "workshops")) {
+
                     /*For tablet size*/
                     if (tabName[i].classList[0] == "tabWorkshop") {
                         tabWorkshop[0].style.backgroundColor = "#402005";
@@ -40,16 +41,16 @@
                         pic[1].srcset = "dist/imgs/home/optimized/workshops-new-700x810.png";
                     }//if tabWorkshop
 
+                    /*For laptop and Desktop*/
                     if (tabName[i].classList[0] == "workshops") {
-
                         workshops[0].style.backgroundColor = "#402005";
                         consultancy[0].style.backgroundColor = "#E6842E";
                         corporateNutrition[0].style.backgroundColor = "#E6842E";
-
                         pic[2].srcset = "dist/imgs/home/optimized/workshops-new-700x810.png";
                         pic[3].srcset = "dist/imgs/home/optimized/workshops-new-700x810.png";
                     }//if workshops
                 }//if((tabName.id == "tabWorkshop") || (tabName.id == "workshops"))
+
                 else if ((tabName[i].classList[0] == "tabConsultancy") || (tabName[i].classList[0] == "consultancy")) {
                     /*For tablet size*/
                     if (tabName[i].classList[0] == "tabConsultancy") {
@@ -58,6 +59,8 @@
                         tabCorporateNutrition[0].style.backgroundColor = "#E6842E";
                         pic[1].srcset = "dist/imgs/home/optimized/consultancy-new-700x810.png";
                     }//if(tabName.id == "tabConsultancy")
+
+                    /*For laptop and desktop*/
                     if (tabName[i].classList[0] == "consultancy") {
                         consultancy[0].style.backgroundColor = "#402005";
                         workshops[0].style.backgroundColor = "#E6842E";
@@ -66,7 +69,9 @@
                         pic[3].srcset = "dist/imgs/home/optimized/consultancy-new-700x810.png";
                     }//if(tabName.id == "consultancy")
                 }//else if((tabName.id == "tabConsultancy")|| (tabName.id == "consultancy"))
+
                 else if ((tabName[i].classList[0] == "tabCorporateNutrition") || (tabName[i].classList[0] == "corporateNutrition")) {
+
                     /*For tablet size*/
                     if (tabName[i].classList[0] == "tabCorporateNutrition") {
                         tabCorporateNutrition[0].style.backgroundColor = "#402005";
@@ -74,6 +79,8 @@
                         tabConsultancy[0].style.backgroundColor = "#E6842E";
                         pic[1].srcset = "dist/imgs/home/optimized/corporateNutritionNew-700x810.png";
                     }//if(tabName.id == "tabCorporateNutrition")
+
+                    /*For laptop and desktop*/
                     if (tabName[i].classList[0] == "corporateNutrition") {
                         consultancy[0].style.backgroundColor = "#E6842E";
                         workshops[0].style.backgroundColor = "#E6842E";
@@ -100,11 +107,14 @@
         enquire.register("screen and (max-width:360px)", {
             match: function(){
 
+                /*Toggle navigation*/
                 $menuIcon.on('click', function () {
                     $('.topNav').slideToggle("fast", "linear");
-                });
+                });/*menuIcon.click*/
 
-                if(imgPic2){
+                /*This is for moving from tablet size to mobile size, because consultancy and corporate nutrition pics are
+                removed from tablet size, so re-adding in mobile size*/
+                if(imgPic2.length > 0){
                     /*Injecting HTML in the picture element to add img tag*/
                     let imgText1 = `<img class="pic"  alt="changingpic" src="dist/imgs/home/optimized/consultancy-new-180x200.png">`;
                     imgPic2[0].innerHTML = imgText1;
@@ -115,12 +125,12 @@
 
                     imgPic2[0].style.display = "block";
                     imgPic3[0].style.display = "block";
-                }
-            },
+                }/*if*/
+            },/*match*/
             unmatch: function(){
 
-            }
-        });
+            }/*unmatch*/
+        });/*enquire.register*/
     }//mobile
 
     /**
@@ -141,10 +151,10 @@
                     tabClicked(tabConsultancy);
                     tabClicked(tabCorporateNutrition);
                 }/*if*/
-            },
+            },/*match*/
             unmatch: function(){
 
-            }
+            }/*unmatch*/
         });/*enquire.register*/
     }//tablet
 
@@ -156,15 +166,16 @@
     {
         enquire.register("screen and (min-width: 769px) and (max-width: 1200px)", {
             match: function(){
+
                 if(workshops.length > 0) {
                     tabClicked(workshops);
                     tabClicked(consultancy);
                     tabClicked(corporateNutrition);
-                }
-            },
+                }/*if*/
+            },/*match*/
             unmatch: function(){
 
-            }
+            }/*unmatch*/
         });/*enquire.register*/
     }//laptop
 
@@ -181,10 +192,10 @@
                     tabClicked(consultancy);
                     tabClicked(corporateNutrition);
                 }/*if*/
-            },
+            },/*match*/
             unmatch: function(){
 
-            }
+            }/*unmatch*/
         });/*enquire.register*/
     }//desktop
 
@@ -194,38 +205,45 @@
      */
     function validation()
     {
-        console.log(submit);
         if(submit){
-            /*CONTACT FORM SUBMIT BUTTON VALIDATION*/
+
+            /*submit is a HTMlCollection, therefore we start a loop, for click event*/
             for(let j=0; j< submit.length; j++) {
                 submit[j].addEventListener("click", function () {
                         const txtBox = document.getElementsByClassName("txtBox");
 
+                        /*Name*/
                         if (!txtBox[0].checkValidity()) {
                             if (txtBox[0].validity.valueMissing)
                                 document.getElementsByClassName("formMessage")[0].innerHTML = txtBox[0].validationMessage;
                             else if (!isNaN(parseInt(document.getElementsByClassName("txtBox")[0].value)))
                                 document.getElementsByClassName("formMessage")[0].innerHTML = "Please enter characters only.";
-                            else document.getElementsByClassName("formMessage")[0].innerHTML = "";
-                        }/*if(!fName.checkValidity())*/
+                            else
+                                document.getElementsByClassName("formMessage")[0].innerHTML = "";
+                        }/*if(!txtBox[0].checkValidity())*/
 
+                        /*Phone*/
                         if (!txtBox[1].checkValidity()) {
                             if (txtBox[1].validity.valueMissing)
                                 document.getElementsByClassName("formMessage")[1].innerHTML = txtBox[1].validationMessage;
                             else if (isNaN(parseInt(txtBox[1].value)))
                                 document.getElementsByClassName("formMessage")[1].innerHTML = "Please enter numbers only.";
-                            else document.getElementsByClassName("formMessage")[1].innerHTML = "";
-                        }/* if(!phone.checkValidity())*/
+                            else
+                                document.getElementsByClassName("formMessage")[1].innerHTML = "";
+                        }/* if(!txtBox[1].checkValidity())*/
 
+                        /*Email address*/
                         if (!txtBox[2].checkValidity()) {
-                            console.log(txtBox[2].validity);
                             if (txtBox[2].validity.valueMissing)
                                 document.getElementsByClassName("formMessage")[2].innerHTML = txtBox[2].validationMessage;
                             else if (txtBox[2].validity.patternMismatch)
                                 document.getElementsByClassName("formMessage")[2].innerHTML = "Please enter a valid email address.";
-                            else document.getElementsByClassName("formMessage")[2].innerHTML = "";
-                        }/*if(!email.checkValidity())*/
-                    }/* if(!fName.checkValidity())*/
+                        }/*if(!txtBox[2].checkValidity())*/
+                        else
+                        {
+                            document.getElementsByClassName("formMessage")[2].innerHTML = "";
+                        }/*else*/
+                    }/*submit.addEventListener*/
                 )/*submit.addEventListener*/
             }/*For tabName*/
         }/*if*/
@@ -246,7 +264,6 @@
         desktop();
 
         validation();
-
     }//bindBtns
 
     /**
