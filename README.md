@@ -6,7 +6,7 @@
 This project is created as a part of the Web Design Career programme from Training Dragon. It is a Mobile web design sample project created for a Nutritionist.
 
 **Why the project is useful:**
-The project shows how to create webpages for mobile size, tablet size, laptop size and desktop size viewport.
+The project shows how to create webpages for mobile size, tablet size, laptop size and desktop size viewport. It also shows how to use Browser sync and bundle *.js files in WebPack.
 
 **How users can get started with the project:**
 Start page is the index.html.
