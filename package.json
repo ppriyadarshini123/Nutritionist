@@ -2,18 +2,9 @@
   "name": "payal_priyadarshini_mwd_project",
   "version": "1.0.0",
   "description": "mobile web development project",
-  "main": "index.js",
+  "main": "index.html",
   "dependencies": {
     "enquire.js": "2.1.6",
-<<<<<<< HEAD
-    "jquery": "3.4.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "startServer": "browser-sync start --directory --server --files '*.js, *.html, *.css'"
-=======
-    "file-loader": "^4.3.0",
     "jquery": "3.4.1"
   },
   "devDependencies": {
@@ -25,7 +16,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "startServer": "browser-sync start --directory --server --files '*.js, *.html, *.css'",
     "build": "webpack src/index.js dist/main.js --mode=production --silent"
->>>>>>> testing
   },
   "repository": {
     "type": "git",
