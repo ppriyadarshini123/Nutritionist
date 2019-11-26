@@ -1,4 +1,6 @@
 import $ from 'jquery';
+window.jQuery = $;
+window.$ = $;
 import enquire from 'enquire.js';
 
 (function(){
@@ -108,21 +110,21 @@ import enquire from 'enquire.js';
     {
         enquire.register("screen and (max-width:360px)", {
             match: function(){
-
                 /*Toggle navigation*/
                 $menuIcon.on('click', function () {
                     $('.topNav').slideToggle("fast", "linear");
+                    console.log("inside jquery");
                 });/*menuIcon.click*/
 
                 /*This is for moving from tablet size to mobile size, because consultancy and corporate nutrition pics are
                 removed from tablet size, so re-adding in mobile size*/
                 if(imgPic2.length > 0){
                     /*Injecting HTML in the picture element to add img tag*/
-                    let imgText1 = `<img class="pic"  alt="changingpic" src="src/imgs/home/optimized/consultancy-new-180x200.png">`;
+                    let imgText1 = `<img class="pic"  alt="changingpic" src="./imgs/home/optimized/consultancy-new-180x200.png">`;
                     imgPic2[0].innerHTML = imgText1;
 
                     /*Injecting HTML in the picture element to add img tag*/
-                    let imgText2 = `<img class="pic"  alt="changingpic" src="src/imgs/home/optimized/corporateNutritionNew-180x200.png">`;
+                    let imgText2 = `<img class="pic"  alt="changingpic" src="./imgs/home/optimized/corporateNutritionNew-180x200.png">`;
                     imgPic3[0].innerHTML = imgText2;
 
                     imgPic2[0].style.display = "block";
