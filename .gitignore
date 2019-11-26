@@ -1,1 +1,7 @@
+<<<<<<< HEAD
+=======
+#ignoring log files
+*.log
+#ignoring node modules folder
+>>>>>>> testing
 node_modules/
