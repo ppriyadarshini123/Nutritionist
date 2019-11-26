@@ -2016,8 +2016,8 @@ body {
     .subTitleDetox
     {
         transform: rotate(-7deg);
-        top: 0.5vw;
-        left: 5vw;
+        top: .5vw;
+        left: 8vw;
     }
     .detox:hover .subTitleDetox
     {
@@ -2054,8 +2054,8 @@ body {
     }
     .subTitleBrain
     {
-        top: .5vw;
-        left: 18vw;
+        top: 1vw;
+        right: 14vw;
     }
     .picLP3
     {
@@ -2076,8 +2076,8 @@ body {
     .subTitleStress
     {
         transform: rotate(-10deg);
-        bottom: -9vw;
-        left: 6vw;
+        bottom: -14vw;
+        left: 8.5vw;
     }
 
     .picLP4
@@ -2103,8 +2103,8 @@ body {
     .subTitleWeight
     {
         transform: rotate(10deg);
-        bottom: -8.3vw;
-        left: 30vw;
+        bottom: -9.3vw;
+        right: 6.5vw;
     }
 
     /*MAP & ADDRESS SECTION*/
