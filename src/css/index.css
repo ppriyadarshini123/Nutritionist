@@ -194,8 +194,6 @@ body {
     .lblBigPicCN
     {
         position: absolute;
-        margin-left: auto;
-        margin-right: auto;
         top: 65%;
         left: calc(50% - 23vw);
     }
@@ -204,8 +202,6 @@ body {
         position:absolute;
         top: 20%;
         left: calc(50% - 24px);
-        max-width: 100%;
-        height: auto;
     }
 
     .pic
@@ -239,6 +235,8 @@ body {
         grid-area: 1/2/1/2;
         position: relative;
         text-align: center;
+        display: inline-block;
+        vertical-align: top;
     }
     .rightColumnBG2
     {
