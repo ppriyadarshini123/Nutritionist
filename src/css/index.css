@@ -181,13 +181,15 @@ body {
         border: 1vw solid #ffffff;
     }
 
+    .trial
+    {
+        margin-bottom: 1vw;
+    }
     .lblBigPic
     {
         position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        top: 65%;
         left: calc(50% - 13vw);
+        top: 69%;
     }
     .lblBigPicCN
     {
@@ -199,13 +201,11 @@ body {
     }
     .iconImage
     {
-        padding-bottom: 3vw;
         position:absolute;
-        top: 50%;
-        margin-top: -9vw;
-        margin-left: auto;
-        margin-right: auto;
+        top: 20%;
         left: calc(50% - 24px);
+        max-width: 100%;
+        height: auto;
     }
 
     .pic
@@ -1393,6 +1393,8 @@ body {
     .detox
     {
         text-align: center;
+        display: inline-block;
+        vertical-align: top;
     }
     .text
     {
@@ -1439,7 +1441,8 @@ body {
     .brain
     {
         text-align: center;
-
+        display: inline-block;
+        vertical-align: top;
     }
     .brain:hover .subTitleBrain
     {
@@ -1448,8 +1451,8 @@ body {
     }
     .subTitleBrain
     {
-        left: 39vw;
-        top: 1vw;
+        left: 34vw;
+        top: 2vw;
     }
     .picLP3
     {
@@ -1470,7 +1473,7 @@ body {
     .subTitleStress
     {
         transform: rotate(-10deg);
-        bottom: -15.5vw;
+        bottom: -17vw;
         left: 11vw;
     }
 
@@ -1488,6 +1491,8 @@ body {
     .weight
     {
         text-align: center;
+        display: inline-block;
+        vertical-align: top;
     }
     .weight:hover .subTitleWeight
     {
@@ -1497,7 +1502,7 @@ body {
     .subTitleWeight
     {
         transform: rotate(10deg);
-        top: 41vw;
+        top: 45vw;
         left: 53vw;
     }
 
@@ -2016,7 +2021,7 @@ body {
     .subTitleDetox
     {
         transform: rotate(-7deg);
-        top: .5vw;
+        top: 1.5vw;
         left: 8vw;
     }
     .detox:hover .subTitleDetox
@@ -2076,7 +2081,7 @@ body {
     .subTitleStress
     {
         transform: rotate(-10deg);
-        bottom: -14vw;
+        bottom: -13vw;
         left: 8.5vw;
     }
 

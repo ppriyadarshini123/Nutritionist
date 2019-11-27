@@ -120,11 +120,11 @@ import enquire from 'enquire.js';
                 removed from tablet size, so re-adding in mobile size*/
                 if(imgPic2.length > 0){
                     /*Injecting HTML in the picture element to add img tag*/
-                    let imgText1 = `<img class="pic"  alt="changingpic" src="./imgs/home/optimized/consultancy-new-180x200.png">`;
+                    let imgText1 = `<img class="pic"  alt="changingpic" src="src/imgs/home/optimized/consultancy-new-180x200.png">`;
                     imgPic2[0].innerHTML = imgText1;
 
                     /*Injecting HTML in the picture element to add img tag*/
-                    let imgText2 = `<img class="pic"  alt="changingpic" src="./imgs/home/optimized/corporateNutritionNew-180x200.png">`;
+                    let imgText2 = `<img class="pic"  alt="changingpic" src="src/imgs/home/optimized/corporateNutritionNew-180x200.png">`;
                     imgPic3[0].innerHTML = imgText2;
 
                     imgPic2[0].style.display = "block";
@@ -145,6 +145,8 @@ import enquire from 'enquire.js';
     {
         enquire.register("screen and (min-width: 361px) and (max-width: 768px)", {
             match: function() {
+                $('topNav').show();
+
                 if(tabWorkshop.length > 0)
                 {
                     /*With getElementByClassName, we get a a HTML collection, therefore we use imgPic2[0]*/
